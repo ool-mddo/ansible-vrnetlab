@@ -1,0 +1,35 @@
+---
+- hosts: localhost
+  connection: local
+  gather_facts: false
+
+  tasks:
+    - name: send command
+      command: ansible --version
+      register: res_version
+
+    - name: debug version
+      debug:
+        msg: "{{ res_version.stdout_lines }}"
+
+    - name: send command
+      command: ansible-galaxy collection list
+      register: res_collections
+
+    - name: debug version
+      debug:
+        msg: "{{ res_collections.stdout_lines }}"
+
+    - name: send command
+      command: pip freeze
+      register: res_pip_freeze
+
+    - name: debug version
+      debug:
+        msg: "{{ res_pip_freeze.stdout_lines }}"
+
+    - name: debug ip
+      debug:
+        msg: "{{ ip | ansible.netcommon.ipv4 }}"
+      vars:
+        ip: '192.168.1.1/32'
