@@ -1,0 +1,21 @@
+---
+- hosts: all
+  connection: ansible.netcommon.network_cli
+  gather_facts: false
+  vars:
+      ansible_connection: ansible.netcommon.network_cli
+      ansible_user: vrnetlab
+      ansible_password: VR-netlab9
+
+
+  tasks:
+    - name: show command
+      ansible.netcommon.cli_command:
+        command: show config
+      when: ansible_network_os == 'junos'
+
+    - name: show command
+      ansible.netcommon.cli_command:
+        command: show running-config
+      when: ansible_network_os == 'iosxr'
+

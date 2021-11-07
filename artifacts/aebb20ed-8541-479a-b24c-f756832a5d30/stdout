@@ -1,0 +1,11 @@
+[0;34mansible-playbook [core 2.12.0rc1.post0][0m
+[0;34m  config file = None[0m
+[0;34m  configured module search path = ['/home/runner/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules'][0m
+[0;34m  ansible python module location = /usr/local/lib/python3.8/site-packages/ansible[0m
+[0;34m  ansible collection location = /home/runner/.ansible/collections:/usr/share/ansible/collections[0m
+[0;34m  executable location = /usr/local/bin/ansible-playbook[0m
+[0;34m  python version = 3.8.6 (default, Jan 29 2021, 17:38:16) [GCC 8.4.1 20200928 (Red Hat 8.4.1-1)][0m
+[0;34m  jinja version = 2.10.3[0m
+[0;34m  libyaml = True[0m
+[0;34mNo config file found; using defaults[0m
+[0;31mERROR! the playbook: playbooks/get_config.yml could not be found[0m
