@@ -16,8 +16,6 @@ all:
           ansible_password: VR-netlab9
     Iosxr:
       hosts:
-    Iosxr:
-      hosts:
         RegionA-PE01:
           ansible_host: 172.17.0.6
           ansible_network_os: iosxr
