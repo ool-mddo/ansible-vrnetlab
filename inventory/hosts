@@ -14,6 +14,18 @@ all:
           ansible_connection: ansible.netcommon.network_cli
           ansible_user: vrnetlab
           ansible_password: VR-netlab9
+        RegionB-CE01:
+          ansible_host: 172.17.0.4
+          ansible_network_os: junos
+          ansible_connection: ansible.netcommon.network_cli
+          ansible_user: vrnetlab
+          ansible_password: VR-netlab9
+        RegionB-CE02:
+          ansible_host: 172.17.0.5
+          ansible_network_os: junos
+          ansible_connection: ansible.netcommon.network_cli
+          ansible_user: vrnetlab
+          ansible_password: VR-netlab9
     Iosxr:
       hosts:
         RegionA-PE01:
@@ -32,8 +44,14 @@ all:
           ansible_ssh_common_arg: "-o HostKeyAlgorithms=ssh-rsa -o KexAlgorithms=diffie-hellman-group1-sha1 -o Ciphers=aes256-cbc,3des-cbc -o MACs=hmac-md5,hmac-sha2-512"
     Eos:
       hosts:
-        RegionB-PE01:
+        RegionA-CE01:
           ansible_host: 172.17.0.11
+          ansible_network_os: eos
+          ansible_connection: ansible.netcommon.network_cli
+          ansible_user: vrnetlab
+          ansible_password: VR-netlab9
+        RegionA-CE02:
+          ansible_host: 172.17.0.12
           ansible_network_os: eos
           ansible_connection: ansible.netcommon.network_cli
           ansible_user: vrnetlab
