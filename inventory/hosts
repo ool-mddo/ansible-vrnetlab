@@ -56,3 +56,45 @@ all:
           ansible_connection: ansible.netcommon.network_cli
           ansible_user: vrnetlab
           ansible_password: VR-netlab9
+        RegionA-Acc01:
+          ansible_host: 172.17.0.22
+          ansible_network_os: eos
+          ansible_connection: ansible.netcommon.network_cli
+          ansible_user: vrnetlab
+          ansible_password: VR-netlab9
+        RegionB-Acc01:
+          ansible_host: 172.17.0.10
+          ansible_network_os: eos
+          ansible_connection: ansible.netcommon.network_cli
+          ansible_user: vrnetlab
+          ansible_password: VR-netlab9
+        RegionB-Acc02:
+          ansible_host: 172.17.0.19
+          ansible_network_os: eos
+          ansible_connection: ansible.netcommon.network_cli
+          ansible_user: vrnetlab
+          ansible_password: VR-netlab9
+        RegionA-Svr01:
+          ansible_host: 172.17.0.13
+          ansible_network_os: eos
+          ansible_connection: ansible.netcommon.network_cli
+          ansible_user: vrnetlab
+          ansible_password: VR-netlab9
+        RegionB-Svr02:
+          ansible_host: 172.17.0.15
+          ansible_network_os: eos
+          ansible_connection: ansible.netcommon.network_cli
+          ansible_user: vrnetlab
+          ansible_password: VR-netlab9
+        RegionB-Svr01:
+          ansible_host: 172.17.0.16
+          ansible_network_os: eos
+          ansible_connection: ansible.netcommon.network_cli
+          ansible_user: vrnetlab
+          ansible_password: VR-netlab9
+        RegionA-Svr02:
+          ansible_host: 172.17.0.14
+          ansible_network_os: eos
+          ansible_connection: ansible.netcommon.network_cli
+          ansible_user: vrnetlab
+          ansible_password: VR-netlab9
