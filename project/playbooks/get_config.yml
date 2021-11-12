@@ -19,3 +19,11 @@
         command: show running-config
       when: ansible_network_os == 'iosxr'
 
+    - name: show command
+      ansible.netcommon.cli_command:
+        command: "{{item}}" 
+      loop:
+        - enable 
+        - show running-config
+      when: ansible_network_os == 'eos'
+

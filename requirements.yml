@@ -5,4 +5,5 @@ collections:
   - name: netbox.netbox
   - name: junipernetworks.junos
   - name: cisco.iosxr
+  - name: arista.eos
 
