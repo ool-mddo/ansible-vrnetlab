@@ -1,0 +1,34 @@
+---
+- hosts: localhost
+  connection: local
+  gather_facts: false
+
+  tasks:
+    - name: create directory
+      file: path=/home/kawaguchi/configs state=directory owner=kawaguchi group=kawaguchi mode=0755
+
+
+- hosts: RegionB-PE01
+  connection: ansible.netcommon.network_cli
+  gather_facts: false
+  vars:
+      ansible_network_os: junos
+      ansible_connection: ansible.netcommon.network_cli
+      ansible_user: vrnetlab
+      ansible_password: VR-netlab9
+
+  tasks:
+    - name: show command
+      ansible.netcommon.cli_command:
+        command: show config
+      register: command_result
+
+    - name: output config files
+      local_action:
+        module: copy
+        owner: kawaguchi
+        group: kawaguchi
+        mode: 0644
+        dest: "/home/kawaguchi/configs/{{ inventory_hostname }}_config.txt"
+        content: "{{ command_result }}"
+      changed_when: False
