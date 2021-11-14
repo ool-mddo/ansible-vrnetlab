@@ -32,3 +32,19 @@
         dest: "/home/kawaguchi/configs/{{ inventory_hostname }}_config.txt"
         content: "{{ command_result }}"
       changed_when: False
+
+- hosts: localhost 
+  gather_facts: false
+  connection: local
+
+  tasks:
+    - name: git add & commit & push
+      git_acp:
+        user: ""
+        token: ""
+        path: /home/kawaguchi/configs/   # .git/ のディレクトリ
+        branch: main            # git push 先のブランチ
+        comment: Add junos config file         # git commit -m "Add file" commit のコメント
+        add: "." # git add するファイル
+        mode: https                 # https/ssh/local のいずれか。httpは対応していません
+        url: "https://github.com/ool-mddo/test-git-acp-ansible.git"
