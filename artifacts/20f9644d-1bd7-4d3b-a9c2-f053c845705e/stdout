@@ -1,0 +1,12 @@
+
+PLAY [RegionB-PE01] ************************************************************
+
+TASK [show command] ************************************************************
+[0;32mok: [RegionB-PE01][0m
+
+TASK [output config files] *****************************************************
+[0;31mfatal: [RegionB-PE01 -> localhost]: FAILED! => {"changed": false, "checksum": "9652148a334856881c0b0cf1e1fb86bd8ea3c631", "msg": "Destination directory /home/kawaguchi/configs does not exist"}[0m
+
+PLAY RECAP *********************************************************************
+[0;31mRegionB-PE01[0m               : [0;32mok=1   [0m changed=0    unreachable=0    [0;31mfailed=1   [0m skipped=0    rescued=0    ignored=0   
+

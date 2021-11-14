@@ -1,0 +1,312 @@
+[0;34mansible-playbook [core 2.12.0rc1.post0][0m
+[0;34m  config file = None[0m
+[0;34m  configured module search path = ['/home/runner/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules'][0m
+[0;34m  ansible python module location = /usr/local/lib/python3.8/site-packages/ansible[0m
+[0;34m  ansible collection location = /home/runner/.ansible/collections:/usr/share/ansible/collections[0m
+[0;34m  executable location = /usr/local/bin/ansible-playbook[0m
+[0;34m  python version = 3.8.6 (default, Jan 29 2021, 17:38:16) [GCC 8.4.1 20200928 (Red Hat 8.4.1-1)][0m
+[0;34m  jinja version = 2.10.3[0m
+[0;34m  libyaml = True[0m
+[0;34mNo config file found; using defaults[0m
+[0;34msetting up inventory plugins[0m
+[0;34mhost_list declined parsing /runner/inventory/hosts as it did not pass its verify_file() method[0m
+[0;34mscript declined parsing /runner/inventory/hosts as it did not pass its verify_file() method[0m
+[0;34mauto declined parsing /runner/inventory/hosts as it did not pass its verify_file() method[0m
+[0;34mParsed /runner/inventory/hosts inventory source with yaml plugin[0m
+[0;34mLoading collection ansible.netcommon from /usr/share/ansible/collections/ansible_collections/ansible/netcommon[0m
+[0;34mLoading callback plugin awx_display of type stdout, v2.0 from /usr/local/lib/python3.8/site-packages/ansible_runner/callbacks/awx_display.py[0m
+[0;34mSkipping callback 'awx_display', as we already have a stdout callback.[0m
+[0;34mSkipping callback 'default', as we already have a stdout callback.[0m
+[0;34mSkipping callback 'minimal', as we already have a stdout callback.[0m
+[0;34mSkipping callback 'oneline', as we already have a stdout callback.[0m
+
+PLAYBOOK: junos.yml ************************************************************
+[0;34mPositional arguments: playbooks/junos.yml[0m
+[0;34mverbosity: 4[0m
+[0;34mconnection: smart[0m
+[0;34mtimeout: 10[0m
+[0;34mbecome_method: sudo[0m
+[0;34mtags: ('all',)[0m
+[0;34minventory: ('/runner/inventory/hosts',)[0m
+[0;34mforks: 5[0m
+[0;34m2 plays in playbooks/junos.yml[0m
+
+PLAY [localhost] ***************************************************************
+[0;34mMETA: ran handlers[0m
+
+TASK [send command] ************************************************************
+[1;30mtask path: /runner/project/playbooks/junos.yml:8[0m
+[0;34m<127.0.0.1> ESTABLISH LOCAL CONNECTION FOR USER: runner[0m
+[0;34m<127.0.0.1> EXEC /bin/sh -c 'echo ~runner && sleep 0'[0m
+[0;34m<127.0.0.1> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/runner/.ansible/tmp `"&& mkdir "` echo /home/runner/.ansible/tmp/ansible-tmp-1636167162.5691285-33-217953160758378 `" && echo ansible-tmp-1636167162.5691285-33-217953160758378="` echo /home/runner/.ansible/tmp/ansible-tmp-1636167162.5691285-33-217953160758378 `" ) && sleep 0'[0m
+[0;34mUsing module file /usr/local/lib/python3.8/site-packages/ansible/modules/command.py[0m
+[0;34m<127.0.0.1> PUT /home/runner/.ansible/tmp/ansible-local-282_ygpo3b/tmpj970sup0 TO /home/runner/.ansible/tmp/ansible-tmp-1636167162.5691285-33-217953160758378/AnsiballZ_command.py[0m
+[0;34m<127.0.0.1> EXEC /bin/sh -c 'chmod u+x /home/runner/.ansible/tmp/ansible-tmp-1636167162.5691285-33-217953160758378/ /home/runner/.ansible/tmp/ansible-tmp-1636167162.5691285-33-217953160758378/AnsiballZ_command.py && sleep 0'[0m
+[0;34m<127.0.0.1> EXEC /bin/sh -c '/usr/bin/python3 /home/runner/.ansible/tmp/ansible-tmp-1636167162.5691285-33-217953160758378/AnsiballZ_command.py && sleep 0'[0m
+[0;34m<127.0.0.1> EXEC /bin/sh -c 'rm -f -r /home/runner/.ansible/tmp/ansible-tmp-1636167162.5691285-33-217953160758378/ > /dev/null 2>&1 && sleep 0'[0m
+[0;33mchanged: [localhost] => {[0m
+[0;33m    "changed": true,[0m
+[0;33m    "cmd": [[0m
+[0;33m        "ansible-galaxy",[0m
+[0;33m        "collection",[0m
+[0;33m        "list"[0m
+[0;33m    ],[0m
+[0;33m    "delta": "0:00:00.858807",[0m
+[0;33m    "end": "2021-11-06 02:52:43.935615",[0m
+[0;33m    "invocation": {[0m
+[0;33m        "module_args": {[0m
+[0;33m            "_raw_params": "ansible-galaxy collection list",[0m
+[0;33m            "_uses_shell": false,[0m
+[0;33m            "argv": null,[0m
+[0;33m            "chdir": null,[0m
+[0;33m            "creates": null,[0m
+[0;33m            "executable": null,[0m
+[0;33m            "removes": null,[0m
+[0;33m            "stdin": null,[0m
+[0;33m            "stdin_add_newline": true,[0m
+[0;33m            "strip_empty_ends": true,[0m
+[0;33m            "warn": false[0m
+[0;33m        }[0m
+[0;33m    },[0m
+[0;33m    "msg": "",[0m
+[0;33m    "rc": 0,[0m
+[0;33m    "start": "2021-11-06 02:52:43.076808",[0m
+[0;33m    "stderr": "",[0m
+[0;33m    "stderr_lines": [],[0m
+[0;33m    "stdout": "\n# /usr/share/ansible/collections/ansible_collections\nCollection            Version\n--------------------- -------\nansible.netcommon     2.4.0  \nansible.utils         2.4.2  \njunipernetworks.junos 2.6.0  \nnetbox.netbox         3.3.0  ",[0m
+[0;33m    "stdout_lines": [[0m
+[0;33m        "",[0m
+[0;33m        "# /usr/share/ansible/collections/ansible_collections",[0m
+[0;33m        "Collection            Version",[0m
+[0;33m        "--------------------- -------",[0m
+[0;33m        "ansible.netcommon     2.4.0  ",[0m
+[0;33m        "ansible.utils         2.4.2  ",[0m
+[0;33m        "junipernetworks.junos 2.6.0  ",[0m
+[0;33m        "netbox.netbox         3.3.0  "[0m
+[0;33m    ][0m
+[0;33m}[0m
+[0;34mMETA: ran handlers[0m
+[0;34mMETA: ran handlers[0m
+
+PLAY [all] *********************************************************************
+[0;34mMETA: ran handlers[0m
+
+TASK [show command] ************************************************************
+[1;30mtask path: /runner/project/playbooks/junos.yml:24[0m
+[0;34mredirecting (type: terminal) ansible.builtin.junos to junipernetworks.junos.junos[0m
+[0;34mLoading collection junipernetworks.junos from /usr/share/ansible/collections/ansible_collections/junipernetworks/junos[0m
+[0;34mredirecting (type: cliconf) ansible.builtin.junos to junipernetworks.junos.junos[0m
+[0;34m<172.17.0.3> attempting to start connection[0m
+[0;34m<172.17.0.3> using connection plugin ansible.netcommon.network_cli[0m
+[0;34mFound ansible-connection at path /usr/local/bin/ansible-connection[0m
+[0;34m<172.17.0.3> local domain socket does not exist, starting it[0m
+[0;34m<172.17.0.3> control socket path is /home/runner/.ansible/pc/504702bd18[0m
+[0;34m<172.17.0.3> Loading collection ansible.netcommon from /usr/share/ansible/collections/ansible_collections/ansible/netcommon[0m
+[0;34m<172.17.0.3> redirecting (type: terminal) ansible.builtin.junos to junipernetworks.junos.junos[0m
+[0;34m<172.17.0.3> Loading collection junipernetworks.junos from /usr/share/ansible/collections/ansible_collections/junipernetworks/junos[0m
+[0;34m<172.17.0.3> redirecting (type: cliconf) ansible.builtin.junos to junipernetworks.junos.junos[0m
+[0;34m<172.17.0.3> local domain socket listeners started successfully[0m
+[0;34m<172.17.0.3> loaded cliconf plugin ansible_collections.junipernetworks.junos.plugins.cliconf.junos from path /usr/share/ansible/collections/ansible_collections/junipernetworks/junos/plugins/cliconf/junos.py for network_os junos[0m
+[0;34m<172.17.0.3> ssh type is set to paramiko[0m
+[0;34m<172.17.0.3> [0m
+[0;34m<172.17.0.3> local domain socket path is /home/runner/.ansible/pc/504702bd18[0m
+[0;34m<172.17.0.3> ANSIBLE_NETWORK_IMPORT_MODULES: disabled[0m
+[0;34m<172.17.0.3> ANSIBLE_NETWORK_IMPORT_MODULES: module execution time may be extended[0m
+[0;34m<172.17.0.3> ESTABLISH LOCAL CONNECTION FOR USER: runner[0m
+[0;34m<172.17.0.3> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /home/runner/.ansible/tmp/ansible-local-282_ygpo3b `"&& mkdir "` echo /home/runner/.ansible/tmp/ansible-local-282_ygpo3b/ansible-tmp-1636167165.0499167-54-112139025314141 `" && echo ansible-tmp-1636167165.0499167-54-112139025314141="` echo /home/runner/.ansible/tmp/ansible-local-282_ygpo3b/ansible-tmp-1636167165.0499167-54-112139025314141 `" ) && sleep 0'[0m
+[0;34mUsing module file /usr/share/ansible/collections/ansible_collections/ansible/netcommon/plugins/modules/cli_command.py[0m
+[0;34m<172.17.0.3> PUT /home/runner/.ansible/tmp/ansible-local-282_ygpo3b/tmpy1fum_c0 TO /home/runner/.ansible/tmp/ansible-local-282_ygpo3b/ansible-tmp-1636167165.0499167-54-112139025314141/AnsiballZ_cli_command.py[0m
+[0;34m<172.17.0.3> EXEC /bin/sh -c 'chmod u+x /home/runner/.ansible/tmp/ansible-local-282_ygpo3b/ansible-tmp-1636167165.0499167-54-112139025314141/ /home/runner/.ansible/tmp/ansible-local-282_ygpo3b/ansible-tmp-1636167165.0499167-54-112139025314141/AnsiballZ_cli_command.py && sleep 0'[0m
+[0;34m<172.17.0.3> EXEC /bin/sh -c '/usr/bin/python3 /home/runner/.ansible/tmp/ansible-local-282_ygpo3b/ansible-tmp-1636167165.0499167-54-112139025314141/AnsiballZ_cli_command.py && sleep 0'[0m
+[0;34m<172.17.0.3> EXEC /bin/sh -c 'rm -f -r /home/runner/.ansible/tmp/ansible-local-282_ygpo3b/ansible-tmp-1636167165.0499167-54-112139025314141/ > /dev/null 2>&1 && sleep 0'[0m
+[0;32mok: [RegionB-PE01] => {[0m
+[0;32m    "changed": false,[0m
+[0;32m    "invocation": {[0m
+[0;32m        "module_args": {[0m
+[0;32m            "answer": null,[0m
+[0;32m            "check_all": false,[0m
+[0;32m            "command": "show config",[0m
+[0;32m            "newline": true,[0m
+[0;32m            "prompt": null,[0m
+[0;32m            "sendonly": false[0m
+[0;32m        }[0m
+[0;32m    },[0m
+[0;32m    "stdout": "show configuration \n## Last commit: 2021-10-27 17:16:44 UTC by root\nversion 18.1R1.9;\nsystem {\n    host-name RegionB-PE02;\n    root-authentication {\n        encrypted-password \"$6$vOte4zs5$j1X3fElYvJSt8VPNXx2KzRNrZIkp9CeRX83/W4wQo5K4Tl/MHZeMcvbymEzm9/2ya3S4hU993YDSLY26ROGnW/\"; ## SECRET-DATA\n    }\n    login {\n        user vrnetlab {\n            uid 2000;\n            class super-user;\n            authentication {\n                encrypted-password \"$6$CDmzGe/d$g43HmhI3FA.21JCYppnTg1h4q/JO4DOHSICLhhavqBem5zUTgKEcg5m9tBG1Ik6qmfb7L3v.wgj4/DkfgZejO0\"; ## SECRET-DATA\n            }\n        }\n    }\n    services {\n        ssh;\n        netconf {\n            ssh;\n        }\n    }\n    syslog {\n        user * {\n            any emergency;\n        }\n        file messages {\n            any notice;\n            authorization info;\n        }\n        file interactive-commands {\n            interactive-commands any;\n        }\n    }\n}\nchassis {\n    fpc 0 {\n        pic 0 {\n            number-of-ports 96;\n        }\n    }\n}\ninterfaces {\n    ge-0/0/0 {\n        unit 0 {\n            family inet {\n                address 10.1.1.2/30;\n            }\n            family inet6 {\n                address fc00:10:1:1::2/64;\n            }\n        }\n    }\n    ge-0/0/1 {\n        unit 0 {\n            family inet {\n                address 172.17.0.2/30;\n            }\n            family inet6 {\n                address fc00:172:17::2/64;\n            }\n        }\n    }\n    ge-0/0/2 {\n        unit 0 {\n            family inet {\n                address 172.17.3.1/30;\n            }\n            family inet6 {\n                address fc00:172:17:3::1/64;\n            }\n        }\n    }\n    ge-0/0/3 {\n        unit 0 {\n            family inet {\n                address 172.17.4.1/30;\n            }\n            family inet6 {\n                address fc00:172:17:4::1/64;\n            }\n        }\n    }\n    fxp0 {\n        unit 0 {\n            family inet {\n                address 10.0.0.15/24;\n            }\n        }\n    }\n}\nrouting-options {\n    rib inet6.0 {\n        static {\n            route ::/0 discard;\n        }\n    }\n    generate {\n        route 0.0.0.0/0 discard;\n    }\n    router-id 2.2.2.3;\n    autonomous-system 65001;\n}\nprotocols {\n    bgp {\n        group EXT {\n            type external;\n            export EXPORTOSPF;\n            neighbor 10.1.1.1 {\n                peer-as 65000;\n            }\n            neighbor fc00:10:1:1::1 {\n                peer-as 65000;\n            }\n        }\n        group INT {\n            type internal;\n            export EXPORTOSPF;\n            neighbor 172.17.0.1 {\n                peer-as 65001;\n            }\n            neighbor fc00:172:17::1 {\n                peer-as 65001;\n            }\n        }\n    }\n    ospf {\n        export ospf-default;\n        area 0.0.0.0 {\n            interface ge-0/0/2.0;\n            interface ge-0/0/3.0;\n        }\n    }\n    ospf3 {\n        export ospf3-default;\n        area 0.0.0.0 {\n            interface ge-0/0/2.0;\n            interface ge-0/0/3.0;\n        }\n    }\n}\npolicy-options {\n    policy-statement EXPORTBGP {\n        term 1 {\n            from protocol [ bgp direct ];\n            then accept;\n        }\n    }\n    policy-statement EXPORTOSPF {\n        term 1 {\n            from protocol [ ospf direct ospf3 ];\n            then accept;\n        }\n    }\n    policy-statement ospf-default {\n        from {\n            route-filter 0.0.0.0/0 exact;\n        }\n        then accept;\n    }\n    policy-statement ospf3-default {\n        from {\n            route-filter ::/0 exact;\n        }\n        then accept;\n    }\n}",[0m
+[0;32m    "stdout_lines": [[0m
+[0;32m        "show configuration ",[0m
+[0;32m        "## Last commit: 2021-10-27 17:16:44 UTC by root",[0m
+[0;32m        "version 18.1R1.9;",[0m
+[0;32m        "system {",[0m
+[0;32m        "    host-name RegionB-PE02;",[0m
+[0;32m        "    root-authentication {",[0m
+[0;32m        "        encrypted-password \"$6$vOte4zs5$j1X3fElYvJSt8VPNXx2KzRNrZIkp9CeRX83/W4wQo5K4Tl/MHZeMcvbymEzm9/2ya3S4hU993YDSLY26ROGnW/\"; ## SECRET-DATA",[0m
+[0;32m        "    }",[0m
+[0;32m        "    login {",[0m
+[0;32m        "        user vrnetlab {",[0m
+[0;32m        "            uid 2000;",[0m
+[0;32m        "            class super-user;",[0m
+[0;32m        "            authentication {",[0m
+[0;32m        "                encrypted-password \"$6$CDmzGe/d$g43HmhI3FA.21JCYppnTg1h4q/JO4DOHSICLhhavqBem5zUTgKEcg5m9tBG1Ik6qmfb7L3v.wgj4/DkfgZejO0\"; ## SECRET-DATA",[0m
+[0;32m        "            }",[0m
+[0;32m        "        }",[0m
+[0;32m        "    }",[0m
+[0;32m        "    services {",[0m
+[0;32m        "        ssh;",[0m
+[0;32m        "        netconf {",[0m
+[0;32m        "            ssh;",[0m
+[0;32m        "        }",[0m
+[0;32m        "    }",[0m
+[0;32m        "    syslog {",[0m
+[0;32m        "        user * {",[0m
+[0;32m        "            any emergency;",[0m
+[0;32m        "        }",[0m
+[0;32m        "        file messages {",[0m
+[0;32m        "            any notice;",[0m
+[0;32m        "            authorization info;",[0m
+[0;32m        "        }",[0m
+[0;32m        "        file interactive-commands {",[0m
+[0;32m        "            interactive-commands any;",[0m
+[0;32m        "        }",[0m
+[0;32m        "    }",[0m
+[0;32m        "}",[0m
+[0;32m        "chassis {",[0m
+[0;32m        "    fpc 0 {",[0m
+[0;32m        "        pic 0 {",[0m
+[0;32m        "            number-of-ports 96;",[0m
+[0;32m        "        }",[0m
+[0;32m        "    }",[0m
+[0;32m        "}",[0m
+[0;32m        "interfaces {",[0m
+[0;32m        "    ge-0/0/0 {",[0m
+[0;32m        "        unit 0 {",[0m
+[0;32m        "            family inet {",[0m
+[0;32m        "                address 10.1.1.2/30;",[0m
+[0;32m        "            }",[0m
+[0;32m        "            family inet6 {",[0m
+[0;32m        "                address fc00:10:1:1::2/64;",[0m
+[0;32m        "            }",[0m
+[0;32m        "        }",[0m
+[0;32m        "    }",[0m
+[0;32m        "    ge-0/0/1 {",[0m
+[0;32m        "        unit 0 {",[0m
+[0;32m        "            family inet {",[0m
+[0;32m        "                address 172.17.0.2/30;",[0m
+[0;32m        "            }",[0m
+[0;32m        "            family inet6 {",[0m
+[0;32m        "                address fc00:172:17::2/64;",[0m
+[0;32m        "            }",[0m
+[0;32m        "        }",[0m
+[0;32m        "    }",[0m
+[0;32m        "    ge-0/0/2 {",[0m
+[0;32m        "        unit 0 {",[0m
+[0;32m        "            family inet {",[0m
+[0;32m        "                address 172.17.3.1/30;",[0m
+[0;32m        "            }",[0m
+[0;32m        "            family inet6 {",[0m
+[0;32m        "                address fc00:172:17:3::1/64;",[0m
+[0;32m        "            }",[0m
+[0;32m        "        }",[0m
+[0;32m        "    }",[0m
+[0;32m        "    ge-0/0/3 {",[0m
+[0;32m        "        unit 0 {",[0m
+[0;32m        "            family inet {",[0m
+[0;32m        "                address 172.17.4.1/30;",[0m
+[0;32m        "            }",[0m
+[0;32m        "            family inet6 {",[0m
+[0;32m        "                address fc00:172:17:4::1/64;",[0m
+[0;32m        "            }",[0m
+[0;32m        "        }",[0m
+[0;32m        "    }",[0m
+[0;32m        "    fxp0 {",[0m
+[0;32m        "        unit 0 {",[0m
+[0;32m        "            family inet {",[0m
+[0;32m        "                address 10.0.0.15/24;",[0m
+[0;32m        "            }",[0m
+[0;32m        "        }",[0m
+[0;32m        "    }",[0m
+[0;32m        "}",[0m
+[0;32m        "routing-options {",[0m
+[0;32m        "    rib inet6.0 {",[0m
+[0;32m        "        static {",[0m
+[0;32m        "            route ::/0 discard;",[0m
+[0;32m        "        }",[0m
+[0;32m        "    }",[0m
+[0;32m        "    generate {",[0m
+[0;32m        "        route 0.0.0.0/0 discard;",[0m
+[0;32m        "    }",[0m
+[0;32m        "    router-id 2.2.2.3;",[0m
+[0;32m        "    autonomous-system 65001;",[0m
+[0;32m        "}",[0m
+[0;32m        "protocols {",[0m
+[0;32m        "    bgp {",[0m
+[0;32m        "        group EXT {",[0m
+[0;32m        "            type external;",[0m
+[0;32m        "            export EXPORTOSPF;",[0m
+[0;32m        "            neighbor 10.1.1.1 {",[0m
+[0;32m        "                peer-as 65000;",[0m
+[0;32m        "            }",[0m
+[0;32m        "            neighbor fc00:10:1:1::1 {",[0m
+[0;32m        "                peer-as 65000;",[0m
+[0;32m        "            }",[0m
+[0;32m        "        }",[0m
+[0;32m        "        group INT {",[0m
+[0;32m        "            type internal;",[0m
+[0;32m        "            export EXPORTOSPF;",[0m
+[0;32m        "            neighbor 172.17.0.1 {",[0m
+[0;32m        "                peer-as 65001;",[0m
+[0;32m        "            }",[0m
+[0;32m        "            neighbor fc00:172:17::1 {",[0m
+[0;32m        "                peer-as 65001;",[0m
+[0;32m        "            }",[0m
+[0;32m        "        }",[0m
+[0;32m        "    }",[0m
+[0;32m        "    ospf {",[0m
+[0;32m        "        export ospf-default;",[0m
+[0;32m        "        area 0.0.0.0 {",[0m
+[0;32m        "            interface ge-0/0/2.0;",[0m
+[0;32m        "            interface ge-0/0/3.0;",[0m
+[0;32m        "        }",[0m
+[0;32m        "    }",[0m
+[0;32m        "    ospf3 {",[0m
+[0;32m        "        export ospf3-default;",[0m
+[0;32m        "        area 0.0.0.0 {",[0m
+[0;32m        "            interface ge-0/0/2.0;",[0m
+[0;32m        "            interface ge-0/0/3.0;",[0m
+[0;32m        "        }",[0m
+[0;32m        "    }",[0m
+[0;32m        "}",[0m
+[0;32m        "policy-options {",[0m
+[0;32m        "    policy-statement EXPORTBGP {",[0m
+[0;32m        "        term 1 {",[0m
+[0;32m        "            from protocol [ bgp direct ];",[0m
+[0;32m        "            then accept;",[0m
+[0;32m        "        }",[0m
+[0;32m        "    }",[0m
+[0;32m        "    policy-statement EXPORTOSPF {",[0m
+[0;32m        "        term 1 {",[0m
+[0;32m        "            from protocol [ ospf direct ospf3 ];",[0m
+[0;32m        "            then accept;",[0m
+[0;32m        "        }",[0m
+[0;32m        "    }",[0m
+[0;32m        "    policy-statement ospf-default {",[0m
+[0;32m        "        from {",[0m
+[0;32m        "            route-filter 0.0.0.0/0 exact;",[0m
+[0;32m        "        }",[0m
+[0;32m        "        then accept;",[0m
+[0;32m        "    }",[0m
+[0;32m        "    policy-statement ospf3-default {",[0m
+[0;32m        "        from {",[0m
+[0;32m        "            route-filter ::/0 exact;",[0m
+[0;32m        "        }",[0m
+[0;32m        "        then accept;",[0m
+[0;32m        "    }",[0m
+[0;32m        "}"[0m
+[0;32m    ][0m
+[0;32m}[0m
+[0;34mMETA: ran handlers[0m
+[0;34mMETA: ran handlers[0m
+
+PLAY RECAP *********************************************************************
+[0;32mRegionB-PE01[0m               : [0;32mok=1   [0m changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+[0;33mlocalhost[0m                  : [0;32mok=1   [0m [0;33mchanged=1   [0m unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+

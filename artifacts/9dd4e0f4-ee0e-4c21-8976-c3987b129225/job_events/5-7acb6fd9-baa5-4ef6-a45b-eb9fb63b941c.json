@@ -1,0 +1,1 @@
+{"event": "verbose", "uuid": "7acb6fd9-baa5-4ef6-a45b-eb9fb63b941c", "counter": 5, "stdout": "\u001b[0;31m  found unacceptable key (unhashable type: 'AnsibleMapping')\u001b[0m", "start_line": 4, "end_line": 5, "runner_ident": "9dd4e0f4-ee0e-4c21-8976-c3987b129225", "created": "2021-11-14T03:44:17.138953"}

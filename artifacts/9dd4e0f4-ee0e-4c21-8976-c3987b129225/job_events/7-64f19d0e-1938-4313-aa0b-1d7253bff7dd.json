@@ -1,0 +1,1 @@
+{"event": "verbose", "uuid": "64f19d0e-1938-4313-aa0b-1d7253bff7dd", "counter": 7, "stdout": "\u001b[0;31mThe error appears to be in '/runner/project/playbooks/output.yml': line 51, column 16, but may\u001b[0m", "start_line": 6, "end_line": 7, "runner_ident": "9dd4e0f4-ee0e-4c21-8976-c3987b129225", "created": "2021-11-14T03:44:17.139784"}
