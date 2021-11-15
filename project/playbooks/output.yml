@@ -22,6 +22,7 @@
       ansible.netcommon.cli_command:
         command: show config
       register: command_result
+      tags: common
 
     - name: output config files
       local_action:
@@ -30,7 +31,7 @@
         group: kawaguchi
         mode: 0644
         dest: "/home/kawaguchi/configs/{{ inventory_hostname }}_config.txt"
-        content: "{{ command_result }}"
+        content: "{{ command_result.stdout }}"
       changed_when: False
 
 - hosts: localhost 
