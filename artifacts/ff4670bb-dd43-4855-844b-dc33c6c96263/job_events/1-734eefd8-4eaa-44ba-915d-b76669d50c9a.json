@@ -1,0 +1,1 @@
+{"event": "verbose", "uuid": "734eefd8-4eaa-44ba-915d-b76669d50c9a", "counter": 1, "stdout": "\u001b[0;31mERROR! the playbook: ./project/playbooks/junos.yml could not be found\u001b[0m", "start_line": 0, "end_line": 1, "runner_ident": "ff4670bb-dd43-4855-844b-dc33c6c96263", "created": "2021-11-06T02:47:41.131071"}

@@ -1,0 +1,48 @@
+
+PLAY [all] *********************************************************************
+
+TASK [show command] ************************************************************
+[0;32mok: [RegionB-PE02][0m
+[0;32mok: [RegionB-PE01][0m
+[0;32mok: [RegionB-CE02][0m
+[0;32mok: [RegionA-PE01][0m
+[0;32mok: [RegionB-CE01][0m
+[0;32mok: [RegionA-PE02][0m
+[0;32mok: [RegionA-CE01][0m
+[0;32mok: [RegionA-CE02][0m
+[0;32mok: [RegionB-Acc01][0m
+[0;32mok: [RegionA-Acc01][0m
+[0;32mok: [RegionB-Acc02][0m
+[0;32mok: [RegionA-Svr01][0m
+[0;32mok: [RegionB-Svr01][0m
+[0;32mok: [RegionB-Svr02][0m
+[0;32mok: [RegionA-Svr02][0m
+
+PLAY [localhost] ***************************************************************
+
+TASK [result stdout] ***********************************************************
+[0;32mok: [localhost] => {[0m
+[0;32m    "result_config": "VARIABLE IS NOT DEFINED!"[0m
+[0;32m}[0m
+
+TASK [create dir] **************************************************************
+[0;31mfatal: [localhost -> localhost]: FAILED! => {"changed": false, "msg": "There was an issue creating /home/kawaguchi as requested: [Errno 13] Permission denied: b'/home/kawaguchi'", "path": "/home/kawaguchi/configs/"}[0m
+
+PLAY RECAP *********************************************************************
+[0;32mRegionA-Acc01[0m              : [0;32mok=1   [0m changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+[0;32mRegionA-CE01[0m               : [0;32mok=1   [0m changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+[0;32mRegionA-CE02[0m               : [0;32mok=1   [0m changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+[0;32mRegionA-PE01[0m               : [0;32mok=1   [0m changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+[0;32mRegionA-PE02[0m               : [0;32mok=1   [0m changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+[0;32mRegionA-Svr01[0m              : [0;32mok=1   [0m changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+[0;32mRegionA-Svr02[0m              : [0;32mok=1   [0m changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+[0;32mRegionB-Acc01[0m              : [0;32mok=1   [0m changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+[0;32mRegionB-Acc02[0m              : [0;32mok=1   [0m changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+[0;32mRegionB-CE01[0m               : [0;32mok=1   [0m changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+[0;32mRegionB-CE02[0m               : [0;32mok=1   [0m changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+[0;32mRegionB-PE01[0m               : [0;32mok=1   [0m changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+[0;32mRegionB-PE02[0m               : [0;32mok=1   [0m changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+[0;32mRegionB-Svr01[0m              : [0;32mok=1   [0m changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+[0;32mRegionB-Svr02[0m              : [0;32mok=1   [0m changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+[0;31mlocalhost[0m                  : [0;32mok=1   [0m changed=0    unreachable=0    [0;31mfailed=1   [0m skipped=0    rescued=0    ignored=0   
+
