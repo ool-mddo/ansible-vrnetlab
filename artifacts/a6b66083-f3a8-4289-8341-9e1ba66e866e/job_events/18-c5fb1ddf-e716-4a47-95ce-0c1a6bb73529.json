@@ -1,1 +1,0 @@
-{"event": "verbose", "uuid": "c5fb1ddf-e716-4a47-95ce-0c1a6bb73529", "counter": 18, "stdout": "\u001b[0;34mLoading collection community.general from /usr/local/lib/python3.8/site-packages/ansible_collections/community/general\u001b[0m", "start_line": 17, "end_line": 18, "runner_ident": "a6b66083-f3a8-4289-8341-9e1ba66e866e", "created": "2021-11-24T15:56:27.098581"}

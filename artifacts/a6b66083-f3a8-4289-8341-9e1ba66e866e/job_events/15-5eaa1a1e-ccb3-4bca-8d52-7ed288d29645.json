@@ -1,1 +1,0 @@
-{"event": "verbose", "uuid": "5eaa1a1e-ccb3-4bca-8d52-7ed288d29645", "counter": 15, "stdout": "\u001b[0;34mParsed /runner/inventory/hosts inventory source with yaml plugin\u001b[0m", "start_line": 14, "end_line": 15, "runner_ident": "a6b66083-f3a8-4289-8341-9e1ba66e866e", "created": "2021-11-24T15:56:26.775013"}

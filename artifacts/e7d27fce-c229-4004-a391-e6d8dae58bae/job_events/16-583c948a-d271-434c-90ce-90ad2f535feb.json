@@ -1,1 +1,0 @@
-{"event": "verbose", "uuid": "583c948a-d271-434c-90ce-90ad2f535feb", "counter": 16, "stdout": "\u001b[0;34mLoading collection ansible.netcommon from /usr/share/ansible/collections/ansible_collections/ansible/netcommon\u001b[0m", "start_line": 15, "end_line": 16, "runner_ident": "e7d27fce-c229-4004-a391-e6d8dae58bae", "created": "2021-11-12T02:51:48.585323"}
