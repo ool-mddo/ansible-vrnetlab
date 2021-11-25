@@ -6,6 +6,7 @@
       ansible_connection: ansible.netcommon.network_cli
       ansible_user: vrnetlab
       ansible_password: VR-netlab9
+      config_dir: "/tmp/configs"
 
 
   tasks:
@@ -18,7 +19,7 @@
     - name: save config files
       copy:
         content: "{{ command_junos_result.stdout }}"
-        dest: "/home/kawaguchi/configs/{{ inventory_hostname }}_config.txt"
+        dest: "{{ config_dir }}/{{ inventory_hostname }}_config.txt"
       when: ansible_network_os == 'junos'
       changed_when: False
 
@@ -31,7 +32,7 @@
     - name: save config files
       copy:
         content: "{{ command_ios_result.stdout }}"
-        dest: "/home/kawaguchi/configs/{{ inventory_hostname }}_config.txt"
+        dest: "{{ config_dir }}/{{ inventory_hostname }}_config.txt"
       when: ansible_network_os == 'iosxr'
       changed_when: False
 
@@ -49,20 +50,22 @@
     - name: save config files
       copy:
         content: "{{ command_eos_result.stdout }}"
-        dest: "/home/kawaguchi/configs/{{ inventory_hostname }}_config.txt"
+        dest: "{{ config_dir }}/{{ inventory_hostname }}_config.txt"
       when: ansible_network_os == 'eos'
       changed_when: False
 
 - hosts: localhost 
   gather_facts: false
   connection: local
+  vars:
+      config_dir: "/tmp/configs"
 
   tasks:
     - name: git add & commit & push
       git_acp:
         user: ""
         token: ""
-        path: /home/kawaguchi/configs/
+        path: "{{ config_dir }}"
         branch: main
         comment: Add config files
         add: "."
