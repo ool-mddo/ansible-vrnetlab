@@ -63,11 +63,12 @@
   tasks:
     - name: git add & commit & push
       git_acp:
-        user: ""
-        token: ""
+        user: eterny13
+        token: mytoken 
         path: "{{ config_dir }}"
         branch: main
         comment: Add config files
+        remote: origin
         add: "."
         mode: https
-        url: "https://github.com/ool-mddo/test-git-acp-ansible.git"
+        url: "https://github.com/ool-mddo/pushed_configs.git"
