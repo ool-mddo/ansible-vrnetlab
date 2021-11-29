@@ -6,7 +6,7 @@
       ansible_connection: ansible.netcommon.network_cli
       ansible_user: vrnetlab
       ansible_password: VR-netlab9
-      config_dir: "/tmp/configs/config"
+      config_dir: "/tmp/configs/configs"
 
 
   tasks:
@@ -58,13 +58,13 @@
   gather_facts: false
   connection: local
   vars:
-      config_dir: "/tmp/configs/config"
+      config_dir: "/tmp/configs/configs"
 
   tasks:
     - name: git add & commit & push
       git_acp:
         user: eterny13
-        token: mytoken 
+        token: mytoken
         path: "{{ config_dir }}"
         branch: main
         comment: Add config files
