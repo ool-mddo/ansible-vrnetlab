@@ -81,13 +81,13 @@ all:
           ansible_user: vrnetlab
           ansible_password: VR-netlab9
         RegionB-Svr02:
-          ansible_host: 172.17.0.6
+          ansible_host: 172.17.0.5
           ansible_network_os: eos
           ansible_connection: ansible.netcommon.network_cli
           ansible_user: vrnetlab
           ansible_password: VR-netlab9
         RegionB-Svr01:
-          ansible_host: 172.17.0.5
+          ansible_host: 172.17.0.6
           ansible_network_os: eos
           ansible_connection: ansible.netcommon.network_cli
           ansible_user: vrnetlab
