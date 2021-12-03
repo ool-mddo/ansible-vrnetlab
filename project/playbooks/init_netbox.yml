@@ -1,0 +1,35 @@
+---
+- hosts: netbox
+  gather_facts: false
+  connection: local
+  collections:
+    - netbox.netbox
+
+  vars:
+    ansible_python_interpreter: /usr/bin/python3
+    netbox_url: http://192.168.23.32:8001
+    netbox_token: 0123456789abcdef0123456789abcdef01234567
+    site: RegionB
+    manufacture: Juniper
+    role: PE
+    ansible_network_os: junos
+    ansible_user: vrnetlab
+    ansible_password: VR-netlab9
+    target: RegionB-PE01
+    device_type: MX
+
+  tasks:
+    - name: add devices
+      netbox_device:
+        netbox_url: "{{ netbox_url }}"
+        netbox_token: "{{ netbox_token }}"
+        data:
+          name: "{{ target }}"
+          device_type: "{{ device_type }}"
+          device_role: "{{ role }}"
+          local_context_data:
+            ansible_persistent_log_messages: True
+            ansible_network_os: "{{ ansible_network_os }}"
+            ansible_user: "{{ ansible_user }}"
+            ansible_password: "{{ ansible_password }}"
+          site: "{{ site }}"
