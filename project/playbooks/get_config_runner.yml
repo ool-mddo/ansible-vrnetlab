@@ -25,10 +25,13 @@
   connection: ansible.netcommon.network_cli
   gather_facts: false
   vars:
-      config_dir: "/tmp/configs/configs"
+      config_dir: "./configs"
 
 
   tasks:
+    - name: mkdir -p configs
+      shell: mkdir -p configs
+
     - name: show command
       ansible.netcommon.cli_command:
         command: show config
@@ -72,22 +75,3 @@
         dest: "{{ config_dir }}/{{ inventory_hostname }}_config.txt"
       when: ansible_network_os == 'eos'
       changed_when: False
-
-- hosts: localhost 
-  gather_facts: false
-  connection: local
-  vars:
-      config_dir: "/tmp/configs/configs"
-
-  tasks:
-    - name: git add & commit & push
-      git_acp:
-        user: eterny13
-        token: mytoken
-        path: "{{ config_dir }}"
-        branch: main
-        comment: Add config files
-        remote: origin
-        add: "."
-        mode: https
-        url: "https://github.com/ool-mddo/pushed_configs.git"
