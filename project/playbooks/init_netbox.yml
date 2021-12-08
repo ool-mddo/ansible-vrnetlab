@@ -1,0 +1,149 @@
+---
+- hosts: netbox
+  gather_facts: false
+  connection: local
+  collections:
+    - netbox.netbox
+
+  vars:
+    ansible_python_interpreter: /usr/bin/python3
+    netbox_url: http://192.168.23.31:8000
+    netbox_token: 0123456789abcdef0123456789abcdef01234567
+    machines: 
+      - site: RegionB
+        manufacture: Juniper
+        role: PE
+        ansible_network_os: junos
+        ansible_user: vrnetlab
+        ansible_password: VR-netlab9
+        target: RegionB-PE01
+        device_type: MX
+      - site: RegionB
+        manufacture: Juniper
+        role: PE
+        ansible_network_os: junos
+        ansible_user: vrnetlab
+        ansible_password: VR-netlab9
+        target: RegionB-PE02
+        device_type: MX
+      - site: RegionB
+        manufacture: Juniper
+        role: CE
+        ansible_network_os: junos
+        ansible_user: vrnetlab
+        ansible_password: VR-netlab9
+        target: RegionB-CE01
+        device_type: MX
+      - site: RegionB
+        manufacture: Juniper
+        role: CE
+        ansible_network_os: junos
+        ansible_user: vrnetlab
+        ansible_password: VR-netlab9
+        target: RegionB-CE02
+        device_type: MX
+      - site: RegionA
+        manufacture: Cisco
+        role: PE
+        ansible_network_os: iosxr
+        ansible_user: vrnetlab
+        ansible_password: VR-netlab9
+        target: RegionA-PE01
+        device_type: XR
+      - site: RegionA
+        manufacture: Cisco
+        role: PE
+        ansible_network_os: iosxr
+        ansible_user: vrnetlab
+        ansible_password: VR-netlab9
+        target: RegionA-PE02
+        device_type: XR
+      - site: RegionA
+        manufacture: Arista
+        role: CE
+        ansible_network_os: eos
+        ansible_user: vrnetlab
+        ansible_password: VR-netlab9
+        target: RegionA-CE01
+        device_type: EOS
+      - site: RegionA
+        manufacture: Arista
+        role: CE
+        ansible_network_os: eos
+        ansible_user: vrnetlab
+        ansible_password: VR-netlab9
+        target: RegionA-CE02
+        device_type: EOS
+      - site: RegionA
+        manufacture: Arista
+        role: ToR
+        ansible_network_os: eos
+        ansible_user: vrnetlab
+        ansible_password: VR-netlab9
+        target: RegionA-Acc01
+        device_type: EOS
+      - site: RegionB
+        manufacture: Arista
+        role: ToR
+        ansible_network_os: eos
+        ansible_user: vrnetlab
+        ansible_password: VR-netlab9
+        target: RegionB-Acc01
+        device_type: EOS
+      - site: RegionB
+        manufacture: Arista
+        role: ToR
+        ansible_network_os: eos
+        ansible_user: vrnetlab
+        ansible_password: VR-netlab9
+        target: RegionB-Acc02
+        device_type: EOS
+      - site: RegionA
+        manufacture: Ubuntu
+        role: Server
+        ansible_network_os: eos
+        ansible_user: vrnetlab
+        ansible_password: VR-netlab9
+        target: RegionA-Svr01
+        device_type: EOS
+      - site: RegionA
+        manufacture: Ubuntu
+        role: Server
+        ansible_network_os: eos
+        ansible_user: vrnetlab
+        ansible_password: VR-netlab9
+        target: RegionA-Svr02
+        device_type: EOS
+      - site: RegionB
+        manufacture: Ubuntu
+        role: Server
+        ansible_network_os: eos
+        ansible_user: vrnetlab
+        ansible_password: VR-netlab9
+        target: RegionB-Svr01
+        device_type: EOS
+      - site: RegionB
+        manufacture: Ubuntu
+        role: Server
+        ansible_network_os: eos
+        ansible_user: vrnetlab
+        ansible_password: VR-netlab9
+        target: RegionB-Svr02
+        device_type: EOS
+
+  tasks:
+    - name: add devices
+      netbox_device:
+        netbox_url: "{{ netbox_url }}"
+        netbox_token: "{{ netbox_token }}"
+        data:
+          name: "{{ item.target }}"
+          device_type: "{{ item.device_type }}"
+          device_role: "{{ item.role }}"
+          local_context_data:
+            ansible_persistent_log_messages: True
+            ansible_network_os: "{{ item.ansible_network_os }}"
+            ansible_user: "{{ item.ansible_user }}"
+            ansible_password: "{{ item.ansible_password }}"
+          site: "{{ item.site }}"
+      loop: "{{ machines }}"
