@@ -7,7 +7,7 @@
 
   vars:
     ansible_python_interpreter: /usr/bin/python3
-    netbox_url: http://192.168.23.31:8000
+    netbox_url: http://192.168.23.32:8001
     netbox_token: 0123456789abcdef0123456789abcdef01234567
 
   tasks:
@@ -15,7 +15,7 @@
       add_host:
         groups: "network"
         name: "{{ item.value.name }}"
-        ansible_host: "{{ item.value.name }}"
+        ansible_host: "{{ item.value.local_context_data.ansible_host }}"
         ansible_network_os: "{{ item.value.local_context_data.ansible_network_os }}"
         ansible_user: "{{ item.value.local_context_data.ansible_user }}"
         ansible_password: "{{ item.value.local_context_data.ansible_password }}"
