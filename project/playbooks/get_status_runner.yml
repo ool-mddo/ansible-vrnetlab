@@ -10,6 +10,7 @@
     netbox_url: http://192.168.23.32:8001
     netbox_token: 0123456789abcdef0123456789abcdef01234567
 
+
   tasks:
     - name: add host values
       add_host:
@@ -22,58 +23,12 @@
       loop: "{{ query('netbox.netbox.nb_lookup','devices', api_endpoint=netbox_url, token=netbox_token) }}"
 
 
-- hosts: network 
+- hosts: network
   connection: ansible.netcommon.network_cli
   gather_facts: false
   vars:
       status_dir: "./status"
-
-
-  tasks:
-    - name: mkdir -p status
-      shell: mkdir -p status
-
-    - name: show interfaces
-      ansible.netcommon.cli_command:
-        command: show interfaces 
-      when: ansible_network_os == 'junos'
-      register: command_junos_result
-
-    - name: save status files
-      copy:
-        content: "{{ command_junos_result.stdout }}"
-        dest: "{{ status_dir }}/{{ inventory_hostname }}_show_interfaces.txt"
-      when: ansible_network_os == 'junos'
-      changed_when: False
-
-    - name: show interfaces 
-      ansible.netcommon.cli_command:
-        command: show interfaces
-      when: ansible_network_os == 'iosxr'
-      register: command_ios_result
-
-    - name: save status files
-      copy:
-        content: "{{ command_ios_result.stdout }}"
-        dest: "{{ status_dir }}/{{ inventory_hostname }}_show_interfaces.txt"
-      when: ansible_network_os == 'iosxr'
-      changed_when: False
-
-    - name: change enable mode 
-      ansible.netcommon.cli_command:
-        command: enable 
-      when: ansible_network_os == 'eos'
-
-    - name: show interfaces
-      ansible.netcommon.cli_command:
-        command: show interfaces
-      when: ansible_network_os == 'eos'
-      register: command_eos_result
-    
-    - name: save status files
-      copy:
-        content: "{{ command_eos_result.stdout }}"
-        dest: "{{ status_dir }}/{{ inventory_hostname }}_show_interfaces.txt"
-      when: ansible_network_os == 'eos'
-      changed_when: False
+  roles:
+    - showinterfaces
+    - showlldp
 
