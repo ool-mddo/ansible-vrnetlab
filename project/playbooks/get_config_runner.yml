@@ -27,11 +27,15 @@
   gather_facts: false
   vars:
       config_dir: "./configs"
+      hosts_dir: "./hosts"
 
 
   tasks:
     - name: mkdir -p configs
       shell: mkdir -p configs
+
+    - name: mkdir -p hosts
+      shell: mkdir -p hosts
 
     - name: show command
       ansible.netcommon.cli_command:

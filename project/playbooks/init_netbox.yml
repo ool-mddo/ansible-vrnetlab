@@ -77,9 +77,9 @@
         rack_face: Front
         device_type: XR
       - site: RegionA
-        manufacture: Arista
+        manufacture: Juniper
         role: CE
-        ansible_network_os: eos
+        ansible_network_os: junos
         ansible_user: vrnetlab
         ansible_password: VR-netlab9
         target: RegionA-CE01
@@ -88,9 +88,9 @@
         rack_face: Front
         device_type: EOS
       - site: RegionA
-        manufacture: Arista
+        manufacture: Juniper
         role: CE
-        ansible_network_os: eos
+        ansible_network_os: junos
         ansible_user: vrnetlab
         ansible_password: VR-netlab9
         target: RegionA-CE02
@@ -134,47 +134,47 @@
       - site: RegionA
         manufacture: Ubuntu
         role: Server
-        ansible_network_os: eos
+        ansible_network_os: server
         ansible_user: vrnetlab
         ansible_password: VR-netlab9
         target: RegionA-Svr01
         rack:  RegionA-Rack1
         rack_position: 10
         rack_face: Front
-        device_type: EOS
+        device_type: Ubuntu
       - site: RegionA
         manufacture: Ubuntu
         role: Server
-        ansible_network_os: eos
+        ansible_network_os: server
         ansible_user: vrnetlab
         ansible_password: VR-netlab9
         target: RegionA-Svr02
         rack:  RegionA-Rack1
         rack_position: 8
         rack_face: Front
-        device_type: EOS
+        device_type: Ubuntu
       - site: RegionB
         manufacture: Ubuntu
         role: Server
-        ansible_network_os: eos
+        ansible_network_os: server
         ansible_user: vrnetlab
         ansible_password: VR-netlab9
         target: RegionB-Svr01
         rack:  RegionB-Rack1
         rack_position: 10
         rack_face: Front
-        device_type: EOS
+        device_type: Ubuntu
       - site: RegionB
         manufacture: Ubuntu
         role: Server
-        ansible_network_os: eos
+        ansible_network_os: server
         ansible_user: vrnetlab
         ansible_password: VR-netlab9
         target: RegionB-Svr02
         rack:  RegionB-Rack1
         rack_position: 8
         rack_face: Front
-        device_type: EOS
+        device_type: Ubuntu
 
   tasks:
     - name: site
