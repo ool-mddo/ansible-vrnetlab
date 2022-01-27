@@ -23,15 +23,62 @@
 
 
 - hosts: network 
+  gather_facts: false
+
+  tasks:
+    - name: mkdir -p hosts
+      shell: mkdir -p ../hosts
+      delegate_to: 127.0.0.1
+
+    - name: cat /etc/netplan/99_config.yaml
+      ansible.builtin.command: cat /etc/netplan/99_config.yaml
+      when: ansible_network_os == 'server'
+      register: netplan_result
+
+    - name: netplan_result convert yaml
+      set_fact: 
+        netplan: "{{ netplan_result.stdout | from_yaml }}"
+      when: ansible_network_os == 'server'
+
+    - name: generate host.json data
+      set_fact: 
+        hostjson: |-
+            {
+                "hostname" : "{{ inventory_hostname }}",
+                "iptablesFile" : "",
+                "hostInterfaces" : 
+                {
+                    {%- for key, value in netplan.network.ethernets.items() -%}
+                        "{{ key }}" : {
+                          "name": "{{ key }}",
+                          "prefix" : "{{ value.addresses[0] }}",
+                          {%- if value.gateway4 is defined -%}
+                          "gateway" : "{{ value.gateway4 }}"
+                          {%- endif -%}
+                        },
+                    {%- endfor -%}
+                }
+            }
+      when: ansible_network_os == 'server'
+
+    - name: save config files
+      copy:
+        content: "{{ hostjson | to_nice_json}}"
+        dest: "../hosts/{{ inventory_hostname}}.json"
+      when: ansible_network_os == 'server'
+      changed_when: False
+      delegate_to: 127.0.0.1
+
+- hosts: network 
   connection: ansible.netcommon.network_cli
   gather_facts: false
   vars:
       config_dir: "./configs"
 
-
   tasks:
     - name: mkdir -p configs
-      shell: mkdir -p configs
+      shell: mkdir -p ../configs
+      delegate_to: 127.0.0.1
 
     - name: show command
       ansible.netcommon.cli_command:
@@ -76,3 +123,4 @@
         dest: "{{ config_dir }}/{{ inventory_hostname }}_config.txt"
       when: ansible_network_os == 'eos'
       changed_when: False
+

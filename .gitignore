@@ -1,4 +1,5 @@
 artifacts/**
 project/artifacts/**
 project/configs/**
+project/hosts/**
 project/status/**
