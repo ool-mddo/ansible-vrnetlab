@@ -55,31 +55,31 @@
         rack_face: Front
         device_type: MX
       - site: RegionA
-        manufacture: Cisco
+        manufacture: Juniper
         role: PE
-        ansible_network_os: iosxr
+        ansible_network_os: junos
         ansible_user: vrnetlab
         ansible_password: VR-netlab9
         target: RegionA-PE01
         rack: RegionA-CoreRack
         rack_position: 35
         rack_face: Front
-        device_type: XR
+        device_type: MX
       - site: RegionA
-        manufacture: Cisco
+        manufacture: Juniper
         role: PE
-        ansible_network_os: iosxr
+        ansible_network_os: junos
         ansible_user: vrnetlab
         ansible_password: VR-netlab9
         target: RegionA-PE02
         rack: RegionA-CoreRack
         rack_position: 33
         rack_face: Front
-        device_type: XR
+        device_type: MX
       - site: RegionA
-        manufacture: Juniper
+        manufacture: Arista
         role: CE
-        ansible_network_os: junos
+        ansible_network_os: eos
         ansible_user: vrnetlab
         ansible_password: VR-netlab9
         target: RegionA-CE01
@@ -88,9 +88,9 @@
         rack_face: Front
         device_type: EOS
       - site: RegionA
-        manufacture: Juniper
+        manufacture: Arista
         role: CE
-        ansible_network_os: junos
+        ansible_network_os: eos
         ansible_user: vrnetlab
         ansible_password: VR-netlab9
         target: RegionA-CE02
