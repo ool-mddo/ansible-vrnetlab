@@ -22,16 +22,16 @@
 
     - name: "check swarm manager node"
       command:
-        cmd: "docker nodes ls"
+        cmd: "docker node ls"
       register: docker_node
       failed_when: false
 
     - name: "create {{ multihost_bridge }} for Manager node"
       command:
         cmd: "docker network create -d overlay {{ multihost_bridge }} --attachable"
-      when: docker_network.rc != 0 and docker_node.rc != 0
+      when: docker_network.rc != 0 and docker_node.rc == 0
 
     - name: "create {{ multihost_bridge }} for worker node"
-      shell: "docker run --name temp_alpine -itd alpine:latest /bin/sh; docker network connect {{ multihost_bridge }} temp_alpine; docker rm -f temp_alpine"
-      when: docker_network.rc != 0 and docker_node.rc == 0
+      shell: "docker run --name temp_alpine -itd alpine:latest /bin/sh; docker network connect {{ multihost_bridge }} temp_alpine"
+      when: docker_network.rc != 0 and docker_node.rc != 0
 
