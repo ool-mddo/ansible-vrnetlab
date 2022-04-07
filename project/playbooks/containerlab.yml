@@ -10,6 +10,21 @@
     ansible_python_interpreter: /usr/bin/python3
     containerlab_basedir: /home/test/
     L1_topo_file: /home/test/pushed_configs/L1_topo/layer1_topology.sample.json
+    clab_topo:
+      name: test01
+      mgmt:
+        network: "{{ multihost_bridge }}"
+      topology:
+        nodes:
+          ceos1:
+            kind: ceos
+            image: ceos-lab:4.27.2F
+          ceos2:
+            kind: ceos
+            image: ceos-lab:4.27.2F
+        links:
+          - endpoints: ["ceos1:eth1","ceos2:eth1"]
+
     #multihost_bridge: "my-multihost-network"
 
 
@@ -35,3 +50,11 @@
       shell: "docker run --name temp_alpine -itd alpine:latest /bin/sh; docker network connect {{ multihost_bridge }} temp_alpine"
       when: docker_network.rc != 0 and docker_node.rc != 0
 
+    - name: Creating a file with content
+      copy:
+        dest: "/tmp/clab-topo.yml"
+        content: "{{ clab_topo | to_yaml }}"
+
+    - name: deploy containerlab
+      command:
+        cmd: "containerlab deploy --topo /tmp/clab-topo.yml --reconfigure"
