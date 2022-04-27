@@ -22,3 +22,11 @@ sudo ansible-runner run . -p playbooks/get_config_runner.yml --container-option=
 
 ```
 
+### multi Region config generate
+
+```
+cd {cloneDir}/ansible-vrnetlab/project
+sudo ansible-runner run . -p playbooks/generate_config_Region[ABCDE...].yml -vvv
+
+```
+
