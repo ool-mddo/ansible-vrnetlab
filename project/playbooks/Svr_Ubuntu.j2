@@ -1,0 +1,19 @@
+{
+    "hostInterfaces": {
+        "enp1s4": {
+            "gateway": "{{ item | json_query('NetworkInterface[?name==`enp1s4`].prefix') | first }}",
+            "name": "enp1s4",
+            "prefix": "{{ item | json_query('NetworkInterface[?name==`enp1s4`].ipv4') | first }}"
+        },
+        "enp1s5": {
+            "name": "enp1s5",
+            "prefix": "{{ item | json_query('NetworkInterface[?name==`enp1s5`].ipv4') | first }}"
+        },
+        "ens4": {
+            "name": "ens4",
+            "prefix": "{{ item | json_query('NetworkInterface[?name==`ens4`].ipv4') | first }}"
+        }
+    },
+    "hostname": "{{ item.hostname }}",
+    "iptablesFile": ""
+}

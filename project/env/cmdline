@@ -1,0 +1,1 @@
+-e login_user=ubuntu -e login_pass=ubuntu -e sudo_pass=ubuntu

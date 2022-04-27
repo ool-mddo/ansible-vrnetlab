@@ -1,0 +1,11 @@
+[0;34mansible-playbook [core 2.11.6] [0m
+[0;34m  config file = None[0m
+[0;34m  configured module search path = ['/root/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules'][0m
+[0;34m  ansible python module location = /usr/local/lib/python3.8/dist-packages/ansible[0m
+[0;34m  ansible collection location = /root/.ansible/collections:/usr/share/ansible/collections[0m
+[0;34m  executable location = /usr/local/bin/ansible-playbook[0m
+[0;34m  python version = 3.8.10 (default, Mar 15 2022, 12:22:08) [GCC 9.4.0][0m
+[0;34m  jinja version = 3.0.2[0m
+[0;34m  libyaml = True[0m
+[0;34mNo config file found; using defaults[0m
+[0;31mERROR! the playbook: playbooks/generate_config.yml could not be found[0m

@@ -1,0 +1,194 @@
+show configuration 
+## Last commit: 2022-02-22 18:35:30 UTC by vrnetlab
+version 18.1R1.9;
+system {
+    host-name {{ item.hostname }};
+    root-authentication {
+        encrypted-password "$6$vOte4zs5$j1X3fElYvJSt8VPNXx2KzRNrZIkp9CeRX83/W4wQo5K4Tl/MHZeMcvbymEzm9/2ya3S4hU993YDSLY26ROGnW/"; ## SECRET-DATA
+    }
+    login {
+        user vrnetlab {
+            uid 2000;
+            class super-user;
+            authentication {
+                encrypted-password "$6$J6ejaVYH$tGgA7n6s6eb.QUX.RpHNVw9xlGNWPK6D8NEVbJt/8B6/PpREFVDSbvuPJn3/HwzklK8vdJ/MOpB01M/fwroT51"; ## SECRET-DATA
+            }
+        }
+    }
+    services {
+        ssh;
+        netconf {
+            ssh;
+        }
+    }
+    syslog {
+        user * {
+            any emergency;
+        }
+        file messages {
+            any notice;
+            authorization info;
+        }
+        file interactive-commands {
+            interactive-commands any;
+        }
+    }
+}
+chassis {
+    fpc 0 {
+        pic 0 {
+            number-of-ports 96;
+        }
+    }
+}
+interfaces {
+    ge-0/0/0 {
+        description {{ item | json_query('NetworkInterface[?name==`ge-0/0/0`].description') | first }};
+        unit 0 {
+            family inet {
+                address {{ item | json_query('NetworkInterface[?name==`ge-0/0/0`].ipv4') | first }};
+            }
+            family inet6 {
+                address {{ item | json_query('NetworkInterface[?name==`ge-0/0/0`].ipv6') | first }};
+            }
+        }
+    }
+    ge-0/0/1 {
+        description {{ item | json_query('NetworkInterface[?name==`ge-0/0/1`].description') | first }};
+        unit 0 {
+            family inet {
+                address {{ item | json_query('NetworkInterface[?name==`ge-0/0/1`].ipv4') | first }};
+            }
+            family inet6 {
+                address {{ item | json_query('NetworkInterface[?name==`ge-0/0/1`].ipv6') | first }};
+            }
+        }
+    }
+{% if item.NetworkInterface[2].name == "ge-0/0/2" %}
+    ge-0/0/2 {
+        description {{ item | json_query('NetworkInterface[?name==`ge-0/0/2`].description') | first }};
+        unit 0 {
+            family inet {
+                address {{ item | json_query('NetworkInterface[?name==`ge-0/0/2`].ipv4') | first }};
+            }
+            family inet6 {
+                address {{ item | json_query('NetworkInterface[?name==`ge-0/0/2`].ipv6') | first }};
+            }
+        }
+    }
+{% elif item.NetworkInterface[2].name == "ge-0/0/3" %}
+    ge-0/0/3 {
+        description {{ item | json_query('NetworkInterface[?name==`ge-0/0/3`].description') | first }};
+        unit 0 {
+            family inet {
+                address {{ item | json_query('NetworkInterface[?name==`ge-0/0/3`].ipv4') | first }};
+            }
+            family inet6 {
+                address {{ item | json_query('NetworkInterface[?name==`ge-0/0/3`].ipv6') | first }};
+            }
+        }
+    }
+{% endif %}
+    fxp0 {
+        unit 0 {
+            family inet {
+                address 10.0.0.15/24;
+            }
+        }
+    }
+    lo0 {
+        unit 0 {
+            family inet {
+                address {{ item | json_query('NetworkInterface[?name==`lo0`].ipv4') | first }};
+            }
+            family inet6 {
+                address {{ item | json_query('NetworkInterface[?name==`lo0`].ipv6') | first }};
+            }
+        }
+    }
+}
+routing-options {
+    rib inet6.0 {
+        static {
+            route ::/0 discard;
+        }
+    }
+    generate {
+        route 0.0.0.0/0 discard;
+    }
+    router-id {{ item.RouterID }};
+    autonomous-system {{ item.AS }};
+}
+protocols {
+    bgp { 
+        group EXT { 
+            type external;
+            export EXPORTOSPF;
+{% for bgppeer in item | json_query('BGP[?bgp_group == `EXT`]') %}
+            neighbor {{ bgppeer.peer_address }} {
+                peer-as {{ bgppeer.peer_as }};
+            }
+{% endfor %}
+        }
+        group INT {
+            type internal;
+{% for bgppeer in item | json_query('BGP[?bgp_group == `INT`]') %}
+            local-address {{ bgppeer.local_address }};
+            export EXPORTOSPF;
+            neighbor {{ bgppeer.peer_address }} {
+                peer-as {{ bgppeer.peer_as }};
+            }
+{% endfor %}
+        }
+        group INT6 {
+            type internal;
+{% for bgppeer in item | json_query('BGP[?bgp_group == `INT6`]') %}
+            local-address {{ bgppeer.local_address }};
+            export EXPORTOSPF;
+            neighbor {{ bgppeer.peer_address }} {
+                peer-as {{ bgppeer.peer_as }};
+            }
+{% endfor %}
+        }
+    }
+    ospf {
+        export ospf-default;
+        area {{ item.OSPFv2.area }} {
+{% for ospf_if in item.OSPFv2.interfaces %}
+            interface {{ ospf_if }};
+{% endfor %}
+        }
+    }
+    ospf3 {
+        export ospf3-default;
+        area {{ item.OSPFv3.area }} {
+{% for ospf_if in item.OSPFv3.interfaces %}
+            interface {{ ospf_if }};
+{% endfor %}
+        }
+    }
+    lldp {
+        interface all;
+    }
+}
+policy-options {
+    policy-statement EXPORTOSPF {
+        term 1 {
+            from protocol [ ospf direct ospf3 ];
+            then accept;
+        }
+    }
+    policy-statement ospf-default {
+        from {
+            route-filter 0.0.0.0/0 exact;
+        }
+        then accept;
+    }
+    policy-statement ospf3-default {
+        from {
+            route-filter ::/0 exact;
+        }
+        then accept;
+    }
+}
+

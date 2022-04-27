@@ -9,11 +9,11 @@
     ansible_sudo_pass: "{{ sudo_pass }}"
     ansible_python_interpreter: /usr/bin/python3
     containerlab_basedir: /home/test/
-    L1_topo_file: /home/test/pushed_configs/L1_topo/layer1_topology.sample.json
+    #L1_topo_file: /home/test/pushed_configs/L1_topo/layer1_topology.sample.json
     clab_topo:
       name: test01
-      mgmt:
-        network: "{{ multihost_bridge }}"
+      #mgmt:
+      #  network: "{{ multihost_bridge }}"
       topology:
         nodes:
           ceos1:
@@ -24,9 +24,16 @@
             image: ceos-lab:4.27.2F
         links:
           - endpoints: ["ceos1:eth1","ceos2:eth1"]
+          - endpoints: ["ceos1:eth2","ceos2:eth2"]
+          - endpoints: ["ceos1:eth3","ceos2:eth3"]
+          - endpoints: ["ceos1:eth4","ceos2:eth4"]
+          - endpoints: ["ceos1:eth5","ceos2:eth5"]
+          - endpoints: ["ceos1:eth6","ceos2:eth6"]
+          - endpoints: ["ceos1:eth7","ceos2:eth7"]
+          - endpoints: ["ceos1:eth8","ceos2:eth8"]
+          - endpoints: ["ceos1:eth9","ceos2:eth9"]
 
     #multihost_bridge: "my-multihost-network"
-
 
   tasks:
     - name: "check {{ multihost_bridge }} network "

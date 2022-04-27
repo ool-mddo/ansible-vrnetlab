@@ -1,0 +1,18 @@
+[1;35m[WARNING]: No inventory was parsed, only implicit localhost is available[0m
+[1;35m[WARNING]: provided hosts list is empty, only localhost is available. Note that[0m
+[1;35mthe implicit localhost does not match 'all'[0m
+
+PLAY [localhost] ***************************************************************
+
+TASK [read json file content] **************************************************
+[0;33mchanged: [localhost][0m
+
+TASK [save the Json data to jsondata] ******************************************
+[0;32mok: [localhost][0m
+
+TASK [mddomodel] ***************************************************************
+[0;31mfatal: [localhost]: FAILED! => {"msg": "JMESPathError in json_query filter plugin:\nExpecting: star, got: quoted_identifier: Parse error at column 43, token \"network-id\" (QUOTED_IDENTIFIER), for expression:\n\"[\"ietf-network:networks\"][*][\"network\"][0][\"network-id\"]\"\n                                            ^"}[0m
+
+PLAY RECAP *********************************************************************
+[0;31mlocalhost[0m                  : [0;32mok=2   [0m [0;33mchanged=1   [0m unreachable=0    [0;31mfailed=1   [0m skipped=0    rescued=0    ignored=0   
+

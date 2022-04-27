@@ -1,0 +1,10 @@
+mgmt: {network: multihost-network}
+name: test01
+topology:
+  links:
+  - endpoints: ['ceos1:eth1', 'ceos2:eth1']
+  - endpoints: ['ceos2:eth1', 'ceos1:eth1']
+  nodes:
+    ceos1: {image: 'ceos-lab:4.27.2F', kind: ceos}
+    ceos2: {image: 'ceos-lab:4.27.2F', kind: ceos}
+

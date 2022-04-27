@@ -1,0 +1,105 @@
+! Command: show running-config
+! device: {{ item.hostname }} (vEOS-lab, EOS-4.27.0F)
+!
+! boot system flash:/vEOS-lab.swi
+!
+no aaa root
+!
+username vrnetlab role network-admin secret sha512 $6$X4t7IeYHl9u7Lyku$rbfvfCyNMD9YNUb9z1WBxue5GJZCslCy9bfa0yB0m7b7K9wnhQKDql25TJUlkPxpotCxJh3kmDOpXp/fvJ6./.
+!
+transceiver qsfp default-mode 4x10G
+!
+service routing protocols model ribd
+!
+hostname {{ item.hostname }}
+!
+spanning-tree mode mstp
+!
+vlan {{ item.vlanids }}
+!
+management api http-commands
+   protocol unix-socket
+   no shutdown
+!
+interface Port-Channel1
+   load-interval 30
+   switchport trunk allowed vlan {{ item | json_query('NetworkInterface[?name==`Port-Channel1`].vlanids') | first }}
+   switchport mode trunk
+   port-channel min-links 1
+!
+interface Port-Channel2
+   load-interval 30
+   switchport trunk allowed vlan {{ item | json_query('NetworkInterface[?name==`Port-Channel2`].vlanids') | first }}
+   switchport mode trunk
+   port-channel min-links 1
+!
+interface Ethernet1
+   description {{ item | json_query('NetworkInterface[?name==`Ethernet1`].description') | first }}
+   load-interval 30
+   speed forced 1000full
+   channel-group {{ item | json_query('NetworkInterface[?name==`Ethernet1`].channelgroup') | first }} mode active
+!
+interface Ethernet2
+   description {{ item | json_query('NetworkInterface[?name==`Ethernet2`].description') | first }}
+   load-interval 30
+   speed forced 1000full
+   channel-group {{ item | json_query('NetworkInterface[?name==`Ethernet2`].channelgroup') | first }} mode active
+!
+interface Ethernet3
+   description {{ item | json_query('NetworkInterface[?name==`Ethernet3`].description') | first }}
+   load-interval 30
+   speed forced 1000full
+   channel-group {{ item | json_query('NetworkInterface[?name==`Ethernet3`].channelgroup') | first }} mode active
+!
+interface Ethernet4
+   description {{ item | json_query('NetworkInterface[?name==`Ethernet4`].description') | first }}
+   load-interval 30
+   speed forced 1000full
+   channel-group {{ item | json_query('NetworkInterface[?name==`Ethernet4`].channelgroup') | first }} mode active
+!
+interface Ethernet5
+   description {{ item | json_query('NetworkInterface[?name==`Ethernet5`].description') | first }}
+   switchport access vlan {{ item | json_query('NetworkInterface[?name==`Ethernet5`].accessvlan') | first }}
+!
+interface Ethernet6
+   description {{ item | json_query('NetworkInterface[?name==`Ethernet6`].description') | first }}
+   switchport access vlan {{ item | json_query('NetworkInterface[?name==`Ethernet6`].accessvlan') | first }}
+!
+interface Ethernet7
+!
+interface Ethernet8
+!
+interface Ethernet9
+!
+interface Ethernet10
+!
+interface Ethernet11
+!
+interface Ethernet12
+!
+interface Ethernet13
+!
+interface Ethernet14
+!
+interface Ethernet15
+!
+interface Ethernet16
+!
+interface Ethernet17
+!
+interface Ethernet18
+!
+interface Ethernet19
+!
+interface Management1
+   speed 10full
+   ip address 10.0.0.15/24
+   ipv6 enable
+   ipv6 address auto-config
+   ipv6 nd ra rx accept default-route
+!
+no ip routing
+!
+ntp server 10.0.0.1
+!
+end

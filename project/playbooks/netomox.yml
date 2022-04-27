@@ -1,0 +1,38 @@
+---
+- hosts: localhost
+  gather_facts: false
+  become: true
+  connection: local
+
+  tasks:
+    - name: read json file content
+      shell: cat pushed_configs_mddo_network.json
+      register: result
+
+    - name: save the Json data to jsondata
+      set_fact:
+        jsondata: "{{ result.stdout | from_json }}"
+
+    - name: mddomodel
+      set_fact:
+        mddomodel: "{{ jsondata | json_query(jmesquery) }}"
+      vars:
+        jmesquery: '["ietf-network:networks"][]["network"][][3][]["ietf-network-topology:link"][][]["link-id"]'
+
+    - set_fact:
+        tmplist: "{{ tmplist | default([]) + [ { 'from': key1 ,  'to': key2  }] }}"
+      vars:
+        key1: "{{item[0].split(',')[0] + ':' + item[0].split(',')[1]}}"
+        key2: "{{item[0].split(',')[2] + ':' + item[0].split(',')[3]}}"
+      loop: "{{ mddomodel }}"
+
+    - set_fact:
+        resultlist: "{{ resultlist | default([]) + [ item ] }}"
+      when: "{{ tmplist[my_idx]['from'] == tmplist[my_idx+1]['to'] | default(omit) }}"
+      loop: "{{ tmplist }}"
+      loop_control:
+        index_var: my_idx
+
+    - debug:
+        msg: "{{ resultlist }}"
+

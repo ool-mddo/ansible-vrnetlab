@@ -1,0 +1,316 @@
+show configuration 
+## Last commit: 2022-02-08 16:04:58 UTC by root
+version 18.1R1.9;
+system {
+    host-name {{ item.hostname }};
+    root-authentication {
+        encrypted-password "$6$vOte4zs5$j1X3fElYvJSt8VPNXx2KzRNrZIkp9CeRX83/W4wQo5K4Tl/MHZeMcvbymEzm9/2ya3S4hU993YDSLY26ROGnW/"; ## SECRET-DATA
+    }
+    login {
+        user vrnetlab {
+            uid 2000;
+            class super-user;
+            authentication {
+                encrypted-password "$6$CDmzGe/d$g43HmhI3FA.21JCYppnTg1h4q/JO4DOHSICLhhavqBem5zUTgKEcg5m9tBG1Ik6qmfb7L3v.wgj4/DkfgZejO0"; ## SECRET-DATA
+            }
+        }
+    }
+    services {
+        ssh;
+        netconf {
+            ssh;
+        }
+    }
+    syslog {
+        user * {
+            any emergency;
+        }
+        file messages {
+            any notice;
+            authorization info;
+        }
+        file interactive-commands {
+            interactive-commands any;
+        }
+    }
+}
+chassis {
+    aggregated-devices {
+        ethernet {
+            device-count 4;
+        }
+    }
+    fpc 0 {
+        pic 0 {
+            number-of-ports 96;
+        }
+    }
+}
+interfaces {
+{% if item.NetworkInterface[0].name == "ge-0/0/0" %}
+    ge-0/0/0 {
+        description {{ item | json_query('NetworkInterface[?name==`ge-0/0/0`].description') | first }};
+        unit 0 {
+            family inet {
+                address {{ item | json_query('NetworkInterface[?name==`ge-0/0/0`].ipv4') | first }};
+            }
+            family inet6 {
+                address {{ item | json_query('NetworkInterface[?name==`ge-0/0/0`].ipv6') | first }};
+            }
+        }
+    }
+{% elif item.NetworkInterface[0].name == "ge-0/0/1"  %}
+    ge-0/0/1 {
+        description {{ item | json_query('NetworkInterface[?name==`ge-0/0/1`].description') | first }};
+        unit 0 {
+            family inet {
+                address {{ item | json_query('NetworkInterface[?name==`ge-0/0/1`].ipv4') | first }};
+            }
+            family inet6 {
+                address {{ item | json_query('NetworkInterface[?name==`ge-0/0/1`].ipv6') | first }};
+            }
+        }
+    }
+{% elif item.NetworkInterface[0].name == "ge-0/0/1"  %}
+{% endif %}
+    ge-0/0/2 {
+        description {{ item | json_query('NetworkInterface[?name==`ge-0/0/2`].description') | first }};
+        gigether-options {
+            802.3ad {{ item | json_query('NetworkInterface[?name==`ge-0/0/2`].lacp_if') | first }};
+        }
+    }
+    ge-0/0/3 {
+        description {{ item | json_query('NetworkInterface[?name==`ge-0/0/3`].description') | first }};
+        gigether-options {
+            802.3ad {{ item | json_query('NetworkInterface[?name==`ge-0/0/3`].lacp_if') | first }};
+        }
+    }
+    ge-0/0/4 {
+        description {{ item | json_query('NetworkInterface[?name==`ge-0/0/4`].description') | first }};
+        gigether-options {
+            802.3ad {{ item | json_query('NetworkInterface[?name==`ge-0/0/4`].lacp_if') | first }};
+        }
+    }
+    ge-0/0/5 {
+        description {{ item | json_query('NetworkInterface[?name==`ge-0/0/5`].description') | first }};
+        gigether-options {
+            802.3ad {{ item | json_query('NetworkInterface[?name==`ge-0/0/5`].lacp_if') | first }};
+        }
+    }
+    ge-0/0/6 {
+        description {{ item | json_query('NetworkInterface[?name==`ge-0/0/6`].description') | first }};
+        gigether-options {
+            802.3ad {{ item | json_query('NetworkInterface[?name==`ge-0/0/6`].lacp_if') | first }};
+        }
+    }
+    ge-0/0/7 {
+        description {{ item | json_query('NetworkInterface[?name==`ge-0/0/7`].description') | first }};
+        gigether-options {
+            802.3ad {{ item | json_query('NetworkInterface[?name==`ge-0/0/7`].lacp_if') | first }};
+        }
+    }
+    ae0 {
+        aggregated-ether-options {
+            lacp {
+                active;
+            }
+        }
+        unit 0 {
+            family inet {
+                address {{ item | json_query('NetworkInterface[?name==`ae0`].ipv4') | first }};
+            }
+            family inet6 {
+                address {{ item | json_query('NetworkInterface[?name==`ae0`].ipv6') | first }};
+            }
+        }
+    }
+    ae1 {
+        flexible-vlan-tagging;
+        aggregated-ether-options {
+            lacp {
+                active;
+            }
+        }
+        unit {{ item | json_query('NetworkInterface[?name==`ae1`].vlanids[0].vlanid') | first }} {
+            vlan-id {{ item | json_query('NetworkInterface[?name==`ae1`].vlanids[0].vlanid') | first }};
+            family inet {
+                address {{ item | json_query('NetworkInterface[?name==`ae1`].vlanids[0].ipv4') | first }} {
+                    vrrp-group {{ item | json_query('NetworkInterface[?name==`ae1`].vlanids[0].vrrp.vrrp_group') | first }} {
+                        virtual-address {{ item | json_query('NetworkInterface[?name==`ae1`].vlanids[0].vrrp.vip') | first }};
+                        priority {{ item | json_query('NetworkInterface[?name==`ae1`].vlanids[0].vrrp.priority') | first }};
+                        accept-data;
+                        track {
+                            interface ae1 {
+                                priority-cost 20;
+                            }
+                        }
+                    }
+                }
+            }
+            family inet6 {
+                address {{ item | json_query('NetworkInterface[?name==`ae1`].vlanids[0].ipv6') | first }} {
+                    vrrp-inet6-group {{ item | json_query('NetworkInterface[?name==`ae1`].vlanids[0].vrrp.vrrp_group') | first }} {
+                        virtual-inet6-address {{ item | json_query('NetworkInterface[?name==`ae1`].vlanids[0].vrrp.vip_v6') | first }};
+                        priority {{ item | json_query('NetworkInterface[?name==`ae1`].vlanids[0].vrrp.priority') | first }};
+                        accept-data;
+                        track {
+                            interface ae1 {
+                                priority-cost 20;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        unit {{ item | json_query('NetworkInterface[?name==`ae1`].vlanids[1].vlanid') | first }} {
+            vlan-id {{ item | json_query('NetworkInterface[?name==`ae1`].vlanids[1].vlanid') | first }};
+            family inet {
+                address {{ item | json_query('NetworkInterface[?name==`ae1`].vlanids[1].ipv4') | first }} {
+                    vrrp-group {{ item | json_query('NetworkInterface[?name==`ae1`].vlanids[1].vrrp.vrrp_group') | first }} {
+                        virtual-address {{ item | json_query('NetworkInterface[?name==`ae1`].vlanids[1].vrrp.vip') | first }};
+                        priority {{ item | json_query('NetworkInterface[?name==`ae1`].vlanids[1].vrrp.priority') | first }};
+                        accept-data;
+                        track {
+                            interface ae1 {
+                                priority-cost 20;
+                            }
+                        }
+                    }
+                }
+            }
+            family inet6 {
+                address {{ item | json_query('NetworkInterface[?name==`ae1`].vlanids[1].ipv6') | first }} {
+                    vrrp-inet6-group {{ item | json_query('NetworkInterface[?name==`ae1`].vlanids[1].vrrp.vrrp_group') | first }} {
+                        virtual-inet6-address {{ item | json_query('NetworkInterface[?name==`ae1`].vlanids[1].vrrp.vip_v6') | first }};
+                        priority {{ item | json_query('NetworkInterface[?name==`ae1`].vlanids[1].vrrp.priority') | first }};
+                        accept-data;
+                        track {
+                            interface ae1 {
+                                priority-cost 20;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    ae2 {
+        flexible-vlan-tagging;
+        aggregated-ether-options {
+            lacp {
+                active;
+            }
+        }
+        unit {{ item | json_query('NetworkInterface[?name==`ae2`].vlanids[0].vlanid') | first }} {
+            vlan-id {{ item | json_query('NetworkInterface[?name==`ae2`].vlanids[0].vlanid') | first }};
+            family inet {
+                address {{ item | json_query('NetworkInterface[?name==`ae2`].vlanids[0].ipv4') | first }} {
+                    vrrp-group {{ item | json_query('NetworkInterface[?name==`ae2`].vlanids[0].vrrp.vrrp_group') | first }} {
+                        virtual-address {{ item | json_query('NetworkInterface[?name==`ae2`].vlanids[0].vrrp.vip') | first }};
+                        priority {{ item | json_query('NetworkInterface[?name==`ae2`].vlanids[0].vrrp.priority') | first }};
+                        accept-data;
+                        track {
+                            interface ae2 {
+                                priority-cost 20;
+                            }
+                        }
+                    }
+                }
+            }
+            family inet6 {
+                address {{ item | json_query('NetworkInterface[?name==`ae2`].vlanids[0].ipv6') | first }} {
+                    vrrp-inet6-group {{ item | json_query('NetworkInterface[?name==`ae2`].vlanids[0].vrrp.vrrp_group') | first }} {
+                        virtual-inet6-address {{ item | json_query('NetworkInterface[?name==`ae2`].vlanids[0].vrrp.vip_v6') | first }};
+                        priority {{ item | json_query('NetworkInterface[?name==`ae2`].vlanids[0].vrrp.priority') | first }};
+                        accept-data;
+                        track {
+                            interface ae2 {
+                                priority-cost 20;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        unit {{ item | json_query('NetworkInterface[?name==`ae2`].vlanids[1].vlanid') | first }} {
+            vlan-id {{ item | json_query('NetworkInterface[?name==`ae2`].vlanids[1].vlanid') | first }};
+            family inet {
+                address {{ item | json_query('NetworkInterface[?name==`ae2`].vlanids[1].ipv4') | first }} {
+                    vrrp-group {{ item | json_query('NetworkInterface[?name==`ae2`].vlanids[1].vrrp.vrrp_group') | first }} {
+                        virtual-address {{ item | json_query('NetworkInterface[?name==`ae2`].vlanids[1].vrrp.vip') | first }};
+                        priority {{ item | json_query('NetworkInterface[?name==`ae2`].vlanids[1].vrrp.priority') | first }};
+                        accept-data;
+                        track {
+                            interface ae2 {
+                                priority-cost 20;
+                            }
+                        }
+                    }
+                }
+            }
+            family inet6 {
+                address {{ item | json_query('NetworkInterface[?name==`ae2`].vlanids[1].ipv6') | first }} {
+                    vrrp-inet6-group {{ item | json_query('NetworkInterface[?name==`ae2`].vlanids[1].vrrp.vrrp_group') | first }} {
+                        virtual-inet6-address {{ item | json_query('NetworkInterface[?name==`ae2`].vlanids[1].vrrp.vip_v6') | first }};
+                        priority {{ item | json_query('NetworkInterface[?name==`ae2`].vlanids[1].vrrp.priority') | first }};
+                        accept-data;
+                        track {
+                            interface ae2 {
+                                priority-cost 20;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    fxp0 {
+        unit 0 {
+            family inet {
+                address 10.0.0.15/24;
+            }
+        }
+    }
+}
+routing-options {
+    router-id {{ item.RouterID }};
+}
+protocols {
+    ospf {
+        export EXPORTDIRECT;
+        area {{ item.OSPFv2.area }} {
+{% for ospf_if in item.OSPFv2.interfaces %}
+            interface {{ ospf_if }};
+{% endfor %}
+        }
+    }
+    ospf3 {
+        export EXPORTDIRECT;
+        area {{ item.OSPFv3.area }} {
+{% for ospf_if in item.OSPFv3.interfaces %}
+            interface {{ ospf_if }};
+{% endfor %}
+        }
+    }
+    lldp {
+        interface all;
+    }
+}
+policy-options {
+    policy-statement EXPORTDIRECT {
+        term 1 {
+            from protocol direct;
+            then accept;
+        }
+    }
+}
+routing-instances {
+{% for VRF in item.VRF %}
+    {{ VRF.name }} {
+        instance-type virtual-router;
+{% for VRF_if in VRF.interfaces %}
+        interface {{ VRF_if }};
+{% endfor %}
+    }
+{% endfor %}
+}
