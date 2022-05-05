@@ -6,8 +6,7 @@
   vars:
     Region: RegionE
     PeerRegion1: RegionD
-    #PeerRegion2: RegionF
-    PeerRegion2: RegionA
+    PeerRegion2: RegionF
     Junos:
     - hostname: "{{ Region }}-PE01"
       Role: PE01
@@ -64,10 +63,8 @@
       RouterID: 5.5.5.6
       NetworkInterface:
       - name: "ge-0/0/0" 
-        #ipv4: "10.1.5.1/30"
-        #ipv6: "fc00:10:1:5::1/64"
-        ipv4: "10.1.0.1/30"
-        ipv6: "fc00:10:1:0::1/64"
+        ipv4: "10.1.5.1/30"
+        ipv6: "fc00:10:1:5::1/64"
         description: "to_{{ PeerRegion2 }}-PE01_ge-0/0/0"
       - name: "ge-0/0/1" 
         ipv4: "172.20.0.2/30"

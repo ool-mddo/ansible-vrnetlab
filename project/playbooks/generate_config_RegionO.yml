@@ -1,0 +1,403 @@
+---
+- hosts: localhost
+  gather_facts: false
+  become: true
+  connection: local
+  vars:
+    Region: RegionO
+    PeerRegion1: RegionN
+    PeerRegion2: RegionP
+    Junos:
+    - hostname: "{{ Region }}-PE01"
+      Role: PE01
+      AS: 65014
+      RouterID: 15.15.15.15
+      NetworkInterface:
+      - name: "ge-0/0/0" 
+        ipv4: "10.1.14.2/30"
+        ipv6: "fc00:10:1:154::2/64"
+        description: "to_{{ PeerRegion1 }}-PE02_ge-0/0/0"
+      - name: "ge-0/0/1" 
+        ipv4: "172.130.0.1/30"
+        ipv6: "fc00:172:130::1/64"
+        description: "to_{{ Region }}-PE02_ge-0/0/1"
+      - name: "ge-0/0/2" 
+        ipv4: "172.130.1.1/30"
+        ipv6: "fc00:172:130:1::1/64"
+        description: "to_{{ Region }}-CE01_ge-0/0/0"
+      - name: "lo0" 
+        ipv4: "15.15.15.15/32"
+        ipv6: "fc00:15:15:15::15/64"
+      BGP: 
+      - peer_address: "10.1.14.1" 
+        peer_as: "65013"
+        bgp_group: "EXT"
+      - peer_address: "fc00:10:1:154::1" 
+        peer_as: "65013"
+        bgp_group: "EXT"
+      - peer_address: "15.15.15.16" 
+        peer_as: "65014"
+        bgp_group: "INT"
+        local_address: "15.15.15.15"
+      - peer_address: "fc00:15:15:15::16" 
+        peer_as: "65014"
+        bgp_group: "INT6"
+        local_address: "fc00:15:15:15::15"
+      OSPFv2:
+        area: 0.0.0.0
+        interfaces:
+        - ge-0/0/2.0
+        - ge-0/0/3.0
+        - ge-0/0/1.0
+        - lo0.0
+      OSPFv3:
+        area: 0.0.0.0
+        interfaces:
+        - ge-0/0/2.0
+        - ge-0/0/3.0
+        - ge-0/0/1.0
+        - lo0.0
+    - hostname: "{{ Region }}-PE02"
+      Role: PE02
+      AS: 65014
+      RouterID: 15.15.15.16
+      NetworkInterface:
+      - name: "ge-0/0/0" 
+        ipv4: "10.1.15.1/30"
+        ipv6: "fc00:10:1:15::1/64"
+        description: "to_{{ PeerRegion2 }}-PE01_ge-0/0/0"
+      - name: "ge-0/0/1" 
+        ipv4: "172.130.0.2/30"
+        ipv6: "fc00:172:130::2/64"
+        description: "to_{{ Region }}-PE01_ge-0/0/1"
+      - name: "ge-0/0/3" 
+        ipv4: "172.130.4.1/30"
+        ipv6: "fc00:172:130:4::1/64"
+        description: "to_{{ Region }}-CE02_ge-0/0/1"
+      - name: "lo0" 
+        ipv4: "15.15.15.16/32"
+        ipv6: "fc00:15:15:15::16/64"
+      BGP: 
+      - peer_address: "10.1.15.2" 
+        peer_as: "65015"
+        bgp_group: "EXT"
+      - peer_address: "fc00:10:1:15::2" 
+        peer_as: "65015"
+        bgp_group: "EXT"
+      - peer_address: "15.15.15.15" 
+        peer_as: "65014"
+        bgp_group: "INT"
+        local_address: "15.15.15.16"
+      - peer_address: "fc00:15:15:15::15" 
+        peer_as: "65014"
+        bgp_group: "INT6"
+        local_address: "fc00:15:15:15::16"
+      OSPFv2:
+        area: 0.0.0.0
+        interfaces:
+        - ge-0/0/2.0
+        - ge-0/0/3.0
+        - ge-0/0/1.0
+        - lo0.0
+      OSPFv3:
+        area: 0.0.0.0
+        interfaces:
+        - ge-0/0/2.0
+        - ge-0/0/3.0
+        - ge-0/0/1.0
+        - lo0.0
+    - hostname: "{{ Region }}-CE01"
+      Role: CE01
+      RouterID: 15.15.15.17
+      NetworkInterface:
+      - name: "ge-0/0/0" 
+        ipv4: "172.130.1.2/30"
+        ipv6: "fc00:172:130:1::2/64"
+        description: "to_{{ Region }}-PE01_ge-0/0/2"
+      - name: "ge-0/0/2" 
+        lacp_if: "ae0"
+        description: "to_{{ Region }}-CE02_ge-0/0/2"
+      - name: "ge-0/0/3" 
+        lacp_if: "ae0"
+        description: "to_{{ Region }}-CE02_ge-0/0/3"
+      - name: "ge-0/0/4" 
+        lacp_if: "ae1"
+        description: "to_{{ Region }}-Acc01_Ethernet1"
+      - name: "ge-0/0/5" 
+        lacp_if: "ae1"
+        description: "to_{{ Region }}-Acc01_Ethernet2"
+      - name: "ge-0/0/6" 
+        lacp_if: "ae2"
+        description: "to_{{ Region }}-Acc02_Ethernet1"
+      - name: "ge-0/0/7" 
+        lacp_if: "ae2"
+        description: "to_{{ Region }}-Acc02_Ethernet2"
+      - name: "ae0" 
+        ipv4: "172.130.5.1/30"
+        ipv6: "fc00:172:130:5::1/64"
+      - name: "ae1"
+        vlanids: 
+        - vlanid: "1010"
+          ipv4:  "172.44.10.1/24"
+          ipv6:  "fc00:172:44:10::1/64"
+          vrrp:
+            vip: "172.44.10.3"
+            vip_v6: "fc00:172:44:10::3"
+            priority: 110
+            vrrp_group: 1
+        - vlanid: "1110"
+          ipv4:  "172.44.110.1/24"
+          ipv6:  "fc00:172:44:110::1/64"
+          vrrp:
+            vip: "172.44.110.3"
+            vip_v6: "fc00:172:44:110::3"
+            priority: 110
+            vrrp_group: 2
+      - name: "ae2"
+        vlanids: 
+        - vlanid: "1020"
+          ipv4:  "172.44.20.1/24"
+          ipv6:  "fc00:172:44:20::1/64"
+          vrrp:
+            vip: "172.44.20.3"
+            vip_v6: "fc00:172:44:20::3"
+            priority: 110
+            vrrp_group: 3
+        - vlanid: "1120"
+          ipv4:  "172.44.120.1/24"
+          ipv6:  "fc00:172:44:120::1/64"
+          vrrp:
+            vip: "172.44.120.3"
+            vip_v6: "fc00:172:44:120::3"
+            priority: 110
+            vrrp_group: 4
+      OSPFv2:
+        area: 0.0.0.0
+        interfaces:
+        - ge-0/0/0.0
+        - ge-0/0/1.0
+        - ae0.0
+      OSPFv3:
+        area: 0.0.0.0
+        interfaces:
+        - ge-0/0/0.0
+        - ge-0/0/1.0
+        - ae0.0
+      VRF:
+      - name: VR1
+        interfaces:
+        - ae1.1110
+        - ae2.1120
+    - hostname: "{{ Region }}-CE02"
+      Role: CE02
+      RouterID: 15.15.15.18
+      NetworkInterface:
+      - name: "ge-0/0/1"
+        ipv4: "172.130.4.2/30"
+        ipv6: "fc00:172:130:4::2/64"
+        description: "to_{{ Region }}-PE02_ge-0/0/3"
+      - name: "ge-0/0/2"
+        lacp_if: "ae0"
+        description: "to_{{ Region }}-CE01_ge-0/0/2"
+      - name: "ge-0/0/3"
+        lacp_if: "ae0"
+        description: "to_{{ Region }}-CE01_ge-0/0/3"
+      - name: "ge-0/0/4"
+        lacp_if: "ae1"
+        description: "to_{{ Region }}-Acc01_Ethernet3"
+      - name: "ge-0/0/5"
+        lacp_if: "ae1"
+        description: "to_{{ Region }}-Acc01_Ethernet4"
+      - name: "ge-0/0/6"
+        lacp_if: "ae2"
+        description: "to_{{ Region }}-Acc02_Ethernet3"
+      - name: "ge-0/0/7"
+        lacp_if: "ae2"
+        description: "to_{{ Region }}-Acc02_Ethernet4"
+      - name: "ae0" 
+        ipv4: "172.130.5.2/30"
+        ipv6: "fc00:172:130:5::2/64"
+      - name: "ae1"
+        vlanids:
+        - vlanid: "1010"
+          ipv4:  "172.44.10.2/24"
+          ipv6:  "fc00:172:44:10::2/64"
+          vrrp:
+            vip: "172.44.10.3"
+            vip_v6: "fc00:172:44:10::3"
+            priority: 100
+            vrrp_group: 1
+        - vlanid: "1110"
+          ipv4:  "172.44.110.2/24"
+          ipv6:  "fc00:172:44:110::2/64"
+          vrrp:
+            vip: "172.44.110.3"
+            vip_v6: "fc00:172:44:110::3"
+            priority: 100
+            vrrp_group: 2
+      - name: "ae2"
+        vlanids: 
+        - vlanid: "1020"
+          ipv4:  "172.44.20.2/24"
+          ipv6:  "fc00:172:44:20::2/64"
+          vrrp:
+            vip: "172.44.20.3"
+            vip_v6: "fc00:172:44:20::3"
+            priority: 100
+            vrrp_group: 3
+        - vlanid: "1120"
+          ipv4:  "172.44.120.2/24"
+          ipv6:  "fc00:172:44:120::2/64"
+          vrrp:
+            vip: "172.44.120.3"
+            vip_v6: "fc00:172:44:120::3"
+            priority: 100
+            vrrp_group: 4
+      OSPFv2:
+        area: 0.0.0.0
+        interfaces:
+        - ge-0/0/0.0
+        - ge-0/0/1.0
+        - ae0.0
+      OSPFv3:
+        area: 0.0.0.0
+        interfaces:
+        - ge-0/0/0.0
+        - ge-0/0/1.0
+        - ae0.0
+      VRF:
+      - name: VR1
+        interfaces:
+        - ae1.1110
+        - ae2.1120
+    Arista:
+    - hostname: "{{ Region }}-Acc01"
+      Role: Acc01
+      vlanids: "1010,1020,1110,1120"
+      NetworkInterface:
+      - name: "Port-Channel1"
+        vlanids: "1010,1110"
+      - name: "Port-Channel2"
+        vlanids: "1010,1110"
+      - name: "Ethernet1"
+        channelgroup: 1
+        description: "to_{{ Region }}-CE01_ge-0/0/4"
+      - name: "Ethernet2"
+        channelgroup: 1
+        description: "to_{{ Region }}-CE01_ge-0/0/5"
+      - name: "Ethernet3"
+        channelgroup: 2
+        description: "to_{{ Region }}-CE02_ge-0/0/4"
+      - name: "Ethernet4"
+        channelgroup: 2
+        description: "to_{{ Region }}-CE02_ge-0/0/5"
+      - name: "Ethernet5"
+        accessvlan: 1010
+        description: "to_{{ Region }}-Svr01_enp1s4"
+      - name: "Ethernet6"
+        accessvlan: 1110
+        description: "to_{{ Region }}-Svr01_enp1s5"
+    - hostname: "{{ Region }}-Acc02"
+      Role: Acc02
+      vlanids: "1010,1020,1110,1120"
+      NetworkInterface:
+      - name: "Port-Channel1"
+        vlanids: "1020,1120"
+      - name: "Port-Channel2"
+        vlanids: "1020,1120"
+      - name: "Ethernet1"
+        channelgroup: 1
+        description: "to_{{ Region }}-CE01_ge-0/0/6"
+      - name: "Ethernet2"
+        channelgroup: 1
+        description: "to_{{ Region }}-CE01_ge-0/0/7"
+      - name: "Ethernet3"
+        channelgroup: 2
+        description: "to_{{ Region }}-CE02_ge-0/0/6"
+      - name: "Ethernet4"
+        channelgroup: 2
+        description: "to_{{ Region }}-CE02_ge-0/0/7"
+      - name: "Ethernet5"
+        accessvlan: 1020
+        description: "to_{{ Region }}-Svr02_enp1s4"
+      - name: "Ethernet6"
+        accessvlan: 1120
+        description: "to_{{ Region }}-Svr02_enp1s5"
+    Ubuntu:
+    - hostname: "{{ Region }}-Svr01"
+      NetworkInterface:
+      - name: "enp1s4"
+        ipv4: "172.44.10.100/24"
+        prefix: "172.44.10.3"
+      - name: "enp1s5"
+        ipv4: "172.44.110.100/24"
+      - name: "ens4"
+        ipv4: "10.0.0.15/24"
+    - hostname: "{{ Region }}-Svr02"
+      NetworkInterface:
+      - name: "enp1s4"
+        ipv4: "172.44.10.101/24"
+        prefix: "172.44.10.3"
+      - name: "enp1s5"
+        ipv4: "172.44.110.101/24"
+      - name: "ens4"
+        ipv4: "10.0.0.15/24"
+
+
+
+  tasks:
+  - name: "{{ Region }}-PE01のコンフィグ生成"
+    template:
+      src: PE_Junos.j2
+      dest: "{{ Region }}-PE01_Junos.conf"
+    when: item.hostname == "{{ Region }}-PE01"
+    loop: "{{ Junos }}"
+
+  - name: "{{ Region }}-PE02のコンフィグ生成"
+    template:
+      src: PE_Junos.j2
+      dest: "{{ Region }}-PE02_Junos.conf"
+    when: item.hostname == "{{ Region }}-PE02"
+    loop: "{{ Junos }}"
+
+  - name: "{{ Region }}-CE01のコンフィグ生成"
+    template:
+      src: CE_Junos.j2
+      dest: "{{ Region }}-CE01_Junos.conf"
+    when: item.hostname == "{{ Region }}-CE01"
+    loop: "{{ Junos }}"
+
+  - name: "{{ Region }}-CE02のコンフィグ生成"
+    template:
+      src: CE_Junos.j2
+      dest: "{{ Region }}-CE02_Junos.conf"
+    when: item.hostname == "{{ Region }}-CE02"
+    loop: "{{ Junos }}"
+
+  - name: "{{ Region }}-Acc01のコンフィグ生成"
+    template:
+      src: AccSW.j2
+      dest: "{{ Region }}-Acc01_Arista.conf"
+    when: item.hostname == "{{ Region }}-Acc01"
+    loop: "{{ Arista }}"
+
+  - name: "{{ Region }}-Acc02のコンフィグ生成"
+    template:
+      src: AccSW.j2
+      dest: "{{ Region }}-Acc02_Arista.conf"
+    when: item.hostname == "{{ Region }}-Acc02"
+    loop: "{{ Arista }}"
+
+  - name: "{{ Region }}-Svr01のコンフィグ生成"
+    template:
+      src: Svr_Ubuntu.j2
+      dest: "{{ Region }}-Svr01_Ubuntu.conf"
+    when: item.hostname == "{{ Region }}-Svr01"
+    loop: "{{ Ubuntu }}"
+
+  - name: "{{ Region }}-Svr02のコンフィグ生成"
+    template:
+      src: Svr_Ubuntu.j2
+      dest: "{{ Region }}-Svr02_Ubuntu.conf"
+    when: item.hostname == "{{ Region }}-Svr02"
+    loop: "{{ Ubuntu }}"

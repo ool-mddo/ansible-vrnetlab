@@ -5,8 +5,7 @@
   connection: local
   vars:
     Region: RegionA
-    #PeerRegion1: RegionJ
-    PeerRegion1: RegionE
+    PeerRegion1: RegionJ
     PeerRegion2: RegionB
     Junos:
     - hostname: "{{ Region }}-PE01"
