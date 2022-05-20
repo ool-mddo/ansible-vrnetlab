@@ -15,7 +15,7 @@
       NetworkInterface:
       - name: "ge-0/0/0" 
         ipv4: "10.1.14.2/30"
-        ipv6: "fc00:10:1:154::2/64"
+        ipv6: "fc00:10:1:14::2/64"
         description: "to_{{ PeerRegion1 }}-PE02_ge-0/0/0"
       - name: "ge-0/0/1" 
         ipv4: "172.130.0.1/30"
@@ -30,10 +30,10 @@
         ipv6: "fc00:15:15:15::15/64"
       BGP: 
       - peer_address: "10.1.14.1" 
-        peer_as: "65013"
+        peer_as: "65039"
         bgp_group: "EXT"
-      - peer_address: "fc00:10:1:154::1" 
-        peer_as: "65013"
+      - peer_address: "fc00:10:1:14::1" 
+        peer_as: "65039"
         bgp_group: "EXT"
       - peer_address: "15.15.15.16" 
         peer_as: "65014"

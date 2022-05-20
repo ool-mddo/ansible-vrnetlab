@@ -4,13 +4,13 @@
   become: true
   connection: local
   vars:
-    Region: RegionI
+    Region: RegionJ
     PeerRegion1: RegionI
     PeerRegion2: RegionK
     Junos:
     - hostname: "{{ Region }}-PE01"
       Role: PE01
-      AS: 65008
+      AS: 65009
       RouterID: 10.10.10.10
       NetworkInterface:
       - name: "ge-0/0/0" 
@@ -30,17 +30,17 @@
         ipv6: "fc00:10:10:10::10/64"
       BGP: 
       - peer_address: "10.1.9.1" 
-        peer_as: "65008"
+        peer_as: "65039"
         bgp_group: "EXT"
       - peer_address: "fc00:10:1:9::1" 
-        peer_as: "65008"
+        peer_as: "65039"
         bgp_group: "EXT"
       - peer_address: "10.10.10.11" 
-        peer_as: "65008"
+        peer_as: "65009"
         bgp_group: "INT"
         local_address: "10.10.10.10"
       - peer_address: "fc00:10:10:10::11" 
-        peer_as: "65008"
+        peer_as: "65009"
         bgp_group: "INT6"
         local_address: "fc00:10:10:10::10"
       OSPFv2:
@@ -59,7 +59,7 @@
         - lo0.0
     - hostname: "{{ Region }}-PE02"
       Role: PE02
-      AS: 65008
+      AS: 65009
       RouterID: 10.10.10.11
       NetworkInterface:
       - name: "ge-0/0/0" 
@@ -85,11 +85,11 @@
         peer_as: "65010"
         bgp_group: "EXT"
       - peer_address: "10.10.10.10" 
-        peer_as: "65008"
+        peer_as: "65009"
         bgp_group: "INT"
         local_address: "10.10.10.11"
       - peer_address: "fc00:10:10:10::10" 
-        peer_as: "65008"
+        peer_as: "65009"
         bgp_group: "INT6"
         local_address: "fc00:10:10:10::11"
       OSPFv2:
