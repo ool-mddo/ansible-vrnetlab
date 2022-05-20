@@ -4,45 +4,45 @@
   become: true
   connection: local
   vars:
-    Region: RegionC
-    PeerRegion1: RegionD
-    PeerRegion2: RegionD
+    Region: RegionG
+    PeerRegion1: RegionF
+    PeerRegion2: RegionH
     Junos:
     - hostname: "{{ Region }}-PE01"
       Role: PE01
-      AS: 65002
-      RouterID: 3.3.3.3
+      AS: 65006
+      RouterID: 7.7.7.7
       NetworkInterface:
       - name: "ge-0/0/0" 
-        ipv4: "10.1.2.2/30"
-        ipv6: "fc00:10:1:2::2/64"
+        ipv4: "10.1.6.2/30"
+        ipv6: "fc00:10:1:6::2/64"
         description: "to_{{ PeerRegion1 }}-PE02_ge-0/0/0"
       - name: "ge-0/0/1" 
-        ipv4: "172.18.0.1/30"
-        ipv6: "fc00:172:18::1/64"
+        ipv4: "172.22.0.1/30"
+        ipv6: "fc00:172:22::1/64"
         description: "to_{{ Region }}-PE02_ge-0/0/1"
       - name: "ge-0/0/2" 
-        ipv4: "172.18.1.1/30"
-        ipv6: "fc00:172:18:1::1/64"
+        ipv4: "172.22.1.1/30"
+        ipv6: "fc00:172:22:1::1/64"
         description: "to_{{ Region }}-CE01_ge-0/0/0"
       - name: "lo0" 
-        ipv4: "3.3.3.3/32"
-        ipv6: "fc00:3:3:3::3/64"
+        ipv4: "7.7.7.7/32"
+        ipv6: "fc00:7:7:7::7/64"
       BGP: 
-      - peer_address: "10.1.2.1" 
-        peer_as: "65003"
+      - peer_address: "10.1.6.1" 
+        peer_as: "65005"
         bgp_group: "EXT"
-      - peer_address: "fc00:10:1:2::1" 
-        peer_as: "65003"
+      - peer_address: "fc00:10:1:6::1" 
+        peer_as: "65005"
         bgp_group: "EXT"
-      - peer_address: "3.3.3.4" 
-        peer_as: "65002"
+      - peer_address: "7.7.7.8" 
+        peer_as: "65006"
         bgp_group: "INT"
-        local_address: "3.3.3.3"
-      - peer_address: "fc00:3:3:3::4" 
-        peer_as: "65002"
+        local_address: "7.7.7.7"
+      - peer_address: "fc00:7:7:7::8" 
+        peer_as: "65006"
         bgp_group: "INT6"
-        local_address: "fc00:3:3:3::3"
+        local_address: "fc00:7:7:7::7"
       OSPFv2:
         area: 0.0.0.0
         interfaces:
@@ -59,39 +59,39 @@
         - lo0.0
     - hostname: "{{ Region }}-PE02"
       Role: PE02
-      AS: 65002
-      RouterID: 3.3.3.4
+      AS: 65006
+      RouterID: 7.7.7.8
       NetworkInterface:
       - name: "ge-0/0/0" 
-        ipv4: "10.1.3.1/30"
-        ipv6: "fc00:10:1:3:1/64"
+        ipv4: "10.1.7.1/30"
+        ipv6: "fc00:10:1:7:1/64"
         description: "to_{{ PeerRegion2 }}-PE01_ge-0/0/0"
       - name: "ge-0/0/1" 
-        ipv4: "172.18.0.2/30"
-        ipv6: "fc00:172:18::2/64"
+        ipv4: "172.22.0.2/30"
+        ipv6: "fc00:172:22::2/64"
         description: "to_{{ Region }}-PE01_ge-0/0/1"
       - name: "ge-0/0/3" 
-        ipv4: "172.18.4.1/30"
-        ipv6: "fc00:172:18:4::1/64"
+        ipv4: "172.22.4.1/30"
+        ipv6: "fc00:172:22:4::1/64"
         description: "to_{{ Region }}-CE02_ge-0/0/1"
       - name: "lo0" 
-        ipv4: "3.3.3.4/32"
-        ipv6: "fc00:3:3:3::4/64"
+        ipv4: "7.7.7.8/32"
+        ipv6: "fc00:7:7:7::8/64"
       BGP: 
-      - peer_address: "10.1.3.2" 
-        peer_as: "65003"
+      - peer_address: "10.1.7.2" 
+        peer_as: "65007"
         bgp_group: "EXT"
-      - peer_address: "fc00:10:1:3:2" 
-        peer_as: "65003"
+      - peer_address: "fc00:10:1:7:2" 
+        peer_as: "65007"
         bgp_group: "EXT"
-      - peer_address: "3.3.3.3" 
-        peer_as: "65002"
+      - peer_address: "7.7.7.7" 
+        peer_as: "65006"
         bgp_group: "INT"
-        local_address: "3.3.3.4"
-      - peer_address: "fc00:3:3:3::3" 
-        peer_as: "65002"
+        local_address: "7.7.7.8"
+      - peer_address: "fc00:7:7:7::7" 
+        peer_as: "65006"
         bgp_group: "INT6"
-        local_address: "fc00:3:3:3::4"
+        local_address: "fc00:7:7:7::8"
       OSPFv2:
         area: 0.0.0.0
         interfaces:
@@ -108,11 +108,11 @@
         - lo0.0
     - hostname: "{{ Region }}-CE01"
       Role: CE01
-      RouterID: 3.3.3.5
+      RouterID: 7.7.7.9
       NetworkInterface:
       - name: "ge-0/0/0" 
-        ipv4: "172.18.1.2/30"
-        ipv6: "fc00:172:18:1::2/64"
+        ipv4: "172.22.1.2/30"
+        ipv6: "fc00:172:22:1::2/64"
         description: "to_{{ Region }}-PE01_ge-0/0/2"
       - name: "ge-0/0/2" 
         lacp_if: "ae0"
@@ -133,42 +133,42 @@
         lacp_if: "ae2"
         description: "to_{{ Region }}-Acc02_Ethernet2"
       - name: "ae0" 
-        ipv4: "172.18.5.1/30"
-        ipv6: "fc00:172:18:5::1/64"
+        ipv4: "172.22.5.1/30"
+        ipv6: "fc00:172:22:5::1/64"
       - name: "ae1"
         vlanids: 
         - vlanid: "1010"
-          ipv4:  "172.32.10.1/24"
-          ipv6:  "fc00:172:32:10::1/64"
+          ipv4:  "172.36.10.1/24"
+          ipv6:  "fc00:172:36:10::1/64"
           vrrp:
-            vip: "172.32.10.3"
-            vip_v6: "fc00:172:32:10::3"
+            vip: "172.36.10.3"
+            vip_v6: "fc00:172:36:10::3"
             priority: 110
             vrrp_group: 1
         - vlanid: "1110"
-          ipv4:  "172.32.110.1/24"
-          ipv6:  "fc00:172:32:110::1/64"
+          ipv4:  "172.36.110.1/24"
+          ipv6:  "fc00:172:36:110::1/64"
           vrrp:
-            vip: "172.32.110.3"
-            vip_v6: "fc00:172:32:110::3"
+            vip: "172.36.110.3"
+            vip_v6: "fc00:172:36:110::3"
             priority: 110
             vrrp_group: 2
       - name: "ae2"
         vlanids: 
         - vlanid: "1020"
-          ipv4:  "172.32.20.1/24"
-          ipv6:  "fc00:172:32:20::1/64"
+          ipv4:  "172.36.20.1/24"
+          ipv6:  "fc00:172:36:20::1/64"
           vrrp:
-            vip: "172.32.20.3"
-            vip_v6: "fc00:172:32:20::3"
+            vip: "172.36.20.3"
+            vip_v6: "fc00:172:36:20::3"
             priority: 110
             vrrp_group: 3
         - vlanid: "1120"
-          ipv4:  "172.32.120.1/24"
-          ipv6:  "fc00:172:32:120::1/64"
+          ipv4:  "172.36.120.1/24"
+          ipv6:  "fc00:172:36:120::1/64"
           vrrp:
-            vip: "172.32.120.3"
-            vip_v6: "fc00:172:32:120::3"
+            vip: "172.36.120.3"
+            vip_v6: "fc00:172:36:120::3"
             priority: 110
             vrrp_group: 4
       OSPFv2:
@@ -190,11 +190,11 @@
         - ae2.1120
     - hostname: "{{ Region }}-CE02"
       Role: CE02
-      RouterID: 3.3.3.6
+      RouterID: 7.7.7.10
       NetworkInterface:
       - name: "ge-0/0/1"
-        ipv4: "172.18.4.2/30"
-        ipv6: "fc00:172:18:4::2/64"
+        ipv4: "172.22.4.2/30"
+        ipv6: "fc00:172:22:4::2/64"
         description: "to_{{ Region }}-PE02_ge-0/0/3"
       - name: "ge-0/0/2"
         lacp_if: "ae0"
@@ -215,42 +215,42 @@
         lacp_if: "ae2"
         description: "to_{{ Region }}-Acc02_Ethernet4"
       - name: "ae0" 
-        ipv4: "172.18.5.2/30"
-        ipv6: "fc00:172:18:5::2/64"
+        ipv4: "172.22.5.2/30"
+        ipv6: "fc00:172:22:5::2/64"
       - name: "ae1"
         vlanids:
         - vlanid: "1010"
-          ipv4:  "172.32.10.2/24"
-          ipv6:  "fc00:172:32:10::2/64"
+          ipv4:  "172.36.10.2/24"
+          ipv6:  "fc00:172:36:10::2/64"
           vrrp:
-            vip: "172.32.10.3"
-            vip_v6: "fc00:172:32:10::3"
+            vip: "172.36.10.3"
+            vip_v6: "fc00:172:36:10::3"
             priority: 100
             vrrp_group: 1
         - vlanid: "1110"
-          ipv4:  "172.32.110.2/24"
-          ipv6:  "fc00:172:32:110::2/64"
+          ipv4:  "172.36.110.2/24"
+          ipv6:  "fc00:172:36:110::2/64"
           vrrp:
-            vip: "172.32.110.3"
-            vip_v6: "fc00:172:32:110::3"
+            vip: "172.36.110.3"
+            vip_v6: "fc00:172:36:110::3"
             priority: 100
             vrrp_group: 2
       - name: "ae2"
         vlanids: 
         - vlanid: "1020"
-          ipv4:  "172.32.20.2/24"
-          ipv6:  "fc00:172:32:20::2/64"
+          ipv4:  "172.36.20.2/24"
+          ipv6:  "fc00:172:36:20::2/64"
           vrrp:
-            vip: "172.32.20.3"
-            vip_v6: "fc00:172:32:20::3"
+            vip: "172.36.20.3"
+            vip_v6: "fc00:172:36:20::3"
             priority: 100
             vrrp_group: 3
         - vlanid: "1120"
-          ipv4:  "172.32.120.2/24"
-          ipv6:  "fc00:172:32:120::2/64"
+          ipv4:  "172.36.120.2/24"
+          ipv6:  "fc00:172:36:120::2/64"
           vrrp:
-            vip: "172.32.120.3"
-            vip_v6: "fc00:172:32:120::3"
+            vip: "172.36.120.3"
+            vip_v6: "fc00:172:36:120::3"
             priority: 100
             vrrp_group: 4
       OSPFv2:
@@ -327,19 +327,19 @@
     - hostname: "{{ Region }}-Svr01"
       NetworkInterface:
       - name: "enp1s4"
-        ipv4: "172.32.10.100/24"
-        prefix: "172.32.10.3"
+        ipv4: "172.36.10.100/24"
+        prefix: "172.36.10.3"
       - name: "enp1s5"
-        ipv4: "172.32.110.100/24"
+        ipv4: "172.36.110.100/24"
       - name: "ens4"
         ipv4: "10.0.0.15/24"
     - hostname: "{{ Region }}-Svr02"
       NetworkInterface:
       - name: "enp1s4"
-        ipv4: "172.32.20.101/24"
-        prefix: "172.32.20.3"
+        ipv4: "172.36.20.101/24"
+        prefix: "172.36.20.3"
       - name: "enp1s5"
-        ipv4: "172.32.120.101/24"
+        ipv4: "172.36.120.101/24"
       - name: "ens4"
         ipv4: "10.0.0.15/24"
 
