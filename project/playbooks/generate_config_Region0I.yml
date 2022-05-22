@@ -336,10 +336,10 @@
     - hostname: "{{ Region }}-Svr02"
       NetworkInterface:
       - name: "enp1s4"
-        ipv4: "172.64.10.101/24"
-        prefix: "172.64.10.3"
+        ipv4: "172.64.20.101/24"
+        prefix: "172.64.20.3"
       - name: "enp1s5"
-        ipv4: "172.64.110.101/24"
+        ipv4: "172.64.120.101/24"
       - name: "ens4"
         ipv4: "10.0.0.15/24"
 
