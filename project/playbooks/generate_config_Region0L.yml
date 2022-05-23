@@ -30,10 +30,10 @@
         ipv6: "fc00:38:38:38::38/64"
       BGP: 
       - peer_address: "10.1.37.1" 
-        peer_as: "65039"
+        peer_as: "65036"
         bgp_group: "EXT"
       - peer_address: "fc00:10:1:37::1" 
-        peer_as: "65039"
+        peer_as: "65036"
         bgp_group: "EXT"
       - peer_address: "38.38.38.39" 
         peer_as: "65037"
