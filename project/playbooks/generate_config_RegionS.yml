@@ -6,7 +6,7 @@
   vars:
     Region: RegionS
     PeerRegion1: RegionR
-    PeerRegion2: Region0N
+    PeerRegion2: RegionT
     Junos:
     - hostname: "{{ Region }}-PE01"
       Role: PE01
