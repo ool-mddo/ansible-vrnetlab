@@ -5,7 +5,7 @@
   connection: local
   vars:
     Region: RegionB
-    PeerRegion1: RegionJ
+    PeerRegion1: RegionA
     PeerRegion2: RegionC
     Junos:
     - hostname: "{{ Region }}-PE01"
@@ -30,10 +30,10 @@
         ipv6: "fc00:2:2:2::2/64"
       BGP: 
       - peer_address: "10.1.1.1" 
-        peer_as: "65009"
+        peer_as: "65000"
         bgp_group: "EXT"
       - peer_address: "fc00:10:1:1::1" 
-        peer_as: "65009"
+        peer_as: "65000"
         bgp_group: "EXT"
       - peer_address: "2.2.2.3" 
         peer_as: "65001"
