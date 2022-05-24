@@ -14,8 +14,8 @@
       RouterID: 2.2.2.2
       NetworkInterface:
       - name: "ge-0/0/0" 
-        ipv4: "10.1.2.2/30"
-        ipv6: "fc00:10:1:2:2/64"
+        ipv4: "10.1.1.2/30"
+        ipv6: "fc00:10:1:1::2/64"
         description: "to_{{ PeerRegion1 }}-PE02_ge-0/0/0"
       - name: "ge-0/0/1" 
         ipv4: "172.17.0.1/30"
@@ -29,10 +29,10 @@
         ipv4: "2.2.2.2/32"
         ipv6: "fc00:2:2:2::2/64"
       BGP: 
-      - peer_address: "10.1.2.1" 
+      - peer_address: "10.1.1.1" 
         peer_as: "65000"
         bgp_group: "EXT"
-      - peer_address: "fc00:10:1:2:1" 
+      - peer_address: "fc00:10:1:1::1" 
         peer_as: "65000"
         bgp_group: "EXT"
       - peer_address: "2.2.2.3" 
@@ -64,7 +64,7 @@
       NetworkInterface:
       - name: "ge-0/0/0" 
         ipv4: "10.1.2.1/30"
-        ipv6: "fc00:10:1:2:1/64"
+        ipv6: "fc00:10:1:2::1/64"
         description: "to_{{ PeerRegion2 }}-PE01_ge-0/0/0"
       - name: "ge-0/0/1" 
         ipv4: "172.17.0.2/30"
@@ -81,7 +81,7 @@
       - peer_address: "10.1.2.2" 
         peer_as: "65002"
         bgp_group: "EXT"
-      - peer_address: "fc00:10:1:2:2" 
+      - peer_address: "fc00:10:1:2::2" 
         peer_as: "65002"
         bgp_group: "EXT"
       - peer_address: "2.2.2.2" 
