@@ -22,3 +22,7 @@ sudo ansible-runner run . -p playbooks/get_config_runner.yml --container-option=
 
 ```
 
+### containerlab deploy playbook
+```
+ansible-vrnetlab$ sudo ansible-runner run . -p playbooks/containerlab.yml --cmdline '-e login_user=XXXXX -e login_pass=XXXXX -e sudo_pass=XXXXX '-vvvv
+```

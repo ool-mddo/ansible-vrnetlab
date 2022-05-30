@@ -22,8 +22,16 @@
           ceos2:
             kind: ceos
             image: ceos-lab:4.27.2F
+          crpd1:
+            kind: crpd
+            image: crpd:22.1R1.10  
+          crpd2:
+            kind: crpd
+            image: crpd:22.1R1.10  
         links:
           - endpoints: ["ceos1:eth1","ceos2:eth1"]
+          - endpoints: ["crpd1:eth1","crpd2:eth1"]
+          - endpoints: ["crpd1:eth2","ceos1:eth2"]
 
     #multihost_bridge: "my-multihost-network"
 
