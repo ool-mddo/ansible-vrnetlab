@@ -1,0 +1,2866 @@
+{
+    "msg": {
+        "ietf-network-topology:link": [
+            {
+                "destination": {
+                    "dest-node": "regiona-ce01_Vlan10",
+                    "dest-tp": "Port-Channel2"
+                },
+                "link-id": "regiona-acc01_Vlan10,Port-Channel1,regiona-ce01_Vlan10,Port-Channel2",
+                "source": {
+                    "source-node": "regiona-acc01_Vlan10",
+                    "source-tp": "Port-Channel1"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regiona-ce01_Vlan110",
+                    "dest-tp": "Port-Channel2"
+                },
+                "link-id": "regiona-acc01_Vlan110,Port-Channel1,regiona-ce01_Vlan110,Port-Channel2",
+                "source": {
+                    "source-node": "regiona-acc01_Vlan110",
+                    "source-tp": "Port-Channel1"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regiona-acc01_Vlan10",
+                    "dest-tp": "Port-Channel1"
+                },
+                "link-id": "regiona-ce01_Vlan10,Port-Channel2,regiona-acc01_Vlan10,Port-Channel1",
+                "source": {
+                    "source-node": "regiona-ce01_Vlan10",
+                    "source-tp": "Port-Channel2"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regiona-acc01_Vlan110",
+                    "dest-tp": "Port-Channel1"
+                },
+                "link-id": "regiona-ce01_Vlan110,Port-Channel2,regiona-acc01_Vlan110,Port-Channel1",
+                "source": {
+                    "source-node": "regiona-ce01_Vlan110",
+                    "source-tp": "Port-Channel2"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regiona-ce02_Vlan10",
+                    "dest-tp": "Port-Channel2"
+                },
+                "link-id": "regiona-acc01_Vlan10,Port-Channel2,regiona-ce02_Vlan10,Port-Channel2",
+                "source": {
+                    "source-node": "regiona-acc01_Vlan10",
+                    "source-tp": "Port-Channel2"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regiona-ce02_Vlan110",
+                    "dest-tp": "Port-Channel2"
+                },
+                "link-id": "regiona-acc01_Vlan110,Port-Channel2,regiona-ce02_Vlan110,Port-Channel2",
+                "source": {
+                    "source-node": "regiona-acc01_Vlan110",
+                    "source-tp": "Port-Channel2"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regiona-acc01_Vlan10",
+                    "dest-tp": "Port-Channel2"
+                },
+                "link-id": "regiona-ce02_Vlan10,Port-Channel2,regiona-acc01_Vlan10,Port-Channel2",
+                "source": {
+                    "source-node": "regiona-ce02_Vlan10",
+                    "source-tp": "Port-Channel2"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regiona-acc01_Vlan110",
+                    "dest-tp": "Port-Channel2"
+                },
+                "link-id": "regiona-ce02_Vlan110,Port-Channel2,regiona-acc01_Vlan110,Port-Channel2",
+                "source": {
+                    "source-node": "regiona-ce02_Vlan110",
+                    "source-tp": "Port-Channel2"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regiona-ce01_Vlan20",
+                    "dest-tp": "Port-Channel3"
+                },
+                "link-id": "regiona-acc01_Vlan20,Port-Channel3,regiona-ce01_Vlan20,Port-Channel3",
+                "source": {
+                    "source-node": "regiona-acc01_Vlan20",
+                    "source-tp": "Port-Channel3"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regiona-ce01_Vlan120",
+                    "dest-tp": "Port-Channel3"
+                },
+                "link-id": "regiona-acc01_Vlan120,Port-Channel3,regiona-ce01_Vlan120,Port-Channel3",
+                "source": {
+                    "source-node": "regiona-acc01_Vlan120",
+                    "source-tp": "Port-Channel3"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regiona-acc01_Vlan20",
+                    "dest-tp": "Port-Channel3"
+                },
+                "link-id": "regiona-ce01_Vlan20,Port-Channel3,regiona-acc01_Vlan20,Port-Channel3",
+                "source": {
+                    "source-node": "regiona-ce01_Vlan20",
+                    "source-tp": "Port-Channel3"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regiona-acc01_Vlan120",
+                    "dest-tp": "Port-Channel3"
+                },
+                "link-id": "regiona-ce01_Vlan120,Port-Channel3,regiona-acc01_Vlan120,Port-Channel3",
+                "source": {
+                    "source-node": "regiona-ce01_Vlan120",
+                    "source-tp": "Port-Channel3"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regiona-ce02_Vlan20",
+                    "dest-tp": "Port-Channel3"
+                },
+                "link-id": "regiona-acc01_Vlan20,Port-Channel4,regiona-ce02_Vlan20,Port-Channel3",
+                "source": {
+                    "source-node": "regiona-acc01_Vlan20",
+                    "source-tp": "Port-Channel4"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regiona-ce02_Vlan120",
+                    "dest-tp": "Port-Channel3"
+                },
+                "link-id": "regiona-acc01_Vlan120,Port-Channel4,regiona-ce02_Vlan120,Port-Channel3",
+                "source": {
+                    "source-node": "regiona-acc01_Vlan120",
+                    "source-tp": "Port-Channel4"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regiona-acc01_Vlan20",
+                    "dest-tp": "Port-Channel4"
+                },
+                "link-id": "regiona-ce02_Vlan20,Port-Channel3,regiona-acc01_Vlan20,Port-Channel4",
+                "source": {
+                    "source-node": "regiona-ce02_Vlan20",
+                    "source-tp": "Port-Channel3"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regiona-acc01_Vlan120",
+                    "dest-tp": "Port-Channel4"
+                },
+                "link-id": "regiona-ce02_Vlan120,Port-Channel3,regiona-acc01_Vlan120,Port-Channel4",
+                "source": {
+                    "source-node": "regiona-ce02_Vlan120",
+                    "source-tp": "Port-Channel3"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regiona-svr01_enp1s4",
+                    "dest-tp": "enp1s4"
+                },
+                "link-id": "regiona-acc01_Vlan10,Ethernet9,regiona-svr01_enp1s4,enp1s4",
+                "source": {
+                    "source-node": "regiona-acc01_Vlan10",
+                    "source-tp": "Ethernet9"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regiona-acc01_Vlan10",
+                    "dest-tp": "Ethernet9"
+                },
+                "link-id": "regiona-svr01_enp1s4,enp1s4,regiona-acc01_Vlan10,Ethernet9",
+                "source": {
+                    "source-node": "regiona-svr01_enp1s4",
+                    "source-tp": "enp1s4"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regiona-svr01_enp1s5",
+                    "dest-tp": "enp1s5"
+                },
+                "link-id": "regiona-acc01_Vlan110,Ethernet10,regiona-svr01_enp1s5,enp1s5",
+                "source": {
+                    "source-node": "regiona-acc01_Vlan110",
+                    "source-tp": "Ethernet10"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regiona-acc01_Vlan110",
+                    "dest-tp": "Ethernet10"
+                },
+                "link-id": "regiona-svr01_enp1s5,enp1s5,regiona-acc01_Vlan110,Ethernet10",
+                "source": {
+                    "source-node": "regiona-svr01_enp1s5",
+                    "source-tp": "enp1s5"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regiona-svr02_enp1s4",
+                    "dest-tp": "enp1s4"
+                },
+                "link-id": "regiona-acc01_Vlan10,Ethernet11,regiona-svr02_enp1s4,enp1s4",
+                "source": {
+                    "source-node": "regiona-acc01_Vlan10",
+                    "source-tp": "Ethernet11"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regiona-acc01_Vlan10",
+                    "dest-tp": "Ethernet11"
+                },
+                "link-id": "regiona-svr02_enp1s4,enp1s4,regiona-acc01_Vlan10,Ethernet11",
+                "source": {
+                    "source-node": "regiona-svr02_enp1s4",
+                    "source-tp": "enp1s4"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regiona-svr02_enp1s5",
+                    "dest-tp": "enp1s5"
+                },
+                "link-id": "regiona-acc01_Vlan110,Ethernet12,regiona-svr02_enp1s5,enp1s5",
+                "source": {
+                    "source-node": "regiona-acc01_Vlan110",
+                    "source-tp": "Ethernet12"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regiona-acc01_Vlan110",
+                    "dest-tp": "Ethernet12"
+                },
+                "link-id": "regiona-svr02_enp1s5,enp1s5,regiona-acc01_Vlan110,Ethernet12",
+                "source": {
+                    "source-node": "regiona-svr02_enp1s5",
+                    "source-tp": "enp1s5"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regiona-pe02_ge-0/0/3.0",
+                    "dest-tp": "ge-0/0/3.0"
+                },
+                "link-id": "regiona-ce02_Ethernet2,Ethernet2,regiona-pe02_ge-0/0/3.0,ge-0/0/3.0",
+                "source": {
+                    "source-node": "regiona-ce02_Ethernet2",
+                    "source-tp": "Ethernet2"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regiona-ce02_Ethernet2",
+                    "dest-tp": "Ethernet2"
+                },
+                "link-id": "regiona-pe02_ge-0/0/3.0,ge-0/0/3.0,regiona-ce02_Ethernet2,Ethernet2",
+                "source": {
+                    "source-node": "regiona-pe02_ge-0/0/3.0",
+                    "source-tp": "ge-0/0/3.0"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regiona-ce01_Port-Channel1",
+                    "dest-tp": "Port-Channel1"
+                },
+                "link-id": "regiona-ce02_Port-Channel1,Port-Channel1,regiona-ce01_Port-Channel1,Port-Channel1",
+                "source": {
+                    "source-node": "regiona-ce02_Port-Channel1",
+                    "source-tp": "Port-Channel1"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regiona-ce02_Port-Channel1",
+                    "dest-tp": "Port-Channel1"
+                },
+                "link-id": "regiona-ce01_Port-Channel1,Port-Channel1,regiona-ce02_Port-Channel1,Port-Channel1",
+                "source": {
+                    "source-node": "regiona-ce01_Port-Channel1",
+                    "source-tp": "Port-Channel1"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regionb-pe02_ge-0/0/0.0",
+                    "dest-tp": "ge-0/0/0.0"
+                },
+                "link-id": "regiona-pe02_ge-0/0/0.0,ge-0/0/0.0,regionb-pe02_ge-0/0/0.0,ge-0/0/0.0",
+                "source": {
+                    "source-node": "regiona-pe02_ge-0/0/0.0",
+                    "source-tp": "ge-0/0/0.0"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regiona-pe02_ge-0/0/0.0",
+                    "dest-tp": "ge-0/0/0.0"
+                },
+                "link-id": "regionb-pe02_ge-0/0/0.0,ge-0/0/0.0,regiona-pe02_ge-0/0/0.0,ge-0/0/0.0",
+                "source": {
+                    "source-node": "regionb-pe02_ge-0/0/0.0",
+                    "source-tp": "ge-0/0/0.0"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regiona-pe01_ge-0/0/1.0",
+                    "dest-tp": "ge-0/0/1.0"
+                },
+                "link-id": "regiona-pe02_ge-0/0/1.0,ge-0/0/1.0,regiona-pe01_ge-0/0/1.0,ge-0/0/1.0",
+                "source": {
+                    "source-node": "regiona-pe02_ge-0/0/1.0",
+                    "source-tp": "ge-0/0/1.0"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regiona-pe02_ge-0/0/1.0",
+                    "dest-tp": "ge-0/0/1.0"
+                },
+                "link-id": "regiona-pe01_ge-0/0/1.0,ge-0/0/1.0,regiona-pe02_ge-0/0/1.0,ge-0/0/1.0",
+                "source": {
+                    "source-node": "regiona-pe01_ge-0/0/1.0",
+                    "source-tp": "ge-0/0/1.0"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regionb-pe01_ge-0/0/0.0",
+                    "dest-tp": "ge-0/0/0.0"
+                },
+                "link-id": "regiona-pe01_ge-0/0/0.0,ge-0/0/0.0,regionb-pe01_ge-0/0/0.0,ge-0/0/0.0",
+                "source": {
+                    "source-node": "regiona-pe01_ge-0/0/0.0",
+                    "source-tp": "ge-0/0/0.0"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regiona-pe01_ge-0/0/0.0",
+                    "dest-tp": "ge-0/0/0.0"
+                },
+                "link-id": "regionb-pe01_ge-0/0/0.0,ge-0/0/0.0,regiona-pe01_ge-0/0/0.0,ge-0/0/0.0",
+                "source": {
+                    "source-node": "regionb-pe01_ge-0/0/0.0",
+                    "source-tp": "ge-0/0/0.0"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regiona-ce01_Ethernet1",
+                    "dest-tp": "Ethernet1"
+                },
+                "link-id": "regiona-pe01_ge-0/0/2.0,ge-0/0/2.0,regiona-ce01_Ethernet1,Ethernet1",
+                "source": {
+                    "source-node": "regiona-pe01_ge-0/0/2.0",
+                    "source-tp": "ge-0/0/2.0"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regiona-pe01_ge-0/0/2.0",
+                    "dest-tp": "ge-0/0/2.0"
+                },
+                "link-id": "regiona-ce01_Ethernet1,Ethernet1,regiona-pe01_ge-0/0/2.0,ge-0/0/2.0",
+                "source": {
+                    "source-node": "regiona-ce01_Ethernet1",
+                    "source-tp": "Ethernet1"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regionb-pe02_ge-0/0/1.0",
+                    "dest-tp": "ge-0/0/1.0"
+                },
+                "link-id": "regionb-pe01_ge-0/0/1.0,ge-0/0/1.0,regionb-pe02_ge-0/0/1.0,ge-0/0/1.0",
+                "source": {
+                    "source-node": "regionb-pe01_ge-0/0/1.0",
+                    "source-tp": "ge-0/0/1.0"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regionb-pe01_ge-0/0/1.0",
+                    "dest-tp": "ge-0/0/1.0"
+                },
+                "link-id": "regionb-pe02_ge-0/0/1.0,ge-0/0/1.0,regionb-pe01_ge-0/0/1.0,ge-0/0/1.0",
+                "source": {
+                    "source-node": "regionb-pe02_ge-0/0/1.0",
+                    "source-tp": "ge-0/0/1.0"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regionb-ce01_ge-0/0/0.0",
+                    "dest-tp": "ge-0/0/0.0"
+                },
+                "link-id": "regionb-pe01_ge-0/0/2.0,ge-0/0/2.0,regionb-ce01_ge-0/0/0.0,ge-0/0/0.0",
+                "source": {
+                    "source-node": "regionb-pe01_ge-0/0/2.0",
+                    "source-tp": "ge-0/0/2.0"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regionb-pe01_ge-0/0/2.0",
+                    "dest-tp": "ge-0/0/2.0"
+                },
+                "link-id": "regionb-ce01_ge-0/0/0.0,ge-0/0/0.0,regionb-pe01_ge-0/0/2.0,ge-0/0/2.0",
+                "source": {
+                    "source-node": "regionb-ce01_ge-0/0/0.0",
+                    "source-tp": "ge-0/0/0.0"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regionb-ce02_ae0.0",
+                    "dest-tp": "ae0.0"
+                },
+                "link-id": "regionb-ce01_ae0.0,ae0.0,regionb-ce02_ae0.0,ae0.0",
+                "source": {
+                    "source-node": "regionb-ce01_ae0.0",
+                    "source-tp": "ae0.0"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regionb-ce01_ae0.0",
+                    "dest-tp": "ae0.0"
+                },
+                "link-id": "regionb-ce02_ae0.0,ae0.0,regionb-ce01_ae0.0,ae0.0",
+                "source": {
+                    "source-node": "regionb-ce02_ae0.0",
+                    "source-tp": "ae0.0"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regionb-acc01_Vlan1010",
+                    "dest-tp": "Port-Channel1"
+                },
+                "link-id": "regionb-ce01_ae1.1010,ae1.1010,regionb-acc01_Vlan1010,Port-Channel1",
+                "source": {
+                    "source-node": "regionb-ce01_ae1.1010",
+                    "source-tp": "ae1.1010"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regionb-acc01_Vlan1110",
+                    "dest-tp": "Port-Channel1"
+                },
+                "link-id": "regionb-ce01_ae1.1110,ae1.1110,regionb-acc01_Vlan1110,Port-Channel1",
+                "source": {
+                    "source-node": "regionb-ce01_ae1.1110",
+                    "source-tp": "ae1.1110"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regionb-ce01_ae1.1010",
+                    "dest-tp": "ae1.1010"
+                },
+                "link-id": "regionb-acc01_Vlan1010,Port-Channel1,regionb-ce01_ae1.1010,ae1.1010",
+                "source": {
+                    "source-node": "regionb-acc01_Vlan1010",
+                    "source-tp": "Port-Channel1"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regionb-ce01_ae1.1110",
+                    "dest-tp": "ae1.1110"
+                },
+                "link-id": "regionb-acc01_Vlan1110,Port-Channel1,regionb-ce01_ae1.1110,ae1.1110",
+                "source": {
+                    "source-node": "regionb-acc01_Vlan1110",
+                    "source-tp": "Port-Channel1"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regionb-acc02_Vlan1020",
+                    "dest-tp": "Port-Channel1"
+                },
+                "link-id": "regionb-ce01_ae2.1020,ae2.1020,regionb-acc02_Vlan1020,Port-Channel1",
+                "source": {
+                    "source-node": "regionb-ce01_ae2.1020",
+                    "source-tp": "ae2.1020"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regionb-acc02_Vlan1120",
+                    "dest-tp": "Port-Channel1"
+                },
+                "link-id": "regionb-ce01_ae2.1120,ae2.1120,regionb-acc02_Vlan1120,Port-Channel1",
+                "source": {
+                    "source-node": "regionb-ce01_ae2.1120",
+                    "source-tp": "ae2.1120"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regionb-ce01_ae2.1020",
+                    "dest-tp": "ae2.1020"
+                },
+                "link-id": "regionb-acc02_Vlan1020,Port-Channel1,regionb-ce01_ae2.1020,ae2.1020",
+                "source": {
+                    "source-node": "regionb-acc02_Vlan1020",
+                    "source-tp": "Port-Channel1"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regionb-ce01_ae2.1120",
+                    "dest-tp": "ae2.1120"
+                },
+                "link-id": "regionb-acc02_Vlan1120,Port-Channel1,regionb-ce01_ae2.1120,ae2.1120",
+                "source": {
+                    "source-node": "regionb-acc02_Vlan1120",
+                    "source-tp": "Port-Channel1"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regionb-ce02_ae2.1020",
+                    "dest-tp": "ae2.1020"
+                },
+                "link-id": "regionb-acc02_Vlan1020,Port-Channel2,regionb-ce02_ae2.1020,ae2.1020",
+                "source": {
+                    "source-node": "regionb-acc02_Vlan1020",
+                    "source-tp": "Port-Channel2"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regionb-ce02_ae2.1120",
+                    "dest-tp": "ae2.1120"
+                },
+                "link-id": "regionb-acc02_Vlan1120,Port-Channel2,regionb-ce02_ae2.1120,ae2.1120",
+                "source": {
+                    "source-node": "regionb-acc02_Vlan1120",
+                    "source-tp": "Port-Channel2"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regionb-acc02_Vlan1020",
+                    "dest-tp": "Port-Channel2"
+                },
+                "link-id": "regionb-ce02_ae2.1020,ae2.1020,regionb-acc02_Vlan1020,Port-Channel2",
+                "source": {
+                    "source-node": "regionb-ce02_ae2.1020",
+                    "source-tp": "ae2.1020"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regionb-acc02_Vlan1120",
+                    "dest-tp": "Port-Channel2"
+                },
+                "link-id": "regionb-ce02_ae2.1120,ae2.1120,regionb-acc02_Vlan1120,Port-Channel2",
+                "source": {
+                    "source-node": "regionb-ce02_ae2.1120",
+                    "source-tp": "ae2.1120"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regionb-svr02_enp1s4",
+                    "dest-tp": "enp1s4"
+                },
+                "link-id": "regionb-acc02_Vlan1020,Ethernet5,regionb-svr02_enp1s4,enp1s4",
+                "source": {
+                    "source-node": "regionb-acc02_Vlan1020",
+                    "source-tp": "Ethernet5"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regionb-acc02_Vlan1020",
+                    "dest-tp": "Ethernet5"
+                },
+                "link-id": "regionb-svr02_enp1s4,enp1s4,regionb-acc02_Vlan1020,Ethernet5",
+                "source": {
+                    "source-node": "regionb-svr02_enp1s4",
+                    "source-tp": "enp1s4"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regionb-svr02_enp1s5",
+                    "dest-tp": "enp1s5"
+                },
+                "link-id": "regionb-acc02_Vlan1120,Ethernet6,regionb-svr02_enp1s5,enp1s5",
+                "source": {
+                    "source-node": "regionb-acc02_Vlan1120",
+                    "source-tp": "Ethernet6"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regionb-acc02_Vlan1120",
+                    "dest-tp": "Ethernet6"
+                },
+                "link-id": "regionb-svr02_enp1s5,enp1s5,regionb-acc02_Vlan1120,Ethernet6",
+                "source": {
+                    "source-node": "regionb-svr02_enp1s5",
+                    "source-tp": "enp1s5"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regionb-ce02_ae1.1010",
+                    "dest-tp": "ae1.1010"
+                },
+                "link-id": "regionb-acc01_Vlan1010,Port-Channel2,regionb-ce02_ae1.1010,ae1.1010",
+                "source": {
+                    "source-node": "regionb-acc01_Vlan1010",
+                    "source-tp": "Port-Channel2"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regionb-ce02_ae1.1110",
+                    "dest-tp": "ae1.1110"
+                },
+                "link-id": "regionb-acc01_Vlan1110,Port-Channel2,regionb-ce02_ae1.1110,ae1.1110",
+                "source": {
+                    "source-node": "regionb-acc01_Vlan1110",
+                    "source-tp": "Port-Channel2"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regionb-acc01_Vlan1010",
+                    "dest-tp": "Port-Channel2"
+                },
+                "link-id": "regionb-ce02_ae1.1010,ae1.1010,regionb-acc01_Vlan1010,Port-Channel2",
+                "source": {
+                    "source-node": "regionb-ce02_ae1.1010",
+                    "source-tp": "ae1.1010"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regionb-acc01_Vlan1110",
+                    "dest-tp": "Port-Channel2"
+                },
+                "link-id": "regionb-ce02_ae1.1110,ae1.1110,regionb-acc01_Vlan1110,Port-Channel2",
+                "source": {
+                    "source-node": "regionb-ce02_ae1.1110",
+                    "source-tp": "ae1.1110"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regionb-svr01_enp1s4",
+                    "dest-tp": "enp1s4"
+                },
+                "link-id": "regionb-acc01_Vlan1010,Ethernet5,regionb-svr01_enp1s4,enp1s4",
+                "source": {
+                    "source-node": "regionb-acc01_Vlan1010",
+                    "source-tp": "Ethernet5"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regionb-acc01_Vlan1010",
+                    "dest-tp": "Ethernet5"
+                },
+                "link-id": "regionb-svr01_enp1s4,enp1s4,regionb-acc01_Vlan1010,Ethernet5",
+                "source": {
+                    "source-node": "regionb-svr01_enp1s4",
+                    "source-tp": "enp1s4"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regionb-svr01_enp1s5",
+                    "dest-tp": "enp1s5"
+                },
+                "link-id": "regionb-acc01_Vlan1110,Ethernet6,regionb-svr01_enp1s5,enp1s5",
+                "source": {
+                    "source-node": "regionb-acc01_Vlan1110",
+                    "source-tp": "Ethernet6"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regionb-acc01_Vlan1110",
+                    "dest-tp": "Ethernet6"
+                },
+                "link-id": "regionb-svr01_enp1s5,enp1s5,regionb-acc01_Vlan1110,Ethernet6",
+                "source": {
+                    "source-node": "regionb-svr01_enp1s5",
+                    "source-tp": "enp1s5"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regionb-pe02_ge-0/0/3.0",
+                    "dest-tp": "ge-0/0/3.0"
+                },
+                "link-id": "regionb-ce02_ge-0/0/1.0,ge-0/0/1.0,regionb-pe02_ge-0/0/3.0,ge-0/0/3.0",
+                "source": {
+                    "source-node": "regionb-ce02_ge-0/0/1.0",
+                    "source-tp": "ge-0/0/1.0"
+                }
+            },
+            {
+                "destination": {
+                    "dest-node": "regionb-ce02_ge-0/0/1.0",
+                    "dest-tp": "ge-0/0/1.0"
+                },
+                "link-id": "regionb-pe02_ge-0/0/3.0,ge-0/0/3.0,regionb-ce02_ge-0/0/1.0,ge-0/0/1.0",
+                "source": {
+                    "source-node": "regionb-pe02_ge-0/0/3.0",
+                    "source-tp": "ge-0/0/3.0"
+                }
+            }
+        ],
+        "network-id": "layer2",
+        "network-types": {
+            "mddo-topology:l2-network": {}
+        },
+        "node": [
+            {
+                "ietf-network-topology:termination-point": [
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "",
+                            "encapsulation": "dot1q",
+                            "flag": [],
+                            "switchport-mode": "trunk"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regiona-acc01",
+                                "tp-ref": "Ethernet1"
+                            },
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regiona-acc01",
+                                "tp-ref": "Ethernet2"
+                            }
+                        ],
+                        "tp-id": "Port-Channel1"
+                    },
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "",
+                            "encapsulation": "dot1q",
+                            "flag": [],
+                            "switchport-mode": "trunk"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regiona-acc01",
+                                "tp-ref": "Ethernet3"
+                            },
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regiona-acc01",
+                                "tp-ref": "Ethernet4"
+                            }
+                        ],
+                        "tp-id": "Port-Channel2"
+                    },
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "to_RegionA-Svr01_enp1s4",
+                            "encapsulation": "",
+                            "flag": [],
+                            "switchport-mode": "access"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regiona-acc01",
+                                "tp-ref": "Ethernet9"
+                            }
+                        ],
+                        "tp-id": "Ethernet9"
+                    },
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "to_RegionA-Svr02_enp1s4",
+                            "encapsulation": "",
+                            "flag": [],
+                            "switchport-mode": "access"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regiona-acc01",
+                                "tp-ref": "Ethernet11"
+                            }
+                        ],
+                        "tp-id": "Ethernet11"
+                    }
+                ],
+                "mddo-topology:l2-node-attributes": {
+                    "flag": [],
+                    "name": "regiona-acc01",
+                    "vlan-id": 10
+                },
+                "node-id": "regiona-acc01_Vlan10",
+                "supporting-node": [
+                    {
+                        "network-ref": "layer1",
+                        "node-ref": "regiona-acc01"
+                    }
+                ]
+            },
+            {
+                "ietf-network-topology:termination-point": [
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "",
+                            "encapsulation": "dot1q",
+                            "flag": [],
+                            "switchport-mode": "trunk"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regiona-ce01",
+                                "tp-ref": "Ethernet5"
+                            },
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regiona-ce01",
+                                "tp-ref": "Ethernet6"
+                            }
+                        ],
+                        "tp-id": "Port-Channel2"
+                    }
+                ],
+                "mddo-topology:l2-node-attributes": {
+                    "flag": [],
+                    "name": "regiona-ce01",
+                    "vlan-id": 10
+                },
+                "node-id": "regiona-ce01_Vlan10",
+                "supporting-node": [
+                    {
+                        "network-ref": "layer1",
+                        "node-ref": "regiona-ce01"
+                    }
+                ]
+            },
+            {
+                "ietf-network-topology:termination-point": [
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "",
+                            "encapsulation": "dot1q",
+                            "flag": [],
+                            "switchport-mode": "trunk"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regiona-acc01",
+                                "tp-ref": "Ethernet1"
+                            },
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regiona-acc01",
+                                "tp-ref": "Ethernet2"
+                            }
+                        ],
+                        "tp-id": "Port-Channel1"
+                    },
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "",
+                            "encapsulation": "dot1q",
+                            "flag": [],
+                            "switchport-mode": "trunk"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regiona-acc01",
+                                "tp-ref": "Ethernet3"
+                            },
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regiona-acc01",
+                                "tp-ref": "Ethernet4"
+                            }
+                        ],
+                        "tp-id": "Port-Channel2"
+                    },
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "to_RegionA-Svr01_enp1s5",
+                            "encapsulation": "",
+                            "flag": [],
+                            "switchport-mode": "access"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regiona-acc01",
+                                "tp-ref": "Ethernet10"
+                            }
+                        ],
+                        "tp-id": "Ethernet10"
+                    },
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "to_RegionA-Svr02_enp1s5",
+                            "encapsulation": "",
+                            "flag": [],
+                            "switchport-mode": "access"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regiona-acc01",
+                                "tp-ref": "Ethernet12"
+                            }
+                        ],
+                        "tp-id": "Ethernet12"
+                    }
+                ],
+                "mddo-topology:l2-node-attributes": {
+                    "flag": [],
+                    "name": "regiona-acc01",
+                    "vlan-id": 110
+                },
+                "node-id": "regiona-acc01_Vlan110",
+                "supporting-node": [
+                    {
+                        "network-ref": "layer1",
+                        "node-ref": "regiona-acc01"
+                    }
+                ]
+            },
+            {
+                "ietf-network-topology:termination-point": [
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "",
+                            "encapsulation": "dot1q",
+                            "flag": [],
+                            "switchport-mode": "trunk"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regiona-ce01",
+                                "tp-ref": "Ethernet5"
+                            },
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regiona-ce01",
+                                "tp-ref": "Ethernet6"
+                            }
+                        ],
+                        "tp-id": "Port-Channel2"
+                    }
+                ],
+                "mddo-topology:l2-node-attributes": {
+                    "flag": [],
+                    "name": "regiona-ce01",
+                    "vlan-id": 110
+                },
+                "node-id": "regiona-ce01_Vlan110",
+                "supporting-node": [
+                    {
+                        "network-ref": "layer1",
+                        "node-ref": "regiona-ce01"
+                    }
+                ]
+            },
+            {
+                "ietf-network-topology:termination-point": [
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "",
+                            "encapsulation": "dot1q",
+                            "flag": [],
+                            "switchport-mode": "trunk"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regiona-ce02",
+                                "tp-ref": "Ethernet5"
+                            },
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regiona-ce02",
+                                "tp-ref": "Ethernet6"
+                            }
+                        ],
+                        "tp-id": "Port-Channel2"
+                    }
+                ],
+                "mddo-topology:l2-node-attributes": {
+                    "flag": [],
+                    "name": "regiona-ce02",
+                    "vlan-id": 10
+                },
+                "node-id": "regiona-ce02_Vlan10",
+                "supporting-node": [
+                    {
+                        "network-ref": "layer1",
+                        "node-ref": "regiona-ce02"
+                    }
+                ]
+            },
+            {
+                "ietf-network-topology:termination-point": [
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "",
+                            "encapsulation": "dot1q",
+                            "flag": [],
+                            "switchport-mode": "trunk"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regiona-ce02",
+                                "tp-ref": "Ethernet5"
+                            },
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regiona-ce02",
+                                "tp-ref": "Ethernet6"
+                            }
+                        ],
+                        "tp-id": "Port-Channel2"
+                    }
+                ],
+                "mddo-topology:l2-node-attributes": {
+                    "flag": [],
+                    "name": "regiona-ce02",
+                    "vlan-id": 110
+                },
+                "node-id": "regiona-ce02_Vlan110",
+                "supporting-node": [
+                    {
+                        "network-ref": "layer1",
+                        "node-ref": "regiona-ce02"
+                    }
+                ]
+            },
+            {
+                "ietf-network-topology:termination-point": [
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "",
+                            "encapsulation": "dot1q",
+                            "flag": [],
+                            "switchport-mode": "trunk"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regiona-acc01",
+                                "tp-ref": "Ethernet5"
+                            },
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regiona-acc01",
+                                "tp-ref": "Ethernet6"
+                            }
+                        ],
+                        "tp-id": "Port-Channel3"
+                    },
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "",
+                            "encapsulation": "dot1q",
+                            "flag": [],
+                            "switchport-mode": "trunk"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regiona-acc01",
+                                "tp-ref": "Ethernet7"
+                            },
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regiona-acc01",
+                                "tp-ref": "Ethernet8"
+                            }
+                        ],
+                        "tp-id": "Port-Channel4"
+                    }
+                ],
+                "mddo-topology:l2-node-attributes": {
+                    "flag": [],
+                    "name": "regiona-acc01",
+                    "vlan-id": 20
+                },
+                "node-id": "regiona-acc01_Vlan20",
+                "supporting-node": [
+                    {
+                        "network-ref": "layer1",
+                        "node-ref": "regiona-acc01"
+                    }
+                ]
+            },
+            {
+                "ietf-network-topology:termination-point": [
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "",
+                            "encapsulation": "dot1q",
+                            "flag": [],
+                            "switchport-mode": "trunk"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regiona-ce01",
+                                "tp-ref": "Ethernet7"
+                            },
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regiona-ce01",
+                                "tp-ref": "Ethernet8"
+                            }
+                        ],
+                        "tp-id": "Port-Channel3"
+                    }
+                ],
+                "mddo-topology:l2-node-attributes": {
+                    "flag": [],
+                    "name": "regiona-ce01",
+                    "vlan-id": 20
+                },
+                "node-id": "regiona-ce01_Vlan20",
+                "supporting-node": [
+                    {
+                        "network-ref": "layer1",
+                        "node-ref": "regiona-ce01"
+                    }
+                ]
+            },
+            {
+                "ietf-network-topology:termination-point": [
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "",
+                            "encapsulation": "dot1q",
+                            "flag": [],
+                            "switchport-mode": "trunk"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regiona-acc01",
+                                "tp-ref": "Ethernet5"
+                            },
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regiona-acc01",
+                                "tp-ref": "Ethernet6"
+                            }
+                        ],
+                        "tp-id": "Port-Channel3"
+                    },
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "",
+                            "encapsulation": "dot1q",
+                            "flag": [],
+                            "switchport-mode": "trunk"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regiona-acc01",
+                                "tp-ref": "Ethernet7"
+                            },
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regiona-acc01",
+                                "tp-ref": "Ethernet8"
+                            }
+                        ],
+                        "tp-id": "Port-Channel4"
+                    }
+                ],
+                "mddo-topology:l2-node-attributes": {
+                    "flag": [],
+                    "name": "regiona-acc01",
+                    "vlan-id": 120
+                },
+                "node-id": "regiona-acc01_Vlan120",
+                "supporting-node": [
+                    {
+                        "network-ref": "layer1",
+                        "node-ref": "regiona-acc01"
+                    }
+                ]
+            },
+            {
+                "ietf-network-topology:termination-point": [
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "",
+                            "encapsulation": "dot1q",
+                            "flag": [],
+                            "switchport-mode": "trunk"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regiona-ce01",
+                                "tp-ref": "Ethernet7"
+                            },
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regiona-ce01",
+                                "tp-ref": "Ethernet8"
+                            }
+                        ],
+                        "tp-id": "Port-Channel3"
+                    }
+                ],
+                "mddo-topology:l2-node-attributes": {
+                    "flag": [],
+                    "name": "regiona-ce01",
+                    "vlan-id": 120
+                },
+                "node-id": "regiona-ce01_Vlan120",
+                "supporting-node": [
+                    {
+                        "network-ref": "layer1",
+                        "node-ref": "regiona-ce01"
+                    }
+                ]
+            },
+            {
+                "ietf-network-topology:termination-point": [
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "",
+                            "encapsulation": "dot1q",
+                            "flag": [],
+                            "switchport-mode": "trunk"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regiona-ce02",
+                                "tp-ref": "Ethernet7"
+                            },
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regiona-ce02",
+                                "tp-ref": "Ethernet8"
+                            }
+                        ],
+                        "tp-id": "Port-Channel3"
+                    }
+                ],
+                "mddo-topology:l2-node-attributes": {
+                    "flag": [],
+                    "name": "regiona-ce02",
+                    "vlan-id": 20
+                },
+                "node-id": "regiona-ce02_Vlan20",
+                "supporting-node": [
+                    {
+                        "network-ref": "layer1",
+                        "node-ref": "regiona-ce02"
+                    }
+                ]
+            },
+            {
+                "ietf-network-topology:termination-point": [
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "",
+                            "encapsulation": "dot1q",
+                            "flag": [],
+                            "switchport-mode": "trunk"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regiona-ce02",
+                                "tp-ref": "Ethernet7"
+                            },
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regiona-ce02",
+                                "tp-ref": "Ethernet8"
+                            }
+                        ],
+                        "tp-id": "Port-Channel3"
+                    }
+                ],
+                "mddo-topology:l2-node-attributes": {
+                    "flag": [],
+                    "name": "regiona-ce02",
+                    "vlan-id": 120
+                },
+                "node-id": "regiona-ce02_Vlan120",
+                "supporting-node": [
+                    {
+                        "network-ref": "layer1",
+                        "node-ref": "regiona-ce02"
+                    }
+                ]
+            },
+            {
+                "ietf-network-topology:termination-point": [
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "",
+                            "encapsulation": "",
+                            "flag": [],
+                            "switchport-mode": "none"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regiona-svr01",
+                                "tp-ref": "enp1s4"
+                            }
+                        ],
+                        "tp-id": "enp1s4"
+                    }
+                ],
+                "mddo-topology:l2-node-attributes": {
+                    "flag": [],
+                    "name": "regiona-svr01",
+                    "vlan-id": 0
+                },
+                "node-id": "regiona-svr01_enp1s4",
+                "supporting-node": [
+                    {
+                        "network-ref": "layer1",
+                        "node-ref": "regiona-svr01"
+                    }
+                ]
+            },
+            {
+                "ietf-network-topology:termination-point": [
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "",
+                            "encapsulation": "",
+                            "flag": [],
+                            "switchport-mode": "none"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regiona-svr01",
+                                "tp-ref": "enp1s5"
+                            }
+                        ],
+                        "tp-id": "enp1s5"
+                    }
+                ],
+                "mddo-topology:l2-node-attributes": {
+                    "flag": [],
+                    "name": "regiona-svr01",
+                    "vlan-id": 0
+                },
+                "node-id": "regiona-svr01_enp1s5",
+                "supporting-node": [
+                    {
+                        "network-ref": "layer1",
+                        "node-ref": "regiona-svr01"
+                    }
+                ]
+            },
+            {
+                "ietf-network-topology:termination-point": [
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "",
+                            "encapsulation": "",
+                            "flag": [],
+                            "switchport-mode": "none"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regiona-svr02",
+                                "tp-ref": "enp1s4"
+                            }
+                        ],
+                        "tp-id": "enp1s4"
+                    }
+                ],
+                "mddo-topology:l2-node-attributes": {
+                    "flag": [],
+                    "name": "regiona-svr02",
+                    "vlan-id": 0
+                },
+                "node-id": "regiona-svr02_enp1s4",
+                "supporting-node": [
+                    {
+                        "network-ref": "layer1",
+                        "node-ref": "regiona-svr02"
+                    }
+                ]
+            },
+            {
+                "ietf-network-topology:termination-point": [
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "",
+                            "encapsulation": "",
+                            "flag": [],
+                            "switchport-mode": "none"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regiona-svr02",
+                                "tp-ref": "enp1s5"
+                            }
+                        ],
+                        "tp-id": "enp1s5"
+                    }
+                ],
+                "mddo-topology:l2-node-attributes": {
+                    "flag": [],
+                    "name": "regiona-svr02",
+                    "vlan-id": 0
+                },
+                "node-id": "regiona-svr02_enp1s5",
+                "supporting-node": [
+                    {
+                        "network-ref": "layer1",
+                        "node-ref": "regiona-svr02"
+                    }
+                ]
+            },
+            {
+                "ietf-network-topology:termination-point": [
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "to_RegionA-PE02_ge-0/0/3",
+                            "encapsulation": "",
+                            "flag": [],
+                            "switchport-mode": "none"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regiona-ce02",
+                                "tp-ref": "Ethernet2"
+                            }
+                        ],
+                        "tp-id": "Ethernet2"
+                    }
+                ],
+                "mddo-topology:l2-node-attributes": {
+                    "flag": [],
+                    "name": "regiona-ce02",
+                    "vlan-id": 0
+                },
+                "node-id": "regiona-ce02_Ethernet2",
+                "supporting-node": [
+                    {
+                        "network-ref": "layer1",
+                        "node-ref": "regiona-ce02"
+                    }
+                ]
+            },
+            {
+                "ietf-network-topology:termination-point": [
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "to_RegionA-CE02_Ethernet2",
+                            "encapsulation": "",
+                            "flag": [],
+                            "switchport-mode": "none"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regiona-pe02",
+                                "tp-ref": "ge-0/0/3"
+                            }
+                        ],
+                        "tp-id": "ge-0/0/3.0"
+                    }
+                ],
+                "mddo-topology:l2-node-attributes": {
+                    "flag": [],
+                    "name": "regiona-pe02",
+                    "vlan-id": 0
+                },
+                "node-id": "regiona-pe02_ge-0/0/3.0",
+                "supporting-node": [
+                    {
+                        "network-ref": "layer1",
+                        "node-ref": "regiona-pe02"
+                    }
+                ]
+            },
+            {
+                "ietf-network-topology:termination-point": [
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "",
+                            "encapsulation": "",
+                            "flag": [],
+                            "switchport-mode": "none"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regiona-ce02",
+                                "tp-ref": "Ethernet3"
+                            },
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regiona-ce02",
+                                "tp-ref": "Ethernet4"
+                            }
+                        ],
+                        "tp-id": "Port-Channel1"
+                    }
+                ],
+                "mddo-topology:l2-node-attributes": {
+                    "flag": [],
+                    "name": "regiona-ce02",
+                    "vlan-id": 0
+                },
+                "node-id": "regiona-ce02_Port-Channel1",
+                "supporting-node": [
+                    {
+                        "network-ref": "layer1",
+                        "node-ref": "regiona-ce02"
+                    }
+                ]
+            },
+            {
+                "ietf-network-topology:termination-point": [
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "",
+                            "encapsulation": "",
+                            "flag": [],
+                            "switchport-mode": "none"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regiona-ce01",
+                                "tp-ref": "Ethernet3"
+                            },
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regiona-ce01",
+                                "tp-ref": "Ethernet4"
+                            }
+                        ],
+                        "tp-id": "Port-Channel1"
+                    }
+                ],
+                "mddo-topology:l2-node-attributes": {
+                    "flag": [],
+                    "name": "regiona-ce01",
+                    "vlan-id": 0
+                },
+                "node-id": "regiona-ce01_Port-Channel1",
+                "supporting-node": [
+                    {
+                        "network-ref": "layer1",
+                        "node-ref": "regiona-ce01"
+                    }
+                ]
+            },
+            {
+                "ietf-network-topology:termination-point": [
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "to_RegionB-PE02_ge-0/0/0",
+                            "encapsulation": "",
+                            "flag": [],
+                            "switchport-mode": "none"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regiona-pe02",
+                                "tp-ref": "ge-0/0/0"
+                            }
+                        ],
+                        "tp-id": "ge-0/0/0.0"
+                    }
+                ],
+                "mddo-topology:l2-node-attributes": {
+                    "flag": [],
+                    "name": "regiona-pe02",
+                    "vlan-id": 0
+                },
+                "node-id": "regiona-pe02_ge-0/0/0.0",
+                "supporting-node": [
+                    {
+                        "network-ref": "layer1",
+                        "node-ref": "regiona-pe02"
+                    }
+                ]
+            },
+            {
+                "ietf-network-topology:termination-point": [
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "to_RegionA-PE02_ge-0/0/0",
+                            "encapsulation": "",
+                            "flag": [],
+                            "switchport-mode": "none"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regionb-pe02",
+                                "tp-ref": "ge-0/0/0"
+                            }
+                        ],
+                        "tp-id": "ge-0/0/0.0"
+                    }
+                ],
+                "mddo-topology:l2-node-attributes": {
+                    "flag": [],
+                    "name": "regionb-pe02",
+                    "vlan-id": 0
+                },
+                "node-id": "regionb-pe02_ge-0/0/0.0",
+                "supporting-node": [
+                    {
+                        "network-ref": "layer1",
+                        "node-ref": "regionb-pe02"
+                    }
+                ]
+            },
+            {
+                "ietf-network-topology:termination-point": [
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "to_RegionA-PE01_ge-0/0/1",
+                            "encapsulation": "",
+                            "flag": [],
+                            "switchport-mode": "none"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regiona-pe02",
+                                "tp-ref": "ge-0/0/1"
+                            }
+                        ],
+                        "tp-id": "ge-0/0/1.0"
+                    }
+                ],
+                "mddo-topology:l2-node-attributes": {
+                    "flag": [],
+                    "name": "regiona-pe02",
+                    "vlan-id": 0
+                },
+                "node-id": "regiona-pe02_ge-0/0/1.0",
+                "supporting-node": [
+                    {
+                        "network-ref": "layer1",
+                        "node-ref": "regiona-pe02"
+                    }
+                ]
+            },
+            {
+                "ietf-network-topology:termination-point": [
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "to_RegionA-PE02_ge-0/0/1",
+                            "encapsulation": "",
+                            "flag": [],
+                            "switchport-mode": "none"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regiona-pe01",
+                                "tp-ref": "ge-0/0/1"
+                            }
+                        ],
+                        "tp-id": "ge-0/0/1.0"
+                    }
+                ],
+                "mddo-topology:l2-node-attributes": {
+                    "flag": [],
+                    "name": "regiona-pe01",
+                    "vlan-id": 0
+                },
+                "node-id": "regiona-pe01_ge-0/0/1.0",
+                "supporting-node": [
+                    {
+                        "network-ref": "layer1",
+                        "node-ref": "regiona-pe01"
+                    }
+                ]
+            },
+            {
+                "ietf-network-topology:termination-point": [
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "to_RegionB-PE01_ge-0/0/0",
+                            "encapsulation": "",
+                            "flag": [],
+                            "switchport-mode": "none"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regiona-pe01",
+                                "tp-ref": "ge-0/0/0"
+                            }
+                        ],
+                        "tp-id": "ge-0/0/0.0"
+                    }
+                ],
+                "mddo-topology:l2-node-attributes": {
+                    "flag": [],
+                    "name": "regiona-pe01",
+                    "vlan-id": 0
+                },
+                "node-id": "regiona-pe01_ge-0/0/0.0",
+                "supporting-node": [
+                    {
+                        "network-ref": "layer1",
+                        "node-ref": "regiona-pe01"
+                    }
+                ]
+            },
+            {
+                "ietf-network-topology:termination-point": [
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "to_RegionA-PE01_ge-0/0/0",
+                            "encapsulation": "",
+                            "flag": [],
+                            "switchport-mode": "none"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regionb-pe01",
+                                "tp-ref": "ge-0/0/0"
+                            }
+                        ],
+                        "tp-id": "ge-0/0/0.0"
+                    }
+                ],
+                "mddo-topology:l2-node-attributes": {
+                    "flag": [],
+                    "name": "regionb-pe01",
+                    "vlan-id": 0
+                },
+                "node-id": "regionb-pe01_ge-0/0/0.0",
+                "supporting-node": [
+                    {
+                        "network-ref": "layer1",
+                        "node-ref": "regionb-pe01"
+                    }
+                ]
+            },
+            {
+                "ietf-network-topology:termination-point": [
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "to_RegionA-CE01_Ethernet1",
+                            "encapsulation": "",
+                            "flag": [],
+                            "switchport-mode": "none"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regiona-pe01",
+                                "tp-ref": "ge-0/0/2"
+                            }
+                        ],
+                        "tp-id": "ge-0/0/2.0"
+                    }
+                ],
+                "mddo-topology:l2-node-attributes": {
+                    "flag": [],
+                    "name": "regiona-pe01",
+                    "vlan-id": 0
+                },
+                "node-id": "regiona-pe01_ge-0/0/2.0",
+                "supporting-node": [
+                    {
+                        "network-ref": "layer1",
+                        "node-ref": "regiona-pe01"
+                    }
+                ]
+            },
+            {
+                "ietf-network-topology:termination-point": [
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "to_RegionA-PE01_ge-0/0/2",
+                            "encapsulation": "",
+                            "flag": [],
+                            "switchport-mode": "none"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regiona-ce01",
+                                "tp-ref": "Ethernet1"
+                            }
+                        ],
+                        "tp-id": "Ethernet1"
+                    }
+                ],
+                "mddo-topology:l2-node-attributes": {
+                    "flag": [],
+                    "name": "regiona-ce01",
+                    "vlan-id": 0
+                },
+                "node-id": "regiona-ce01_Ethernet1",
+                "supporting-node": [
+                    {
+                        "network-ref": "layer1",
+                        "node-ref": "regiona-ce01"
+                    }
+                ]
+            },
+            {
+                "ietf-network-topology:termination-point": [
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "to_RegionB-PE02_ge-0/0/1",
+                            "encapsulation": "",
+                            "flag": [],
+                            "switchport-mode": "none"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regionb-pe01",
+                                "tp-ref": "ge-0/0/1"
+                            }
+                        ],
+                        "tp-id": "ge-0/0/1.0"
+                    }
+                ],
+                "mddo-topology:l2-node-attributes": {
+                    "flag": [],
+                    "name": "regionb-pe01",
+                    "vlan-id": 0
+                },
+                "node-id": "regionb-pe01_ge-0/0/1.0",
+                "supporting-node": [
+                    {
+                        "network-ref": "layer1",
+                        "node-ref": "regionb-pe01"
+                    }
+                ]
+            },
+            {
+                "ietf-network-topology:termination-point": [
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "to_RegionB-PE01_ge-0/0/1",
+                            "encapsulation": "",
+                            "flag": [],
+                            "switchport-mode": "none"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regionb-pe02",
+                                "tp-ref": "ge-0/0/1"
+                            }
+                        ],
+                        "tp-id": "ge-0/0/1.0"
+                    }
+                ],
+                "mddo-topology:l2-node-attributes": {
+                    "flag": [],
+                    "name": "regionb-pe02",
+                    "vlan-id": 0
+                },
+                "node-id": "regionb-pe02_ge-0/0/1.0",
+                "supporting-node": [
+                    {
+                        "network-ref": "layer1",
+                        "node-ref": "regionb-pe02"
+                    }
+                ]
+            },
+            {
+                "ietf-network-topology:termination-point": [
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "to_RegionB-CE01_ge-0/0/0",
+                            "encapsulation": "",
+                            "flag": [],
+                            "switchport-mode": "none"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regionb-pe01",
+                                "tp-ref": "ge-0/0/2"
+                            }
+                        ],
+                        "tp-id": "ge-0/0/2.0"
+                    }
+                ],
+                "mddo-topology:l2-node-attributes": {
+                    "flag": [],
+                    "name": "regionb-pe01",
+                    "vlan-id": 0
+                },
+                "node-id": "regionb-pe01_ge-0/0/2.0",
+                "supporting-node": [
+                    {
+                        "network-ref": "layer1",
+                        "node-ref": "regionb-pe01"
+                    }
+                ]
+            },
+            {
+                "ietf-network-topology:termination-point": [
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "to_RegionB-PE01_ge-0/0/2",
+                            "encapsulation": "",
+                            "flag": [],
+                            "switchport-mode": "none"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regionb-ce01",
+                                "tp-ref": "ge-0/0/0"
+                            }
+                        ],
+                        "tp-id": "ge-0/0/0.0"
+                    }
+                ],
+                "mddo-topology:l2-node-attributes": {
+                    "flag": [],
+                    "name": "regionb-ce01",
+                    "vlan-id": 0
+                },
+                "node-id": "regionb-ce01_ge-0/0/0.0",
+                "supporting-node": [
+                    {
+                        "network-ref": "layer1",
+                        "node-ref": "regionb-ce01"
+                    }
+                ]
+            },
+            {
+                "ietf-network-topology:termination-point": [
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "",
+                            "encapsulation": "",
+                            "flag": [],
+                            "switchport-mode": "none"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regionb-ce01",
+                                "tp-ref": "ge-0/0/2"
+                            },
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regionb-ce01",
+                                "tp-ref": "ge-0/0/3"
+                            }
+                        ],
+                        "tp-id": "ae0.0"
+                    }
+                ],
+                "mddo-topology:l2-node-attributes": {
+                    "flag": [],
+                    "name": "regionb-ce01",
+                    "vlan-id": 0
+                },
+                "node-id": "regionb-ce01_ae0.0",
+                "supporting-node": [
+                    {
+                        "network-ref": "layer1",
+                        "node-ref": "regionb-ce01"
+                    }
+                ]
+            },
+            {
+                "ietf-network-topology:termination-point": [
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "",
+                            "encapsulation": "",
+                            "flag": [],
+                            "switchport-mode": "none"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regionb-ce02",
+                                "tp-ref": "ge-0/0/2"
+                            },
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regionb-ce02",
+                                "tp-ref": "ge-0/0/3"
+                            }
+                        ],
+                        "tp-id": "ae0.0"
+                    }
+                ],
+                "mddo-topology:l2-node-attributes": {
+                    "flag": [],
+                    "name": "regionb-ce02",
+                    "vlan-id": 0
+                },
+                "node-id": "regionb-ce02_ae0.0",
+                "supporting-node": [
+                    {
+                        "network-ref": "layer1",
+                        "node-ref": "regionb-ce02"
+                    }
+                ]
+            },
+            {
+                "ietf-network-topology:termination-point": [
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "",
+                            "encapsulation": "dot1q",
+                            "flag": [],
+                            "switchport-mode": "trunk"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regionb-ce01",
+                                "tp-ref": "ge-0/0/4"
+                            },
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regionb-ce01",
+                                "tp-ref": "ge-0/0/5"
+                            }
+                        ],
+                        "tp-id": "ae1.1010"
+                    }
+                ],
+                "mddo-topology:l2-node-attributes": {
+                    "flag": [],
+                    "name": "regionb-ce01",
+                    "vlan-id": 1010
+                },
+                "node-id": "regionb-ce01_ae1.1010",
+                "supporting-node": [
+                    {
+                        "network-ref": "layer1",
+                        "node-ref": "regionb-ce01"
+                    }
+                ]
+            },
+            {
+                "ietf-network-topology:termination-point": [
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "",
+                            "encapsulation": "dot1q",
+                            "flag": [],
+                            "switchport-mode": "trunk"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regionb-acc01",
+                                "tp-ref": "Ethernet1"
+                            },
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regionb-acc01",
+                                "tp-ref": "Ethernet2"
+                            }
+                        ],
+                        "tp-id": "Port-Channel1"
+                    },
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "",
+                            "encapsulation": "dot1q",
+                            "flag": [],
+                            "switchport-mode": "trunk"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regionb-acc01",
+                                "tp-ref": "Ethernet3"
+                            },
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regionb-acc01",
+                                "tp-ref": "Ethernet4"
+                            }
+                        ],
+                        "tp-id": "Port-Channel2"
+                    },
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "to_RegionB-Svr01_enp1s4",
+                            "encapsulation": "",
+                            "flag": [],
+                            "switchport-mode": "access"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regionb-acc01",
+                                "tp-ref": "Ethernet5"
+                            }
+                        ],
+                        "tp-id": "Ethernet5"
+                    }
+                ],
+                "mddo-topology:l2-node-attributes": {
+                    "flag": [],
+                    "name": "regionb-acc01",
+                    "vlan-id": 1010
+                },
+                "node-id": "regionb-acc01_Vlan1010",
+                "supporting-node": [
+                    {
+                        "network-ref": "layer1",
+                        "node-ref": "regionb-acc01"
+                    }
+                ]
+            },
+            {
+                "ietf-network-topology:termination-point": [
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "",
+                            "encapsulation": "dot1q",
+                            "flag": [],
+                            "switchport-mode": "trunk"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regionb-ce01",
+                                "tp-ref": "ge-0/0/4"
+                            },
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regionb-ce01",
+                                "tp-ref": "ge-0/0/5"
+                            }
+                        ],
+                        "tp-id": "ae1.1110"
+                    }
+                ],
+                "mddo-topology:l2-node-attributes": {
+                    "flag": [],
+                    "name": "regionb-ce01",
+                    "vlan-id": 1110
+                },
+                "node-id": "regionb-ce01_ae1.1110",
+                "supporting-node": [
+                    {
+                        "network-ref": "layer1",
+                        "node-ref": "regionb-ce01"
+                    }
+                ]
+            },
+            {
+                "ietf-network-topology:termination-point": [
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "",
+                            "encapsulation": "dot1q",
+                            "flag": [],
+                            "switchport-mode": "trunk"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regionb-acc01",
+                                "tp-ref": "Ethernet1"
+                            },
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regionb-acc01",
+                                "tp-ref": "Ethernet2"
+                            }
+                        ],
+                        "tp-id": "Port-Channel1"
+                    },
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "",
+                            "encapsulation": "dot1q",
+                            "flag": [],
+                            "switchport-mode": "trunk"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regionb-acc01",
+                                "tp-ref": "Ethernet3"
+                            },
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regionb-acc01",
+                                "tp-ref": "Ethernet4"
+                            }
+                        ],
+                        "tp-id": "Port-Channel2"
+                    },
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "to_RegionB-Svr01_enp1s5",
+                            "encapsulation": "",
+                            "flag": [],
+                            "switchport-mode": "access"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regionb-acc01",
+                                "tp-ref": "Ethernet6"
+                            }
+                        ],
+                        "tp-id": "Ethernet6"
+                    }
+                ],
+                "mddo-topology:l2-node-attributes": {
+                    "flag": [],
+                    "name": "regionb-acc01",
+                    "vlan-id": 1110
+                },
+                "node-id": "regionb-acc01_Vlan1110",
+                "supporting-node": [
+                    {
+                        "network-ref": "layer1",
+                        "node-ref": "regionb-acc01"
+                    }
+                ]
+            },
+            {
+                "ietf-network-topology:termination-point": [
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "",
+                            "encapsulation": "dot1q",
+                            "flag": [],
+                            "switchport-mode": "trunk"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regionb-ce01",
+                                "tp-ref": "ge-0/0/6"
+                            },
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regionb-ce01",
+                                "tp-ref": "ge-0/0/7"
+                            }
+                        ],
+                        "tp-id": "ae2.1020"
+                    }
+                ],
+                "mddo-topology:l2-node-attributes": {
+                    "flag": [],
+                    "name": "regionb-ce01",
+                    "vlan-id": 1020
+                },
+                "node-id": "regionb-ce01_ae2.1020",
+                "supporting-node": [
+                    {
+                        "network-ref": "layer1",
+                        "node-ref": "regionb-ce01"
+                    }
+                ]
+            },
+            {
+                "ietf-network-topology:termination-point": [
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "",
+                            "encapsulation": "dot1q",
+                            "flag": [],
+                            "switchport-mode": "trunk"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regionb-acc02",
+                                "tp-ref": "Ethernet1"
+                            },
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regionb-acc02",
+                                "tp-ref": "Ethernet2"
+                            }
+                        ],
+                        "tp-id": "Port-Channel1"
+                    },
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "",
+                            "encapsulation": "dot1q",
+                            "flag": [],
+                            "switchport-mode": "trunk"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regionb-acc02",
+                                "tp-ref": "Ethernet3"
+                            },
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regionb-acc02",
+                                "tp-ref": "Ethernet4"
+                            }
+                        ],
+                        "tp-id": "Port-Channel2"
+                    },
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "to_RegionB-Svr02_enp1s4",
+                            "encapsulation": "",
+                            "flag": [],
+                            "switchport-mode": "access"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regionb-acc02",
+                                "tp-ref": "Ethernet5"
+                            }
+                        ],
+                        "tp-id": "Ethernet5"
+                    }
+                ],
+                "mddo-topology:l2-node-attributes": {
+                    "flag": [],
+                    "name": "regionb-acc02",
+                    "vlan-id": 1020
+                },
+                "node-id": "regionb-acc02_Vlan1020",
+                "supporting-node": [
+                    {
+                        "network-ref": "layer1",
+                        "node-ref": "regionb-acc02"
+                    }
+                ]
+            },
+            {
+                "ietf-network-topology:termination-point": [
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "",
+                            "encapsulation": "dot1q",
+                            "flag": [],
+                            "switchport-mode": "trunk"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regionb-ce01",
+                                "tp-ref": "ge-0/0/6"
+                            },
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regionb-ce01",
+                                "tp-ref": "ge-0/0/7"
+                            }
+                        ],
+                        "tp-id": "ae2.1120"
+                    }
+                ],
+                "mddo-topology:l2-node-attributes": {
+                    "flag": [],
+                    "name": "regionb-ce01",
+                    "vlan-id": 1120
+                },
+                "node-id": "regionb-ce01_ae2.1120",
+                "supporting-node": [
+                    {
+                        "network-ref": "layer1",
+                        "node-ref": "regionb-ce01"
+                    }
+                ]
+            },
+            {
+                "ietf-network-topology:termination-point": [
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "",
+                            "encapsulation": "dot1q",
+                            "flag": [],
+                            "switchport-mode": "trunk"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regionb-acc02",
+                                "tp-ref": "Ethernet1"
+                            },
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regionb-acc02",
+                                "tp-ref": "Ethernet2"
+                            }
+                        ],
+                        "tp-id": "Port-Channel1"
+                    },
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "",
+                            "encapsulation": "dot1q",
+                            "flag": [],
+                            "switchport-mode": "trunk"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regionb-acc02",
+                                "tp-ref": "Ethernet3"
+                            },
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regionb-acc02",
+                                "tp-ref": "Ethernet4"
+                            }
+                        ],
+                        "tp-id": "Port-Channel2"
+                    },
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "to_RegionB-Svr02_enp1s5",
+                            "encapsulation": "",
+                            "flag": [],
+                            "switchport-mode": "access"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regionb-acc02",
+                                "tp-ref": "Ethernet6"
+                            }
+                        ],
+                        "tp-id": "Ethernet6"
+                    }
+                ],
+                "mddo-topology:l2-node-attributes": {
+                    "flag": [],
+                    "name": "regionb-acc02",
+                    "vlan-id": 1120
+                },
+                "node-id": "regionb-acc02_Vlan1120",
+                "supporting-node": [
+                    {
+                        "network-ref": "layer1",
+                        "node-ref": "regionb-acc02"
+                    }
+                ]
+            },
+            {
+                "ietf-network-topology:termination-point": [
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "",
+                            "encapsulation": "dot1q",
+                            "flag": [],
+                            "switchport-mode": "trunk"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regionb-ce02",
+                                "tp-ref": "ge-0/0/6"
+                            },
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regionb-ce02",
+                                "tp-ref": "ge-0/0/7"
+                            }
+                        ],
+                        "tp-id": "ae2.1020"
+                    }
+                ],
+                "mddo-topology:l2-node-attributes": {
+                    "flag": [],
+                    "name": "regionb-ce02",
+                    "vlan-id": 1020
+                },
+                "node-id": "regionb-ce02_ae2.1020",
+                "supporting-node": [
+                    {
+                        "network-ref": "layer1",
+                        "node-ref": "regionb-ce02"
+                    }
+                ]
+            },
+            {
+                "ietf-network-topology:termination-point": [
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "",
+                            "encapsulation": "dot1q",
+                            "flag": [],
+                            "switchport-mode": "trunk"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regionb-ce02",
+                                "tp-ref": "ge-0/0/6"
+                            },
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regionb-ce02",
+                                "tp-ref": "ge-0/0/7"
+                            }
+                        ],
+                        "tp-id": "ae2.1120"
+                    }
+                ],
+                "mddo-topology:l2-node-attributes": {
+                    "flag": [],
+                    "name": "regionb-ce02",
+                    "vlan-id": 1120
+                },
+                "node-id": "regionb-ce02_ae2.1120",
+                "supporting-node": [
+                    {
+                        "network-ref": "layer1",
+                        "node-ref": "regionb-ce02"
+                    }
+                ]
+            },
+            {
+                "ietf-network-topology:termination-point": [
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "",
+                            "encapsulation": "",
+                            "flag": [],
+                            "switchport-mode": "none"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regionb-svr02",
+                                "tp-ref": "enp1s4"
+                            }
+                        ],
+                        "tp-id": "enp1s4"
+                    }
+                ],
+                "mddo-topology:l2-node-attributes": {
+                    "flag": [],
+                    "name": "regionb-svr02",
+                    "vlan-id": 0
+                },
+                "node-id": "regionb-svr02_enp1s4",
+                "supporting-node": [
+                    {
+                        "network-ref": "layer1",
+                        "node-ref": "regionb-svr02"
+                    }
+                ]
+            },
+            {
+                "ietf-network-topology:termination-point": [
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "",
+                            "encapsulation": "",
+                            "flag": [],
+                            "switchport-mode": "none"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regionb-svr02",
+                                "tp-ref": "enp1s5"
+                            }
+                        ],
+                        "tp-id": "enp1s5"
+                    }
+                ],
+                "mddo-topology:l2-node-attributes": {
+                    "flag": [],
+                    "name": "regionb-svr02",
+                    "vlan-id": 0
+                },
+                "node-id": "regionb-svr02_enp1s5",
+                "supporting-node": [
+                    {
+                        "network-ref": "layer1",
+                        "node-ref": "regionb-svr02"
+                    }
+                ]
+            },
+            {
+                "ietf-network-topology:termination-point": [
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "",
+                            "encapsulation": "dot1q",
+                            "flag": [],
+                            "switchport-mode": "trunk"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regionb-ce02",
+                                "tp-ref": "ge-0/0/4"
+                            },
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regionb-ce02",
+                                "tp-ref": "ge-0/0/5"
+                            }
+                        ],
+                        "tp-id": "ae1.1010"
+                    }
+                ],
+                "mddo-topology:l2-node-attributes": {
+                    "flag": [],
+                    "name": "regionb-ce02",
+                    "vlan-id": 1010
+                },
+                "node-id": "regionb-ce02_ae1.1010",
+                "supporting-node": [
+                    {
+                        "network-ref": "layer1",
+                        "node-ref": "regionb-ce02"
+                    }
+                ]
+            },
+            {
+                "ietf-network-topology:termination-point": [
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "",
+                            "encapsulation": "dot1q",
+                            "flag": [],
+                            "switchport-mode": "trunk"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regionb-ce02",
+                                "tp-ref": "ge-0/0/4"
+                            },
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regionb-ce02",
+                                "tp-ref": "ge-0/0/5"
+                            }
+                        ],
+                        "tp-id": "ae1.1110"
+                    }
+                ],
+                "mddo-topology:l2-node-attributes": {
+                    "flag": [],
+                    "name": "regionb-ce02",
+                    "vlan-id": 1110
+                },
+                "node-id": "regionb-ce02_ae1.1110",
+                "supporting-node": [
+                    {
+                        "network-ref": "layer1",
+                        "node-ref": "regionb-ce02"
+                    }
+                ]
+            },
+            {
+                "ietf-network-topology:termination-point": [
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "",
+                            "encapsulation": "",
+                            "flag": [],
+                            "switchport-mode": "none"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regionb-svr01",
+                                "tp-ref": "enp1s4"
+                            }
+                        ],
+                        "tp-id": "enp1s4"
+                    }
+                ],
+                "mddo-topology:l2-node-attributes": {
+                    "flag": [],
+                    "name": "regionb-svr01",
+                    "vlan-id": 0
+                },
+                "node-id": "regionb-svr01_enp1s4",
+                "supporting-node": [
+                    {
+                        "network-ref": "layer1",
+                        "node-ref": "regionb-svr01"
+                    }
+                ]
+            },
+            {
+                "ietf-network-topology:termination-point": [
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "",
+                            "encapsulation": "",
+                            "flag": [],
+                            "switchport-mode": "none"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regionb-svr01",
+                                "tp-ref": "enp1s5"
+                            }
+                        ],
+                        "tp-id": "enp1s5"
+                    }
+                ],
+                "mddo-topology:l2-node-attributes": {
+                    "flag": [],
+                    "name": "regionb-svr01",
+                    "vlan-id": 0
+                },
+                "node-id": "regionb-svr01_enp1s5",
+                "supporting-node": [
+                    {
+                        "network-ref": "layer1",
+                        "node-ref": "regionb-svr01"
+                    }
+                ]
+            },
+            {
+                "ietf-network-topology:termination-point": [
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "to_RegionB-PE02_ge-0/0/3",
+                            "encapsulation": "",
+                            "flag": [],
+                            "switchport-mode": "none"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regionb-ce02",
+                                "tp-ref": "ge-0/0/1"
+                            }
+                        ],
+                        "tp-id": "ge-0/0/1.0"
+                    }
+                ],
+                "mddo-topology:l2-node-attributes": {
+                    "flag": [],
+                    "name": "regionb-ce02",
+                    "vlan-id": 0
+                },
+                "node-id": "regionb-ce02_ge-0/0/1.0",
+                "supporting-node": [
+                    {
+                        "network-ref": "layer1",
+                        "node-ref": "regionb-ce02"
+                    }
+                ]
+            },
+            {
+                "ietf-network-topology:termination-point": [
+                    {
+                        "mddo-topology:l2-termination-point-attributes": {
+                            "description": "to_RegionB-CE02_ge-0/0/1",
+                            "encapsulation": "",
+                            "flag": [],
+                            "switchport-mode": "none"
+                        },
+                        "supporting-termination-point": [
+                            {
+                                "network-ref": "layer1",
+                                "node-ref": "regionb-pe02",
+                                "tp-ref": "ge-0/0/3"
+                            }
+                        ],
+                        "tp-id": "ge-0/0/3.0"
+                    }
+                ],
+                "mddo-topology:l2-node-attributes": {
+                    "flag": [],
+                    "name": "regionb-pe02",
+                    "vlan-id": 0
+                },
+                "node-id": "regionb-pe02_ge-0/0/3.0",
+                "supporting-node": [
+                    {
+                        "network-ref": "layer1",
+                        "node-ref": "regionb-pe02"
+                    }
+                ]
+            }
+        ],
+        "supporting-network": [
+            {
+                "network-ref": "layer1"
+            }
+        ]
+    }
+}
+
