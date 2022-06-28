@@ -2,121 +2,202 @@ name: mddo-lab
 topology:
     links:
     -   endpoints:
-        - regiona-ce01:Ethernet5
-        - regiona-acc01:Ethernet1
+        - regiona-ce01:Vlan10
+        - Seg_172.30.10.0/24:regiona-ce01_Vlan10
     -   endpoints:
-        - regiona-ce01:Ethernet6
-        - regiona-acc01:Ethernet2
-    -   endpoints:
-        - regiona-ce02:Ethernet5
-        - regiona-acc01:Ethernet3
-    -   endpoints:
-        - regiona-ce02:Ethernet6
-        - regiona-acc01:Ethernet4
-    -   endpoints:
-        - regiona-ce01:Ethernet7
-        - regiona-acc01:Ethernet5
-    -   endpoints:
-        - regiona-ce01:Ethernet8
-        - regiona-acc01:Ethernet6
-    -   endpoints:
-        - regiona-ce02:Ethernet7
-        - regiona-acc01:Ethernet7
-    -   endpoints:
-        - regiona-ce02:Ethernet8
-        - regiona-acc01:Ethernet8
+        - regiona-ce02:Vlan10
+        - Seg_172.30.10.0/24:regiona-ce02_Vlan10
     -   endpoints:
         - regiona-svr01:enp1s4
-        - regiona-acc01:Ethernet9
-    -   endpoints:
-        - regiona-svr01:enp1s5
-        - regiona-acc01:Ethernet10
+        - Seg_172.30.10.0/24:regiona-acc01_Ethernet9
     -   endpoints:
         - regiona-svr02:enp1s4
-        - regiona-acc01:Ethernet11
+        - Seg_172.30.10.0/24:regiona-acc01_Ethernet11
+    -   endpoints:
+        - regiona-ce01_vrf1:Vlan110
+        - Seg_172.30.110.0/24:regiona-ce01_vrf1_Vlan110
+    -   endpoints:
+        - regiona-ce02_vrf1:Vlan110
+        - Seg_172.30.110.0/24:regiona-ce02_vrf1_Vlan110
+    -   endpoints:
+        - regiona-svr01:enp1s5
+        - Seg_172.30.110.0/24:regiona-acc01_Ethernet10
     -   endpoints:
         - regiona-svr02:enp1s5
-        - regiona-acc01:Ethernet12
+        - Seg_172.30.110.0/24:regiona-acc01_Ethernet12
     -   endpoints:
-        - regiona-pe02:ge-0/0/3
+        - regiona-ce01:Vlan20
+        - Seg_172.30.20.0/24:regiona-ce01_Vlan20
+    -   endpoints:
+        - regiona-ce02:Vlan20
+        - Seg_172.30.20.0/24:regiona-ce02_Vlan20
+    -   endpoints:
+        - regiona-ce01_vrf1:Vlan120
+        - Seg_172.30.120.0/24:regiona-ce01_vrf1_Vlan120
+    -   endpoints:
+        - regiona-ce02_vrf1:Vlan120
+        - Seg_172.30.120.0/24:regiona-ce02_vrf1_Vlan120
+    -   endpoints:
         - regiona-ce02:Ethernet2
+        - Seg_172.16.4.0/30:regiona-pe02_ge-0/0/3.0
     -   endpoints:
-        - regiona-ce01:Ethernet3
-        - regiona-ce02:Ethernet3
+        - regiona-pe02:ge-0/0/3.0
+        - Seg_172.16.4.0/30:regiona-ce02_Ethernet2
     -   endpoints:
-        - regiona-ce01:Ethernet4
-        - regiona-ce02:Ethernet4
+        - regiona-ce02:Port-Channel1
+        - Seg_172.16.5.0/30:regiona-ce01_Port-Channel1
     -   endpoints:
-        - regionb-pe02:ge-0/0/0
-        - regiona-pe02:ge-0/0/0
+        - regiona-ce01:Port-Channel1
+        - Seg_172.16.5.0/30:regiona-ce02_Port-Channel1
     -   endpoints:
-        - regiona-pe01:ge-0/0/1
-        - regiona-pe02:ge-0/0/1
+        - regiona-pe02:ge-0/0/0.0
+        - Seg_10.1.1.0/30:regionb-pe02_ge-0/0/0.0
     -   endpoints:
-        - regionb-pe01:ge-0/0/0
-        - regiona-pe01:ge-0/0/0
+        - regionb-pe02:ge-0/0/0.0
+        - Seg_10.1.1.0/30:regiona-pe02_ge-0/0/0.0
+    -   endpoints:
+        - regiona-pe02:ge-0/0/1.0
+        - Seg_172.16.0.0/30:regiona-pe01_ge-0/0/1.0
+    -   endpoints:
+        - regiona-pe01:ge-0/0/1.0
+        - Seg_172.16.0.0/30:regiona-pe02_ge-0/0/1.0
+    -   endpoints:
+        - regiona-pe01:ge-0/0/0.0
+        - Seg_10.1.0.0/30:regionb-pe01_ge-0/0/0.0
+    -   endpoints:
+        - regionb-pe01:ge-0/0/0.0
+        - Seg_10.1.0.0/30:regiona-pe01_ge-0/0/0.0
+    -   endpoints:
+        - regiona-pe01:ge-0/0/2.0
+        - Seg_172.16.1.0/30:regiona-ce01_Ethernet1
     -   endpoints:
         - regiona-ce01:Ethernet1
-        - regiona-pe01:ge-0/0/2
+        - Seg_172.16.1.0/30:regiona-pe01_ge-0/0/2.0
     -   endpoints:
-        - regionb-pe02:ge-0/0/1
-        - regionb-pe01:ge-0/0/1
+        - regionb-pe01:ge-0/0/1.0
+        - Seg_172.17.0.0/30:regionb-pe02_ge-0/0/1.0
     -   endpoints:
-        - regionb-ce01:ge-0/0/0
-        - regionb-pe01:ge-0/0/2
+        - regionb-pe02:ge-0/0/1.0
+        - Seg_172.17.0.0/30:regionb-pe01_ge-0/0/1.0
     -   endpoints:
-        - regionb-ce02:ge-0/0/2
-        - regionb-ce01:ge-0/0/2
+        - regionb-pe01:ge-0/0/2.0
+        - Seg_172.17.1.0/30:regionb-ce01_ge-0/0/0.0
     -   endpoints:
-        - regionb-ce02:ge-0/0/3
-        - regionb-ce01:ge-0/0/3
+        - regionb-ce01:ge-0/0/0.0
+        - Seg_172.17.1.0/30:regionb-pe01_ge-0/0/2.0
     -   endpoints:
-        - regionb-acc01:Ethernet1
-        - regionb-ce01:ge-0/0/4
+        - regionb-ce01:ae0.0
+        - Seg_172.17.5.0/30:regionb-ce02_ae0.0
     -   endpoints:
-        - regionb-acc01:Ethernet2
-        - regionb-ce01:ge-0/0/5
+        - regionb-ce02:ae0.0
+        - Seg_172.17.5.0/30:regionb-ce01_ae0.0
     -   endpoints:
-        - regionb-acc02:Ethernet1
-        - regionb-ce01:ge-0/0/6
+        - regionb-ce01:ae1.1010
+        - Seg_172.31.10.0/24:regionb-acc01_Port-Channel1
     -   endpoints:
-        - regionb-acc02:Ethernet2
-        - regionb-ce01:ge-0/0/7
-    -   endpoints:
-        - regionb-ce02:ge-0/0/6
-        - regionb-acc02:Ethernet3
-    -   endpoints:
-        - regionb-ce02:ge-0/0/7
-        - regionb-acc02:Ethernet4
-    -   endpoints:
-        - regionb-svr02:enp1s4
-        - regionb-acc02:Ethernet5
-    -   endpoints:
-        - regionb-svr02:enp1s5
-        - regionb-acc02:Ethernet6
-    -   endpoints:
-        - regionb-ce02:ge-0/0/4
-        - regionb-acc01:Ethernet3
-    -   endpoints:
-        - regionb-ce02:ge-0/0/5
-        - regionb-acc01:Ethernet4
+        - regionb-ce02:ae1.1010
+        - Seg_172.31.10.0/24:regionb-acc01_Port-Channel2
     -   endpoints:
         - regionb-svr01:enp1s4
-        - regionb-acc01:Ethernet5
+        - Seg_172.31.10.0/24:regionb-acc01_Ethernet5
+    -   endpoints:
+        - regionb-ce01_VR1:ae1.1110
+        - Seg_172.31.110.0/24:regionb-acc01_Port-Channel1
+    -   endpoints:
+        - regionb-ce02_VR1:ae1.1110
+        - Seg_172.31.110.0/24:regionb-acc01_Port-Channel2
     -   endpoints:
         - regionb-svr01:enp1s5
-        - regionb-acc01:Ethernet6
+        - Seg_172.31.110.0/24:regionb-acc01_Ethernet6
     -   endpoints:
-        - regionb-pe02:ge-0/0/3
-        - regionb-ce02:ge-0/0/1
+        - regionb-ce01:ae2.1020
+        - Seg_172.31.20.0/24:regionb-acc02_Port-Channel1
+    -   endpoints:
+        - regionb-ce02:ae2.1020
+        - Seg_172.31.20.0/24:regionb-acc02_Port-Channel2
+    -   endpoints:
+        - regionb-svr02:enp1s4
+        - Seg_172.31.20.0/24:regionb-acc02_Ethernet5
+    -   endpoints:
+        - regionb-ce01_VR1:ae2.1120
+        - Seg_172.31.120.0/24:regionb-acc02_Port-Channel1
+    -   endpoints:
+        - regionb-ce02_VR1:ae2.1120
+        - Seg_172.31.120.0/24:regionb-acc02_Port-Channel2
+    -   endpoints:
+        - regionb-svr02:enp1s5
+        - Seg_172.31.120.0/24:regionb-acc02_Ethernet6
+    -   endpoints:
+        - regionb-ce02:ge-0/0/1.0
+        - Seg_172.17.4.0/30:regionb-pe02_ge-0/0/3.0
+    -   endpoints:
+        - regionb-pe02:ge-0/0/3.0
+        - Seg_172.17.4.0/30:regionb-ce02_ge-0/0/1.0
     nodes:
-        regiona-acc01:
+        Seg_10.1.0.0/30:
+            image: crpd:22.1R1.10
+            kind: crpd
+        Seg_10.1.1.0/30:
+            image: crpd:22.1R1.10
+            kind: crpd
+        Seg_172.16.0.0/30:
+            image: crpd:22.1R1.10
+            kind: crpd
+        Seg_172.16.1.0/30:
+            image: crpd:22.1R1.10
+            kind: crpd
+        Seg_172.16.4.0/30:
+            image: crpd:22.1R1.10
+            kind: crpd
+        Seg_172.16.5.0/30:
+            image: crpd:22.1R1.10
+            kind: crpd
+        Seg_172.17.0.0/30:
+            image: crpd:22.1R1.10
+            kind: crpd
+        Seg_172.17.1.0/30:
+            image: crpd:22.1R1.10
+            kind: crpd
+        Seg_172.17.4.0/30:
+            image: crpd:22.1R1.10
+            kind: crpd
+        Seg_172.17.5.0/30:
+            image: crpd:22.1R1.10
+            kind: crpd
+        Seg_172.30.10.0/24:
+            image: crpd:22.1R1.10
+            kind: crpd
+        Seg_172.30.110.0/24:
+            image: crpd:22.1R1.10
+            kind: crpd
+        Seg_172.30.120.0/24:
+            image: crpd:22.1R1.10
+            kind: crpd
+        Seg_172.30.20.0/24:
+            image: crpd:22.1R1.10
+            kind: crpd
+        Seg_172.31.10.0/24:
+            image: crpd:22.1R1.10
+            kind: crpd
+        Seg_172.31.110.0/24:
+            image: crpd:22.1R1.10
+            kind: crpd
+        Seg_172.31.120.0/24:
+            image: crpd:22.1R1.10
+            kind: crpd
+        Seg_172.31.20.0/24:
             image: crpd:22.1R1.10
             kind: crpd
         regiona-ce01:
             image: crpd:22.1R1.10
             kind: crpd
+        regiona-ce01_vrf1:
+            image: crpd:22.1R1.10
+            kind: crpd
         regiona-ce02:
+            image: crpd:22.1R1.10
+            kind: crpd
+        regiona-ce02_vrf1:
             image: crpd:22.1R1.10
             kind: crpd
         regiona-pe01:
@@ -131,16 +212,16 @@ topology:
         regiona-svr02:
             image: crpd:22.1R1.10
             kind: crpd
-        regionb-acc01:
-            image: crpd:22.1R1.10
-            kind: crpd
-        regionb-acc02:
-            image: crpd:22.1R1.10
-            kind: crpd
         regionb-ce01:
             image: crpd:22.1R1.10
             kind: crpd
+        regionb-ce01_VR1:
+            image: crpd:22.1R1.10
+            kind: crpd
         regionb-ce02:
+            image: crpd:22.1R1.10
+            kind: crpd
+        regionb-ce02_VR1:
             image: crpd:22.1R1.10
             kind: crpd
         regionb-pe01:
