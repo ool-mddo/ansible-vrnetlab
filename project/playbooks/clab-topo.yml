@@ -3,236 +3,218 @@ topology:
     links:
     -   endpoints:
         - regiona-ce01:eth1
-        - Seg_172.30.10.0_24:eth1
+        - br17230100:veth4355
     -   endpoints:
         - regiona-ce02:eth1
-        - Seg_172.30.10.0_24:eth2
+        - br17230100:veth4821
     -   endpoints:
         - regiona-svr01:eth1
-        - Seg_172.30.10.0_24:eth3
+        - br17230100:veth0114
     -   endpoints:
         - regiona-svr02:eth1
-        - Seg_172.30.10.0_24:eth4
+        - br17230100:veth1620
     -   endpoints:
         - regiona-ce01_vrf1:eth1
-        - Seg_172.30.110.0_24:eth1
+        - br172301100:veth2464
     -   endpoints:
         - regiona-ce02_vrf1:eth1
-        - Seg_172.30.110.0_24:eth2
+        - br172301100:veth9729
     -   endpoints:
         - regiona-svr01:eth2
-        - Seg_172.30.110.0_24:eth3
+        - br172301100:veth3970
     -   endpoints:
         - regiona-svr02:eth2
-        - Seg_172.30.110.0_24:eth4
+        - br172301100:veth1236
     -   endpoints:
         - regiona-ce01:eth2
-        - Seg_172.30.20.0_24:eth1
+        - br17230200:veth9458
     -   endpoints:
         - regiona-ce02:eth2
-        - Seg_172.30.20.0_24:eth2
+        - br17230200:veth3539
     -   endpoints:
         - regiona-ce01_vrf1:eth2
-        - Seg_172.30.120.0_24:eth1
+        - br172301200:veth4839
     -   endpoints:
         - regiona-ce02_vrf1:eth2
-        - Seg_172.30.120.0_24:eth2
+        - br172301200:veth7760
     -   endpoints:
         - regiona-ce02:eth3
-        - Seg_172.16.4.0_30:eth1
+        - br1721640:veth8226
     -   endpoints:
         - regiona-pe02:eth1
-        - Seg_172.16.4.0_30:eth2
+        - br1721640:veth8026
     -   endpoints:
         - regiona-ce02:eth4
-        - Seg_172.16.5.0_30:eth1
+        - br1721650:veth6939
     -   endpoints:
         - regiona-ce01:eth3
-        - Seg_172.16.5.0_30:eth2
+        - br1721650:veth1251
     -   endpoints:
         - regiona-pe02:eth2
-        - Seg_10.1.1.0_30:eth1
+        - br10110:veth7753
     -   endpoints:
         - regionb-pe02:eth1
-        - Seg_10.1.1.0_30:eth2
+        - br10110:veth3834
     -   endpoints:
         - regiona-pe02:eth3
-        - Seg_172.16.0.0_30:eth1
+        - br1721600:veth9544
     -   endpoints:
         - regiona-pe01:eth1
-        - Seg_172.16.0.0_30:eth2
+        - br1721600:veth1332
     -   endpoints:
         - regiona-pe01:eth2
-        - Seg_10.1.0.0_30:eth1
+        - br10100:veth6808
     -   endpoints:
         - regionb-pe01:eth1
-        - Seg_10.1.0.0_30:eth2
+        - br10100:veth9986
     -   endpoints:
         - regiona-pe01:eth3
-        - Seg_172.16.1.0_30:eth1
+        - br1721610:veth2881
     -   endpoints:
         - regiona-ce01:eth4
-        - Seg_172.16.1.0_30:eth2
+        - br1721610:veth0762
     -   endpoints:
         - regionb-pe01:eth2
-        - Seg_172.17.0.0_30:eth1
+        - br1721700:veth5292
     -   endpoints:
         - regionb-pe02:eth2
-        - Seg_172.17.0.0_30:eth2
+        - br1721700:veth0861
     -   endpoints:
         - regionb-pe01:eth3
-        - Seg_172.17.1.0_30:eth1
+        - br1721710:veth8780
     -   endpoints:
         - regionb-ce01:eth1
-        - Seg_172.17.1.0_30:eth2
+        - br1721710:veth4036
     -   endpoints:
         - regionb-ce01:eth2
-        - Seg_172.17.5.0_30:eth1
+        - br1721750:veth5127
     -   endpoints:
         - regionb-ce02:eth1
-        - Seg_172.17.5.0_30:eth2
+        - br1721750:veth4530
     -   endpoints:
         - regionb-ce01:eth3
-        - Seg_172.31.10.0_24:eth1
+        - br17231100:veth3965
     -   endpoints:
         - regionb-ce02:eth2
-        - Seg_172.31.10.0_24:eth2
+        - br17231100:veth7735
     -   endpoints:
         - regionb-svr01:eth1
-        - Seg_172.31.10.0_24:eth3
+        - br17231100:veth0856
     -   endpoints:
         - regionb-ce01_VR1:eth1
-        - Seg_172.31.110.0_24:eth1
+        - br172311100:veth5848
     -   endpoints:
         - regionb-ce02_VR1:eth1
-        - Seg_172.31.110.0_24:eth2
+        - br172311100:veth8690
     -   endpoints:
         - regionb-svr01:eth2
-        - Seg_172.31.110.0_24:eth3
+        - br172311100:veth9713
     -   endpoints:
         - regionb-ce01:eth4
-        - Seg_172.31.20.0_24:eth1
+        - br17231200:veth8068
     -   endpoints:
         - regionb-ce02:eth3
-        - Seg_172.31.20.0_24:eth2
+        - br17231200:veth1289
     -   endpoints:
         - regionb-svr02:eth1
-        - Seg_172.31.20.0_24:eth3
+        - br17231200:veth3467
     -   endpoints:
         - regionb-ce01_VR1:eth2
-        - Seg_172.31.120.0_24:eth1
+        - br172311200:veth6610
     -   endpoints:
         - regionb-ce02_VR1:eth2
-        - Seg_172.31.120.0_24:eth2
+        - br172311200:veth8692
     -   endpoints:
         - regionb-svr02:eth2
-        - Seg_172.31.120.0_24:eth3
+        - br172311200:veth7118
     -   endpoints:
         - regionb-ce02:eth4
-        - Seg_172.17.4.0_30:eth1
+        - br1721740:veth1608
     -   endpoints:
         - regionb-pe02:eth3
-        - Seg_172.17.4.0_30:eth2
+        - br1721740:veth0619
     nodes:
-        Seg_10.1.0.0_30:
-            image: crpd:22.1R1.10
-            kind: crpd
-        Seg_10.1.1.0_30:
-            image: crpd:22.1R1.10
-            kind: crpd
-        Seg_172.16.0.0_30:
-            image: crpd:22.1R1.10
-            kind: crpd
-        Seg_172.16.1.0_30:
-            image: crpd:22.1R1.10
-            kind: crpd
-        Seg_172.16.4.0_30:
-            image: crpd:22.1R1.10
-            kind: crpd
-        Seg_172.16.5.0_30:
-            image: crpd:22.1R1.10
-            kind: crpd
-        Seg_172.17.0.0_30:
-            image: crpd:22.1R1.10
-            kind: crpd
-        Seg_172.17.1.0_30:
-            image: crpd:22.1R1.10
-            kind: crpd
-        Seg_172.17.4.0_30:
-            image: crpd:22.1R1.10
-            kind: crpd
-        Seg_172.17.5.0_30:
-            image: crpd:22.1R1.10
-            kind: crpd
-        Seg_172.30.10.0_24:
-            image: crpd:22.1R1.10
-            kind: crpd
-        Seg_172.30.110.0_24:
-            image: crpd:22.1R1.10
-            kind: crpd
-        Seg_172.30.120.0_24:
-            image: crpd:22.1R1.10
-            kind: crpd
-        Seg_172.30.20.0_24:
-            image: crpd:22.1R1.10
-            kind: crpd
-        Seg_172.31.10.0_24:
-            image: crpd:22.1R1.10
-            kind: crpd
-        Seg_172.31.110.0_24:
-            image: crpd:22.1R1.10
-            kind: crpd
-        Seg_172.31.120.0_24:
-            image: crpd:22.1R1.10
-            kind: crpd
-        Seg_172.31.20.0_24:
-            image: crpd:22.1R1.10
-            kind: crpd
+        br10100:
+            kind: bridge
+        br10110:
+            kind: bridge
+        br1721600:
+            kind: bridge
+        br1721610:
+            kind: bridge
+        br1721640:
+            kind: bridge
+        br1721650:
+            kind: bridge
+        br1721700:
+            kind: bridge
+        br1721710:
+            kind: bridge
+        br1721740:
+            kind: bridge
+        br1721750:
+            kind: bridge
+        br17230100:
+            kind: bridge
+        br172301100:
+            kind: bridge
+        br172301200:
+            kind: bridge
+        br17230200:
+            kind: bridge
+        br17231100:
+            kind: bridge
+        br172311100:
+            kind: bridge
+        br172311200:
+            kind: bridge
+        br17231200:
+            kind: bridge
         regiona-ce01:
             image: crpd:22.1R1.10
-            kind: crpd
+            kind: juniper_crpd
         regiona-ce01_vrf1:
             image: crpd:22.1R1.10
-            kind: crpd
+            kind: juniper_crpd
         regiona-ce02:
             image: crpd:22.1R1.10
-            kind: crpd
+            kind: juniper_crpd
         regiona-ce02_vrf1:
             image: crpd:22.1R1.10
-            kind: crpd
+            kind: juniper_crpd
         regiona-pe01:
             image: crpd:22.1R1.10
-            kind: crpd
+            kind: juniper_crpd
         regiona-pe02:
             image: crpd:22.1R1.10
-            kind: crpd
+            kind: juniper_crpd
         regiona-svr01:
             image: crpd:22.1R1.10
-            kind: crpd
+            kind: juniper_crpd
         regiona-svr02:
             image: crpd:22.1R1.10
-            kind: crpd
+            kind: juniper_crpd
         regionb-ce01:
             image: crpd:22.1R1.10
-            kind: crpd
+            kind: juniper_crpd
         regionb-ce01_VR1:
             image: crpd:22.1R1.10
-            kind: crpd
+            kind: juniper_crpd
         regionb-ce02:
             image: crpd:22.1R1.10
-            kind: crpd
+            kind: juniper_crpd
         regionb-ce02_VR1:
             image: crpd:22.1R1.10
-            kind: crpd
+            kind: juniper_crpd
         regionb-pe01:
             image: crpd:22.1R1.10
-            kind: crpd
+            kind: juniper_crpd
         regionb-pe02:
             image: crpd:22.1R1.10
-            kind: crpd
+            kind: juniper_crpd
         regionb-svr01:
             image: crpd:22.1R1.10
-            kind: crpd
+            kind: juniper_crpd
         regionb-svr02:
             image: crpd:22.1R1.10
-            kind: crpd
+            kind: juniper_crpd

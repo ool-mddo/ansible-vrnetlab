@@ -1,10 +1,4 @@
 -   iflist:
-    -   regiona-ce01_Vlan10: eth1
-    -   regiona-ce02_Vlan10: eth2
-    -   regiona-acc01_Ethernet9: eth3
-    -   regiona-acc01_Ethernet11: eth4
-    node: Seg_172.30.10.0/24
--   iflist:
     -   Vlan10: eth1
     -   Vlan20: eth2
     -   Port-Channel1: eth3
@@ -25,12 +19,6 @@
     -   enp1s5: eth2
     node: regiona-svr02
 -   iflist:
-    -   regiona-ce01_vrf1_Vlan110: eth1
-    -   regiona-ce02_vrf1_Vlan110: eth2
-    -   regiona-acc01_Ethernet10: eth3
-    -   regiona-acc01_Ethernet12: eth4
-    node: Seg_172.30.110.0/24
--   iflist:
     -   Vlan110: eth1
     -   Vlan120: eth2
     node: regiona-ce01_vrf1
@@ -39,65 +27,25 @@
     -   Vlan120: eth2
     node: regiona-ce02_vrf1
 -   iflist:
-    -   regiona-ce01_Vlan20: eth1
-    -   regiona-ce02_Vlan20: eth2
-    node: Seg_172.30.20.0/24
--   iflist:
-    -   regiona-ce01_vrf1_Vlan120: eth1
-    -   regiona-ce02_vrf1_Vlan120: eth2
-    node: Seg_172.30.120.0/24
--   iflist:
-    -   regiona-pe02_ge-0/0/3.0: eth1
-    -   regiona-ce02_Ethernet2: eth2
-    node: Seg_172.16.4.0/30
--   iflist:
     -   ge-0/0/3.0: eth1
     -   ge-0/0/0.0: eth2
     -   ge-0/0/1.0: eth3
     node: regiona-pe02
--   iflist:
-    -   regiona-ce01_Port-Channel1: eth1
-    -   regiona-ce02_Port-Channel1: eth2
-    node: Seg_172.16.5.0/30
--   iflist:
-    -   regionb-pe02_ge-0/0/0.0: eth1
-    -   regiona-pe02_ge-0/0/0.0: eth2
-    node: Seg_10.1.1.0/30
 -   iflist:
     -   ge-0/0/0.0: eth1
     -   ge-0/0/1.0: eth2
     -   ge-0/0/3.0: eth3
     node: regionb-pe02
 -   iflist:
-    -   regiona-pe01_ge-0/0/1.0: eth1
-    -   regiona-pe02_ge-0/0/1.0: eth2
-    node: Seg_172.16.0.0/30
--   iflist:
     -   ge-0/0/1.0: eth1
     -   ge-0/0/0.0: eth2
     -   ge-0/0/2.0: eth3
     node: regiona-pe01
 -   iflist:
-    -   regionb-pe01_ge-0/0/0.0: eth1
-    -   regiona-pe01_ge-0/0/0.0: eth2
-    node: Seg_10.1.0.0/30
--   iflist:
     -   ge-0/0/0.0: eth1
     -   ge-0/0/1.0: eth2
     -   ge-0/0/2.0: eth3
     node: regionb-pe01
--   iflist:
-    -   regiona-ce01_Ethernet1: eth1
-    -   regiona-pe01_ge-0/0/2.0: eth2
-    node: Seg_172.16.1.0/30
--   iflist:
-    -   regionb-pe02_ge-0/0/1.0: eth1
-    -   regionb-pe01_ge-0/0/1.0: eth2
-    node: Seg_172.17.0.0/30
--   iflist:
-    -   regionb-ce01_ge-0/0/0.0: eth1
-    -   regionb-pe01_ge-0/0/2.0: eth2
-    node: Seg_172.17.1.0/30
 -   iflist:
     -   ge-0/0/0.0: eth1
     -   ae0.0: eth2
@@ -105,29 +53,15 @@
     -   ae2.1020: eth4
     node: regionb-ce01
 -   iflist:
-    -   regionb-ce02_ae0.0: eth1
-    -   regionb-ce01_ae0.0: eth2
-    node: Seg_172.17.5.0/30
--   iflist:
     -   ae0.0: eth1
     -   ae1.1010: eth2
     -   ae2.1020: eth3
     -   ge-0/0/1.0: eth4
     node: regionb-ce02
 -   iflist:
-    -   regionb-acc01_Port-Channel1: eth1
-    -   regionb-acc01_Port-Channel2: eth2
-    -   regionb-acc01_Ethernet5: eth3
-    node: Seg_172.31.10.0/24
--   iflist:
     -   enp1s4: eth1
     -   enp1s5: eth2
     node: regionb-svr01
--   iflist:
-    -   regionb-acc01_Port-Channel1: eth1
-    -   regionb-acc01_Port-Channel2: eth2
-    -   regionb-acc01_Ethernet6: eth3
-    node: Seg_172.31.110.0/24
 -   iflist:
     -   ae1.1110: eth1
     -   ae2.1120: eth2
@@ -137,20 +71,86 @@
     -   ae2.1120: eth2
     node: regionb-ce02_VR1
 -   iflist:
-    -   regionb-acc02_Port-Channel1: eth1
-    -   regionb-acc02_Port-Channel2: eth2
-    -   regionb-acc02_Ethernet5: eth3
-    node: Seg_172.31.20.0/24
--   iflist:
     -   enp1s4: eth1
     -   enp1s5: eth2
     node: regionb-svr02
 -   iflist:
-    -   regionb-acc02_Port-Channel1: eth1
-    -   regionb-acc02_Port-Channel2: eth2
-    -   regionb-acc02_Ethernet6: eth3
+    -   regiona-ce01_Vlan10: veth4355
+    -   regiona-ce02_Vlan10: veth4821
+    -   regiona-acc01_Ethernet9: veth0114
+    -   regiona-acc01_Ethernet11: veth1620
+    node: Seg_172.30.10.0/24
+-   iflist:
+    -   regiona-ce01_vrf1_Vlan110: veth2464
+    -   regiona-ce02_vrf1_Vlan110: veth9729
+    -   regiona-acc01_Ethernet10: veth3970
+    -   regiona-acc01_Ethernet12: veth1236
+    node: Seg_172.30.110.0/24
+-   iflist:
+    -   regiona-ce01_Vlan20: veth9458
+    -   regiona-ce02_Vlan20: veth3539
+    node: Seg_172.30.20.0/24
+-   iflist:
+    -   regiona-ce01_vrf1_Vlan120: veth4839
+    -   regiona-ce02_vrf1_Vlan120: veth7760
+    node: Seg_172.30.120.0/24
+-   iflist:
+    -   regiona-pe02_ge-0/0/3.0: veth8226
+    -   regiona-ce02_Ethernet2: veth8026
+    node: Seg_172.16.4.0/30
+-   iflist:
+    -   regiona-ce01_Port-Channel1: veth6939
+    -   regiona-ce02_Port-Channel1: veth1251
+    node: Seg_172.16.5.0/30
+-   iflist:
+    -   regionb-pe02_ge-0/0/0.0: veth7753
+    -   regiona-pe02_ge-0/0/0.0: veth3834
+    node: Seg_10.1.1.0/30
+-   iflist:
+    -   regiona-pe01_ge-0/0/1.0: veth9544
+    -   regiona-pe02_ge-0/0/1.0: veth1332
+    node: Seg_172.16.0.0/30
+-   iflist:
+    -   regionb-pe01_ge-0/0/0.0: veth6808
+    -   regiona-pe01_ge-0/0/0.0: veth9986
+    node: Seg_10.1.0.0/30
+-   iflist:
+    -   regiona-ce01_Ethernet1: veth2881
+    -   regiona-pe01_ge-0/0/2.0: veth0762
+    node: Seg_172.16.1.0/30
+-   iflist:
+    -   regionb-pe02_ge-0/0/1.0: veth5292
+    -   regionb-pe01_ge-0/0/1.0: veth0861
+    node: Seg_172.17.0.0/30
+-   iflist:
+    -   regionb-ce01_ge-0/0/0.0: veth8780
+    -   regionb-pe01_ge-0/0/2.0: veth4036
+    node: Seg_172.17.1.0/30
+-   iflist:
+    -   regionb-ce02_ae0.0: veth5127
+    -   regionb-ce01_ae0.0: veth4530
+    node: Seg_172.17.5.0/30
+-   iflist:
+    -   regionb-acc01_Port-Channel1: veth3965
+    -   regionb-acc01_Port-Channel2: veth7735
+    -   regionb-acc01_Ethernet5: veth0856
+    node: Seg_172.31.10.0/24
+-   iflist:
+    -   regionb-acc01_Port-Channel1: veth5848
+    -   regionb-acc01_Port-Channel2: veth8690
+    -   regionb-acc01_Ethernet6: veth9713
+    node: Seg_172.31.110.0/24
+-   iflist:
+    -   regionb-acc02_Port-Channel1: veth8068
+    -   regionb-acc02_Port-Channel2: veth1289
+    -   regionb-acc02_Ethernet5: veth3467
+    node: Seg_172.31.20.0/24
+-   iflist:
+    -   regionb-acc02_Port-Channel1: veth6610
+    -   regionb-acc02_Port-Channel2: veth8692
+    -   regionb-acc02_Ethernet6: veth7118
     node: Seg_172.31.120.0/24
 -   iflist:
-    -   regionb-pe02_ge-0/0/3.0: eth1
-    -   regionb-ce02_ge-0/0/1.0: eth2
+    -   regionb-pe02_ge-0/0/3.0: veth1608
+    -   regionb-ce02_ge-0/0/1.0: veth0619
     node: Seg_172.17.4.0/30
