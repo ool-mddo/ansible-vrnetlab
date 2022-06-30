@@ -3,136 +3,136 @@ topology:
     links:
     -   endpoints:
         - regiona-ce01:eth1
-        - br17230100:veth4355
+        - br17230100:veth5733
     -   endpoints:
         - regiona-ce02:eth1
-        - br17230100:veth4821
+        - br17230100:veth3285
     -   endpoints:
         - regiona-svr01:eth1
-        - br17230100:veth0114
+        - br17230100:veth7075
     -   endpoints:
         - regiona-svr02:eth1
-        - br17230100:veth1620
+        - br17230100:veth9867
     -   endpoints:
         - regiona-ce01_vrf1:eth1
-        - br172301100:veth2464
+        - br172301100:veth7231
     -   endpoints:
         - regiona-ce02_vrf1:eth1
-        - br172301100:veth9729
+        - br172301100:veth5022
     -   endpoints:
         - regiona-svr01:eth2
-        - br172301100:veth3970
+        - br172301100:veth7016
     -   endpoints:
         - regiona-svr02:eth2
-        - br172301100:veth1236
+        - br172301100:veth7942
     -   endpoints:
         - regiona-ce01:eth2
-        - br17230200:veth9458
+        - br17230200:veth6912
     -   endpoints:
         - regiona-ce02:eth2
-        - br17230200:veth3539
+        - br17230200:veth6817
     -   endpoints:
         - regiona-ce01_vrf1:eth2
-        - br172301200:veth4839
+        - br172301200:veth6906
     -   endpoints:
         - regiona-ce02_vrf1:eth2
-        - br172301200:veth7760
+        - br172301200:veth9748
     -   endpoints:
         - regiona-ce02:eth3
-        - br1721640:veth8226
+        - br1721640:veth9411
     -   endpoints:
         - regiona-pe02:eth1
-        - br1721640:veth8026
+        - br1721640:veth1894
     -   endpoints:
         - regiona-ce02:eth4
-        - br1721650:veth6939
+        - br1721650:veth4123
     -   endpoints:
         - regiona-ce01:eth3
-        - br1721650:veth1251
+        - br1721650:veth2099
     -   endpoints:
         - regiona-pe02:eth2
-        - br10110:veth7753
+        - br10110:veth7262
     -   endpoints:
         - regionb-pe02:eth1
-        - br10110:veth3834
+        - br10110:veth6355
     -   endpoints:
         - regiona-pe02:eth3
-        - br1721600:veth9544
+        - br1721600:veth8467
     -   endpoints:
         - regiona-pe01:eth1
-        - br1721600:veth1332
+        - br1721600:veth6105
     -   endpoints:
         - regiona-pe01:eth2
-        - br10100:veth6808
+        - br10100:veth1863
     -   endpoints:
         - regionb-pe01:eth1
-        - br10100:veth9986
+        - br10100:veth5972
     -   endpoints:
         - regiona-pe01:eth3
-        - br1721610:veth2881
+        - br1721610:veth9049
     -   endpoints:
         - regiona-ce01:eth4
-        - br1721610:veth0762
+        - br1721610:veth2500
     -   endpoints:
         - regionb-pe01:eth2
-        - br1721700:veth5292
+        - br1721700:veth6271
     -   endpoints:
         - regionb-pe02:eth2
-        - br1721700:veth0861
+        - br1721700:veth2473
     -   endpoints:
         - regionb-pe01:eth3
-        - br1721710:veth8780
+        - br1721710:veth5703
     -   endpoints:
         - regionb-ce01:eth1
-        - br1721710:veth4036
+        - br1721710:veth5368
     -   endpoints:
         - regionb-ce01:eth2
-        - br1721750:veth5127
+        - br1721750:veth9492
     -   endpoints:
         - regionb-ce02:eth1
-        - br1721750:veth4530
+        - br1721750:veth9187
     -   endpoints:
         - regionb-ce01:eth3
-        - br17231100:veth3965
+        - br17231100:veth2690
     -   endpoints:
         - regionb-ce02:eth2
-        - br17231100:veth7735
+        - br17231100:veth5853
     -   endpoints:
         - regionb-svr01:eth1
-        - br17231100:veth0856
+        - br17231100:veth0179
     -   endpoints:
         - regionb-ce01_VR1:eth1
-        - br172311100:veth5848
+        - br172311100:veth9611
     -   endpoints:
         - regionb-ce02_VR1:eth1
-        - br172311100:veth8690
+        - br172311100:veth4924
     -   endpoints:
         - regionb-svr01:eth2
-        - br172311100:veth9713
+        - br172311100:veth9460
     -   endpoints:
         - regionb-ce01:eth4
-        - br17231200:veth8068
+        - br17231200:veth7280
     -   endpoints:
         - regionb-ce02:eth3
-        - br17231200:veth1289
+        - br17231200:veth4976
     -   endpoints:
         - regionb-svr02:eth1
-        - br17231200:veth3467
+        - br17231200:veth2489
     -   endpoints:
         - regionb-ce01_VR1:eth2
-        - br172311200:veth6610
+        - br172311200:veth5864
     -   endpoints:
         - regionb-ce02_VR1:eth2
-        - br172311200:veth8692
+        - br172311200:veth5887
     -   endpoints:
         - regionb-svr02:eth2
-        - br172311200:veth7118
+        - br172311200:veth8469
     -   endpoints:
         - regionb-ce02:eth4
-        - br1721740:veth1608
+        - br1721740:veth1970
     -   endpoints:
         - regionb-pe02:eth3
-        - br1721740:veth0619
+        - br1721740:veth4373
     nodes:
         br10100:
             kind: bridge
