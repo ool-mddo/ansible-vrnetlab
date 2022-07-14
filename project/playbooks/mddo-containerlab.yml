@@ -16,15 +16,23 @@
       set_fact:
         containerlab: "{{lookup('file', mddo_containerlab_file)  | from_yaml }}"
 
-    - debug:
-        msg: "{{ item.key }}"
+    - copy:
+        src: "{{ item.key }}.conf"
+        dest: "/tmp/{{ item.key }}.conf"
       loop: "{{ containerlab.topology.nodes | dict2items }}"
-      when: '"br" in item.key' 
+      when: '"br" not in item.key and operation == "create"'
+
 
     - command:
         cmd: "ip link add  {{ item.key }} type bridge"
       loop: "{{ containerlab.topology.nodes | dict2items }}"
       when: '"br" in item.key and operation == "create"'
+
+    - command:
+        cmd: "ip link set dev  {{ item.key }} up"
+      loop: "{{ containerlab.topology.nodes | dict2items }}"
+      when: '"br" in item.key and operation == "create"'
+
 
     - name: Creating a file with content
       copy:

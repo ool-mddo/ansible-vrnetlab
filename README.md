@@ -32,6 +32,7 @@ ansible-vrnetlab$ sudo ansible-runner run . -p playbooks/containerlab.yml --cmdl
 cd ansible-vrnetlab
 cd project
 sudo ansible-runner run . -p playbooks/generate_topo_layer3.yml
+sudo ansible-runner run . -p playbooks/generate_config_layer3.yml
 cd ../
 sudo ansible-runner run . -p playbooks/mddo-containerlab.yml --cmdline '-e login_user=ubuntu -e login_pass=ubuntu -e sudo_pass=ubuntu -e operation=create '-vvvv
 ```

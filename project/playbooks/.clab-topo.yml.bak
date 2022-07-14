@@ -1,0 +1,237 @@
+name: mddo-lab
+topology:
+    links:
+    -   endpoints:
+        - regiona-ce01:eth1
+        - br17230100:veth2147
+    -   endpoints:
+        - regiona-ce02:eth1
+        - br17230100:veth0923
+    -   endpoints:
+        - regiona-svr01:eth1
+        - br17230100:veth5297
+    -   endpoints:
+        - regiona-svr02:eth1
+        - br17230100:veth3136
+    -   endpoints:
+        - regiona-ce01_vrf1:eth1
+        - br172301100:veth2480
+    -   endpoints:
+        - regiona-ce02_vrf1:eth1
+        - br172301100:veth8573
+    -   endpoints:
+        - regiona-svr01:eth2
+        - br172301100:veth1418
+    -   endpoints:
+        - regiona-svr02:eth2
+        - br172301100:veth1227
+    -   endpoints:
+        - regiona-ce01:eth2
+        - br17230200:veth7570
+    -   endpoints:
+        - regiona-ce02:eth2
+        - br17230200:veth9217
+    -   endpoints:
+        - regiona-ce01_vrf1:eth2
+        - br172301200:veth5776
+    -   endpoints:
+        - regiona-ce02_vrf1:eth2
+        - br172301200:veth4108
+    -   endpoints:
+        - regiona-ce02:eth3
+        - br1721640:veth3812
+    -   endpoints:
+        - regiona-pe02:eth1
+        - br1721640:veth9059
+    -   endpoints:
+        - regiona-ce02:eth4
+        - br1721650:veth4231
+    -   endpoints:
+        - regiona-ce01:eth3
+        - br1721650:veth4353
+    -   endpoints:
+        - regiona-pe02:eth2
+        - br10110:veth9917
+    -   endpoints:
+        - regionb-pe02:eth1
+        - br10110:veth0513
+    -   endpoints:
+        - regiona-pe02:eth3
+        - br1721600:veth6827
+    -   endpoints:
+        - regiona-pe01:eth1
+        - br1721600:veth2790
+    -   endpoints:
+        - regiona-pe01:eth2
+        - br10100:veth4142
+    -   endpoints:
+        - regionb-pe01:eth1
+        - br10100:veth9970
+    -   endpoints:
+        - regiona-pe01:eth3
+        - br1721610:veth0470
+    -   endpoints:
+        - regiona-ce01:eth4
+        - br1721610:veth2833
+    -   endpoints:
+        - regionb-pe01:eth2
+        - br1721700:veth0334
+    -   endpoints:
+        - regionb-pe02:eth2
+        - br1721700:veth8890
+    -   endpoints:
+        - regionb-pe01:eth3
+        - br1721710:veth3841
+    -   endpoints:
+        - regionb-ce01:eth1
+        - br1721710:veth5698
+    -   endpoints:
+        - regionb-ce01:eth2
+        - br1721750:veth1690
+    -   endpoints:
+        - regionb-ce02:eth1
+        - br1721750:veth8097
+    -   endpoints:
+        - regionb-ce01:eth3
+        - br17231100:veth5821
+    -   endpoints:
+        - regionb-ce02:eth2
+        - br17231100:veth2478
+    -   endpoints:
+        - regionb-svr01:eth1
+        - br17231100:veth0528
+    -   endpoints:
+        - regionb-ce01_VR1:eth1
+        - br172311100:veth6317
+    -   endpoints:
+        - regionb-ce02_VR1:eth1
+        - br172311100:veth6713
+    -   endpoints:
+        - regionb-svr01:eth2
+        - br172311100:veth4595
+    -   endpoints:
+        - regionb-ce01:eth4
+        - br17231200:veth7586
+    -   endpoints:
+        - regionb-ce02:eth3
+        - br17231200:veth0295
+    -   endpoints:
+        - regionb-svr02:eth1
+        - br17231200:veth3367
+    -   endpoints:
+        - regionb-ce01_VR1:eth2
+        - br172311200:veth9043
+    -   endpoints:
+        - regionb-ce02_VR1:eth2
+        - br172311200:veth0215
+    -   endpoints:
+        - regionb-svr02:eth2
+        - br172311200:veth4279
+    -   endpoints:
+        - regionb-ce02:eth4
+        - br1721740:veth1421
+    -   endpoints:
+        - regionb-pe02:eth3
+        - br1721740:veth0757
+    nodes:
+        br10100:
+            kind: bridge
+        br10110:
+            kind: bridge
+        br1721600:
+            kind: bridge
+        br1721610:
+            kind: bridge
+        br1721640:
+            kind: bridge
+        br1721650:
+            kind: bridge
+        br1721700:
+            kind: bridge
+        br1721710:
+            kind: bridge
+        br1721740:
+            kind: bridge
+        br1721750:
+            kind: bridge
+        br17230100:
+            kind: bridge
+        br172301100:
+            kind: bridge
+        br172301200:
+            kind: bridge
+        br17230200:
+            kind: bridge
+        br17231100:
+            kind: bridge
+        br172311100:
+            kind: bridge
+        br172311200:
+            kind: bridge
+        br17231200:
+            kind: bridge
+        regiona-ce01:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+            startup-config: regiona-ce01.conf
+        regiona-ce01_vrf1:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+            startup-config: regiona-ce01_vrf1.conf
+        regiona-ce02:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+            startup-config: regiona-ce02.conf
+        regiona-ce02_vrf1:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+            startup-config: regiona-ce02_vrf1.conf
+        regiona-pe01:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+            startup-config: regiona-pe01.conf
+        regiona-pe02:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+            startup-config: regiona-pe02.conf
+        regiona-svr01:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+            startup-config: regiona-svr01.conf
+        regiona-svr02:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+            startup-config: regiona-svr02.conf
+        regionb-ce01:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+            startup-config: regionb-ce01.conf
+        regionb-ce01_VR1:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+            startup-config: regionb-ce01_VR1.conf
+        regionb-ce02:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+            startup-config: regionb-ce02.conf
+        regionb-ce02_VR1:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+            startup-config: regionb-ce02_VR1.conf
+        regionb-pe01:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+            startup-config: regionb-pe01.conf
+        regionb-pe02:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+            startup-config: regionb-pe02.conf
+        regionb-svr01:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+            startup-config: regionb-svr01.conf
+        regionb-svr02:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+            startup-config: regionb-svr02.conf
+

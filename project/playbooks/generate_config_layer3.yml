@@ -4,6 +4,7 @@
     node_list: []
     node_dict: {}
     convert_file: "./convert-if.yml"
+    interface_ipv4_file: "./interface-ipv4.yml"
 
   tasks:
   - name: Include users.json
@@ -59,6 +60,11 @@
 
   - name: generate convert-if file
     copy:
-      dest: "./interface-ipv4.yml"
+      dest: "{{ interface_ipv4_file }}"
       content: "{{ node_list | to_nice_yaml }}"
 
+  - name: generate config
+    template:
+      src: crpd.j2
+      dest: "{{ item.name }}.conf"
+    loop: "{{ node_list }}"

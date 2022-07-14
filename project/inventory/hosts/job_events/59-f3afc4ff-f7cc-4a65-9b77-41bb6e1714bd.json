@@ -1,0 +1,1 @@
+{"event": "verbose", "uuid": "f3afc4ff-f7cc-4a65-9b77-41bb6e1714bd", "counter": 59, "stdout": "\u001b[1;35m[WARNING]: Skipping key (SUDO_COMMAND) in group (env) as it is not a mapping,\u001b[0m", "start_line": 58, "end_line": 59, "runner_ident": "../inventory/hosts", "created": "2022-07-11T17:33:25.020159"}

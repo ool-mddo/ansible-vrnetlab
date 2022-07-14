@@ -1,0 +1,1 @@
+{"event": "verbose", "uuid": "9ac02664-fbdd-4510-91db-73621f4c7da7", "counter": 251, "stdout": "\u001b[0;34m  File \"/usr/local/lib/python3.8/dist-packages/ansible/inventory/manager.py\", line 290, in parse_source\u001b[0m", "start_line": 250, "end_line": 251, "runner_ident": "../inventory/hosts", "created": "2022-07-11T17:33:25.042112"}

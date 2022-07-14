@@ -1,0 +1,1 @@
+{"event": "verbose", "uuid": "f353bb7d-9b5f-4fc4-a5c0-d9c27ec05792", "counter": 240, "stdout": "\u001b[1;35mread either as JSON nor YAML, these are the errors we got from each: JSON:\u001b[0m", "start_line": 239, "end_line": 240, "runner_ident": "../inventory/hosts", "created": "2022-07-11T17:33:25.040938"}

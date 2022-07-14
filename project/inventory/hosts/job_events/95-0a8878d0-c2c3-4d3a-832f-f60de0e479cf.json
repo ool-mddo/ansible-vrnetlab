@@ -1,0 +1,1 @@
+{"event": "verbose", "uuid": "0a8878d0-c2c3-4d3a-832f-f60de0e479cf", "counter": 95, "stdout": "\u001b[1;35m[WARNING]: Skipping 'end_line' as this is not a valid group definition\u001b[0m", "start_line": 94, "end_line": 95, "runner_ident": "../inventory/hosts", "created": "2022-07-11T17:33:25.023582"}

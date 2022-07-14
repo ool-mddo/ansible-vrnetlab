@@ -1,0 +1,1 @@
+{"event": "verbose", "uuid": "f0a1ebff-5862-4221-a68a-cd47056402f9", "counter": 45, "stdout": "\u001b[1;35m[WARNING]: Skipping key (PATH) in group (env) as it is not a mapping, it is a\u001b[0m", "start_line": 44, "end_line": 45, "runner_ident": "../inventory/hosts", "created": "2022-07-11T17:33:25.018769"}

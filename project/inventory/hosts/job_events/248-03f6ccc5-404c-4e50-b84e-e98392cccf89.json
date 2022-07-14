@@ -1,0 +1,1 @@
+{"event": "verbose", "uuid": "03f6ccc5-404c-4e50-b84e-e98392cccf89", "counter": 248, "stdout": "\u001b[1;35m[WARNING]:  * Failed to parse /home/ubuntu/Desktop/ansible-\u001b[0m", "start_line": 247, "end_line": 248, "runner_ident": "../inventory/hosts", "created": "2022-07-11T17:33:25.041630"}

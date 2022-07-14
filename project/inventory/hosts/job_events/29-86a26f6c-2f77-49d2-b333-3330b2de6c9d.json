@@ -1,0 +1,1 @@
+{"event": "verbose", "uuid": "86a26f6c-2f77-49d2-b333-3330b2de6c9d", "counter": 29, "stdout": "\u001b[1;35m[WARNING]: Skipping key (LANG) in group (env) as it is not a mapping, it is a\u001b[0m", "start_line": 28, "end_line": 29, "runner_ident": "../inventory/hosts", "created": "2022-07-11T17:33:25.017363"}

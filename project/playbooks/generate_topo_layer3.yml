@@ -137,9 +137,11 @@
 
 
     - set_fact:
-        nodes: "{{ nodes | combine( { convert_nodes : cnf_image } ) }}"
+        nodes: '{{ nodes | combine( { convert_nodes : tmp_cnf_image } ) }}'
       vars:
-        convert_nodes: "{{ item['dest-node'] | regex_replace('\/[0-9]*', '' ) | regex_replace('^Seg_', 'br' ) | regex_replace('\\.', '') }}" 
+        convert_nodes: "{{ item['dest-node'] }}" 
+        tmp_cnf_image: "{{ cnf_image | combine( {'startup-config': config_file } ) }}"
+        config_file: "{{ item['dest-node'] }}.conf"
       when: '"Seg" not in item["dest-node"]'
       loop: "{{ inout_info }}"
 

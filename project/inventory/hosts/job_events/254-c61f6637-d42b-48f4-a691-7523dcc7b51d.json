@@ -1,0 +1,1 @@
+{"event": "verbose", "uuid": "c61f6637-d42b-48f4-a691-7523dcc7b51d", "counter": 254, "stdout": "\u001b[0;34m    raise AnsibleParserError(e)\u001b[0m", "start_line": 253, "end_line": 254, "runner_ident": "../inventory/hosts", "created": "2022-07-11T17:33:25.042386"}

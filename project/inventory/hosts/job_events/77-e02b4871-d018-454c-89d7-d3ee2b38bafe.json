@@ -1,0 +1,1 @@
+{"event": "verbose", "uuid": "e02b4871-d018-454c-89d7-d3ee2b38bafe", "counter": 77, "stdout": "\u001b[1;35m[WARNING]: Skipping key (ANSIBLE_CACHE_PLUGIN) in group (env) as it is not a\u001b[0m", "start_line": 76, "end_line": 77, "runner_ident": "../inventory/hosts", "created": "2022-07-11T17:33:25.021722"}
