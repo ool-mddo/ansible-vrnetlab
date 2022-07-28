@@ -8,7 +8,10 @@
     containerlab: []
     convertif: []
     bridge_image:
-      kind: bridge
+      kind: linux
+      image: openvswitch:latest
+      # git clone https://github.com/globocom/docker-openvswitch
+      # cd docker-openvswitch; docker build --tag openvswitch .
     cnf_image:
       kind: 'juniper_crpd'
       #kind: 'crpd'
@@ -24,6 +27,9 @@
       vars:
         query1: 'network[-3]'
 
+    - debug:
+        msg: "{{ topology2 }}"
+       
     - name: "parse layer3 topology phase2"
       set_fact:
         layer3: "{{ topology2['node']  | json_query(query1) }}"
@@ -54,28 +60,8 @@
           {%- endfor -%}
           {%- endfor -%}
           ] 
-      when: "'Seg_' not in key[0]"    
       loop: "{{ if_list  }}"
 
-    - name: generate convert-if(bridge)
-      set_fact: 
-        convertif: "{{ convertif + [ tmpdict ]  }}"
-      vars:
-        tmpdict:
-         node: "{{ key[0] }}"
-         iflist: "{{ tmp }}"
-        key: "{{ item.keys() | list }}"
-        tmp: |-
-          [
-          {%- for list in  item.values() -%}
-          {%- for value in  list -%}
-          {%- set current = list.index(value) -%}
-          { "{{ value }}": "{{ 'veth%04d' | format(range(1, 9999) | random)  }}" } ,
-          {%- endfor -%}
-          {%- endfor -%}
-          ] 
-      when: "'Seg_' in key[0]"    
-      loop: "{{ if_list  }}"
 
     - name: generate convert-if file
       copy:
@@ -99,7 +85,7 @@
           {%-       for ifname in ifnamelist -%}
           {%-         if ( ifname == item['dest-if'] ) -%}
           {%-           for convertifname in key.values() -%}
-          {{ item['dest-node'] | regex_replace('\/[0-9]*', '' ) | regex_replace('^Seg_', 'br' ) | regex_replace('\.','') }}:{{ convertifname }}
+          {{ item['dest-node'] | regex_replace('\/', '_' )}}:{{ convertifname }}
           {%-           endfor -%}
           {%-         endif -%}
           {%-       endfor -%}
@@ -114,7 +100,7 @@
           {%-       for ifname in ifnamelist -%}
           {%-         if ( ifname == item['source-if'] ) -%}
           {%-           for convertifname in key.values() -%}
-          {{ item['source-node'] | regex_replace('\/[0-9]*', '' ) | regex_replace('^Seg_', 'br' ) | regex_replace('\.','') }}:{{ convertifname }}
+          {{ item['source-node'] | regex_replace('\/', '_' ) }}:{{ convertifname }}
           {%-           endfor -%}
           {%-         endif -%}
           {%-       endfor -%}
@@ -148,7 +134,7 @@
     - set_fact:
         nodes: "{{ nodes | combine( { convert_nodes : bridge_image } ) }}"
       vars:
-        convert_nodes: "{{ item['dest-node'] | regex_replace('\/[0-9]*', '' ) | regex_replace('^Seg_', 'br' ) | regex_replace('\\.', '') }}" 
+        convert_nodes: "{{ item['dest-node'] | regex_replace('\/', '_' ) }}" 
       when: '"Seg" in item["dest-node"]'
       loop: "{{ inout_info }}"
 

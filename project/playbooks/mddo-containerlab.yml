@@ -20,18 +20,7 @@
         src: "{{ item.key }}.conf"
         dest: "/tmp/{{ item.key }}.conf"
       loop: "{{ containerlab.topology.nodes | dict2items }}"
-      when: '"br" not in item.key and operation == "create"'
-
-
-    - command:
-        cmd: "ip link add  {{ item.key }} type bridge"
-      loop: "{{ containerlab.topology.nodes | dict2items }}"
-      when: '"br" in item.key and operation == "create"'
-
-    - command:
-        cmd: "ip link set dev  {{ item.key }} up"
-      loop: "{{ containerlab.topology.nodes | dict2items }}"
-      when: '"br" in item.key and operation == "create"'
+      when: '"Seg" not in item.key and operation == "create"'
 
 
     - name: Creating a file with content
@@ -49,8 +38,17 @@
         cmd: "containerlab destroy --topo /tmp/clab-topo.yml"
       when: operation == 'delete'
 
-    - command:
-        cmd: "ip link del  {{ item.key }}"
-      loop: "{{ containerlab.topology.nodes | dict2items }}"
-      when: '"br" in item.key and operation == "delete"'
+
+    - name: ovs container create bridge and assign eth1 & eth2
+      command:
+        cmd: "{{ item }}"
+      vars:
+        exec_commands:
+        - "containerlab exec --topo /tmp/clab-topo.yml  --label clab-node-kind'\'=linux --cmd 'ovs-vsctl add-br lan'"
+        - "containerlab exec --topo /tmp/clab-topo.yml  --label clab-node-kind'\'=linux --cmd 'ovs-vsctl add-port lan eth1'"
+        - "containerlab exec --topo /tmp/clab-topo.yml  --label clab-node-kind'\'=linux --cmd 'ovs-vsctl add-port lan eth2'"
+        - "containerlab exec --topo /tmp/clab-topo.yml  --label clab-node-kind'\'=linux --cmd 'ip link set eth1 promisc on'"
+        - "containerlab exec --topo /tmp/clab-topo.yml  --label clab-node-kind'\'=linux --cmd 'ip link set eth2 promisc on'"
+      when: operation == 'create'
+      loop: "{{ exec_commands }}"
 

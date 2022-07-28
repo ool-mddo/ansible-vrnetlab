@@ -3,189 +3,189 @@ topology:
     links:
     -   endpoints:
         - regiona-ce01:eth1
-        - br17230100:eth1
+        - Seg_172.30.10.0_24:eth1
     -   endpoints:
         - regiona-ce02:eth1
-        - br17230100:eth2
+        - Seg_172.30.10.0_24:eth2
     -   endpoints:
         - regiona-svr01:eth1
-        - br17230100:eth3
+        - Seg_172.30.10.0_24:eth3
     -   endpoints:
         - regiona-svr02:eth1
-        - br17230100:eth4
+        - Seg_172.30.10.0_24:eth4
     -   endpoints:
         - regiona-ce01_vrf1:eth1
-        - br172301100:eth1
+        - Seg_172.30.110.0_24:eth1
     -   endpoints:
         - regiona-ce02_vrf1:eth1
-        - br172301100:eth2
+        - Seg_172.30.110.0_24:eth2
     -   endpoints:
         - regiona-svr01:eth2
-        - br172301100:eth3
+        - Seg_172.30.110.0_24:eth3
     -   endpoints:
         - regiona-svr02:eth2
-        - br172301100:eth4
+        - Seg_172.30.110.0_24:eth4
     -   endpoints:
         - regiona-ce01:eth2
-        - br17230200:eth1
+        - Seg_172.30.20.0_24:eth1
     -   endpoints:
         - regiona-ce02:eth2
-        - br17230200:eth2
+        - Seg_172.30.20.0_24:eth2
     -   endpoints:
         - regiona-ce01_vrf1:eth2
-        - br172301200:eth1
+        - Seg_172.30.120.0_24:eth1
     -   endpoints:
         - regiona-ce02_vrf1:eth2
-        - br172301200:eth2
+        - Seg_172.30.120.0_24:eth2
     -   endpoints:
         - regiona-ce02:eth3
-        - br1721640:eth1
+        - Seg_172.16.4.0_30:eth1
     -   endpoints:
         - regiona-pe02:eth1
-        - br1721640:eth2
+        - Seg_172.16.4.0_30:eth2
     -   endpoints:
         - regiona-ce02:eth4
-        - br1721650:eth1
+        - Seg_172.16.5.0_30:eth1
     -   endpoints:
         - regiona-ce01:eth3
-        - br1721650:eth2
+        - Seg_172.16.5.0_30:eth2
     -   endpoints:
         - regiona-pe02:eth2
-        - br10110:eth1
+        - Seg_10.1.1.0_30:eth1
     -   endpoints:
         - regionb-pe02:eth1
-        - br10110:eth2
+        - Seg_10.1.1.0_30:eth2
     -   endpoints:
         - regiona-pe02:eth3
-        - br1721600:eth1
+        - Seg_172.16.0.0_30:eth1
     -   endpoints:
         - regiona-pe01:eth1
-        - br1721600:eth2
+        - Seg_172.16.0.0_30:eth2
     -   endpoints:
         - regiona-pe01:eth2
-        - br10100:eth1
+        - Seg_10.1.0.0_30:eth1
     -   endpoints:
         - regionb-pe01:eth1
-        - br10100:eth2
+        - Seg_10.1.0.0_30:eth2
     -   endpoints:
         - regiona-pe01:eth3
-        - br1721610:eth1
+        - Seg_172.16.1.0_30:eth1
     -   endpoints:
         - regiona-ce01:eth4
-        - br1721610:eth2
+        - Seg_172.16.1.0_30:eth2
     -   endpoints:
         - regionb-pe01:eth2
-        - br1721700:eth1
+        - Seg_172.17.0.0_30:eth1
     -   endpoints:
         - regionb-pe02:eth2
-        - br1721700:eth2
+        - Seg_172.17.0.0_30:eth2
     -   endpoints:
         - regionb-pe01:eth3
-        - br1721710:eth1
+        - Seg_172.17.1.0_30:eth1
     -   endpoints:
         - regionb-ce01:eth1
-        - br1721710:eth2
+        - Seg_172.17.1.0_30:eth2
     -   endpoints:
         - regionb-ce01:eth2
-        - br1721750:eth1
+        - Seg_172.17.5.0_30:eth1
     -   endpoints:
         - regionb-ce02:eth1
-        - br1721750:eth2
+        - Seg_172.17.5.0_30:eth2
     -   endpoints:
         - regionb-ce01:eth3
-        - br17231100:eth1
+        - Seg_172.31.10.0_24:eth1
     -   endpoints:
         - regionb-ce02:eth2
-        - br17231100:eth2
+        - Seg_172.31.10.0_24:eth2
     -   endpoints:
         - regionb-svr01:eth1
-        - br17231100:eth3
+        - Seg_172.31.10.0_24:eth3
     -   endpoints:
         - regionb-ce01_VR1:eth1
-        - br172311100:eth1
+        - Seg_172.31.110.0_24:eth1
     -   endpoints:
         - regionb-ce02_VR1:eth1
-        - br172311100:eth2
+        - Seg_172.31.110.0_24:eth2
     -   endpoints:
         - regionb-svr01:eth2
-        - br172311100:eth3
+        - Seg_172.31.110.0_24:eth3
     -   endpoints:
         - regionb-ce01:eth4
-        - br17231200:eth1
+        - Seg_172.31.20.0_24:eth1
     -   endpoints:
         - regionb-ce02:eth3
-        - br17231200:eth2
+        - Seg_172.31.20.0_24:eth2
     -   endpoints:
         - regionb-svr02:eth1
-        - br17231200:eth3
+        - Seg_172.31.20.0_24:eth3
     -   endpoints:
         - regionb-ce01_VR1:eth2
-        - br172311200:eth1
+        - Seg_172.31.120.0_24:eth1
     -   endpoints:
         - regionb-ce02_VR1:eth2
-        - br172311200:eth2
+        - Seg_172.31.120.0_24:eth2
     -   endpoints:
         - regionb-svr02:eth2
-        - br172311200:eth3
+        - Seg_172.31.120.0_24:eth3
     -   endpoints:
         - regionb-ce02:eth4
-        - br1721740:eth1
+        - Seg_172.17.4.0_30:eth1
     -   endpoints:
         - regionb-pe02:eth3
-        - br1721740:eth2
+        - Seg_172.17.4.0_30:eth2
     nodes:
-        br10100:
+        Seg_10.1.0.0_30:
             image: openvswitch:latest
             kind: linux
-        br10110:
+        Seg_10.1.1.0_30:
             image: openvswitch:latest
             kind: linux
-        br1721600:
+        Seg_172.16.0.0_30:
             image: openvswitch:latest
             kind: linux
-        br1721610:
+        Seg_172.16.1.0_30:
             image: openvswitch:latest
             kind: linux
-        br1721640:
+        Seg_172.16.4.0_30:
             image: openvswitch:latest
             kind: linux
-        br1721650:
+        Seg_172.16.5.0_30:
             image: openvswitch:latest
             kind: linux
-        br1721700:
+        Seg_172.17.0.0_30:
             image: openvswitch:latest
             kind: linux
-        br1721710:
+        Seg_172.17.1.0_30:
             image: openvswitch:latest
             kind: linux
-        br1721740:
+        Seg_172.17.4.0_30:
             image: openvswitch:latest
             kind: linux
-        br1721750:
+        Seg_172.17.5.0_30:
             image: openvswitch:latest
             kind: linux
-        br17230100:
+        Seg_172.30.10.0_24:
             image: openvswitch:latest
             kind: linux
-        br172301100:
+        Seg_172.30.110.0_24:
             image: openvswitch:latest
             kind: linux
-        br172301200:
+        Seg_172.30.120.0_24:
             image: openvswitch:latest
             kind: linux
-        br17230200:
+        Seg_172.30.20.0_24:
             image: openvswitch:latest
             kind: linux
-        br17231100:
+        Seg_172.31.10.0_24:
             image: openvswitch:latest
             kind: linux
-        br172311100:
+        Seg_172.31.110.0_24:
             image: openvswitch:latest
             kind: linux
-        br172311200:
+        Seg_172.31.120.0_24:
             image: openvswitch:latest
             kind: linux
-        br17231200:
+        Seg_172.31.20.0_24:
             image: openvswitch:latest
             kind: linux
         regiona-ce01:
@@ -252,4 +252,3 @@ topology:
             image: crpd:22.1R1.10
             kind: juniper_crpd
             startup-config: regionb-svr02.conf
-
