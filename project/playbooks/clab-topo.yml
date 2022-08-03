@@ -135,58 +135,58 @@ topology:
         - Seg_172.17.4.0_30:eth2
     nodes:
         Seg_10.1.0.0_30:
-            image: openvswitch:latest
+            image: ghcr.io/ool-mddo/clab-ovs:latest
             kind: linux
         Seg_10.1.1.0_30:
-            image: openvswitch:latest
+            image: ghcr.io/ool-mddo/clab-ovs:latest
             kind: linux
         Seg_172.16.0.0_30:
-            image: openvswitch:latest
+            image: ghcr.io/ool-mddo/clab-ovs:latest
             kind: linux
         Seg_172.16.1.0_30:
-            image: openvswitch:latest
+            image: ghcr.io/ool-mddo/clab-ovs:latest
             kind: linux
         Seg_172.16.4.0_30:
-            image: openvswitch:latest
+            image: ghcr.io/ool-mddo/clab-ovs:latest
             kind: linux
         Seg_172.16.5.0_30:
-            image: openvswitch:latest
+            image: ghcr.io/ool-mddo/clab-ovs:latest
             kind: linux
         Seg_172.17.0.0_30:
-            image: openvswitch:latest
+            image: ghcr.io/ool-mddo/clab-ovs:latest
             kind: linux
         Seg_172.17.1.0_30:
-            image: openvswitch:latest
+            image: ghcr.io/ool-mddo/clab-ovs:latest
             kind: linux
         Seg_172.17.4.0_30:
-            image: openvswitch:latest
+            image: ghcr.io/ool-mddo/clab-ovs:latest
             kind: linux
         Seg_172.17.5.0_30:
-            image: openvswitch:latest
+            image: ghcr.io/ool-mddo/clab-ovs:latest
             kind: linux
         Seg_172.30.10.0_24:
-            image: openvswitch:latest
+            image: ghcr.io/ool-mddo/clab-ovs:latest
             kind: linux
         Seg_172.30.110.0_24:
-            image: openvswitch:latest
+            image: ghcr.io/ool-mddo/clab-ovs:latest
             kind: linux
         Seg_172.30.120.0_24:
-            image: openvswitch:latest
+            image: ghcr.io/ool-mddo/clab-ovs:latest
             kind: linux
         Seg_172.30.20.0_24:
-            image: openvswitch:latest
+            image: ghcr.io/ool-mddo/clab-ovs:latest
             kind: linux
         Seg_172.31.10.0_24:
-            image: openvswitch:latest
+            image: ghcr.io/ool-mddo/clab-ovs:latest
             kind: linux
         Seg_172.31.110.0_24:
-            image: openvswitch:latest
+            image: ghcr.io/ool-mddo/clab-ovs:latest
             kind: linux
         Seg_172.31.120.0_24:
-            image: openvswitch:latest
+            image: ghcr.io/ool-mddo/clab-ovs:latest
             kind: linux
         Seg_172.31.20.0_24:
-            image: openvswitch:latest
+            image: ghcr.io/ool-mddo/clab-ovs:latest
             kind: linux
         regiona-ce01:
             image: crpd:22.1R1.10

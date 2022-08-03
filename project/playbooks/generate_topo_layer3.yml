@@ -9,9 +9,7 @@
     convertif: []
     bridge_image:
       kind: linux
-      image: openvswitch:latest
-      # git clone https://github.com/globocom/docker-openvswitch
-      # cd docker-openvswitch; docker build --tag openvswitch .
+      image: ghcr.io/ool-mddo/clab-ovs:latest
     cnf_image:
       kind: 'juniper_crpd'
       #kind: 'crpd'
