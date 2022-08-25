@@ -1,120 +1,164 @@
 -   iflist:
-    -   ipv4: 172.30.10.1/24
+    -   description: to_Seg_172.30.10.0_24_Ethernet1
+        ipv4: 172.30.10.1/24
         name: eth1
-    -   ipv4: 172.30.20.1/24
+    -   description: to_Seg_172.30.20.0_24_Ethernet1
+        ipv4: 172.30.20.1/24
         name: eth2
-    -   ipv4: 172.16.5.1/30
+    -   description: to_Seg_172.16.5.0_30_Ethernet2
+        ipv4: 172.16.5.1/30
         name: eth3
-    -   ipv4: 172.16.1.2/30
+    -   description: to_Seg_172.16.1.0_30_Ethernet2
+        ipv4: 172.16.1.2/30
         name: eth4
     name: regiona-ce01
 -   iflist:
-    -   ipv4: 172.30.10.2/24
+    -   description: to_Seg_172.30.10.0_24_Ethernet2
+        ipv4: 172.30.10.2/24
         name: eth1
-    -   ipv4: 172.30.20.2/24
+    -   description: to_Seg_172.30.20.0_24_Ethernet2
+        ipv4: 172.30.20.2/24
         name: eth2
-    -   ipv4: 172.16.4.2/30
+    -   description: to_Seg_172.16.4.0_30_Ethernet1
+        ipv4: 172.16.4.2/30
         name: eth3
-    -   ipv4: 172.16.5.2/30
+    -   description: to_Seg_172.16.5.0_30_Ethernet1
+        ipv4: 172.16.5.2/30
         name: eth4
     name: regiona-ce02
 -   iflist:
-    -   ipv4: 172.30.10.100/24
+    -   description: to_Seg_172.30.10.0_24_Ethernet3
+        ipv4: 172.30.10.100/24
         name: eth1
-    -   ipv4: 172.30.110.100/24
+    -   description: to_Seg_172.30.110.0_24_Ethernet3
+        ipv4: 172.30.110.100/24
         name: eth2
     name: regiona-svr01
 -   iflist:
-    -   ipv4: 172.30.10.101/24
+    -   description: to_Seg_172.30.10.0_24_Ethernet4
+        ipv4: 172.30.10.101/24
         name: eth1
-    -   ipv4: 172.30.110.101/24
+    -   description: to_Seg_172.30.110.0_24_Ethernet4
+        ipv4: 172.30.110.101/24
         name: eth2
     name: regiona-svr02
 -   iflist:
-    -   ipv4: 172.30.110.1/24
+    -   description: to_Seg_172.30.110.0_24_Ethernet1
+        ipv4: 172.30.110.1/24
         name: eth1
-    -   ipv4: 172.30.120.1/24
+    -   description: to_Seg_172.30.120.0_24_Ethernet1
+        ipv4: 172.30.120.1/24
         name: eth2
     name: regiona-ce01_vrf1
 -   iflist:
-    -   ipv4: 172.30.110.2/24
+    -   description: to_Seg_172.30.110.0_24_Ethernet2
+        ipv4: 172.30.110.2/24
         name: eth1
-    -   ipv4: 172.30.120.2/24
+    -   description: to_Seg_172.30.120.0_24_Ethernet2
+        ipv4: 172.30.120.2/24
         name: eth2
     name: regiona-ce02_vrf1
 -   iflist:
-    -   ipv4: 172.16.4.1/30
+    -   description: to_Seg_172.16.4.0_30_Ethernet2
+        ipv4: 172.16.4.1/30
         name: eth1
-    -   ipv4: 10.1.1.1/30
+    -   description: to_Seg_10.1.1.0_30_Ethernet1
+        ipv4: 10.1.1.1/30
         name: eth2
-    -   ipv4: 172.16.0.2/30
+    -   description: to_Seg_172.16.0.0_30_Ethernet1
+        ipv4: 172.16.0.2/30
         name: eth3
     name: regiona-pe02
 -   iflist:
-    -   ipv4: 10.1.1.2/30
+    -   description: to_Seg_10.1.1.0_30_Ethernet2
+        ipv4: 10.1.1.2/30
         name: eth1
-    -   ipv4: 172.17.0.2/30
+    -   description: to_Seg_172.17.0.0_30_Ethernet2
+        ipv4: 172.17.0.2/30
         name: eth2
-    -   ipv4: 172.17.4.1/30
+    -   description: to_Seg_172.17.4.0_30_Ethernet2
+        ipv4: 172.17.4.1/30
         name: eth3
     name: regionb-pe02
 -   iflist:
-    -   ipv4: 172.16.0.1/30
+    -   description: to_Seg_172.16.0.0_30_Ethernet2
+        ipv4: 172.16.0.1/30
         name: eth1
-    -   ipv4: 10.1.0.1/30
+    -   description: to_Seg_10.1.0.0_30_Ethernet1
+        ipv4: 10.1.0.1/30
         name: eth2
-    -   ipv4: 172.16.1.1/30
+    -   description: to_Seg_172.16.1.0_30_Ethernet1
+        ipv4: 172.16.1.1/30
         name: eth3
     name: regiona-pe01
 -   iflist:
-    -   ipv4: 10.1.0.2/30
+    -   description: to_Seg_10.1.0.0_30_Ethernet2
+        ipv4: 10.1.0.2/30
         name: eth1
-    -   ipv4: 172.17.0.1/30
+    -   description: to_Seg_172.17.0.0_30_Ethernet1
+        ipv4: 172.17.0.1/30
         name: eth2
-    -   ipv4: 172.17.1.1/30
+    -   description: to_Seg_172.17.1.0_30_Ethernet1
+        ipv4: 172.17.1.1/30
         name: eth3
     name: regionb-pe01
 -   iflist:
-    -   ipv4: 172.17.1.2/30
+    -   description: to_Seg_172.17.1.0_30_Ethernet2
+        ipv4: 172.17.1.2/30
         name: eth1
-    -   ipv4: 172.17.5.1/30
+    -   description: to_Seg_172.17.5.0_30_Ethernet1
+        ipv4: 172.17.5.1/30
         name: eth2
-    -   ipv4: 172.31.10.1/24
+    -   description: to_Seg_172.31.10.0_24_Ethernet1
+        ipv4: 172.31.10.1/24
         name: eth3
-    -   ipv4: 172.31.20.1/24
+    -   description: to_Seg_172.31.20.0_24_Ethernet1
+        ipv4: 172.31.20.1/24
         name: eth4
     name: regionb-ce01
 -   iflist:
-    -   ipv4: 172.17.5.2/30
+    -   description: to_Seg_172.17.5.0_30_Ethernet2
+        ipv4: 172.17.5.2/30
         name: eth1
-    -   ipv4: 172.31.10.2/24
+    -   description: to_Seg_172.31.10.0_24_Ethernet2
+        ipv4: 172.31.10.2/24
         name: eth2
-    -   ipv4: 172.31.20.2/24
+    -   description: to_Seg_172.31.20.0_24_Ethernet2
+        ipv4: 172.31.20.2/24
         name: eth3
-    -   ipv4: 172.17.4.2/30
+    -   description: to_Seg_172.17.4.0_30_Ethernet1
+        ipv4: 172.17.4.2/30
         name: eth4
     name: regionb-ce02
 -   iflist:
-    -   ipv4: 172.31.10.100/24
+    -   description: to_Seg_172.31.10.0_24_Ethernet3
+        ipv4: 172.31.10.100/24
         name: eth1
-    -   ipv4: 172.31.110.100/24
+    -   description: to_Seg_172.31.110.0_24_Ethernet3
+        ipv4: 172.31.110.100/24
         name: eth2
     name: regionb-svr01
 -   iflist:
-    -   ipv4: 172.31.110.1/24
+    -   description: to_Seg_172.31.110.0_24_Ethernet1
+        ipv4: 172.31.110.1/24
         name: eth1
-    -   ipv4: 172.31.120.1/24
+    -   description: to_Seg_172.31.120.0_24_Ethernet1
+        ipv4: 172.31.120.1/24
         name: eth2
     name: regionb-ce01_VR1
 -   iflist:
-    -   ipv4: 172.31.110.2/24
+    -   description: to_Seg_172.31.110.0_24_Ethernet2
+        ipv4: 172.31.110.2/24
         name: eth1
-    -   ipv4: 172.31.120.2/24
+    -   description: to_Seg_172.31.120.0_24_Ethernet2
+        ipv4: 172.31.120.2/24
         name: eth2
     name: regionb-ce02_VR1
 -   iflist:
-    -   ipv4: 172.31.20.100/24
+    -   description: to_Seg_172.31.20.0_24_Ethernet3
+        ipv4: 172.31.20.100/24
         name: eth1
-    -   ipv4: 172.31.120.100/24
+    -   description: to_Seg_172.31.120.0_24_Ethernet3
+        ipv4: 172.31.120.100/24
         name: eth2
     name: regionb-svr02
