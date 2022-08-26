@@ -1,7 +1,7 @@
 ---
 - hosts: localhost
   vars:
-    nodered_url: "http://172.26.0.2:1880"
+    nodered_url: "http://192.168.80.2:1880"
     node_list: []
     node_dict: {}
     #convert_file: "./convert-if.yml"
@@ -46,10 +46,6 @@
       url: "{{ nodered_url }}/description/batfish"
       method: "GET"
     register: result_node
-
-  #- name: "lookup {{ convert_file }}"
-  #  set_fact: 
-  #    convertif: "{{lookup('file', convert_file) | from_yaml }}"
         
   - name: merge inout_info & convert-if
     set_fact:
@@ -82,4 +78,25 @@
       dest: "{{ item.name }}.conf"
     when: '"Seg" not in item.name'
     loop: "{{ node_list }}"
+
+  - name: generate bridge data
+    set_fact:
+      bridgedata: "{{ bridgedata | default([])  + [ data ] }}"
+    vars:
+      data:
+       name: "{{ item.node.clab }}"
+       iflist: >-
+         {%- for dict in item.iflist -%}
+         { 'name': '{{ dict.clab }}', 'description': '{{ dict.ifDescr }}'},
+         {%- endfor -%}
+    when: '"Seg" in item.node.clab'
+    loop: "{{ result_node.json }}"
+         
+
+  - name: generate config
+    template:
+      src: ceos.j2
+      dest: "{{ item.name }}.conf"
+    when: '"Seg" in item.name'
+    loop: "{{ bridgedata }}"
 

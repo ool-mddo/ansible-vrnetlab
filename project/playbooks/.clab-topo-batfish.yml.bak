@@ -1,0 +1,273 @@
+name: mddo-lab
+topology:
+    links:
+    -   endpoints:
+        - regiona-ce01:eth1
+        - Seg_172.30.10.0_24:eth1
+    -   endpoints:
+        - regiona-ce02:eth1
+        - Seg_172.30.10.0_24:eth2
+    -   endpoints:
+        - regiona-svr01:eth1
+        - Seg_172.30.10.0_24:eth3
+    -   endpoints:
+        - regiona-svr02:eth1
+        - Seg_172.30.10.0_24:eth4
+    -   endpoints:
+        - regiona-ce01_vrf1:eth1
+        - Seg_172.30.110.0_24:eth1
+    -   endpoints:
+        - regiona-ce02_vrf1:eth1
+        - Seg_172.30.110.0_24:eth2
+    -   endpoints:
+        - regiona-svr01:eth2
+        - Seg_172.30.110.0_24:eth3
+    -   endpoints:
+        - regiona-svr02:eth2
+        - Seg_172.30.110.0_24:eth4
+    -   endpoints:
+        - regiona-ce01:eth2
+        - Seg_172.30.20.0_24:eth1
+    -   endpoints:
+        - regiona-ce02:eth2
+        - Seg_172.30.20.0_24:eth2
+    -   endpoints:
+        - regiona-ce01_vrf1:eth2
+        - Seg_172.30.120.0_24:eth1
+    -   endpoints:
+        - regiona-ce02_vrf1:eth2
+        - Seg_172.30.120.0_24:eth2
+    -   endpoints:
+        - regiona-ce02:eth3
+        - Seg_172.16.4.0_30:eth1
+    -   endpoints:
+        - regiona-pe02:eth1
+        - Seg_172.16.4.0_30:eth2
+    -   endpoints:
+        - regiona-ce02:eth4
+        - Seg_172.16.5.0_30:eth1
+    -   endpoints:
+        - regiona-ce01:eth3
+        - Seg_172.16.5.0_30:eth2
+    -   endpoints:
+        - regiona-pe02:eth2
+        - Seg_10.1.1.0_30:eth1
+    -   endpoints:
+        - regionb-pe02:eth1
+        - Seg_10.1.1.0_30:eth2
+    -   endpoints:
+        - regiona-pe02:eth3
+        - Seg_172.16.0.0_30:eth1
+    -   endpoints:
+        - regiona-pe01:eth1
+        - Seg_172.16.0.0_30:eth2
+    -   endpoints:
+        - regiona-pe01:eth2
+        - Seg_10.1.0.0_30:eth1
+    -   endpoints:
+        - regionb-pe01:eth1
+        - Seg_10.1.0.0_30:eth2
+    -   endpoints:
+        - regiona-pe01:eth3
+        - Seg_172.16.1.0_30:eth1
+    -   endpoints:
+        - regiona-ce01:eth4
+        - Seg_172.16.1.0_30:eth2
+    -   endpoints:
+        - regionb-pe01:eth2
+        - Seg_172.17.0.0_30:eth1
+    -   endpoints:
+        - regionb-pe02:eth2
+        - Seg_172.17.0.0_30:eth2
+    -   endpoints:
+        - regionb-pe01:eth3
+        - Seg_172.17.1.0_30:eth1
+    -   endpoints:
+        - regionb-ce01:eth1
+        - Seg_172.17.1.0_30:eth2
+    -   endpoints:
+        - regionb-ce01:eth2
+        - Seg_172.17.5.0_30:eth1
+    -   endpoints:
+        - regionb-ce02:eth1
+        - Seg_172.17.5.0_30:eth2
+    -   endpoints:
+        - regionb-ce01:eth3
+        - Seg_172.31.10.0_24:eth1
+    -   endpoints:
+        - regionb-ce02:eth2
+        - Seg_172.31.10.0_24:eth2
+    -   endpoints:
+        - regionb-svr01:eth1
+        - Seg_172.31.10.0_24:eth3
+    -   endpoints:
+        - regionb-ce01_VR1:eth1
+        - Seg_172.31.110.0_24:eth1
+    -   endpoints:
+        - regionb-ce02_VR1:eth1
+        - Seg_172.31.110.0_24:eth2
+    -   endpoints:
+        - regionb-svr01:eth2
+        - Seg_172.31.110.0_24:eth3
+    -   endpoints:
+        - regionb-ce01:eth4
+        - Seg_172.31.20.0_24:eth1
+    -   endpoints:
+        - regionb-ce02:eth3
+        - Seg_172.31.20.0_24:eth2
+    -   endpoints:
+        - regionb-svr02:eth1
+        - Seg_172.31.20.0_24:eth3
+    -   endpoints:
+        - regionb-ce01_VR1:eth2
+        - Seg_172.31.120.0_24:eth1
+    -   endpoints:
+        - regionb-ce02_VR1:eth2
+        - Seg_172.31.120.0_24:eth2
+    -   endpoints:
+        - regionb-svr02:eth2
+        - Seg_172.31.120.0_24:eth3
+    -   endpoints:
+        - regionb-ce02:eth4
+        - Seg_172.17.4.0_30:eth1
+    -   endpoints:
+        - regionb-pe02:eth3
+        - Seg_172.17.4.0_30:eth2
+    nodes:
+        Seg_10.1.0.0_30:
+            image: ceos:4.27.3F
+            kind: arista_ceos
+            startup-config: Seg_10.1.0.0_30.conf
+        Seg_10.1.1.0_30:
+            image: ceos:4.27.3F
+            kind: arista_ceos
+            startup-config: Seg_10.1.1.0_30.conf
+        Seg_172.16.0.0_30:
+            image: ceos:4.27.3F
+            kind: arista_ceos
+            startup-config: Seg_172.16.0.0_30.conf
+        Seg_172.16.1.0_30:
+            image: ceos:4.27.3F
+            kind: arista_ceos
+            startup-config: Seg_172.16.1.0_30.conf
+        Seg_172.16.4.0_30:
+            image: ceos:4.27.3F
+            kind: arista_ceos
+            startup-config: Seg_172.16.4.0_30.conf
+        Seg_172.16.5.0_30:
+            image: ceos:4.27.3F
+            kind: arista_ceos
+            startup-config: Seg_172.16.5.0_30.conf
+        Seg_172.17.0.0_30:
+            image: ceos:4.27.3F
+            kind: arista_ceos
+            startup-config: Seg_172.17.0.0_30.conf
+        Seg_172.17.1.0_30:
+            image: ceos:4.27.3F
+            kind: arista_ceos
+            startup-config: Seg_172.17.1.0_30.conf
+        Seg_172.17.4.0_30:
+            image: ceos:4.27.3F
+            kind: arista_ceos
+            startup-config: Seg_172.17.4.0_30.conf
+        Seg_172.17.5.0_30:
+            image: ceos:4.27.3F
+            kind: arista_ceos
+            startup-config: Seg_172.17.5.0_30.conf
+        Seg_172.30.10.0_24:
+            image: ceos:4.27.3F
+            kind: arista_ceos
+            startup-config: Seg_172.30.10.0_24.conf
+        Seg_172.30.110.0_24:
+            image: ceos:4.27.3F
+            kind: arista_ceos
+            startup-config: Seg_172.30.110.0_24.conf
+        Seg_172.30.120.0_24:
+            image: ceos:4.27.3F
+            kind: arista_ceos
+            startup-config: Seg_172.30.120.0_24.conf
+        Seg_172.30.20.0_24:
+            image: ceos:4.27.3F
+            kind: arista_ceos
+            startup-config: Seg_172.30.20.0_24.conf
+        Seg_172.31.10.0_24:
+            image: ceos:4.27.3F
+            kind: arista_ceos
+            startup-config: Seg_172.31.10.0_24.conf
+        Seg_172.31.110.0_24:
+            image: ceos:4.27.3F
+            kind: arista_ceos
+            startup-config: Seg_172.31.110.0_24.conf
+        Seg_172.31.120.0_24:
+            image: ceos:4.27.3F
+            kind: arista_ceos
+            startup-config: Seg_172.31.120.0_24.conf
+        Seg_172.31.20.0_24:
+            image: ceos:4.27.3F
+            kind: arista_ceos
+            startup-config: Seg_172.31.20.0_24.conf
+        regiona-ce01:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+            startup-config: regiona-ce01.conf
+        regiona-ce01_vrf1:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+            startup-config: regiona-ce01_vrf1.conf
+        regiona-ce02:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+            startup-config: regiona-ce02.conf
+        regiona-ce02_vrf1:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+            startup-config: regiona-ce02_vrf1.conf
+        regiona-pe01:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+            startup-config: regiona-pe01.conf
+        regiona-pe02:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+            startup-config: regiona-pe02.conf
+        regiona-svr01:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+            startup-config: regiona-svr01.conf
+        regiona-svr02:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+            startup-config: regiona-svr02.conf
+        regionb-ce01:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+            startup-config: regionb-ce01.conf
+        regionb-ce01_VR1:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+            startup-config: regionb-ce01_VR1.conf
+        regionb-ce02:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+            startup-config: regionb-ce02.conf
+        regionb-ce02_VR1:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+            startup-config: regionb-ce02_VR1.conf
+        regionb-pe01:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+            startup-config: regionb-pe01.conf
+        regionb-pe02:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+            startup-config: regionb-pe02.conf
+        regionb-svr01:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+            startup-config: regionb-svr01.conf
+        regionb-svr02:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+            startup-config: regionb-svr02.conf
+

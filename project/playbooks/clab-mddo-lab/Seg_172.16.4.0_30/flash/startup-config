@@ -1,0 +1,37 @@
+! Startup-config last modified at Fri Aug 26 06:27:29 2022 by root
+! device: Seg_172.16.4.0_30 (cEOSLab, EOS-4.27.3F-26379303.4273F (engineering build))
+!
+no aaa root
+!
+username admin privilege 15 role network-admin secret sha512 $6$CBiRxPYBJdKHYxqj$ROVcl3YC2m3Vvo97Tu83dDT5X/BtuHWGmHhAxJhkcZpgTo9PseHRGhqeyTWQLgv/w3gLKt8ozSCiGKjhIzbS01
+!
+transceiver qsfp default-mode 4x10G
+!
+service routing protocols model multi-agent
+!
+hostname Seg_172.16.4.0_30
+!
+spanning-tree mode mstp
+!
+management api http-commands
+   no shutdown
+!
+management api gnmi
+   transport grpc default
+!
+management api netconf
+   transport ssh default
+!
+interface Ethernet1
+   description to_regiona-ce02_eth3
+!
+interface Ethernet2
+   description to_regiona-pe02_eth1
+!
+interface Management0
+   ip address 172.20.20.5/24
+   ipv6 address 2001:172:20:20::5/64
+!
+no ip routing
+!
+end

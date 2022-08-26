@@ -7,7 +7,7 @@
     nodes: {}
     containerlab: []
     convertif: []
-    nodered_url: "http://172.26.0.2:1880"
+    nodered_url: "http://192.168.80.2:1880"
     bridge_image:
       kind: arista_ceos
       image: ceos:4.27.3F  
