@@ -46,8 +46,10 @@ chassis {
 }
 interfaces {
 {% for interface in item.iflist %}
-    {{ interface.name }} {
-        description {{ interface.description }}
+    {{ interface.name }} { 
+{% if 'description' in interface %}
+        description {{ interface.description }} 
+{% endif %}
         unit 0 {
             family inet {
                 address {{ interface.ipv4 }};

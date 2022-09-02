@@ -60,6 +60,8 @@
           {%-       for dict in tmpdict.iflist -%}
           {%-         if iflist.name in dict.original and 'ifDescr' in dict -%}
           { 'name': '{{ dict.clab }}', 'ipv4': '{{ iflist.ipv4 }}' , 'description': '{{ dict.ifDescr }}'},
+          {%-         elif iflist.name in dict.original -%}
+          { 'name': '{{ dict.clab }}', 'ipv4': '{{ iflist.ipv4 }}' },
           {%-         endif -%}
           {%-       endfor -%}
           {%-     endfor -%}
@@ -75,7 +77,7 @@
   - name: generate config
     template:
       src: crpd.j2
-      dest: "{{ item.name }}.conf"
+      dest: "{{ item.name }}_layer3.conf"
     when: '"Seg" not in item.name'
     loop: "{{ node_list }}"
 
@@ -99,4 +101,22 @@
       dest: "{{ item.name }}.conf"
     when: '"Seg" in item.name'
     loop: "{{ bridgedata }}"
+
+  - name: "get nodered convert data"
+    uri:
+      url: "{{ nodered_url }}/ospf_iflist/area0"
+      method: "GET"
+    register: result_node
+        
+  - name: generate config
+    template:
+      src: crpd_ospf.j2
+      dest: "{{ item.node }}_ospf.conf"
+    when: '"Seg" not in item.node'
+    loop: "{{ result_node.json }}"
+
+
+  - name: merge ospf-layer3
+    shell: "cat {{ item.node }}_layer3.conf {{ item.node }}_ospf.conf > {{ item.node }}.conf " 
+    loop: "{{ result_node.json }}"
 
