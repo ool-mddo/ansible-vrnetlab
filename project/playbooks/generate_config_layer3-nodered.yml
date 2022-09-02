@@ -102,13 +102,35 @@
     when: '"Seg" in item.name'
     loop: "{{ bridgedata }}"
 
+  - debug:
+      msg: '{{ item["mddo-topology:l3-node-attributes"]["static-route"]  }}'
+    vars:
+      query: '*.network[1].node[*]'
+    loop: "{{ tmp_json | json_query(query) | flatten}}"
+
+  - name: generate static-route config
+    template:
+      src: crpd_static.j2
+      dest: "{{ item['node-id'] }}_static.conf"
+    vars:
+      query: '*.network[1].node[*]'
+    when: 'item["mddo-topology:l3-node-attributes"]["static-route"] | length > 0'
+    loop: "{{ tmp_json | json_query(query) | flatten }}"
+
+  - name: merge ospf-layer3
+    shell: "cat {{ item['node-id'] }}_static.conf >> {{ item['node-id'] }}.conf " 
+    vars:
+      query: '*.network[1].node[*]'
+    when: 'item["mddo-topology:l3-node-attributes"]["static-route"] | length > 0'
+    loop: "{{ tmp_json | json_query(query) | flatten }}"
+ 
   - name: "get nodered convert data"
     uri:
       url: "{{ nodered_url }}/ospf_iflist/area0"
       method: "GET"
     register: result_node
         
-  - name: generate config
+  - name: generate ospf config
     template:
       src: crpd_ospf.j2
       dest: "{{ item.node }}_ospf.conf"
