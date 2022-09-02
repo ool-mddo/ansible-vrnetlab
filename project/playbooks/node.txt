@@ -1,121 +1,43 @@
 node:
 -   -   iflist:
-        -   ipv4: 172.30.10.1/24
-            name: Vlan10
-        -   ipv4: 172.30.20.1/24
-            name: Vlan20
-        -   ipv4: 172.16.5.1/30
-            name: Port-Channel1
-        -   ipv4: 172.16.1.2/30
-            name: Ethernet1
-        name: regiona-ce01
-    -   iflist:
-        -   ipv4: 172.30.10.2/24
-            name: Vlan10
-        -   ipv4: 172.30.20.2/24
-            name: Vlan20
-        -   ipv4: 172.16.4.2/30
-            name: Ethernet2
-        -   ipv4: 172.16.5.2/30
-            name: Port-Channel1
-        name: regiona-ce02
-    -   iflist:
-        -   ipv4: 172.30.10.100/24
-            name: enp1s4
-        -   ipv4: 172.30.110.100/24
-            name: enp1s5
-        name: regiona-svr01
-    -   iflist:
-        -   ipv4: 172.30.10.101/24
-            name: enp1s4
-        -   ipv4: 172.30.110.101/24
-            name: enp1s5
-        name: regiona-svr02
-    -   iflist:
-        -   ipv4: 172.30.110.1/24
-            name: Vlan110
-        -   ipv4: 172.30.120.1/24
-            name: Vlan120
-        name: regiona-ce01_vrf1
-    -   iflist:
-        -   ipv4: 172.30.110.2/24
-            name: Vlan110
-        -   ipv4: 172.30.120.2/24
-            name: Vlan120
-        name: regiona-ce02_vrf1
-    -   iflist:
-        -   ipv4: 172.16.4.1/30
-            name: ge-0/0/3.0
-        -   ipv4: 10.1.1.1/30
+        -   ipv4: 203.0.113.1/24
             name: ge-0/0/0.0
-        -   ipv4: 172.16.0.2/30
+        -   ipv4: 10.0.0.1/30
             name: ge-0/0/1.0
-        name: regiona-pe02
-    -   iflist:
-        -   ipv4: 10.1.1.2/30
-            name: ge-0/0/0.0
-        -   ipv4: 172.17.0.2/30
-            name: ge-0/0/1.0
-        -   ipv4: 172.17.4.1/30
-            name: ge-0/0/3.0
-        name: regionb-pe02
-    -   iflist:
-        -   ipv4: 172.16.0.1/30
-            name: ge-0/0/1.0
-        -   ipv4: 10.1.0.1/30
-            name: ge-0/0/0.0
-        -   ipv4: 172.16.1.1/30
+        -   ipv4: 10.0.1.1/30
             name: ge-0/0/2.0
-        name: regiona-pe01
+        -   ipv4: 172.16.0.1/32
+            name: lo0.0
+        name: rt1
     -   iflist:
-        -   ipv4: 10.1.0.2/30
+        -   ipv4: 203.0.113.2/24
             name: ge-0/0/0.0
-        -   ipv4: 172.17.0.1/30
-            name: ge-0/0/1.0
-        -   ipv4: 172.17.1.1/30
-            name: ge-0/0/2.0
-        name: regionb-pe01
+        name: serv1
     -   iflist:
-        -   ipv4: 172.17.1.2/30
+        -   ipv4: 10.0.0.2/30
             name: ge-0/0/0.0
-        -   ipv4: 172.17.5.1/30
-            name: ae0.0
-        -   ipv4: 172.31.10.1/24
-            name: ae1.1010
-        -   ipv4: 172.31.20.1/24
-            name: ae2.1020
-        name: regionb-ce01
-    -   iflist:
-        -   ipv4: 172.17.5.2/30
-            name: ae0.0
-        -   ipv4: 172.31.10.2/24
-            name: ae1.1010
-        -   ipv4: 172.31.20.2/24
-            name: ae2.1020
-        -   ipv4: 172.17.4.2/30
+        -   ipv4: 10.1.0.1/24
             name: ge-0/0/1.0
-        name: regionb-ce02
+        -   ipv4: 172.16.0.2/32
+            name: lo0.0
+        name: rt2
     -   iflist:
-        -   ipv4: 172.31.10.100/24
-            name: enp1s4
-        -   ipv4: 172.31.110.100/24
-            name: enp1s5
-        name: regionb-svr01
+        -   ipv4: 10.0.1.2/30
+            name: ge-0/0/0.0
+        -   ipv4: 10.1.0.2/24
+            name: ge-0/0/1.0
+        -   ipv4: 172.16.0.3/32
+            name: lo0.0
+        name: rt3
     -   iflist:
-        -   ipv4: 172.31.110.1/24
-            name: ae1.1110
-        -   ipv4: 172.31.120.1/24
-            name: ae2.1120
-        name: regionb-ce01_VR1
+        -   ipv4: 10.1.0.3/24
+            name: ge-0/0/0.0
+        -   ipv4: 192.168.0.1/24
+            name: ge-0/0/1.0
+        -   ipv4: 172.16.0.4/32
+            name: lo0.0
+        name: rt4
     -   iflist:
-        -   ipv4: 172.31.110.2/24
-            name: ae1.1110
-        -   ipv4: 172.31.120.2/24
-            name: ae2.1120
-        name: regionb-ce02_VR1
-    -   iflist:
-        -   ipv4: 172.31.20.100/24
-            name: enp1s4
-        -   ipv4: 172.31.120.100/24
-            name: enp1s5
-        name: regionb-svr02
+        -   ipv4: 192.168.0.2/24
+            name: ge-0/0/0.0
+        name: serv2

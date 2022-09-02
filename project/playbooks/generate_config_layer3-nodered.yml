@@ -55,10 +55,10 @@
         name: "{{ item.name }}"
         iflist: >-
           {%- for tmpdict in result_node.json -%}
-          {%-   if item.name == tmpdict['node']['original'] -%}
+          {%-   if ( item.name == tmpdict['node']['original'] ) -%}
           {%-     for iflist in item.iflist -%}
           {%-       for dict in tmpdict.iflist -%}
-          {%-         if iflist.name in dict.original -%}
+          {%-         if iflist.name in dict.original and 'ifDescr' in dict -%}
           { 'name': '{{ dict.clab }}', 'ipv4': '{{ iflist.ipv4 }}' , 'description': '{{ dict.ifDescr }}'},
           {%-         endif -%}
           {%-       endfor -%}
