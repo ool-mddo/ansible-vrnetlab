@@ -10,7 +10,8 @@
     nodered_url: "http://192.168.80.2:1880"
     bridge_image:
       kind: arista_ceos
-      image: ceos:4.27.3F  
+      image: ceos-lab:4.27.2F
+      #image: ceos:4.27.3F  
       #kind: linux
       #image: ghcr.io/ool-mddo/clab-ovs:latest
     cnf_image:
@@ -25,12 +26,14 @@
     - name: "get nodered convert link"
       uri:
         url: "{{ nodered_url }}/convertlink"
+        #url: "{{ nodered_url }}/convertlink/batfish"
         method: "GET"
       register: result_link     
 
     - name: "get nodered convert data"
       uri:
         url: "{{ nodered_url }}/convertif/eth"
+        #url: "{{ nodered_url }}/convertif/batfish/eth"
         method: "GET"
       register: result_node
 
@@ -60,6 +63,6 @@
             nodes: "{{ nodes }}"
     - name:
       copy:
-        dest: "./clab-topo-batfish.yml"
+        dest: "./clab-topo.yml"
         content: "{{ containerlab | to_nice_yaml }}"
 

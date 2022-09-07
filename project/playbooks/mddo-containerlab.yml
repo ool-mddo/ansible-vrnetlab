@@ -20,7 +20,7 @@
         src: "{{ item.key }}.conf"
         dest: "/tmp/{{ item.key }}.conf"
       loop: "{{ containerlab.topology.nodes | dict2items }}"
-      when: '"Seg" not in item.key and operation == "create"'
+      when: 'operation == "create"'
 
 
     - name: Creating a file with content
@@ -30,7 +30,7 @@
 
     - name: deploy containerlab
       command:
-        cmd: "containerlab deploy --topo /tmp/clab-topo.yml --reconfigure"
+        cmd: "containerlab deploy --topo /tmp/clab-topo.yml"
       when: operation == 'create'
 
     - name: destroy containerlab

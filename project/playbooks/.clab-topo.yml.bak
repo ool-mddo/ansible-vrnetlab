@@ -2,254 +2,81 @@ name: mddo-lab
 topology:
     links:
     -   endpoints:
-        - regiona-ce01:eth1
-        - br17230100:eth1
+        - rt1:eth1
+        - Seg_203_0_113_0_24:Ethernet1
     -   endpoints:
-        - regiona-ce02:eth1
-        - br17230100:eth2
+        - serv1:eth1
+        - Seg_203_0_113_0_24:Ethernet2
     -   endpoints:
-        - regiona-svr01:eth1
-        - br17230100:eth3
+        - rt1:eth2
+        - Seg_10_0_0_0_30:Ethernet1
     -   endpoints:
-        - regiona-svr02:eth1
-        - br17230100:eth4
+        - rt2:eth1
+        - Seg_10_0_0_0_30:Ethernet2
     -   endpoints:
-        - regiona-ce01_vrf1:eth1
-        - br172301100:eth1
+        - rt1:eth3
+        - Seg_10_0_1_0_30:Ethernet1
     -   endpoints:
-        - regiona-ce02_vrf1:eth1
-        - br172301100:eth2
+        - rt3:eth1
+        - Seg_10_0_1_0_30:Ethernet2
     -   endpoints:
-        - regiona-svr01:eth2
-        - br172301100:eth3
+        - rt3:eth2
+        - Seg_10_1_0_0_24:Ethernet1
     -   endpoints:
-        - regiona-svr02:eth2
-        - br172301100:eth4
+        - rt2:eth2
+        - Seg_10_1_0_0_24:Ethernet2
     -   endpoints:
-        - regiona-ce01:eth2
-        - br17230200:eth1
+        - rt4:eth1
+        - Seg_10_1_0_0_24:Ethernet3
     -   endpoints:
-        - regiona-ce02:eth2
-        - br17230200:eth2
+        - rt4:eth2
+        - Seg_192_168_0_0_24:Ethernet1
     -   endpoints:
-        - regiona-ce01_vrf1:eth2
-        - br172301200:eth1
-    -   endpoints:
-        - regiona-ce02_vrf1:eth2
-        - br172301200:eth2
-    -   endpoints:
-        - regiona-ce02:eth3
-        - br1721640:eth1
-    -   endpoints:
-        - regiona-pe02:eth1
-        - br1721640:eth2
-    -   endpoints:
-        - regiona-ce02:eth4
-        - br1721650:eth1
-    -   endpoints:
-        - regiona-ce01:eth3
-        - br1721650:eth2
-    -   endpoints:
-        - regiona-pe02:eth2
-        - br10110:eth1
-    -   endpoints:
-        - regionb-pe02:eth1
-        - br10110:eth2
-    -   endpoints:
-        - regiona-pe02:eth3
-        - br1721600:eth1
-    -   endpoints:
-        - regiona-pe01:eth1
-        - br1721600:eth2
-    -   endpoints:
-        - regiona-pe01:eth2
-        - br10100:eth1
-    -   endpoints:
-        - regionb-pe01:eth1
-        - br10100:eth2
-    -   endpoints:
-        - regiona-pe01:eth3
-        - br1721610:eth1
-    -   endpoints:
-        - regiona-ce01:eth4
-        - br1721610:eth2
-    -   endpoints:
-        - regionb-pe01:eth2
-        - br1721700:eth1
-    -   endpoints:
-        - regionb-pe02:eth2
-        - br1721700:eth2
-    -   endpoints:
-        - regionb-pe01:eth3
-        - br1721710:eth1
-    -   endpoints:
-        - regionb-ce01:eth1
-        - br1721710:eth2
-    -   endpoints:
-        - regionb-ce01:eth2
-        - br1721750:eth1
-    -   endpoints:
-        - regionb-ce02:eth1
-        - br1721750:eth2
-    -   endpoints:
-        - regionb-ce01:eth3
-        - br17231100:eth1
-    -   endpoints:
-        - regionb-ce02:eth2
-        - br17231100:eth2
-    -   endpoints:
-        - regionb-svr01:eth1
-        - br17231100:eth3
-    -   endpoints:
-        - regionb-ce01_VR1:eth1
-        - br172311100:eth1
-    -   endpoints:
-        - regionb-ce02_VR1:eth1
-        - br172311100:eth2
-    -   endpoints:
-        - regionb-svr01:eth2
-        - br172311100:eth3
-    -   endpoints:
-        - regionb-ce01:eth4
-        - br17231200:eth1
-    -   endpoints:
-        - regionb-ce02:eth3
-        - br17231200:eth2
-    -   endpoints:
-        - regionb-svr02:eth1
-        - br17231200:eth3
-    -   endpoints:
-        - regionb-ce01_VR1:eth2
-        - br172311200:eth1
-    -   endpoints:
-        - regionb-ce02_VR1:eth2
-        - br172311200:eth2
-    -   endpoints:
-        - regionb-svr02:eth2
-        - br172311200:eth3
-    -   endpoints:
-        - regionb-ce02:eth4
-        - br1721740:eth1
-    -   endpoints:
-        - regionb-pe02:eth3
-        - br1721740:eth2
+        - serv2:eth1
+        - Seg_192_168_0_0_24:Ethernet2
     nodes:
-        br10100:
-            image: openvswitch:latest
-            kind: linux
-        br10110:
-            image: openvswitch:latest
-            kind: linux
-        br1721600:
-            image: openvswitch:latest
-            kind: linux
-        br1721610:
-            image: openvswitch:latest
-            kind: linux
-        br1721640:
-            image: openvswitch:latest
-            kind: linux
-        br1721650:
-            image: openvswitch:latest
-            kind: linux
-        br1721700:
-            image: openvswitch:latest
-            kind: linux
-        br1721710:
-            image: openvswitch:latest
-            kind: linux
-        br1721740:
-            image: openvswitch:latest
-            kind: linux
-        br1721750:
-            image: openvswitch:latest
-            kind: linux
-        br17230100:
-            image: openvswitch:latest
-            kind: linux
-        br172301100:
-            image: openvswitch:latest
-            kind: linux
-        br172301200:
-            image: openvswitch:latest
-            kind: linux
-        br17230200:
-            image: openvswitch:latest
-            kind: linux
-        br17231100:
-            image: openvswitch:latest
-            kind: linux
-        br172311100:
-            image: openvswitch:latest
-            kind: linux
-        br172311200:
-            image: openvswitch:latest
-            kind: linux
-        br17231200:
-            image: openvswitch:latest
-            kind: linux
-        regiona-ce01:
+        Seg_10_0_0_0_30:
+            image: ceos-lab:4.27.2F
+            kind: arista_ceos
+            startup-config: Seg_10_0_0_0_30.conf
+        Seg_10_0_1_0_30:
+            image: ceos-lab:4.27.2F
+            kind: arista_ceos
+            startup-config: Seg_10_0_1_0_30.conf
+        Seg_10_1_0_0_24:
+            image: ceos-lab:4.27.2F
+            kind: arista_ceos
+            startup-config: Seg_10_1_0_0_24.conf
+        Seg_192_168_0_0_24:
+            image: ceos-lab:4.27.2F
+            kind: arista_ceos
+            startup-config: Seg_192_168_0_0_24.conf
+        Seg_203_0_113_0_24:
+            image: ceos-lab:4.27.2F
+            kind: arista_ceos
+            startup-config: Seg_203_0_113_0_24.conf
+        rt1:
             image: crpd:22.1R1.10
             kind: juniper_crpd
-            startup-config: regiona-ce01.conf
-        regiona-ce01_vrf1:
+            startup-config: rt1.conf
+        rt2:
             image: crpd:22.1R1.10
             kind: juniper_crpd
-            startup-config: regiona-ce01_vrf1.conf
-        regiona-ce02:
+            startup-config: rt2.conf
+        rt3:
             image: crpd:22.1R1.10
             kind: juniper_crpd
-            startup-config: regiona-ce02.conf
-        regiona-ce02_vrf1:
+            startup-config: rt3.conf
+        rt4:
             image: crpd:22.1R1.10
             kind: juniper_crpd
-            startup-config: regiona-ce02_vrf1.conf
-        regiona-pe01:
+            startup-config: rt4.conf
+        serv1:
             image: crpd:22.1R1.10
             kind: juniper_crpd
-            startup-config: regiona-pe01.conf
-        regiona-pe02:
+            startup-config: serv1.conf
+        serv2:
             image: crpd:22.1R1.10
             kind: juniper_crpd
-            startup-config: regiona-pe02.conf
-        regiona-svr01:
-            image: crpd:22.1R1.10
-            kind: juniper_crpd
-            startup-config: regiona-svr01.conf
-        regiona-svr02:
-            image: crpd:22.1R1.10
-            kind: juniper_crpd
-            startup-config: regiona-svr02.conf
-        regionb-ce01:
-            image: crpd:22.1R1.10
-            kind: juniper_crpd
-            startup-config: regionb-ce01.conf
-        regionb-ce01_VR1:
-            image: crpd:22.1R1.10
-            kind: juniper_crpd
-            startup-config: regionb-ce01_VR1.conf
-        regionb-ce02:
-            image: crpd:22.1R1.10
-            kind: juniper_crpd
-            startup-config: regionb-ce02.conf
-        regionb-ce02_VR1:
-            image: crpd:22.1R1.10
-            kind: juniper_crpd
-            startup-config: regionb-ce02_VR1.conf
-        regionb-pe01:
-            image: crpd:22.1R1.10
-            kind: juniper_crpd
-            startup-config: regionb-pe01.conf
-        regionb-pe02:
-            image: crpd:22.1R1.10
-            kind: juniper_crpd
-            startup-config: regionb-pe02.conf
-        regionb-svr01:
-            image: crpd:22.1R1.10
-            kind: juniper_crpd
-            startup-config: regionb-svr01.conf
-        regionb-svr02:
-            image: crpd:22.1R1.10
-            kind: juniper_crpd
-            startup-config: regionb-svr02.conf
+            startup-config: serv2.conf
 

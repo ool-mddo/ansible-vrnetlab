@@ -1,53 +1,53 @@
 -   iflist:
-    -   description: to_Seg_203.0.113.0_24_Ethernet1
+    -   description: to_Seg-203.0.113.0-24_Ethernet1
         ipv4: 203.0.113.1/24
         name: eth1
-    -   description: to_Seg_10.0.0.0_30_Ethernet1
+    -   description: to_Seg-10.0.0.0-30_Ethernet1
         ipv4: 10.0.0.1/30
         name: eth2
-    -   description: to_Seg_10.0.1.0_30_Ethernet1
+    -   description: to_Seg-10.0.1.0-30_Ethernet1
         ipv4: 10.0.1.1/30
         name: eth3
     -   ipv4: 172.16.0.1/32
-        name: eth4
+        name: lo
     name: rt1
 -   iflist:
-    -   description: to_Seg_203.0.113.0_24_Ethernet2
+    -   description: to_Seg-203.0.113.0-24_Ethernet2
         ipv4: 203.0.113.2/24
         name: eth1
     name: serv1
 -   iflist:
-    -   description: to_Seg_10.0.0.0_30_Ethernet2
+    -   description: to_Seg-10.0.0.0-30_Ethernet2
         ipv4: 10.0.0.2/30
         name: eth1
-    -   description: to_Seg_10.1.0.0_24_Ethernet2
+    -   description: to_Seg-10.1.0.0-24_Ethernet2
         ipv4: 10.1.0.1/24
         name: eth2
     -   ipv4: 172.16.0.2/32
-        name: eth3
+        name: lo
     name: rt2
 -   iflist:
-    -   description: to_Seg_10.0.1.0_30_Ethernet2
+    -   description: to_Seg-10.0.1.0-30_Ethernet2
         ipv4: 10.0.1.2/30
         name: eth1
-    -   description: to_Seg_10.1.0.0_24_Ethernet1
+    -   description: to_Seg-10.1.0.0-24_Ethernet1
         ipv4: 10.1.0.2/24
         name: eth2
     -   ipv4: 172.16.0.3/32
-        name: eth3
+        name: lo
     name: rt3
 -   iflist:
-    -   description: to_Seg_10.1.0.0_24_Ethernet3
+    -   description: to_Seg-10.1.0.0-24_Ethernet3
         ipv4: 10.1.0.3/24
         name: eth1
-    -   description: to_Seg_192.168.0.0_24_Ethernet1
+    -   description: to_Seg-192.168.0.0-24_Ethernet1
         ipv4: 192.168.0.1/24
         name: eth2
     -   ipv4: 172.16.0.4/32
-        name: eth3
+        name: lo
     name: rt4
 -   iflist:
-    -   description: to_Seg_192.168.0.0_24_Ethernet2
+    -   description: to_Seg-192.168.0.0-24_Ethernet2
         ipv4: 192.168.0.2/24
         name: eth1
     name: serv2

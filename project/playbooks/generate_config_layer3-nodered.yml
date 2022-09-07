@@ -77,7 +77,7 @@
   - name: generate config
     template:
       src: crpd.j2
-      dest: "{{ item.name }}_layer3.conf"
+      dest: "{{ item.name }}.conf"
     when: '"Seg" not in item.name'
     loop: "{{ node_list }}"
 
@@ -139,6 +139,6 @@
 
 
   - name: merge ospf-layer3
-    shell: "cat {{ item.node }}_layer3.conf {{ item.node }}_ospf.conf > {{ item.node }}.conf " 
+    shell: "cat {{ item.node }}_ospf.conf >> {{ item.node }}.conf " 
     loop: "{{ result_node.json }}"
 
