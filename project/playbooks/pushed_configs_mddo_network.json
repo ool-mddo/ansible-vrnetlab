@@ -934,7 +934,16 @@
                                     ]
                                 }
                             ],
-                            "static-route": [],
+                            "static-route": [
+                                {
+                                    "prefix": "0.0.0.0/0",
+                                    "next-hop": "203.0.113.2",
+                                    "interface": "dynamic",
+                                    "metric": 0,
+                                    "preference": 5,
+                                    "description": ""
+                                }
+                            ],
                             "flag": []
                         }
                     },

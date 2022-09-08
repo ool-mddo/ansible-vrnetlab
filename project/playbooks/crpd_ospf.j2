@@ -1,6 +1,3 @@
-routing-options {
-    router-id {{ item.attributes["router-id"] }};
-}
 protocols {
     ospf {
         area 0.0.0.0 {
@@ -8,5 +5,12 @@ protocols {
             interface {{ interface }};
 {% endfor  %}
         }
+        export ospf-redistribute;
+    }
+}
+policy-options {
+    policy-statement ospf-redistribute {
+        from protocol [ {{ item.attributes.redistribute | json_query('[*].protocol') | join(' ') | regex_replace('connected', 'direct') }} ];
+        then accept;
     }
 }

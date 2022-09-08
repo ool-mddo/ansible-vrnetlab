@@ -47,6 +47,12 @@
       method: "GET"
     register: result_node
         
+  - name: "get nodered convert data"
+    uri:
+      url: "{{ nodered_url }}/ospf/convertif/batfish"
+      method: "GET"
+    register: result_ospf
+        
   - name: merge inout_info & convert-if
     set_fact:
       node_list: "{{ node_list + [ data ] }}"
@@ -111,34 +117,30 @@
   - name: generate static-route config
     template:
       src: crpd_static.j2
-      dest: "{{ item['node-id'] }}_static.conf"
+      dest: "{{ item['node-id'] }}_routing-options.conf"
     vars:
       query: '*.network[1].node[*]'
-    when: 'item["mddo-topology:l3-node-attributes"]["static-route"] | length > 0'
+    when: '"Seg" not in item["node-id"]'
     loop: "{{ tmp_json | json_query(query) | flatten }}"
+    #when: 'item["mddo-topology:l3-node-attributes"]["static-route"] | length > 0'
+    #loop: "{{ tmp_json | json_query(query) | flatten }}"
 
-  - name: merge ospf-layer3
-    shell: "cat {{ item['node-id'] }}_static.conf >> {{ item['node-id'] }}.conf " 
-    vars:
-      query: '*.network[1].node[*]'
-    when: 'item["mddo-topology:l3-node-attributes"]["static-route"] | length > 0'
-    loop: "{{ tmp_json | json_query(query) | flatten }}"
- 
-  - name: "get nodered convert data"
-    uri:
-      url: "{{ nodered_url }}/ospf_iflist/area0"
-      method: "GET"
-    register: result_node
-        
   - name: generate ospf config
     template:
       src: crpd_ospf.j2
       dest: "{{ item.node }}_ospf.conf"
     when: '"Seg" not in item.node'
-    loop: "{{ result_node.json }}"
+    loop: "{{ result_ospf.json }}"
 
-
-  - name: merge ospf-layer3
+  - name: merge static-route config
+    shell: "cat {{ item['node-id'] }}_routing-options.conf >> {{ item['node-id'] }}.conf " 
+    vars:
+      query: '*.network[1].node[*]'
+    when: 'item["mddo-topology:l3-node-attributes"]["static-route"] | length > 0'
+    loop: "{{ tmp_json | json_query(query) | flatten }}"
+ 
+  - name: merge ospf config
     shell: "cat {{ item.node }}_ospf.conf >> {{ item.node }}.conf " 
-    loop: "{{ result_node.json }}"
+    loop: "{{ result_ospf.json }}"
+
 

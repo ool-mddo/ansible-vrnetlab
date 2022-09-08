@@ -1,0 +1,12 @@
+routing-options {
+    router-id {{ item.attributes["router-id"] }};
+}
+protocols {
+    ospf {
+        area 0.0.0.0 {
+{% for interface in item.iflist %}
+            interface {{ interface }};
+{% endfor  %}
+        }
+    }
+}

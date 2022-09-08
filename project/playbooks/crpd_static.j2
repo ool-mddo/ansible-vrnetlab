@@ -1,4 +1,5 @@
 routing-options {
+{% if item["mddo-topology:l3-node-attributes"]["static-route"] %}
     rib inet.0 {
         static {
 {% for route in item["mddo-topology:l3-node-attributes"]["static-route"] %}
@@ -6,4 +7,11 @@ routing-options {
 {% endfor  %}
         }
     }
+{% endif %}
+{% for ospf_node in result_ospf["json"] %}
+{% if ospf_node["node"] == item["node-id"] and "Seg" not in item["node-id"] %}
+    router-id {{ ospf_node["attributes"]["router-id"] }};
+{% endif %}
+{% endfor  %}
 }
+
