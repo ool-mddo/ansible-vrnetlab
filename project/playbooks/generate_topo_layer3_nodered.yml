@@ -27,14 +27,20 @@
       uri:
         url: "{{ nodered_url }}/convertlink"
         #url: "{{ nodered_url }}/convertlink/batfish"
-        method: "GET"
+        method: "POST"
+        #method: "GET"
+        body: "{{ topology }}"
+        body_format: json
       register: result_link     
 
     - name: "get nodered convert data"
       uri:
         url: "{{ nodered_url }}/convertif/eth"
         #url: "{{ nodered_url }}/convertif/batfish/eth"
-        method: "GET"
+        method: "POST"
+        #method: "GET"
+        body: "{{ topology }}"
+        body_format: json
       register: result_node
 
     - set_fact:

@@ -4,14 +4,13 @@
     nodered_url: "http://192.168.80.2:1880"
     node_list: []
     node_dict: {}
-    #convert_file: "./convert-if.yml"
     interface_ipv4_file: "./interface-ipv4.yml"
 
   tasks:
   - name: Include users.json
     include_vars:
       file: ./pushed_configs_mddo_network.json
-      name: tmp_json
+      name: topology
     
   - name: extract nodes list data
     set_fact:
@@ -33,7 +32,7 @@
         {{ node_dict }},
         {%- endif -%}
         {%- endfor -%}
-    loop: "{{ tmp_json | json_query(query) }}"
+    loop: "{{ topology | json_query(query) }}"
 
   - name: generate node file
     copy:
@@ -44,13 +43,19 @@
   - name: "get nodered convert data"
     uri:
       url: "{{ nodered_url }}/description/batfish"
-      method: "GET"
+      method: "POST"
+      body: "{{ topology }}"
+      body_format: json        
+      #method: "GET"
     register: result_node
         
   - name: "get nodered convert data"
     uri:
       url: "{{ nodered_url }}/ospf/convertif/batfish"
-      method: "GET"
+      method: "POST"
+      #method: "GET"
+      body: "{{ topology }}"
+      body_format: json        
     register: result_ospf
         
   - name: merge inout_info & convert-if
@@ -112,7 +117,7 @@
       msg: '{{ item["mddo-topology:l3-node-attributes"]["static-route"]  }}'
     vars:
       query: '*.network[1].node[*]'
-    loop: "{{ tmp_json | json_query(query) | flatten}}"
+    loop: "{{ topology | json_query(query) | flatten}}"
 
   - name: generate static-route config
     template:
@@ -121,9 +126,9 @@
     vars:
       query: '*.network[1].node[*]'
     when: '"Seg" not in item["node-id"]'
-    loop: "{{ tmp_json | json_query(query) | flatten }}"
+    loop: "{{ topology | json_query(query) | flatten }}"
     #when: 'item["mddo-topology:l3-node-attributes"]["static-route"] | length > 0'
-    #loop: "{{ tmp_json | json_query(query) | flatten }}"
+    #loop: "{{ topology | json_query(query) | flatten }}"
 
   - name: generate ospf config
     template:
@@ -137,7 +142,7 @@
     vars:
       query: '*.network[1].node[*]'
     when: 'item["mddo-topology:l3-node-attributes"]["static-route"] | length > 0'
-    loop: "{{ tmp_json | json_query(query) | flatten }}"
+    loop: "{{ topology | json_query(query) | flatten }}"
  
   - name: merge ospf config
     shell: "cat {{ item.node }}_ospf.conf >> {{ item.node }}.conf " 
