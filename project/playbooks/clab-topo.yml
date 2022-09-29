@@ -3,37 +3,37 @@ topology:
     links:
     -   endpoints:
         - rt1:eth1
-        - Seg-203.0.113.0-24:eth1
+        - Seg-203.0.113.0-24:Ethernet1
     -   endpoints:
         - serv1:eth1
-        - Seg-203.0.113.0-24:eth2
+        - Seg-203.0.113.0-24:Ethernet2
     -   endpoints:
         - rt1:eth2
-        - Seg-10.0.0.0-30:eth1
+        - Seg-10.0.0.0-30:Ethernet1
     -   endpoints:
         - rt2:eth1
-        - Seg-10.0.0.0-30:eth2
+        - Seg-10.0.0.0-30:Ethernet2
     -   endpoints:
         - rt1:eth3
-        - Seg-10.0.1.0-30:eth1
+        - Seg-10.0.1.0-30:Ethernet1
     -   endpoints:
         - rt3:eth1
-        - Seg-10.0.1.0-30:eth2
+        - Seg-10.0.1.0-30:Ethernet2
     -   endpoints:
         - rt3:eth2
-        - Seg-10.1.0.0-24:eth1
+        - Seg-10.1.0.0-24:Ethernet1
     -   endpoints:
         - rt2:eth2
-        - Seg-10.1.0.0-24:eth2
+        - Seg-10.1.0.0-24:Ethernet2
     -   endpoints:
         - rt4:eth1
-        - Seg-10.1.0.0-24:eth3
+        - Seg-10.1.0.0-24:Ethernet3
     -   endpoints:
         - rt4:eth2
-        - Seg-192.168.0.0-24:eth1
+        - Seg-192.168.0.0-24:Ethernet1
     -   endpoints:
         - serv2:eth1
-        - Seg-192.168.0.0-24:eth2
+        - Seg-192.168.0.0-24:Ethernet2
     nodes:
         Seg-10.0.0.0-30:
             image: ceos:4.27.3F
