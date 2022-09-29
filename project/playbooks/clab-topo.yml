@@ -36,23 +36,23 @@ topology:
         - Seg-192.168.0.0-24:eth2
     nodes:
         Seg-10.0.0.0-30:
-            image: ceos-lab:4.27.2F
+            image: ceos:4.27.3F
             kind: arista_ceos
             startup-config: Seg-10.0.0.0-30.conf
         Seg-10.0.1.0-30:
-            image: ceos-lab:4.27.2F
+            image: ceos:4.27.3F
             kind: arista_ceos
             startup-config: Seg-10.0.1.0-30.conf
         Seg-10.1.0.0-24:
-            image: ceos-lab:4.27.2F
+            image: ceos:4.27.3F
             kind: arista_ceos
             startup-config: Seg-10.1.0.0-24.conf
         Seg-192.168.0.0-24:
-            image: ceos-lab:4.27.2F
+            image: ceos:4.27.3F
             kind: arista_ceos
             startup-config: Seg-192.168.0.0-24.conf
         Seg-203.0.113.0-24:
-            image: ceos-lab:4.27.2F
+            image: ceos:4.27.3F
             kind: arista_ceos
             startup-config: Seg-203.0.113.0-24.conf
         rt1:
