@@ -3,7 +3,11 @@ routing-options {
     rib inet.0 {
         static {
 {% for route in item["mddo-topology:l3-node-attributes"]["static-route"] %}
+{% if "AUTO/NONE" in route["next-hop"]  %}
+            route {{ route.prefix }} discard;
+{% else %}
             route {{ route.prefix }} next-hop {{ route["next-hop"] }};
+{% endif %}
 {% endfor  %}
         }
     }
@@ -14,4 +18,5 @@ routing-options {
 {% endif %}
 {% endfor  %}
 }
+
 
