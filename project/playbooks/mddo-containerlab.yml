@@ -1,0 +1,54 @@
+---
+- hosts: docker-host
+  gather_facts: false
+  become: yes
+  vars:
+    ansible_user: "{{ login_user}}"
+    ansible_password: "{{ login_pass }}"
+    ansible_sudo_pass: "{{ sudo_pass }}"
+    ansible_python_interpreter: /usr/bin/python3
+    mddo_containerlab_file: "./clab-topo.yml"
+    operation: create
+    #operation: delete
+
+  tasks:
+    - name:
+      set_fact:
+        containerlab: "{{lookup('file', mddo_containerlab_file)  | from_yaml }}"
+
+    - copy:
+        src: "{{ item.key }}.conf"
+        dest: "/tmp/{{ item.key }}.conf"
+      loop: "{{ containerlab.topology.nodes | dict2items }}"
+      when: 'operation == "create"'
+
+
+    - name: Creating a file with content
+      copy:
+        dest: "/tmp/clab-topo.yml"
+        content: "{{ containerlab | to_yaml }}"
+
+    - name: deploy containerlab
+      command:
+        cmd: "containerlab deploy --topo /tmp/clab-topo.yml"
+      when: operation == 'create'
+
+    - name: destroy containerlab
+      command:
+        cmd: "containerlab destroy --topo /tmp/clab-topo.yml"
+      when: operation == 'delete'
+
+
+    - name: ovs container create bridge and assign eth1 & eth2
+      command:
+        cmd: "{{ item }}"
+      vars:
+        exec_commands:
+        - "containerlab exec --topo /tmp/clab-topo.yml  --label clab-node-kind'\'=linux --cmd 'ovs-vsctl add-br lan'"
+        - "containerlab exec --topo /tmp/clab-topo.yml  --label clab-node-kind'\'=linux --cmd 'ovs-vsctl add-port lan eth1'"
+        - "containerlab exec --topo /tmp/clab-topo.yml  --label clab-node-kind'\'=linux --cmd 'ovs-vsctl add-port lan eth2'"
+        - "containerlab exec --topo /tmp/clab-topo.yml  --label clab-node-kind'\'=linux --cmd 'ip link set eth1 promisc on'"
+        - "containerlab exec --topo /tmp/clab-topo.yml  --label clab-node-kind'\'=linux --cmd 'ip link set eth2 promisc on'"
+      when: operation == 'create'
+      loop: "{{ exec_commands }}"
+

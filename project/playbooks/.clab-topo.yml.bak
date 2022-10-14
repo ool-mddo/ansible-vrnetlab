@@ -1,0 +1,82 @@
+name: mddo-lab
+topology:
+    links:
+    -   endpoints:
+        - rt1:eth1
+        - Seg_203_0_113_0_24:Ethernet1
+    -   endpoints:
+        - serv1:eth1
+        - Seg_203_0_113_0_24:Ethernet2
+    -   endpoints:
+        - rt1:eth2
+        - Seg_10_0_0_0_30:Ethernet1
+    -   endpoints:
+        - rt2:eth1
+        - Seg_10_0_0_0_30:Ethernet2
+    -   endpoints:
+        - rt1:eth3
+        - Seg_10_0_1_0_30:Ethernet1
+    -   endpoints:
+        - rt3:eth1
+        - Seg_10_0_1_0_30:Ethernet2
+    -   endpoints:
+        - rt3:eth2
+        - Seg_10_1_0_0_24:Ethernet1
+    -   endpoints:
+        - rt2:eth2
+        - Seg_10_1_0_0_24:Ethernet2
+    -   endpoints:
+        - rt4:eth1
+        - Seg_10_1_0_0_24:Ethernet3
+    -   endpoints:
+        - rt4:eth2
+        - Seg_192_168_0_0_24:Ethernet1
+    -   endpoints:
+        - serv2:eth1
+        - Seg_192_168_0_0_24:Ethernet2
+    nodes:
+        Seg_10_0_0_0_30:
+            image: ceos-lab:4.27.2F
+            kind: arista_ceos
+            startup-config: Seg_10_0_0_0_30.conf
+        Seg_10_0_1_0_30:
+            image: ceos-lab:4.27.2F
+            kind: arista_ceos
+            startup-config: Seg_10_0_1_0_30.conf
+        Seg_10_1_0_0_24:
+            image: ceos-lab:4.27.2F
+            kind: arista_ceos
+            startup-config: Seg_10_1_0_0_24.conf
+        Seg_192_168_0_0_24:
+            image: ceos-lab:4.27.2F
+            kind: arista_ceos
+            startup-config: Seg_192_168_0_0_24.conf
+        Seg_203_0_113_0_24:
+            image: ceos-lab:4.27.2F
+            kind: arista_ceos
+            startup-config: Seg_203_0_113_0_24.conf
+        rt1:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+            startup-config: rt1.conf
+        rt2:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+            startup-config: rt2.conf
+        rt3:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+            startup-config: rt3.conf
+        rt4:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+            startup-config: rt4.conf
+        serv1:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+            startup-config: serv1.conf
+        serv2:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+            startup-config: serv2.conf
+

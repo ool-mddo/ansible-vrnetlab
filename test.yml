@@ -1,0 +1,94 @@
+name: mddo-lab
+topology:
+    links:
+    -   endpoints:
+        - regiona-pe02:eth3
+        - br1721600:eth1
+    -   endpoints:
+        - regiona-pe01:eth1
+        - br1721600:eth2
+    nodes:
+        br10100:
+            kind: bridge
+        br10110:
+            kind: bridge
+        br1721600:
+            kind: bridge
+        br1721610:
+            kind: bridge
+        br1721640:
+            kind: bridge
+        br1721650:
+            kind: bridge
+        br1721700:
+            kind: bridge
+        br1721710:
+            kind: bridge
+        br1721740:
+            kind: bridge
+        br1721750:
+            kind: bridge
+        br17230100:
+            kind: bridge
+        br172301100:
+            kind: bridge
+        br172301200:
+            kind: bridge
+        br17230200:
+            kind: bridge
+        br17231100:
+            kind: bridge
+        br172311100:
+            kind: bridge
+        br172311200:
+            kind: bridge
+        br17231200:
+            kind: bridge
+        regiona-ce01:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+        regiona-ce01_vrf1:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+        regiona-ce02:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+        regiona-ce02_vrf1:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+        regiona-pe01:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+        regiona-pe02:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+        regiona-svr01:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+        regiona-svr02:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+        regionb-ce01:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+        regionb-ce01_VR1:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+        regionb-ce02:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+        regionb-ce02_VR1:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+        regionb-pe01:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+        regionb-pe02:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+        regionb-svr01:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+        regionb-svr02:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
