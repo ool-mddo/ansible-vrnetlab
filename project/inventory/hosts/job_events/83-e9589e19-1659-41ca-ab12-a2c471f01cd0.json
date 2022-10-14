@@ -1,1 +1,0 @@
-{"event": "verbose", "uuid": "e9589e19-1659-41ca-ab12-a2c471f01cd0", "counter": 83, "stdout": "\u001b[1;35m[WARNING]: Skipping key (RUNNER_ONLY_FAILED_EVENTS) in group (env) as it is not\u001b[0m", "start_line": 82, "end_line": 83, "runner_ident": "../inventory/hosts", "created": "2022-07-11T17:33:25.022267"}

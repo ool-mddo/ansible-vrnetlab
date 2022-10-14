@@ -1,1 +1,0 @@
-{"event": "verbose", "uuid": "7eff5268-d19d-4cb7-8ed3-d16db76f2291", "counter": 97, "stdout": "\u001b[1;35m[WARNING]: Skipping 'created' as this is not a valid group definition\u001b[0m", "start_line": 96, "end_line": 97, "runner_ident": "../inventory/hosts", "created": "2022-07-11T17:33:25.023751"}

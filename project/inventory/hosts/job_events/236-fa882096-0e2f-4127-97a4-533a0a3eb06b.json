@@ -1,1 +1,0 @@
-{"event": "verbose", "uuid": "fa882096-0e2f-4127-97a4-533a0a3eb06b", "counter": 236, "stdout": "\u001b[0;34mauto declined parsing /home/ubuntu/Desktop/ansible-vrnetlab/project/inventory/hosts/stdout as it did not pass its verify_file() method\u001b[0m", "start_line": 235, "end_line": 236, "runner_ident": "../inventory/hosts", "created": "2022-07-11T17:33:25.040580"}

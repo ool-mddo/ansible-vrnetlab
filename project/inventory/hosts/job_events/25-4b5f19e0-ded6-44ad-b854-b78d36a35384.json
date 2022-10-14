@@ -1,1 +1,0 @@
-{"event": "verbose", "uuid": "4b5f19e0-ded6-44ad-b854-b78d36a35384", "counter": 25, "stdout": "\u001b[1;35m[WARNING]: Skipping key (XAUTHORITY) in group (env) as it is not a mapping, it\u001b[0m", "start_line": 24, "end_line": 25, "runner_ident": "../inventory/hosts", "created": "2022-07-11T17:33:25.016972"}
