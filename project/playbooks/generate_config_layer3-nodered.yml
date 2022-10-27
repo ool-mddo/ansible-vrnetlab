@@ -70,9 +70,9 @@
           {%-     for iflist in item.iflist -%}
           {%-       for dict in tmpdict.iflist -%}
           {%-         if iflist.name in dict.original and 'ifDescr' in dict -%}
-          { 'name': '{{ dict.clab }}', 'ipv4': '{{ iflist.ipv4 }}' , 'description': '{{ dict.ifDescr }}'},
+          { 'name': '{{ dict.clab }}', 'originif': '{{ dict.original }}', 'ipv4': '{{ iflist.ipv4 }}' , 'description': '{{ dict.ifDescr }}'},
           {%-         elif iflist.name in dict.original -%}
-          { 'name': '{{ dict.clab }}', 'ipv4': '{{ iflist.ipv4 }}' },
+          { 'name': '{{ dict.clab }}', 'originif': '{{ dict.original }}', 'ipv4': '{{ iflist.ipv4 }}' },
           {%-         endif -%}
           {%-       endfor -%}
           {%-     endfor -%}
@@ -100,7 +100,11 @@
        name: "{{ item.node.clab }}"
        iflist: >-
          {%- for dict in item.iflist -%}
+         {%-  if 'ifDescr' in dict -%}
          { 'name': '{{ dict.clab }}', 'description': '{{ dict.ifDescr }}'},
+         {%- else -%}
+         { 'name': '{{ dict.clab }}' },
+         {%- endif -%}
          {%- endfor -%}
     when: '"Seg" in item.node.clab'
     loop: "{{ result_node.json }}"

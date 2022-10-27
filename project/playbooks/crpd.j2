@@ -47,6 +47,7 @@ chassis {
 interfaces {
 {% for interface in item.iflist %}
     {{ interface.name }} { 
+    /* {{ interface.originif }} */
 {% if 'description' in interface %}
         description {{ interface.description }} 
 {% endif %}

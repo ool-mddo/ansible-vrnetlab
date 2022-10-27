@@ -11,19 +11,20 @@
     #operation: delete
 
   tasks:
- #    - copy:
- #       src: "rt1.xml"
- #       dest: "/tmp/rt1.xml"
+     - copy:
+        src: "rt1.xml"
+        dest: "/tmp/rt1.xml"
 
-    - name: add host values
-      add_host:
-        groups: "clab"
-        name: "rt1"
-        ansible_host: "clab-mddo-lab-rt1"
-        ansible_network_os: "junos"
-        #ansible_user: "vrnetlab"
-        ansible_user: "root"
-        ansible_password: "VR-netlab9"
+     - name: add host values
+       add_host:
+         groups: "clab"
+         name: "rt1"
+         ansible_host: "172.20.20.8"
+         #ansible_host: "clab-mddo-lab-rt1"
+         ansible_network_os: "junos"
+         #ansible_user: "vrnetlab"
+         ansible_user: "root"
+         ansible_password: "VR-netlab9"
 
 - hosts: clab
   gather_facts: false
@@ -39,8 +40,8 @@
       commands: show configuration
       display: xml
 
-#  - name:
-#    junipernetworks.junos.junos_l3_interfaces:
-#      running_config: "{{ lookup('file', '/tmp/rt1.xml') }}"
-#      state: parsed
+  - name:
+    junipernetworks.junos.junos_l3_interfaces:
+      running_config: "{{ lookup('file', '/tmp/rt1.xml') }}"
+      state: parsed
 

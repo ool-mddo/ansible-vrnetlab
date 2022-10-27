@@ -10,8 +10,8 @@
     nodered_url: "http://192.168.80.2:1880"
     bridge_image:
       kind: arista_ceos
-      #image: ceos-lab:4.27.2F
-      image: ceos:4.27.3F  
+      image: ceos-lab:4.27.2F
+      #image: ceos:4.27.3F  
       #kind: linux
       #image: ghcr.io/ool-mddo/clab-ovs:latest
     cnf_image:

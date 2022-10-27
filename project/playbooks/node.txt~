@@ -1,0 +1,37 @@
+node:
+-   -   iflist:
+        -   ipv4: 220.150.196.33/27
+            name: Vlan601
+        -   ipv4: 220.150.196.97/30
+            name: Port-channel1
+        name: a01c.chib
+    -   iflist:
+        -   ipv4: 220.150.196.34/27
+            name: Bundle-Ether10
+        -   ipv4: 220.150.196.66/27
+            name: TenGigE0/0/0/23
+        name: g01c.chib
+    -   iflist:
+        -   ipv4: 220.150.196.35/27
+            name: et-1/3/0.0
+        -   ipv4: 220.150.196.67/27
+            name: xe-1/0/0.0
+        name: g02j.chib
+    -   iflist:
+        -   ipv4: 220.150.196.36/27
+            name: TenGigE0/0/0/0
+        -   ipv4: 220.150.196.68/27
+            name: TenGigE0/0/0/1
+        name: r01c.chib
+    -   iflist:
+        -   ipv4: 220.150.196.37/27
+            name: em2.0
+        -   ipv4: 220.150.196.69/27
+            name: em3.0
+        name: r02j.chib
+    -   iflist:
+        -   ipv4: 220.150.196.98/30
+            name: Port-channel1
+        -   ipv4: 220.150.196.65/27
+            name: Vlan602
+        name: a02c.chib
