@@ -3,58 +3,58 @@ topology:
     links:
     -   endpoints:
         - rt1:eth1
-        - Seg_203_0_113_0_24:Ethernet1
+        - Seg-203.0.113.0-24:Ethernet1
     -   endpoints:
         - serv1:eth1
-        - Seg_203_0_113_0_24:Ethernet2
+        - Seg-203.0.113.0-24:Ethernet2
     -   endpoints:
         - rt1:eth2
-        - Seg_10_0_0_0_30:Ethernet1
+        - Seg-10.0.0.0-30:Ethernet1
     -   endpoints:
         - rt2:eth1
-        - Seg_10_0_0_0_30:Ethernet2
+        - Seg-10.0.0.0-30:Ethernet2
     -   endpoints:
         - rt1:eth3
-        - Seg_10_0_1_0_30:Ethernet1
+        - Seg-10.0.1.0-30:Ethernet1
     -   endpoints:
         - rt3:eth1
-        - Seg_10_0_1_0_30:Ethernet2
+        - Seg-10.0.1.0-30:Ethernet2
     -   endpoints:
         - rt3:eth2
-        - Seg_10_1_0_0_24:Ethernet1
+        - Seg-10.1.0.0-24:Ethernet1
     -   endpoints:
         - rt2:eth2
-        - Seg_10_1_0_0_24:Ethernet2
+        - Seg-10.1.0.0-24:Ethernet2
     -   endpoints:
         - rt4:eth1
-        - Seg_10_1_0_0_24:Ethernet3
+        - Seg-10.1.0.0-24:Ethernet3
     -   endpoints:
         - rt4:eth2
-        - Seg_192_168_0_0_24:Ethernet1
+        - Seg-192.168.0.0-24:Ethernet1
     -   endpoints:
         - serv2:eth1
-        - Seg_192_168_0_0_24:Ethernet2
+        - Seg-192.168.0.0-24:Ethernet2
     nodes:
-        Seg_10_0_0_0_30:
-            image: ceos-lab:4.27.2F
+        Seg-10.0.0.0-30:
+            image: ceos:4.27.3F
             kind: arista_ceos
-            startup-config: Seg_10_0_0_0_30.conf
-        Seg_10_0_1_0_30:
-            image: ceos-lab:4.27.2F
+            startup-config: Seg-10.0.0.0-30.conf
+        Seg-10.0.1.0-30:
+            image: ceos:4.27.3F
             kind: arista_ceos
-            startup-config: Seg_10_0_1_0_30.conf
-        Seg_10_1_0_0_24:
-            image: ceos-lab:4.27.2F
+            startup-config: Seg-10.0.1.0-30.conf
+        Seg-10.1.0.0-24:
+            image: ceos:4.27.3F
             kind: arista_ceos
-            startup-config: Seg_10_1_0_0_24.conf
-        Seg_192_168_0_0_24:
-            image: ceos-lab:4.27.2F
+            startup-config: Seg-10.1.0.0-24.conf
+        Seg-192.168.0.0-24:
+            image: ceos:4.27.3F
             kind: arista_ceos
-            startup-config: Seg_192_168_0_0_24.conf
-        Seg_203_0_113_0_24:
-            image: ceos-lab:4.27.2F
+            startup-config: Seg-192.168.0.0-24.conf
+        Seg-203.0.113.0-24:
+            image: ceos:4.27.3F
             kind: arista_ceos
-            startup-config: Seg_203_0_113_0_24.conf
+            startup-config: Seg-203.0.113.0-24.conf
         rt1:
             image: crpd:22.1R1.10
             kind: juniper_crpd
