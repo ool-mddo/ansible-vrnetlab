@@ -1,1 +1,0 @@
-{"event": "verbose", "uuid": "c7462931-ea2c-4d51-b926-521b2f678de8", "counter": 73, "stdout": "\u001b[1;35m[WARNING]: Skipping key (ANSIBLE_HOST_KEY_CHECKING) in group (env) as it is not\u001b[0m", "start_line": 72, "end_line": 73, "runner_ident": "../inventory/hosts", "created": "2022-07-11T17:33:25.021388"}

@@ -1,1 +1,0 @@
-{"event": "verbose", "uuid": "f865bbbf-de3e-4208-9b67-074e2ed04b7e", "counter": 21, "stdout": "\u001b[1;35m[WARNING]: Skipping key (LC_NAME) in group (env) as it is not a mapping, it is\u001b[0m", "start_line": 20, "end_line": 21, "runner_ident": "../inventory/hosts", "created": "2022-07-11T17:33:25.016381"}

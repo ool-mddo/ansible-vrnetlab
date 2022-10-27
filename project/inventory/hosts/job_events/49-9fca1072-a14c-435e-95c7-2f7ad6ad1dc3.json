@@ -1,1 +1,0 @@
-{"event": "verbose", "uuid": "9fca1072-a14c-435e-95c7-2f7ad6ad1dc3", "counter": 49, "stdout": "\u001b[1;35m[WARNING]: Skipping key (MAIL) in group (env) as it is not a mapping, it is a\u001b[0m", "start_line": 48, "end_line": 49, "runner_ident": "../inventory/hosts", "created": "2022-07-11T17:33:25.019111"}

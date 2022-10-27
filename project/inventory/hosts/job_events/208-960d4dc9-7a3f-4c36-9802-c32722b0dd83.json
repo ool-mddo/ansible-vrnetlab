@@ -1,1 +1,0 @@
-{"event": "verbose", "uuid": "960d4dc9-7a3f-4c36-9802-c32722b0dd83", "counter": 208, "stdout": "\u001b[0;34msetting up inventory plugins\u001b[0m", "start_line": 207, "end_line": 208, "runner_ident": "../inventory/hosts", "created": "2022-07-11T17:33:25.037120"}

@@ -1,1 +1,0 @@
-{"event": "verbose", "uuid": "36d736e3-7f22-4b05-a3d7-71e103b628f1", "counter": 241, "stdout": "\u001b[1;35mExpecting value: line 1 column 1 (char 0)  Syntax Error while loading YAML.   .\u001b[0m", "start_line": 240, "end_line": 241, "runner_ident": "../inventory/hosts", "created": "2022-07-11T17:33:25.041024"}
