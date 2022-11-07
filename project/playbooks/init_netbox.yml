@@ -7,152 +7,53 @@
 
   vars:
     ansible_python_interpreter: /usr/bin/python3
-    netbox_url: http://192.168.23.32:8001
+    netbox_url: http://192.168.23.31:8000
     netbox_token: 0123456789abcdef0123456789abcdef01234567
     machines: 
-      - site: RegionB
-        manufacture: Juniper
-        role: PE
-        ansible_network_os: junos
-        ansible_user: vrnetlab
-        ansible_password: VR-netlab9
-        target: RegionB-PE01
-        rack: RegionB-CoreRack
-        rack_position: 35
-        rack_face: Front
-        device_type: MX
-      - site: RegionB
-        manufacture: Juniper
-        role: PE
-        ansible_network_os: junos
-        ansible_user: vrnetlab
-        ansible_password: VR-netlab9
-        target: RegionB-PE02
-        rack: RegionB-CoreRack
-        rack_position: 33
-        rack_face: Front
-        device_type: MX
-      - site: RegionB
-        manufacture: Juniper
-        role: CE
-        ansible_network_os: junos
-        ansible_user: vrnetlab
-        ansible_password: VR-netlab9
-        target: RegionB-CE01
-        rack: RegionB-CoreRack
-        rack_position: 31
-        rack_face: Front
-        device_type: MX
-      - site: RegionB
-        manufacture: Juniper
-        role: CE
-        ansible_network_os: junos
-        ansible_user: vrnetlab
-        ansible_password: VR-netlab9
-        target: RegionB-CE02
-        rack: RegionB-CoreRack
-        rack_position: 29
-        rack_face: Front
-        device_type: MX
       - site: RegionA
         manufacture: Juniper
-        role: PE
+        role: RT
         ansible_network_os: junos
         ansible_user: vrnetlab
         ansible_password: VR-netlab9
-        target: RegionA-PE01
+        target: RegionA-RT1
         rack: RegionA-CoreRack
-        rack_position: 35
+        rack_position: 40
         rack_face: Front
         device_type: MX
       - site: RegionA
         manufacture: Juniper
-        role: PE
+        role: RT
         ansible_network_os: junos
         ansible_user: vrnetlab
         ansible_password: VR-netlab9
-        target: RegionA-PE02
+        target: RegionA-RT2
         rack: RegionA-CoreRack
-        rack_position: 33
+        rack_position: 39
         rack_face: Front
         device_type: MX
-      - site: RegionA
-        manufacture: Arista
-        role: CE
-        ansible_network_os: eos
-        ansible_user: vrnetlab
-        ansible_password: VR-netlab9
-        target: RegionA-CE01
-        rack: RegionA-CoreRack
-        rack_position: 31
-        rack_face: Front
-        device_type: EOS
-      - site: RegionA
-        manufacture: Arista
-        role: CE
-        ansible_network_os: eos
-        ansible_user: vrnetlab
-        ansible_password: VR-netlab9
-        target: RegionA-CE02
-        rack: RegionA-CoreRack
-        rack_position: 29
-        rack_face: Front
-        device_type: EOS
-      - site: RegionA
-        manufacture: Arista
-        role: ToR
-        ansible_network_os: eos
-        ansible_user: vrnetlab
-        ansible_password: VR-netlab9
-        target: RegionA-Acc01
-        rack:  RegionA-Rack1
-        rack_position: 42
-        rack_face: Front
-        device_type: EOS
       - site: RegionB
         manufacture: Arista
-        role: ToR
+        role: RT
         ansible_network_os: eos
         ansible_user: vrnetlab
         ansible_password: VR-netlab9
-        target: RegionB-Acc01
-        rack:  RegionB-Rack1
-        rack_position: 42
-        rack_face: Front
-        device_type: EOS
-      - site: RegionB
-        manufacture: Arista
-        role: ToR
-        ansible_network_os: eos
-        ansible_user: vrnetlab
-        ansible_password: VR-netlab9
-        target: RegionB-Acc02
-        rack:  RegionB-Rack1
+        target: RegionB-RT1
+        rack: RegionB-CoreRack
         rack_position: 40
         rack_face: Front
         device_type: EOS
-      - site: RegionA
-        manufacture: Ubuntu
-        role: Server
-        ansible_network_os: server
+      - site: RegionB
+        manufacture: Arista
+        role: RT
+        ansible_network_os: eos
         ansible_user: vrnetlab
         ansible_password: VR-netlab9
-        target: RegionA-Svr01
-        rack:  RegionA-Rack1
-        rack_position: 10
+        target: RegionB-RT2
+        rack: RegionB-CoreRack
+        rack_position: 39
         rack_face: Front
-        device_type: Ubuntu
-      - site: RegionA
-        manufacture: Ubuntu
-        role: Server
-        ansible_network_os: server
-        ansible_user: vrnetlab
-        ansible_password: VR-netlab9
-        target: RegionA-Svr02
-        rack:  RegionA-Rack1
-        rack_position: 8
-        rack_face: Front
-        device_type: Ubuntu
+        device_type: EOS
       - site: RegionB
         manufacture: Ubuntu
         role: Server
@@ -161,18 +62,40 @@
         ansible_password: VR-netlab9
         target: RegionB-Svr01
         rack:  RegionB-Rack1
-        rack_position: 10
+        rack_position: 38
         rack_face: Front
         device_type: Ubuntu
-      - site: RegionB
+      - site: RegionC
+        manufacture: IOSXR
+        role: RT
+        ansible_network_os: iosxr
+        ansible_user: vrnetlab
+        ansible_password: VR-netlab9
+        target: RegionC-RT1
+        rack:  RegionC-Rack1
+        rack_position: 40
+        rack_face: Front
+        device_type: IOSXR
+      - site: RegionC
+        manufacture: IOSXR
+        role: RT
+        ansible_network_os: iosxr
+        ansible_user: vrnetlab
+        ansible_password: VR-netlab9
+        target: RegionC-RT2
+        rack:  RegionC-Rack1
+        rack_position: 39
+        rack_face: Front
+        device_type: IOSXR
+      - site: RegionC
         manufacture: Ubuntu
         role: Server
         ansible_network_os: server
         ansible_user: vrnetlab
         ansible_password: VR-netlab9
-        target: RegionB-Svr02
-        rack:  RegionB-Rack1
-        rack_position: 8
+        target: RegionC-Svr01
+        rack:  RegionC-Rack1
+        rack_position: 38
         rack_face: Front
         device_type: Ubuntu
 

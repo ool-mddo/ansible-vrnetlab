@@ -7,7 +7,7 @@
 
   vars:
     ansible_python_interpreter: /usr/bin/python3
-    netbox_url: http://192.168.23.32:8001
+    netbox_url: http://192.168.23.31:8000
     netbox_token: 0123456789abcdef0123456789abcdef01234567
 
   tasks:
@@ -27,8 +27,8 @@
 
   tasks:
     - name: mkdir -p hosts
-      shell: mkdir -p ../hosts
-      delegate_to: 127.0.0.1
+      shell: mkdir -p /data/hosts
+      delegate_to: localhost
 
     - name: cat /etc/netplan/99_config.yaml
       ansible.builtin.command: cat /etc/netplan/99_config.yaml
@@ -67,18 +67,18 @@
         dest: "../hosts/{{ inventory_hostname}}.json"
       when: ansible_network_os == 'server'
       changed_when: False
-      delegate_to: 127.0.0.1
+      delegate_to: localhost
 
 - hosts: network 
   connection: ansible.netcommon.network_cli
   gather_facts: false
   vars:
-      config_dir: "./configs"
+      config_dir: "/data/configs"
 
   tasks:
     - name: mkdir -p configs
-      shell: mkdir -p ../configs
-      delegate_to: 127.0.0.1
+      shell: mkdir -p /data/configs
+      delegate_to: localhost
 
     - name: show command
       ansible.netcommon.cli_command:
@@ -116,7 +116,7 @@
         command: show running-config 
       when: ansible_network_os == 'eos'
       register: command_eos_result
-    
+        
     - name: save config files
       copy:
         content: "{{ command_eos_result.stdout }}"
