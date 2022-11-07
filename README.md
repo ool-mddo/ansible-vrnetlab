@@ -18,7 +18,9 @@ $ ansible-playbook -i inventory/hosts project/playbooks/get_config.yml
 ### ansible-runner & overlay network version
 
 ```
-sudo ansible-runner run . -p playbooks/get_config_runner.yml --container-option="--net=my-multihost-network" -vvvv
+sudo ansible-runner run /data -p /data/playbooks/get_status_runner.yml --container-option="--net=my-multihost-network" --container-volume-mount="{dirpath}ansible-vrnetlab/project:/data" --container-image=ee001:latest --process-isolation --process-isolation-executable docker 
+
+
 
 ```
 
