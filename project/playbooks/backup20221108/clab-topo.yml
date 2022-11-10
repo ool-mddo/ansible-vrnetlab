@@ -3,94 +3,94 @@ topology:
     links:
     -   endpoints:
         - a01c.chib:eth1
-        - Seg-220.150.196.32-27:eth1
+        - Seg-220.150.196.32-27:Ethernet1
     -   endpoints:
         - g01c.chib:eth1
-        - Seg-220.150.196.32-27:eth2
+        - Seg-220.150.196.32-27:Ethernet2
     -   endpoints:
         - g02j.chib:eth1
-        - Seg-220.150.196.32-27:eth3
+        - Seg-220.150.196.32-27:Ethernet3
     -   endpoints:
         - r01c.chib:eth1
-        - Seg-220.150.196.32-27:eth4
+        - Seg-220.150.196.32-27:Ethernet4
     -   endpoints:
         - r02j.chib:eth1
-        - Seg-220.150.196.32-27:eth5
+        - Seg-220.150.196.32-27:Ethernet5
     -   endpoints:
         - a01c.chib:eth2
-        - Seg-220.150.196.96-30:eth1
+        - Seg-220.150.196.96-30:Ethernet1
     -   endpoints:
         - a02c.chib:eth1
-        - Seg-220.150.196.96-30:eth2
+        - Seg-220.150.196.96-30:Ethernet2
     -   endpoints:
         - a02c.chib:eth2
-        - Seg-163.138.255.84-30:eth1
+        - Seg-163.138.255.84-30:Ethernet1
     -   endpoints:
         - a02j.akbu:eth1
-        - Seg-163.138.255.84-30:eth2
+        - Seg-163.138.255.84-30:Ethernet2
     -   endpoints:
         - a02c.chib:eth3
-        - Seg-220.150.196.64-27:eth1
+        - Seg-220.150.196.64-27:Ethernet1
     -   endpoints:
         - g01c.chib:eth2
-        - Seg-220.150.196.64-27:eth2
+        - Seg-220.150.196.64-27:Ethernet2
     -   endpoints:
         - g02j.chib:eth2
-        - Seg-220.150.196.64-27:eth3
+        - Seg-220.150.196.64-27:Ethernet3
     -   endpoints:
         - r01c.chib:eth2
-        - Seg-220.150.196.64-27:eth4
+        - Seg-220.150.196.64-27:Ethernet4
     -   endpoints:
         - r02j.chib:eth2
-        - Seg-220.150.196.64-27:eth5
+        - Seg-220.150.196.64-27:Ethernet5
     -   endpoints:
         - a02j.akbu:eth2
-        - Seg-163.138.255.36-30:eth1
+        - Seg-163.138.255.36-30:Ethernet1
     -   endpoints:
         - g01j.akbu:eth1
-        - Seg-163.138.255.36-30:eth2
+        - Seg-163.138.255.36-30:Ethernet2
     -   endpoints:
         - a02j.akbu:eth3
-        - Seg-163.138.255.44-30:eth1
+        - Seg-163.138.255.44-30:Ethernet1
     -   endpoints:
         - g02j.akbu:eth1
-        - Seg-163.138.255.44-30:eth2
+        - Seg-163.138.255.44-30:Ethernet2
     -   endpoints:
         - a02j.akbu:eth4
-        - Seg-163.138.255.52-30:eth1
+        - Seg-163.138.255.52-30:Ethernet1
     -   endpoints:
         - g03j.akbu:eth1
-        - Seg-163.138.255.52-30:eth2
+        - Seg-163.138.255.52-30:Ethernet2
     -   endpoints:
         - a02j.akbu:eth5
-        - Seg-163.138.255.60-30:eth1
+        - Seg-163.138.255.60-30:Ethernet1
     -   endpoints:
         - g04j.akbu:eth1
-        - Seg-163.138.255.60-30:eth2
+        - Seg-163.138.255.60-30:Ethernet2
     -   endpoints:
         - a02j.akbu:eth6
-        - Seg-163.138.255.64-30:eth1
+        - Seg-163.138.255.64-30:Ethernet1
     -   endpoints:
         - a01j.akbu:eth1
-        - Seg-163.138.255.64-30:eth2
+        - Seg-163.138.255.64-30:Ethernet2
     -   endpoints:
         - g04j.akbu:eth2
-        - Seg-163.138.255.56-30:eth1
+        - Seg-163.138.255.56-30:Ethernet1
     -   endpoints:
         - a01j.akbu:eth2
-        - Seg-163.138.255.56-30:eth2
+        - Seg-163.138.255.56-30:Ethernet2
     -   endpoints:
         - g03j.akbu:eth2
-        - Seg-163.138.255.48-30:eth1
+        - Seg-163.138.255.48-30:Ethernet1
     -   endpoints:
         - a01j.akbu:eth3
-        - Seg-163.138.255.48-30:eth2
+        - Seg-163.138.255.48-30:Ethernet2
     -   endpoints:
         - g01j.akbu:eth2
-        - Seg-163.138.255.32-30:eth1
+        - Seg-163.138.255.32-30:Ethernet1
     -   endpoints:
         - a01j.akbu:eth4
-        - Seg-163.138.255.32-30:eth2
+        - Seg-163.138.255.32-30:Ethernet2
     nodes:
         Seg-163.138.255.32-30:
             image: ceos:4.27.3F

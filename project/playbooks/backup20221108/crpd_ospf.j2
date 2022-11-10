@@ -2,11 +2,7 @@ protocols {
     ospf {
         area 0.0.0.0 {
 {% for interface in item.iflist %}
-{% if "lo" in interface %}
-            interface {{ interface }}.0 {
-{% else %}
             interface {{ interface }} {
-{% endif %}
 {% if "metric" in item["if_attribute"][loop.index0] %}
                 metric {{ item["if_attribute"][loop.index0]["metric"] }};
 {% endif %}
