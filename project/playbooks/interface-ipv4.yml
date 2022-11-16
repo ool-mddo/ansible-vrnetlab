@@ -1,0 +1,80 @@
+-   iflist:
+    -   description: to_Seg-192.168.0.0-30_Ethernet1
+        ipv4: 192.168.0.1/30
+        name: eth1
+        originif: ge-0/0/0.0
+    -   description: to_Seg-172.16.0.0-30_Ethernet1
+        ipv4: 172.16.0.1/30
+        name: eth2
+        originif: ge-0/0/1.0
+    -   description: to_Seg-172.16.1.0-30_Ethernet1
+        ipv4: 172.16.1.1/30
+        name: eth3
+        originif: ge-0/0/2.0
+    name: regiona-rt1
+-   iflist:
+    -   description: to_Seg-192.168.0.0-30_Ethernet2
+        ipv4: 192.168.0.2/24
+        name: eth1
+        originif: ge-0/0/0.0
+    name: regiona-rt2
+-   iflist:
+    -   description: to_Seg-172.16.0.0-30_Ethernet2
+        ipv4: 172.16.0.2/30
+        name: eth1
+        originif: Ethernet2
+    -   description: to_Seg-172.16.2.0-30_Ethernet2
+        ipv4: 172.16.2.1/30
+        name: eth2
+        originif: Ethernet3
+    -   description: to_Seg-192.168.1.0-30_Ethernet1
+        ipv4: 192.168.1.1/30
+        name: eth3
+        originif: Ethernet1
+    name: regionb-rt1
+-   iflist:
+    -   description: to_Seg-172.16.1.0-30_Ethernet2
+        ipv4: 172.16.1.2/30
+        name: eth1
+        originif: GigabitEthernet0/0/0/1
+    -   description: to_Seg-192.168.2.0-30_Ethernet1
+        ipv4: 192.168.2.1/30
+        name: eth2
+        originif: GigabitEthernet0/0/0/0
+    -   description: to_Seg-172.16.2.0-30_Ethernet1
+        ipv4: 172.16.2.2/30
+        name: eth3
+        originif: GigabitEthernet0/0/0/2
+    name: regionc-rt1
+-   iflist:
+    -   description: to_Seg-192.168.2.0-30_Ethernet2
+        ipv4: 192.168.2.2/30
+        name: eth1
+        originif: GigabitEthernet0/0/0/0
+    -   description: to_Seg-192.168.100.0-25_Ethernet1
+        ipv4: 192.168.100.1/25
+        name: eth2
+        originif: GigabitEthernet0/0/0/1
+    name: regionc-rt2
+-   iflist:
+    -   description: to_Seg-192.168.100.0-25_Ethernet2
+        ipv4: 192.168.100.10/25
+        name: eth1
+        originif: ens2
+    name: regionc-svr01
+-   iflist:
+    -   description: to_Seg-192.168.1.0-30_Ethernet2
+        ipv4: 192.168.1.2/30
+        name: eth1
+        originif: Ethernet1
+    -   description: to_Seg-192.168.254.0-24_Ethernet1
+        ipv4: 192.168.254.1/24
+        name: eth2
+        originif: Ethernet2
+    name: regionb-rt2
+-   iflist:
+    -   description: to_Seg-192.168.254.0-24_Ethernet2
+        ipv4: 192.168.254.10/24
+        name: eth1
+        originif: ens2
+    name: regionb-svr01

@@ -3,3 +3,6 @@ jmespath
 netaddr
 pynetbox
 ttp
+ansible-pylibssh
+xmltodict
+

@@ -8,6 +8,7 @@
     ansible_sudo_pass: "{{ sudo_pass }}"
     ansible_python_interpreter: /usr/bin/python3
     mddo_containerlab_file: "./clab-topo.yml"
+    #mddo_containerlab_file: "/data/clab-topo.yml"
     operation: create
     #operation: delete
 
@@ -38,17 +39,22 @@
         cmd: "containerlab destroy --topo /tmp/clab-topo.yml"
       when: operation == 'delete'
 
-
-    - name: ovs container create bridge and assign eth1 & eth2
+    - name: save config from  containerlab
       command:
-        cmd: "{{ item }}"
-      vars:
-        exec_commands:
-        - "containerlab exec --topo /tmp/clab-topo.yml  --label clab-node-kind'\'=linux --cmd 'ovs-vsctl add-br lan'"
-        - "containerlab exec --topo /tmp/clab-topo.yml  --label clab-node-kind'\'=linux --cmd 'ovs-vsctl add-port lan eth1'"
-        - "containerlab exec --topo /tmp/clab-topo.yml  --label clab-node-kind'\'=linux --cmd 'ovs-vsctl add-port lan eth2'"
-        - "containerlab exec --topo /tmp/clab-topo.yml  --label clab-node-kind'\'=linux --cmd 'ip link set eth1 promisc on'"
-        - "containerlab exec --topo /tmp/clab-topo.yml  --label clab-node-kind'\'=linux --cmd 'ip link set eth2 promisc on'"
+        cmd: "containerlab save --topo /tmp/clab-topo.yml"
       when: operation == 'create'
-      loop: "{{ exec_commands }}"
+
+
+#    - name: ovs container create bridge and assign eth1 & eth2
+#      command:
+#        cmd: "{{ item }}"
+#      vars:
+#        exec_commands:
+#        - "containerlab exec --topo /tmp/clab-topo.yml  --label clab-node-kind'\'=linux --cmd 'ovs-vsctl add-br lan'"
+#        - "containerlab exec --topo /tmp/clab-topo.yml  --label clab-node-kind'\'=linux --cmd 'ovs-vsctl add-port lan eth1'"
+#        - "containerlab exec --topo /tmp/clab-topo.yml  --label clab-node-kind'\'=linux --cmd 'ovs-vsctl add-port lan eth2'"
+#        - "containerlab exec --topo /tmp/clab-topo.yml  --label clab-node-kind'\'=linux --cmd 'ip link set eth1 promisc on'"
+#        - "containerlab exec --topo /tmp/clab-topo.yml  --label clab-node-kind'\'=linux --cmd 'ip link set eth2 promisc on'"
+#      when: operation == 'create'
+#      loop: "{{ exec_commands }}"
 

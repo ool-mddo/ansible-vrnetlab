@@ -1,0 +1,116 @@
+name: mddo-lab
+topology:
+    links:
+    -   endpoints:
+        - regiona-rt1:eth1
+        - Seg-192.168.0.0-30:eth1
+    -   endpoints:
+        - regiona-rt2:eth1
+        - Seg-192.168.0.0-30:eth2
+    -   endpoints:
+        - regiona-rt1:eth2
+        - Seg-172.16.0.0-30:eth1
+    -   endpoints:
+        - regionb-rt1:eth1
+        - Seg-172.16.0.0-30:eth2
+    -   endpoints:
+        - regiona-rt1:eth3
+        - Seg-172.16.1.0-30:eth1
+    -   endpoints:
+        - regionc-rt1:eth1
+        - Seg-172.16.1.0-30:eth2
+    -   endpoints:
+        - regionc-rt1:eth2
+        - Seg-192.168.2.0-30:eth1
+    -   endpoints:
+        - regionc-rt2:eth1
+        - Seg-192.168.2.0-30:eth2
+    -   endpoints:
+        - regionc-rt1:eth3
+        - Seg-172.16.2.0-30:eth1
+    -   endpoints:
+        - regionb-rt1:eth2
+        - Seg-172.16.2.0-30:eth2
+    -   endpoints:
+        - regionc-rt2:eth2
+        - Seg-192.168.100.0-25:eth1
+    -   endpoints:
+        - regionc-svr01:eth1
+        - Seg-192.168.100.0-25:eth2
+    -   endpoints:
+        - regionb-rt1:eth3
+        - Seg-192.168.1.0-30:eth1
+    -   endpoints:
+        - regionb-rt2:eth1
+        - Seg-192.168.1.0-30:eth2
+    -   endpoints:
+        - regionb-rt2:eth2
+        - Seg-192.168.254.0-24:eth1
+    -   endpoints:
+        - regionb-svr01:eth1
+        - Seg-192.168.254.0-24:eth2
+    nodes:
+        Seg-172.16.0.0-30:
+            image: ceos-lab:4.27.2F
+            kind: arista_ceos
+            startup-config: Seg-172.16.0.0-30.conf
+        Seg-172.16.1.0-30:
+            image: ceos-lab:4.27.2F
+            kind: arista_ceos
+            startup-config: Seg-172.16.1.0-30.conf
+        Seg-172.16.2.0-30:
+            image: ceos-lab:4.27.2F
+            kind: arista_ceos
+            startup-config: Seg-172.16.2.0-30.conf
+        Seg-192.168.0.0-30:
+            image: ceos-lab:4.27.2F
+            kind: arista_ceos
+            startup-config: Seg-192.168.0.0-30.conf
+        Seg-192.168.1.0-30:
+            image: ceos-lab:4.27.2F
+            kind: arista_ceos
+            startup-config: Seg-192.168.1.0-30.conf
+        Seg-192.168.100.0-25:
+            image: ceos-lab:4.27.2F
+            kind: arista_ceos
+            startup-config: Seg-192.168.100.0-25.conf
+        Seg-192.168.2.0-30:
+            image: ceos-lab:4.27.2F
+            kind: arista_ceos
+            startup-config: Seg-192.168.2.0-30.conf
+        Seg-192.168.254.0-24:
+            image: ceos-lab:4.27.2F
+            kind: arista_ceos
+            startup-config: Seg-192.168.254.0-24.conf
+        regiona-rt1:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+            startup-config: regiona-rt1.conf
+        regiona-rt2:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+            startup-config: regiona-rt2.conf
+        regionb-rt1:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+            startup-config: regionb-rt1.conf
+        regionb-rt2:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+            startup-config: regionb-rt2.conf
+        regionb-svr01:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+            startup-config: regionb-svr01.conf
+        regionc-rt1:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+            startup-config: regionc-rt1.conf
+        regionc-rt2:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+            startup-config: regionc-rt2.conf
+        regionc-svr01:
+            image: crpd:22.1R1.10
+            kind: juniper_crpd
+            startup-config: regionc-svr01.conf

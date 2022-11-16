@@ -7,6 +7,9 @@
     interface_ipv4_file: "./interface-ipv4.yml"
 
   tasks:
+  - name: collection list
+    shell: ansible-galaxy collection list
+
   - name: Include users.json
     include_vars:
       file: ./pushed_configs_mddo_network.json

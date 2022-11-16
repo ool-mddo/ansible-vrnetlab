@@ -6,4 +6,4 @@ collections:
   - name: junipernetworks.junos
   - name: cisco.iosxr
   - name: arista.eos
-
+  - name: community.general
