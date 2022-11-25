@@ -1,4 +1,4 @@
-name: mddo-lab
+name: mddo-demo202211
 topology:
     links:
     -   endpoints:

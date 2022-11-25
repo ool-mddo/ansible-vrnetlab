@@ -3,6 +3,7 @@
   gather_facts: false
   become: yes
   vars:
+    labname: "mddo-lab"
     mddo_model_file: "./pushed_configs_mddo_network.json"
     nodes: {}
     containerlab: []
@@ -63,7 +64,7 @@
 
     - set_fact:
         containerlab:
-          name: "mddo-lab"
+          name: "{{ labname }}"
           topology:
             links: "{{ result_link.json }}"
             nodes: "{{ nodes }}"

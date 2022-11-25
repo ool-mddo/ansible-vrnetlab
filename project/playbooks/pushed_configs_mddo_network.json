@@ -9,14 +9,14 @@
         },
         "node": [
           {
-            "node-id": "Seg_192.168.0.0/30+",
+            "node-id": "Seg_192.168.0.0/30",
             "ietf-network-topology:termination-point": [
               {
                 "tp-id": "regiona-rt2_ge-0/0/0.0",
                 "supporting-termination-point": [
                   {
                     "network-ref": "layer3",
-                    "node-ref": "Seg_192.168.0.0/30+",
+                    "node-ref": "Seg_192.168.0.0/30",
                     "tp-ref": "regiona-rt2_ge-0/0/0.0"
                   }
                 ],
@@ -39,12 +39,13 @@
             "supporting-node": [
               {
                 "network-ref": "layer3",
-                "node-ref": "Seg_192.168.0.0/30+"
+                "node-ref": "Seg_192.168.0.0/30"
               }
             ],
             "mddo-topology:ospf-area-node-attributes": {
               "node-type": "segment",
               "router-id": "",
+              "process-id": "default",
               "router-id-source": "auto",
               "log-adjacency-change": false,
               "redistribute": [
@@ -143,11 +144,16 @@
             "mddo-topology:ospf-area-node-attributes": {
               "node-type": "ospf_proc",
               "router-id": "10.10.10.10",
+              "process-id": "default",
               "router-id-source": "static",
               "log-adjacency-change": false,
               "redistribute": [
                 {
                   "protocol": "connected",
+                  "metric-type": 2
+                },
+                {
+                  "protocol": "static",
                   "metric-type": 2
                 }
               ]
@@ -214,6 +220,7 @@
             "mddo-topology:ospf-area-node-attributes": {
               "node-type": "segment",
               "router-id": "",
+              "process-id": "default",
               "router-id-source": "auto",
               "log-adjacency-change": false,
               "redistribute": [
@@ -315,13 +322,11 @@
             "mddo-topology:ospf-area-node-attributes": {
               "node-type": "ospf_proc",
               "router-id": "1.1.1.1",
+              "process-id": 1,
               "router-id-source": "static",
               "log-adjacency-change": false,
               "redistribute": [
-                {
-                  "protocol": "connected",
-                  "metric-type": 2
-                }
+
               ]
             }
           },
@@ -386,6 +391,7 @@
             "mddo-topology:ospf-area-node-attributes": {
               "node-type": "segment",
               "router-id": "",
+              "process-id": "default",
               "router-id-source": "auto",
               "log-adjacency-change": false,
               "redistribute": [
@@ -484,13 +490,11 @@
             "mddo-topology:ospf-area-node-attributes": {
               "node-type": "ospf_proc",
               "router-id": "192.168.2.1",
+              "process-id": 65000,
               "router-id-source": "static",
               "log-adjacency-change": false,
               "redistribute": [
-                {
-                  "protocol": "connected",
-                  "metric-type": 2
-                }
+
               ]
             }
           },
@@ -531,6 +535,7 @@
             "mddo-topology:ospf-area-node-attributes": {
               "node-type": "segment",
               "router-id": "",
+              "process-id": "default",
               "router-id-source": "auto",
               "log-adjacency-change": false,
               "redistribute": [
@@ -599,6 +604,7 @@
             "mddo-topology:ospf-area-node-attributes": {
               "node-type": "segment",
               "router-id": "",
+              "process-id": "default",
               "router-id-source": "auto",
               "log-adjacency-change": false,
               "redistribute": [
@@ -667,6 +673,7 @@
             "mddo-topology:ospf-area-node-attributes": {
               "node-type": "segment",
               "router-id": "",
+              "process-id": "default",
               "router-id-source": "auto",
               "log-adjacency-change": false,
               "redistribute": [
@@ -738,13 +745,11 @@
             "mddo-topology:ospf-area-node-attributes": {
               "node-type": "ospf_proc",
               "router-id": "1.1.1.2",
+              "process-id": 1,
               "router-id-source": "static",
               "log-adjacency-change": false,
               "redistribute": [
-                {
-                  "protocol": "connected",
-                  "metric-type": 2
-                }
+
               ]
             }
           },
@@ -785,6 +790,7 @@
             "mddo-topology:ospf-area-node-attributes": {
               "node-type": "segment",
               "router-id": "",
+              "process-id": "default",
               "router-id-source": "auto",
               "log-adjacency-change": false,
               "redistribute": [
@@ -795,9 +801,9 @@
         ],
         "ietf-network-topology:link": [
           {
-            "link-id": "Seg_192.168.0.0/30+,regiona-rt2_ge-0/0/0.0,regiona-rt1,ge-0/0/0.0",
+            "link-id": "Seg_192.168.0.0/30,regiona-rt2_ge-0/0/0.0,regiona-rt1,ge-0/0/0.0",
             "source": {
-              "source-node": "Seg_192.168.0.0/30+",
+              "source-node": "Seg_192.168.0.0/30",
               "source-tp": "regiona-rt2_ge-0/0/0.0"
             },
             "destination": {
@@ -806,13 +812,13 @@
             }
           },
           {
-            "link-id": "regiona-rt1,ge-0/0/0.0,Seg_192.168.0.0/30+,regiona-rt2_ge-0/0/0.0",
+            "link-id": "regiona-rt1,ge-0/0/0.0,Seg_192.168.0.0/30,regiona-rt2_ge-0/0/0.0",
             "source": {
               "source-node": "regiona-rt1",
               "source-tp": "ge-0/0/0.0"
             },
             "destination": {
-              "dest-node": "Seg_192.168.0.0/30+",
+              "dest-node": "Seg_192.168.0.0/30",
               "dest-tp": "regiona-rt2_ge-0/0/0.0"
             }
           },
@@ -1058,7 +1064,7 @@
         },
         "node": [
           {
-            "node-id": "Seg_192.168.0.0/30+",
+            "node-id": "Seg_192.168.0.0/30",
             "ietf-network-topology:termination-point": [
               {
                 "tp-id": "regiona-rt2_ge-0/0/0.0",
@@ -1096,13 +1102,6 @@
               "prefix": [
                 {
                   "prefix": "192.168.0.0/30",
-                  "metric": 0,
-                  "flag": [
-
-                  ]
-                },
-                {
-                  "prefix": "192.168.0.0/24",
                   "metric": 0,
                   "flag": [
 
@@ -1247,7 +1246,7 @@
                 "mddo-topology:l3-termination-point-attributes": {
                   "description": "to_RegionA-RT1_ge-0/0/0",
                   "ip-address": [
-                    "192.168.0.2/24"
+                    "192.168.0.2/30"
                   ],
                   "flag": [
 
@@ -1265,7 +1264,7 @@
               "node-type": "node",
               "prefix": [
                 {
-                  "prefix": "192.168.0.0/24",
+                  "prefix": "192.168.0.0/30",
                   "metric": 0,
                   "flag": [
                     "connected"
@@ -2157,9 +2156,9 @@
         ],
         "ietf-network-topology:link": [
           {
-            "link-id": "Seg_192.168.0.0/30+,regiona-rt2_ge-0/0/0.0,regiona-rt1,ge-0/0/0.0",
+            "link-id": "Seg_192.168.0.0/30,regiona-rt2_ge-0/0/0.0,regiona-rt1,ge-0/0/0.0",
             "source": {
-              "source-node": "Seg_192.168.0.0/30+",
+              "source-node": "Seg_192.168.0.0/30",
               "source-tp": "regiona-rt2_ge-0/0/0.0"
             },
             "destination": {
@@ -2168,20 +2167,20 @@
             }
           },
           {
-            "link-id": "regiona-rt1,ge-0/0/0.0,Seg_192.168.0.0/30+,regiona-rt2_ge-0/0/0.0",
+            "link-id": "regiona-rt1,ge-0/0/0.0,Seg_192.168.0.0/30,regiona-rt2_ge-0/0/0.0",
             "source": {
               "source-node": "regiona-rt1",
               "source-tp": "ge-0/0/0.0"
             },
             "destination": {
-              "dest-node": "Seg_192.168.0.0/30+",
+              "dest-node": "Seg_192.168.0.0/30",
               "dest-tp": "regiona-rt2_ge-0/0/0.0"
             }
           },
           {
-            "link-id": "Seg_192.168.0.0/30+,regiona-rt1_ge-0/0/0.0,regiona-rt2,ge-0/0/0.0",
+            "link-id": "Seg_192.168.0.0/30,regiona-rt1_ge-0/0/0.0,regiona-rt2,ge-0/0/0.0",
             "source": {
-              "source-node": "Seg_192.168.0.0/30+",
+              "source-node": "Seg_192.168.0.0/30",
               "source-tp": "regiona-rt1_ge-0/0/0.0"
             },
             "destination": {
@@ -2190,13 +2189,13 @@
             }
           },
           {
-            "link-id": "regiona-rt2,ge-0/0/0.0,Seg_192.168.0.0/30+,regiona-rt1_ge-0/0/0.0",
+            "link-id": "regiona-rt2,ge-0/0/0.0,Seg_192.168.0.0/30,regiona-rt1_ge-0/0/0.0",
             "source": {
               "source-node": "regiona-rt2",
               "source-tp": "ge-0/0/0.0"
             },
             "destination": {
-              "dest-node": "Seg_192.168.0.0/30+",
+              "dest-node": "Seg_192.168.0.0/30",
               "dest-tp": "regiona-rt1_ge-0/0/0.0"
             }
           },
