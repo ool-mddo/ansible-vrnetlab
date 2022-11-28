@@ -39,22 +39,26 @@
         cmd: "containerlab destroy --topo /tmp/clab-topo.yml"
       when: operation == 'delete'
 
+
+    - name: ovs container create bridge and assign eth1 & eth2
+      command:
+        cmd: "{{ item }}"
+      vars:
+        exec_commands:
+        - "containerlab exec --topo /tmp/clab-topo.yml  --label clab-node-kind'\'=linux --cmd 'ovs-vsctl add-br lan'"
+        - "containerlab exec --topo /tmp/clab-topo.yml  --label clab-node-kind'\'=linux --cmd 'ovs-vsctl add-port lan eth1'"
+        - "containerlab exec --topo /tmp/clab-topo.yml  --label clab-node-kind'\'=linux --cmd 'ovs-vsctl add-port lan eth2'"
+        - "containerlab exec --topo /tmp/clab-topo.yml  --label clab-node-kind'\'=linux --cmd 'ovs-vsctl add-port lan eth3'"
+        - "containerlab exec --topo /tmp/clab-topo.yml  --label clab-node-kind'\'=linux --cmd 'ovs-vsctl add-port lan eth4'"
+        - "containerlab exec --topo /tmp/clab-topo.yml  --label clab-node-kind'\'=linux --cmd 'ip link set eth1 promisc on'"
+        - "containerlab exec --topo /tmp/clab-topo.yml  --label clab-node-kind'\'=linux --cmd 'ip link set eth2 promisc on'"
+        - "containerlab exec --topo /tmp/clab-topo.yml  --label clab-node-kind'\'=linux --cmd 'ip link set eth3 promisc on'"
+        - "containerlab exec --topo /tmp/clab-topo.yml  --label clab-node-kind'\'=linux --cmd 'ip link set eth4 promisc on'"
+      when: operation == 'create'
+      loop: "{{ exec_commands }}"
+
     - name: save config from  containerlab
       command:
         cmd: "containerlab save --topo /tmp/clab-topo.yml"
       when: operation == 'create'
-
-
-#    - name: ovs container create bridge and assign eth1 & eth2
-#      command:
-#        cmd: "{{ item }}"
-#      vars:
-#        exec_commands:
-#        - "containerlab exec --topo /tmp/clab-topo.yml  --label clab-node-kind'\'=linux --cmd 'ovs-vsctl add-br lan'"
-#        - "containerlab exec --topo /tmp/clab-topo.yml  --label clab-node-kind'\'=linux --cmd 'ovs-vsctl add-port lan eth1'"
-#        - "containerlab exec --topo /tmp/clab-topo.yml  --label clab-node-kind'\'=linux --cmd 'ovs-vsctl add-port lan eth2'"
-#        - "containerlab exec --topo /tmp/clab-topo.yml  --label clab-node-kind'\'=linux --cmd 'ip link set eth1 promisc on'"
-#        - "containerlab exec --topo /tmp/clab-topo.yml  --label clab-node-kind'\'=linux --cmd 'ip link set eth2 promisc on'"
-#      when: operation == 'create'
-#      loop: "{{ exec_commands }}"
 

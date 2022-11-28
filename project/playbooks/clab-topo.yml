@@ -51,36 +51,36 @@ topology:
         - Seg-192.168.254.0-24:eth2
     nodes:
         Seg-172.16.0.0-30:
-            image: ceos-lab:4.27.2F
-            kind: arista_ceos
+            image: ghcr.io/ool-mddo/clab-ovs:latest
+            kind: linux
             startup-config: Seg-172.16.0.0-30.conf
         Seg-172.16.1.0-30:
-            image: ceos-lab:4.27.2F
-            kind: arista_ceos
+            image: ghcr.io/ool-mddo/clab-ovs:latest
+            kind: linux
             startup-config: Seg-172.16.1.0-30.conf
         Seg-172.16.2.0-30:
-            image: ceos-lab:4.27.2F
-            kind: arista_ceos
+            image: ghcr.io/ool-mddo/clab-ovs:latest
+            kind: linux
             startup-config: Seg-172.16.2.0-30.conf
         Seg-192.168.0.0-30:
-            image: ceos-lab:4.27.2F
-            kind: arista_ceos
+            image: ghcr.io/ool-mddo/clab-ovs:latest
+            kind: linux
             startup-config: Seg-192.168.0.0-30.conf
         Seg-192.168.1.0-30:
-            image: ceos-lab:4.27.2F
-            kind: arista_ceos
+            image: ghcr.io/ool-mddo/clab-ovs:latest
+            kind: linux
             startup-config: Seg-192.168.1.0-30.conf
         Seg-192.168.100.0-25:
-            image: ceos-lab:4.27.2F
-            kind: arista_ceos
+            image: ghcr.io/ool-mddo/clab-ovs:latest
+            kind: linux
             startup-config: Seg-192.168.100.0-25.conf
         Seg-192.168.2.0-30:
-            image: ceos-lab:4.27.2F
-            kind: arista_ceos
+            image: ghcr.io/ool-mddo/clab-ovs:latest
+            kind: linux
             startup-config: Seg-192.168.2.0-30.conf
         Seg-192.168.254.0-24:
-            image: ceos-lab:4.27.2F
-            kind: arista_ceos
+            image: ghcr.io/ool-mddo/clab-ovs:latest
+            kind: linux
             startup-config: Seg-192.168.254.0-24.conf
         regiona-rt1:
             image: crpd:22.1R1.10

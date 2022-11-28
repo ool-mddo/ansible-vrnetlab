@@ -1,5 +1,5 @@
 NETVIZ=localhost
-NODERED_URL="172.25.0.3"
+NODERED_URL="172.23.0.3"
 ANSIBLERUNNER_IMAGE="ee001"
 NODERED_BRIDGE="mddo-nodered_node-red-net"
 LABNAME="mddo-demo202211"
@@ -9,7 +9,7 @@ LOCALSERVER_PASSWD=ubuntu
 LOCALSERVER_SUDO=ubuntu
 
 ### get original as-is toplogy json date
-curl http://${NETVIZ}:3000/model/mddo-ospf/original_asis/topology.json > playbooks/pushed_configs_mddo_network.json
+#curl http://${NETVIZ}:3000/model/mddo-ospf/original_asis/topology.json > playbooks/pushed_configs_mddo_network.json
 
 ### run generate clab topology file
 echo "run generate clab topology file"
