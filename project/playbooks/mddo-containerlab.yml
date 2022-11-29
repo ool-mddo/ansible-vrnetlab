@@ -11,6 +11,7 @@
     #mddo_containerlab_file: "/data/clab-topo.yml"
     operation: create
     #operation: delete
+    #operation: save
 
   tasks:
     - name:
@@ -24,7 +25,7 @@
       when: 'operation == "create"'
 
 
-    - name: Creating a file with content
+    - name: Creating clab-topo.yml 
       copy:
         dest: "/tmp/clab-topo.yml"
         content: "{{ containerlab | to_yaml }}"
@@ -40,7 +41,7 @@
       when: operation == 'delete'
 
 
-    - name: ovs container create bridge and assign eth1 & eth2
+    - name: ovs container create bridge and assign ethX
       command:
         cmd: "{{ item }}"
       vars:
@@ -60,5 +61,5 @@
     - name: save config from  containerlab
       command:
         cmd: "containerlab save --topo /tmp/clab-topo.yml"
-      when: operation == 'create'
+      when: operation == 'create' or operation == 'save'
 
