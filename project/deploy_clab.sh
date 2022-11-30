@@ -1,4 +1,5 @@
-source ./.env
+#source ./.env
+source ../../.env
 
 ### get original as-is toplogy json date
 #curl http://${NETVIZ}:3000/model/mddo-ospf/original_asis/topology.json > playbooks/pushed_configs_mddo_network.json
