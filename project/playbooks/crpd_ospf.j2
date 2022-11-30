@@ -18,12 +18,16 @@ protocols {
             }
 {% endfor  %}
         }
+{% if  item.attributes.redistribute | json_query('[*].protocol') | length != 0 %}
         export ospf-redistribute;
+{% endif %}
     }
 }
+{% if  item.attributes.redistribute | json_query('[*].protocol') | length != 0 %}
 policy-options {
     policy-statement ospf-redistribute {
         from protocol [ {{ item.attributes.redistribute | json_query('[*].protocol') | join(' ') | regex_replace('connected', 'direct') }} ];
         then accept;
     }
 }
+{% endif %}
