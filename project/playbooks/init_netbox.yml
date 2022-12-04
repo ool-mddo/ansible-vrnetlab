@@ -9,7 +9,7 @@
     ansible_python_interpreter: /usr/bin/python3
     netbox_url: http://192.168.23.31:8000
     netbox_token: 0123456789abcdef0123456789abcdef01234567
-    machines: 
+    machines:
       - site: RegionA
         manufacture: Juniper
         role: RT
@@ -32,6 +32,17 @@
         rack_position: 39
         rack_face: Front
         device_type: MX
+      - site: RegionA
+        manufacture: Ubuntu
+        role: Server
+        ansible_network_os: server
+        ansible_user: vrnetlab
+        ansible_password: VR-netlab9
+        target: RegionA-Svr02
+        rack:  RegionA-Rack1
+        rack_position: 38
+        rack_face: Front
+        device_type: Ubuntu
       - site: RegionB
         manufacture: Arista
         role: RT
