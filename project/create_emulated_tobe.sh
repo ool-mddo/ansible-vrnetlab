@@ -1,9 +1,5 @@
 #source ./.env
-source ../../.env
-
-### run deploy containerlab 
-RUN_DEPLOY_CLAB="sudo ansible-runner run . -p /data/playbooks/mddo-containerlab.yml --container-volume-mount=\"${PWD}:/data\" --container-image=${ANSIBLERUNNER_IMAGE}:latest --process-isolation --process-isolation-executable docker --cmdline '-e login_user=${LOCALSERVER_USER} -e login_pass=${LOCALSERVER_PASSWD} -e sudo_pass=${LOCALSERVER_SUDO} -e operation=save '"
-eval $RUN_DEPLOY_CLAB
+source ../demo_vars
 
 
 cd $DEMO_DIR/emulated_tobe/configs
