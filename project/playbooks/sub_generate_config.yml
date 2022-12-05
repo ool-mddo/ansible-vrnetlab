@@ -1,26 +1,17 @@
 ---
-- hosts: localhost
-  vars:
-    nodered_url: "http://192.168.80.2:1880"
-    node_list: []
-    node_dict: {}
-
-  tasks:
   - name: collection list
     shell: ansible-galaxy collection list
 
-  - name: Include users.json
-    include_vars:
-      file: ./pushed_configs_mddo_network.json
-      name: topology
-    
-  - name: extract nodes list data
+  - set_fact:
+      topology: "{{ original_asis.json }}"
+
+  - name: extract nodes list data 0
     set_fact:
-      node_dicts:
-        node : "[{{ nodes }}]"
+      config_node_dicts:
+        node : "[{{ tmpnodes }}]"
     vars:
       query: '*.network[1].node[*]'
-      nodes: >-
+      tmpnodes: >-
         {%- for node in item -%}
         {%- set if_list= [] -%}
         {%- set tp_list= node['ietf-network-topology:termination-point'] -%}
@@ -29,7 +20,7 @@
         {%- set if_list =  if_list.append( { 'name': tp['tp-id'], 'ipv4': tp['mddo-topology:l3-termination-point-attributes']['ip-address'][0]  } ) %}
         {%- endif -%}
         {%- endfor -%}
-        {%- set trashdata =  node_dict.update( { 'name': node['node-id'] , 'iflist': if_list } ) %}
+        {%- set trashdata =  node_dict.update( { 'name': node['node-id'] , 'iflist': if_list  } ) %}
         {%- if if_list -%}
         {{ node_dict }},
         {%- endif -%}
@@ -74,7 +65,7 @@
           {%-     endfor -%}
           {%-   endif -%}
           {%- endfor -%}               
-    loop: "{{ node_dicts.node[0] }}"
+    loop: "{{ config_node_dicts.node[0] }}"
 
 
   - name: generate config
@@ -123,8 +114,6 @@
       query: '*.network[1].node[*]'
     when: '"Seg" not in item["node-id"]'
     loop: "{{ topology | json_query(query) | flatten }}"
-    #when: 'item["mddo-topology:l3-node-attributes"]["static-route"] | length > 0'
-    #loop: "{{ topology | json_query(query) | flatten }}"
 
   - name: generate ospf config
     template:
