@@ -12,7 +12,3 @@ DIR=$LOCALSERVER_HOMEDIR/clab-$LABNAME; ls $DIR/*/config | grep region | rev | c
 cd $PLAYGROUND_DIR
 sudo docker-compose run netomox-exp bundle exec rake NETWORK=$NETWORK_NAME  PHY_SS_ONLY=1
 
-
-
-cd $MODEL_MERGE_DIR/model_merge
-python3.10 merge.py config $PLAYGROUND_DIR/netoviz_model/$NETWORK_NAME/original_asis/topology.json $PLAYGROUND_DIR/netoviz_model/$NETWORK_NAME/emulated_asis/topology.json $PLAYGROUND_DIR/netoviz_model/$NETWORK_NAME/emulated_tobe/topology.json
