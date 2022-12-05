@@ -1,5 +1,5 @@
-#source ./.env
-source ../../.env
+source ../demo_vars
+#source ../../.env
 
 rm -rf $DEMO_DIR/emulated_asis/configs/*conf
 rm -rf $DEMO_DIR/emulated_tobe/configs/*conf

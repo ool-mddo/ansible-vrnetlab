@@ -1,0 +1,59 @@
+---
+- hosts: localhost
+  connection: local
+  gather_facts: no
+  vars:
+    nodes: {}
+    containerlab: []
+    convertif: []
+    bridge_image:
+      kind: linux
+      image: ghcr.io/ool-mddo/clab-ovs:latest
+    cnf_image:
+      kind: 'juniper_crpd'
+      image: 'crpd:22.1R1.10'
+    mddo_model_file: "/data/project/playbooks/pushed_configs_mddo_network.json"
+    nodered_url: "http://192.168.80.2:1880"
+    node_list: []
+    node: {}
+    node_dicts: {}
+    node_dict: {}
+    network_name: "mddo-ospf"
+    netoviz_url: "http://localhost:3000"
+    labname: "mddo-lab"
+    containerlab_host: "172.17.0.1"
+    mddo_containerlab_file: "./clab-topo.yml"
+
+  tasks:
+    - name: "get original asis data"
+      uri:
+        url: "{{ netoviz_url }}/model/{{network_name}}/original_asis/topology.json"
+        method: "GET"
+      register: original_asis
+
+    - include_tasks: 
+        file: "/data/project/playbooks/sub_generate_topo.yml"
+
+    - include_tasks: 
+        file: "/data/project/playbooks/sub_generate_config.yml"
+
+#    - name: add host values
+#      add_host:
+#        name: "docker-host"
+#        ansible_host: "{{ containerlab_host }}"
+
+- hosts: docker-host
+  gather_facts: false
+  become: yes
+  vars:
+    ansible_user: "{{ login_user}}"
+    #ansible_password: "{{ login_pass }}"
+    #ansible_sudo_pass: "{{ sudo_pass }}"
+    mddo_containerlab_file: "./clab-topo.yml"
+    ansible_python_interpreter: /usr/bin/python3
+    operation: create
+
+  tasks:
+    - include_tasks: 
+        file: "/data/project/playbooks/sub_mddo_containerlab.yml"
+  
