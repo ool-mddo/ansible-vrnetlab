@@ -23,3 +23,8 @@
       shell: "sudo bash create_emulated_asis.sh"
       args:
         chdir: "{{ ansible_runner_dir }}/project"
+      register: result
+
+    - name: debug result var
+      debug: var=result
+        
