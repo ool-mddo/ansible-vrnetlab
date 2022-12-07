@@ -4,7 +4,7 @@
         containerlab: "{{lookup('file', mddo_containerlab_file)  | from_yaml }}"
 
     - copy:
-        src: "{{ item.key }}.conf"
+        src: "configs/{{ item.key }}.conf"
         dest: "/tmp/{{ item.key }}.conf"
       loop: "{{ containerlab.topology.nodes | dict2items }}"
       when: 'operation == "create"'

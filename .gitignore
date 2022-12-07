@@ -2,6 +2,7 @@ artifacts/**
 env/passwords
 project/artifacts/**
 project/configs/**
+project/playbooks/configs/**
 project/hosts/**
 project/status/**
 
