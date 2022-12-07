@@ -6,7 +6,6 @@
       uri:
         url: "{{ nodered_url }}/convertlink"
         method: "POST"
-        #method: "GET"
         body: "{{ topology }}"
         body_format: json
       register: result_link     
@@ -15,7 +14,6 @@
       uri:
         url: "{{ nodered_url }}/convertif/eth"
         method: "POST"
-        #method: "GET"
         body: "{{ topology }}"
         body_format: json
       register: result_node
@@ -46,6 +44,6 @@
             nodes: "{{ nodes }}"
     - name:
       copy:
-        dest: "./clab-topo.yml"
+        dest: "{{ mddo_containerlab_file }}"
         content: "{{ containerlab | to_nice_yaml }}"
 

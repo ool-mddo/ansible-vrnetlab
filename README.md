@@ -1,5 +1,10 @@
 # ansible-vrnetlab
 
+### How to build ansible-runner
+ref: https://usage-automate.hatenablog.com/entry/2021/07/15/191500
+
+
+
 ### How to get junos config
 ```
 $ ansible-playbook -i inventory/hosts project/playbooks/output.yml -vvvv

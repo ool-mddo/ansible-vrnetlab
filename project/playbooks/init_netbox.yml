@@ -9,6 +9,7 @@
     ansible_python_interpreter: /usr/bin/python3
     netbox_url: http://192.168.23.31:8000
     netbox_token: 0123456789abcdef0123456789abcdef01234567
+
     machines:
       - site: RegionA
         manufacture: Juniper

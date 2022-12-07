@@ -71,7 +71,7 @@
   - name: generate config
     template:
       src: crpd.j2
-      dest: "{{ item.name }}.conf"
+      dest: "configs/{{ item.name }}.conf"
     when: '"Seg" not in item.name'
     loop: "{{ node_list }}"
 
@@ -96,7 +96,7 @@
   - name: generate config
     template:
       src: ceos.j2
-      dest: "{{ item.name }}.conf"
+      dest: "configs/{{ item.name }}.conf"
     when: '"Seg" in item.name'
     loop: "{{ bridgedata }}"
 
@@ -109,7 +109,7 @@
   - name: generate static-route config
     template:
       src: crpd_static.j2
-      dest: "{{ item['node-id'] }}_routing-options.conf"
+      dest: "configs/{{ item['node-id'] }}_routing-options.conf"
     vars:
       query: '*.network[1].node[*]'
     when: '"Seg" not in item["node-id"]'
@@ -118,19 +118,19 @@
   - name: generate ospf config
     template:
       src: crpd_ospf.j2
-      dest: "{{ item.node }}_ospf.conf"
+      dest: "configs/{{ item.node }}_ospf.conf"
     when: '"Seg" not in item.node'
     loop: "{{ result_ospf.json }}"
 
   - name: merge static-route config
-    shell: "cat {{ item['node-id'] }}_routing-options.conf >> {{ item['node-id'] }}.conf " 
+    shell: "cat configs/{{ item['node-id'] }}_routing-options.conf >>  configs/{{ item['node-id'] }}.conf " 
     vars:
       query: '*.network[1].node[*]'
     when: 'item["mddo-topology:l3-node-attributes"]["static-route"] | length > 0'
     loop: "{{ topology | json_query(query) | flatten }}"
  
   - name: merge ospf config
-    shell: "cat {{ item.node }}_ospf.conf >> {{ item.node }}.conf " 
+    shell: "cat configs/{{ item.node }}_ospf.conf >> configs/{{ item.node }}.conf " 
     loop: "{{ result_ospf.json }}"
 
 

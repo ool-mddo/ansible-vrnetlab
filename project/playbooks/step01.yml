@@ -22,7 +22,7 @@
     netoviz_url: "http://localhost:3000"
     labname: "mddo-lab"
     containerlab_host: "172.17.0.1"
-    mddo_containerlab_file: "./clab-topo.yml"
+    mddo_containerlab_file: "configs/clab-topo.yml"
 
   tasks:
     - name: "get original asis data"
@@ -49,7 +49,7 @@
     ansible_user: "{{ login_user}}"
     #ansible_password: "{{ login_pass }}"
     #ansible_sudo_pass: "{{ sudo_pass }}"
-    mddo_containerlab_file: "./clab-topo.yml"
+    mddo_containerlab_file: "configs/clab-topo.yml"
     ansible_python_interpreter: /usr/bin/python3
     operation: create
 
