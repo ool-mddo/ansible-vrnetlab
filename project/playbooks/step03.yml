@@ -10,7 +10,7 @@
     labname: "mddo-lab"
     containerlab_host: "172.17.0.1"
     ansible_user: "{{ login_user}}"
-    mddo_containerlab_file: "./clab-topo.yml"
+    mddo_containerlab_file: "configs/clab-topo.yml"
     ansible_python_interpreter: /usr/bin/python3
     ansible_runner_dir: ""
     operation: save
