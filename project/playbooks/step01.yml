@@ -31,7 +31,7 @@
         method: "GET"
       register: original_asis
     - name: create playbooks/configs directory
-      shell: mkdir -p playbooks/configs
+      shell: mkdir -p configs
   
     - include_tasks: 
         file: "/data/project/playbooks/sub_generate_topo.yml"
