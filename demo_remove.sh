@@ -12,3 +12,8 @@ sudo ansible-runner run . -p /data/project/playbooks/remove.yml --container-opti
 	--process-isolation --process-isolation-executable docker --cmdline \
 	"-e nodered_url=${NODERED_URL} -e labname=${LABNAME} -e login_user=${LOCALSERVER_USER} -e netoviz_url=${NETVIZ_URL} -e network_name=${NETWORK_NAME} -e ansible_runner_dir=${ANSIBLE_RUNNER_DIR} -k -K "
 
+cd $DEMO_DIR
+git fetch origin demo202211
+git reset --hard origin/demo202211
+git clean -f
+
