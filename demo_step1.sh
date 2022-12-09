@@ -9,10 +9,10 @@ source ./demo_vars
 
 # DEMO DIR Cleaning
 cd $DEMO_DIR
-git fetch origin demo202211
-git reset --hard origin/demo202211
+git fetch origin $LABNAME
+git reset --hard origin/$LABNAME
 git clean -f
 
 # original as-is Create topology data
 cd $PLAYGROUND_DIR
-sudo docker-compose run netomox-exp bundle exec rake NETWORK=mddo-ospf PHY_SS_ONLY=1
+sudo docker-compose run netomox-exp bundle exec rake NETWORK=$NETWORK_NAME PHY_SS_ONLY=1
