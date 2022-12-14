@@ -9,8 +9,8 @@ source ./demo_vars
 
 # DEMO DIR Cleaning
 cd $DEMO_DIR
-git fetch origin $LABNAME
-git reset --hard origin/$LABNAME
+#git fetch origin $LABNAME
+#git reset --hard origin/$LABNAME
 git clean -f
 
 # original as-is Create topology data
