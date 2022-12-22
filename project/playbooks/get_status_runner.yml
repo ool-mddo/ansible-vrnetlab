@@ -27,7 +27,7 @@
   connection: ansible.netcommon.network_cli
   gather_facts: false
   vars:
-      status_dir: "/data/project/status"
+      status_dir: "/data/status"
   roles:
     - showinterfaces
     - showlldp
