@@ -1,11 +1,11 @@
 ---
     - name: "mkdir -p {{ status_dir }}"
-      shell: "mkdir -p .{{ status_dir }}"
+      shell: "mkdir -p {{ status_dir }}"
       delegate_to: 127.0.0.1
 
 
     - name: "mkdir -p {{ role_name }}"
-      shell: "mkdir -p .{{ status_dir }}/{{ role_name }}"
+      shell: "mkdir -p {{ status_dir }}/{{ role_name }}"
       delegate_to: 127.0.0.1
 
     - name: show interfaces

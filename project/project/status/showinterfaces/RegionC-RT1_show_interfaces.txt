@@ -1,0 +1,3382 @@
+Null0 is up, line protocol is up 
+  Interface state transitions: 1
+  Hardware is Null interface
+  Internet address is Unknown
+  MTU 1500 bytes, BW 0 Kbit
+     reliability 255/255, txload Unknown, rxload Unknown
+  Encapsulation Null,  loopback not set,
+  Last link flapped 7w2d
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+
+MgmtEth0/0/CPU0/0 is up, line protocol is up 
+  Interface state transitions: 1
+  Hardware is Management Ethernet, address is 5254.00d1.e100 (bia 5254.00d1.e100)
+  Internet address is 10.0.0.15/24
+  MTU 1514 bytes, BW 0 Kbit
+     reliability 255/255, txload Unknown, rxload Unknown
+  Encapsulation ARPA,
+  Duplex unknown, 0Kb/s, unknown, link type is autonegotiation
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last link flapped 7w2d
+  ARP type ARPA, ARP timeout 04:00:00
+  Last input 00:00:00, output 00:00:00
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 1 packets/sec
+  5 minute output rate 4000 bits/sec, 1 packets/sec
+     22453 packets input, 2189550 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 11219 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     7890 packets output, 3415775 bytes, 0 total output drops
+     Output 2 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     1 carrier transitions
+
+GigabitEthernet0/0/0/0 is up, line protocol is up 
+  Interface state transitions: 1
+  Hardware is GigabitEthernet, address is 5254.004a.9901 (bia 5254.004a.9901)
+  Description: to_RegionC-RT2_GigabitEthernet0/0/0/0
+  Internet address is 192.168.2.1/30
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last link flapped 7w2d
+  ARP type ARPA, ARP timeout 04:00:00
+  Last input 00:00:00, output 00:00:00
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 1 packets/sec
+  5 minute output rate 0 bits/sec, 1 packets/sec
+     3980794 packets input, 295869798 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 3 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     2309898 packets output, 245866228 bytes, 0 total output drops
+     Output 3 broadcast packets, 411012 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     1 carrier transitions
+
+GigabitEthernet0/0/0/1 is up, line protocol is up 
+  Interface state transitions: 1
+  Hardware is GigabitEthernet, address is 5254.00bd.0302 (bia 5254.00bd.0302)
+  Description: to_RegionA-RT1_ge-0/0/2
+  Internet address is 172.16.1.2/30
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last link flapped 6w3d
+  ARP type ARPA, ARP timeout 04:00:00
+  Last input 00:00:00, output 00:00:04
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     451659 packets input, 42645410 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 3196 broadcast packets, 447650 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     428511 packets output, 40391416 bytes, 0 total output drops
+     Output 6 broadcast packets, 421218 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     1 carrier transitions
+
+GigabitEthernet0/0/0/2 is up, line protocol is up 
+  Interface state transitions: 1
+  Hardware is GigabitEthernet, address is 5254.001a.9b03 (bia 5254.001a.9b03)
+  Description: to_RegionB-RT1_Ethernet3
+  Internet address is 172.16.2.2/30
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last link flapped 6w3d
+  ARP type ARPA, ARP timeout 04:00:00
+  Last input 00:00:04, output 00:00:00
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     521125 packets input, 58814659 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 4 broadcast packets, 520727 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     421646 packets output, 39796428 bytes, 0 total output drops
+     Output 6 broadcast packets, 421254 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     1 carrier transitions
+
+GigabitEthernet0/0/0/3 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00e5.fb04 (bia 5254.00e5.fb04)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/4 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.003c.2205 (bia 5254.003c.2205)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/5 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00d5.c706 (bia 5254.00d5.c706)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/6 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.002b.2307 (bia 5254.002b.2307)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/7 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.0088.3c08 (bia 5254.0088.3c08)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/8 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00b7.4409 (bia 5254.00b7.4409)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/9 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.000c.c80a (bia 5254.000c.c80a)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/10 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00e8.7c0b (bia 5254.00e8.7c0b)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/11 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.001a.260c (bia 5254.001a.260c)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/12 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00a4.860d (bia 5254.00a4.860d)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/13 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.001f.f30e (bia 5254.001f.f30e)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/14 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.0042.ab0f (bia 5254.0042.ab0f)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/15 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.005a.f510 (bia 5254.005a.f510)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/16 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00d5.2c11 (bia 5254.00d5.2c11)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/17 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.000d.d812 (bia 5254.000d.d812)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/18 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00ba.0313 (bia 5254.00ba.0313)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/19 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.007c.1a14 (bia 5254.007c.1a14)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/20 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.0034.3715 (bia 5254.0034.3715)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/21 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.0004.bd16 (bia 5254.0004.bd16)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/22 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00b9.9117 (bia 5254.00b9.9117)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/23 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00e3.9918 (bia 5254.00e3.9918)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/24 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.0015.ca19 (bia 5254.0015.ca19)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/25 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00c8.b61a (bia 5254.00c8.b61a)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/26 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.0000.391b (bia 5254.0000.391b)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/27 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.0093.df1c (bia 5254.0093.df1c)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/28 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.001b.b81d (bia 5254.001b.b81d)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/29 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.0029.981e (bia 5254.0029.981e)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/30 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00a9.3d1f (bia 5254.00a9.3d1f)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/31 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.0016.9f20 (bia 5254.0016.9f20)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/32 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00ad.2021 (bia 5254.00ad.2021)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/33 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00b1.0722 (bia 5254.00b1.0722)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/34 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00da.1723 (bia 5254.00da.1723)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/35 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.008c.8224 (bia 5254.008c.8224)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/36 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00a9.3d25 (bia 5254.00a9.3d25)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/37 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.0059.9526 (bia 5254.0059.9526)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/38 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.007b.bd27 (bia 5254.007b.bd27)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/39 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00c2.b928 (bia 5254.00c2.b928)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/40 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.0050.b729 (bia 5254.0050.b729)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/41 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.0097.0e2a (bia 5254.0097.0e2a)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/42 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.005d.8d2b (bia 5254.005d.8d2b)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/43 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00cd.fd2c (bia 5254.00cd.fd2c)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/44 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00dd.ce2d (bia 5254.00dd.ce2d)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/45 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00b0.5b2e (bia 5254.00b0.5b2e)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/46 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00e0.552f (bia 5254.00e0.552f)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/47 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.0051.3630 (bia 5254.0051.3630)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/48 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.003e.a531 (bia 5254.003e.a531)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/49 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.0067.fb32 (bia 5254.0067.fb32)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/50 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00fc.b133 (bia 5254.00fc.b133)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/51 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.0043.b034 (bia 5254.0043.b034)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/52 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00ab.8b35 (bia 5254.00ab.8b35)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/53 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.002f.d136 (bia 5254.002f.d136)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/54 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.000d.8d37 (bia 5254.000d.8d37)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/55 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00d8.bf38 (bia 5254.00d8.bf38)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/56 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.0074.9739 (bia 5254.0074.9739)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/57 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00ae.493a (bia 5254.00ae.493a)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/58 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.0082.923b (bia 5254.0082.923b)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/59 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.0075.db3c (bia 5254.0075.db3c)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/60 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00a9.6d3d (bia 5254.00a9.6d3d)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/61 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00be.833e (bia 5254.00be.833e)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/62 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.0078.e43f (bia 5254.0078.e43f)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/63 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00c5.6140 (bia 5254.00c5.6140)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/64 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00dc.5941 (bia 5254.00dc.5941)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/65 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00f9.5042 (bia 5254.00f9.5042)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/66 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00da.6143 (bia 5254.00da.6143)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/67 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.004b.2944 (bia 5254.004b.2944)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/68 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.0041.2a45 (bia 5254.0041.2a45)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/69 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00ab.d446 (bia 5254.00ab.d446)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/70 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00b8.0647 (bia 5254.00b8.0647)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/71 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00f8.d548 (bia 5254.00f8.d548)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/72 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00f0.3649 (bia 5254.00f0.3649)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/73 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.0047.2c4a (bia 5254.0047.2c4a)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/74 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.0070.9c4b (bia 5254.0070.9c4b)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/75 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00b4.214c (bia 5254.00b4.214c)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/76 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.0021.9f4d (bia 5254.0021.9f4d)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/77 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.0001.cd4e (bia 5254.0001.cd4e)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/78 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00c8.fa4f (bia 5254.00c8.fa4f)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/79 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00d8.b150 (bia 5254.00d8.b150)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/80 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00b2.e151 (bia 5254.00b2.e151)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/81 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.002d.4352 (bia 5254.002d.4352)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/82 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00ba.0053 (bia 5254.00ba.0053)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/83 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00ca.c554 (bia 5254.00ca.c554)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/84 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.0006.9255 (bia 5254.0006.9255)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/85 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.0035.bb56 (bia 5254.0035.bb56)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/86 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00a9.a057 (bia 5254.00a9.a057)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/87 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00ef.f158 (bia 5254.00ef.f158)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/88 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00f9.5559 (bia 5254.00f9.5559)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/89 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.0017.4b5a (bia 5254.0017.4b5a)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/90 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.0024.785b (bia 5254.0024.785b)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/91 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00f3.2e5c (bia 5254.00f3.2e5c)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/92 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00d3.a55d (bia 5254.00d3.a55d)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/93 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.004c.095e (bia 5254.004c.095e)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/94 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.000c.5a5f (bia 5254.000c.5a5f)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/95 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.000f.1a60 (bia 5254.000f.1a60)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/96 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00c9.ac61 (bia 5254.00c9.ac61)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/97 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00bf.9162 (bia 5254.00bf.9162)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/98 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.0054.c863 (bia 5254.0054.c863)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/99 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.0020.b464 (bia 5254.0020.b464)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/100 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.004a.0465 (bia 5254.004a.0465)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/101 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.0025.aa66 (bia 5254.0025.aa66)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/102 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.0035.3267 (bia 5254.0035.3267)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/103 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.0050.7a68 (bia 5254.0050.7a68)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/104 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00b5.1569 (bia 5254.00b5.1569)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/105 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00fd.c86a (bia 5254.00fd.c86a)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/106 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00dc.686b (bia 5254.00dc.686b)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/107 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.001c.0b6c (bia 5254.001c.0b6c)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/108 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.0055.356d (bia 5254.0055.356d)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/109 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.002c.056e (bia 5254.002c.056e)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/110 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.0008.a06f (bia 5254.0008.a06f)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/111 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00e2.1e70 (bia 5254.00e2.1e70)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/112 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.0029.8d71 (bia 5254.0029.8d71)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/113 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.001a.6b72 (bia 5254.001a.6b72)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/114 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00cb.bd73 (bia 5254.00cb.bd73)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/115 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00df.9e74 (bia 5254.00df.9e74)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/116 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00f2.ac75 (bia 5254.00f2.ac75)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/117 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00f6.a576 (bia 5254.00f6.a576)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/118 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00dc.b277 (bia 5254.00dc.b277)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/119 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00e1.f878 (bia 5254.00e1.f878)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/120 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.007c.0a79 (bia 5254.007c.0a79)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/121 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00f4.e97a (bia 5254.00f4.e97a)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/122 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.000a.eb7b (bia 5254.000a.eb7b)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/123 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.0012.2d7c (bia 5254.0012.2d7c)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/124 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00fd.b77d (bia 5254.00fd.b77d)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/125 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.0014.107e (bia 5254.0014.107e)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/126 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.0095.cb7f (bia 5254.0095.cb7f)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
+
+GigabitEthernet0/0/0/127 is administratively down, line protocol is administratively down 
+  Interface state transitions: 0
+  Hardware is GigabitEthernet, address is 5254.00bc.9e80 (bia 5254.00bc.9e80)
+  Internet address is Unknown
+  MTU 1514 bytes, BW 1000000 Kbit (Max: 1000000 Kbit)
+     reliability 255/255, txload 0/255, rxload 0/255
+  Encapsulation ARPA,
+  Full-duplex, 1000Mb/s, unknown, link type is force-up
+  output flow control is off, input flow control is off
+  Carrier delay (up) is 10 msec
+  loopback not set,
+  Last input never, output never
+  Last clearing of "show interface" counters never
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 total input drops
+     0 drops for unrecognized upper-level protocol
+     Received 0 broadcast packets, 0 multicast packets
+              0 runts, 0 giants, 0 throttles, 0 parity
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 total output drops
+     Output 0 broadcast packets, 0 multicast packets
+     0 output errors, 0 underruns, 0 applique, 0 resets
+     0 output buffer failures, 0 output buffers swapped out
+     0 carrier transitions
