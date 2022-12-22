@@ -31,4 +31,6 @@
   roles:
     - showinterfaces
     - showlldp
+    - showroute
+    - showospfneigh
 
