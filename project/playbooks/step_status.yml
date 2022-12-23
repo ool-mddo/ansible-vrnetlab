@@ -6,6 +6,7 @@
     ansible_user: "{{ login_user}}"
     #ansible_password: "{{ login_pass }}"
     #ansible_sudo_pass: "{{ sudo_pass }}"
+    labname: "demo"
     mddo_containerlab_file: "configs/clab-topo.yml"
     ansible_python_interpreter: /usr/bin/python3
     ansible_runner_dir: "/tmp"
@@ -35,8 +36,10 @@
 
     - name: create show command result files
       copy: 
-        dest: "{{ ansible_runner_dir }}/project/status/showospfneigh/{{ item.key }}_show_ospf_neigh.txt"
+        dest: "{{ ansible_runner_dir }}/project/status/showospfneigh/{{ hostname }}_show_ospf_neigh.txt"
         content: "{{ item.value['cli show ospf neighbor | display json']['stdout'] }}"
+      vars:
+        hostname: "{{ item.key | regex_replace('clab-' + labname + '-' , '')  }}"
       loop: "{{ result.stdout | from_json | dict2items }}"
 
     - name: cli show route | display json
@@ -49,7 +52,9 @@
 
     - name: create show command result files
       copy:
-        dest: "{{ ansible_runner_dir }}/project/status/showroute/{{ item.key }}_show_route.txt"
+        dest: "{{ ansible_runner_dir }}/project/status/showroute/{{ hostname }}_show_route.txt"
         content: "{{ item.value['cli show route | display json']['stdout'] }}"
+      vars:
+        hostname: "{{ item.key | regex_replace('clab-' + labname + '-' , '')  }}"
       loop: "{{ result.stdout | from_json | dict2items }}"
 
