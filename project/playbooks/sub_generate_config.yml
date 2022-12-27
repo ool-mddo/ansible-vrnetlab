@@ -5,12 +5,24 @@
   - set_fact:
       topology: "{{ original_asis.json }}"
 
+  - set_fact:
+      layer3index: "{{ l3_index }}"
+    when: item['network-id'] == "layer3"
+    loop: "{{ topology | json_query('*.network[]') }}"
+    loop_control:
+      index_var: l3_index
+
+  - name: index
+    debug:
+      msg: "{{ layer3index }}"
+
+
   - name: extract nodes list data 0
     set_fact:
       config_node_dicts:
         node : "[{{ tmpnodes }}]"
     vars:
-      query: '*.network[1].node[*]'
+      query: '*.network[{{ layer3index }}].node[*]'
       tmpnodes: >-
         {%- for node in item -%}
         {%- set if_list= [] -%}
@@ -103,7 +115,7 @@
   - debug:
       msg: '{{ item["mddo-topology:l3-node-attributes"]["static-route"]  }}'
     vars:
-      query: '*.network[1].node[*]'
+      query: '*.network[{{ layer3index }}].node[*]'
     loop: "{{ topology | json_query(query) | flatten}}"
 
   - name: generate static-route config
@@ -111,7 +123,7 @@
       src: crpd_static.j2
       dest: "configs/{{ item['node-id'] }}_routing-options.conf"
     vars:
-      query: '*.network[1].node[*]'
+      query: '*.network[{{ layer3index }}].node[*]'
     when: '"Seg" not in item["node-id"]'
     loop: "{{ topology | json_query(query) | flatten }}"
 
@@ -125,7 +137,7 @@
   - name: merge static-route config
     shell: "cat configs/{{ item['node-id'] }}_routing-options.conf >>  configs/{{ item['node-id'] }}.conf " 
     vars:
-      query: '*.network[1].node[*]'
+      query: '*.network[{{ layer3index }}].node[*]'
     when: 'item["mddo-topology:l3-node-attributes"]["static-route"] | length > 0'
     loop: "{{ topology | json_query(query) | flatten }}"
  
