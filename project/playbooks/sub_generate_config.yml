@@ -138,7 +138,8 @@
     shell: "cat configs/{{ item['node-id'] }}_routing-options.conf >>  configs/{{ item['node-id'] }}.conf " 
     vars:
       query: '*.network[{{ layer3index }}].node[*]'
-    when: 'item["mddo-topology:l3-node-attributes"]["static-route"] | length > 0'
+    when: '"Seg" not in item["node-id"]'
+    #when: 'item["mddo-topology:l3-node-attributes"]["static-route"] | length > 0'
     loop: "{{ topology | json_query(query) | flatten }}"
  
   - name: merge ospf config
