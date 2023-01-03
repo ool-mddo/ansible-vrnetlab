@@ -3,7 +3,7 @@
     shell: ansible-galaxy collection list
 
   - set_fact:
-      topology: "{{ original_asis.json }}"
+      topology: "{{ original_asis }}"
 
   - set_fact:
       layer3index: "{{ l3_index }}"
