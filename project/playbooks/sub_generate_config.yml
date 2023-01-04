@@ -3,7 +3,10 @@
     shell: ansible-galaxy collection list
 
   - set_fact:
-      topology: "{{ original_asis }}"
+      topology: "{{ emulated_asis.json }}"
+
+  - set_fact:
+      origin_topology: "{{ original_asis.json }}"
 
   - set_fact:
       layer3index: "{{ l3_index }}"
@@ -43,7 +46,7 @@
     uri:
       url: "{{ nodered_url }}/description/batfish"
       method: "POST"
-      body: "{{ topology }}"
+      body: "{{ origin_topology }}"
       body_format: json        
       #method: "GET"
     register: result_node
@@ -65,12 +68,12 @@
         name: "{{ item.name }}"
         iflist: >-
           {%- for tmpdict in result_node.json -%}
-          {%-   if ( item.name == tmpdict['node']['original'] ) -%}
+          {%-   if ( item.name == tmpdict['node']['clab'] ) -%}
           {%-     for iflist in item.iflist -%}
           {%-       for dict in tmpdict.iflist -%}
-          {%-         if iflist.name in dict.original and 'ifDescr' in dict -%}
+          {%-         if iflist.name in dict.clab and 'ifDescr' in dict -%}
           { 'name': '{{ dict.clab }}', 'originif': '{{ dict.original }}', 'ipv4': '{{ iflist.ipv4 }}' , 'description': '{{ dict.ifDescr }}'},
-          {%-         elif iflist.name in dict.original -%}
+          {%-         elif iflist.name in dict.clab -%}
           { 'name': '{{ dict.clab }}', 'originif': '{{ dict.original }}', 'ipv4': '{{ iflist.ipv4 }}' },
           {%-         endif -%}
           {%-       endfor -%}

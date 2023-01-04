@@ -1,6 +1,6 @@
 ---
     - set_fact:
-       topology: "{{ original_asis }}" 
+       topology: "{{ emulated_asis.json }}" 
 
     - name: "get nodered convert link"
       uri:
