@@ -10,7 +10,8 @@ source ./demo_vars
 ####
 ### convert script  > ./project/playbooks/configs/topology.json ###
 
-cp  ./project/playbooks/configs/topology.json $PLAYGROUND_DIR/netoviz_model/$NETWORK_NAME/emulated_asis/topology.json
+sudo rm -f  $PLAYGROUND_DIR/netoviz_model/$NETWORK_NAME/emulated_asis/topology.json
+sudo cp  ./project/playbooks/configs/topology.json $PLAYGROUND_DIR/netoviz_model/$NETWORK_NAME/emulated_asis/topology.json
 
 sudo ansible-runner run . -p /data/project/playbooks/step02-1.yml --container-option="--net=${NODERED_BRIDGE}" \
 	--container-volume-mount="$PWD:/data" --container-image=${ANSIBLERUNNER_IMAGE} \
