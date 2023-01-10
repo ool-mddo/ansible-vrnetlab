@@ -6,13 +6,14 @@
 ###"^BECOME password.*:\\s*?$": "login password"
 
 source ./demo_vars
+CUR_DIR=`pwd`
 
 ####
 ### convert script  > ./project/playbooks/configs/topology.json ###
+cd $PLAYGROUND_DIR
+sudo docker-compose run netomox-exp  bundle exec ./exe/mddo_toolbox.rb convert_namespace -f json -t ns_table.json -o  /mddo/netoviz_model/${NETWORK_NAME}/original_asis/topology.json > $PLAYGROUND_DIR/netoviz_model/${NETWORK_NAME}/emulated_asis/topology.json
 
-sudo rm -f  $PLAYGROUND_DIR/netoviz_model/$NETWORK_NAME/emulated_asis/topology.json
-sudo cp  ./project/playbooks/configs/topology.json $PLAYGROUND_DIR/netoviz_model/$NETWORK_NAME/emulated_asis/topology.json
-
+cd $CUR_DIR
 sudo ansible-runner run . -p /data/project/playbooks/step02-1.yml --container-option="--net=${NODERED_BRIDGE}" \
 	--container-volume-mount="$PWD:/data" --container-image=${ANSIBLERUNNER_IMAGE} \
        	--process-isolation --process-isolation-executable docker --cmdline  \
