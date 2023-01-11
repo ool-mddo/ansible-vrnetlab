@@ -12,4 +12,5 @@ sudo ansible-runner run . -p /data/project/playbooks/step03.yml --container-opti
 	--process-isolation --process-isolation-executable docker --cmdline \
 	"-e nodered_url=${NODERED_URL} -e labname=${LABNAME} -e login_user=${LOCALSERVER_USER} -e netoviz_url=${NETVIZ_URL} -e network_name=${NETWORK_NAME} -e ansible_runner_dir=${ANSIBLE_RUNNER_DIR} -k -K "
 
-
+sudo rm -f  $PLAYGROUND_DIR/netoviz_model/$NETWORK_NAME/emulated_asis/topology.json
+sudo cp  ./project/playbooks/configs/topology.json $PLAYGROUND_DIR/netoviz_model/$NETWORK_NAME/emulated_asis/topology.json
