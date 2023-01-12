@@ -16,3 +16,4 @@ cd $PLAYGROUND_DIR
 sudo docker-compose run netomox-exp  bundle exec ./exe/mddo_toolbox.rb convert_namespace -f json -t /mddo/netoviz_model/${NETWORK_NAME}/emulated_asis/ns_table.json /mddo/netoviz_model/${NETWORK_NAME}/original_asis/topology.json > $PLAYGROUND_DIR/netoviz_model/${NETWORK_NAME}/emulated_asis/topology.json
 sudo docker-compose run netomox-exp bundle exec ./exe/mddo_toolbox.rb filter_low_layers -f json /mddo/netoviz_model/${NETWORK_NAME}/original_asis/topology.json > $PLAYGROUND_DIR/netoviz_model/${NETWORK_NAME}/original_asis/original_asis_filtered.json
 sudo docker-compose run netomox-exp bundle exec ./exe/mddo_toolbox.rb filter_low_layers -f json /mddo/netoviz_model/${NETWORK_NAME}/emulated_tobe/topology.json > $PLAYGROUND_DIR/netoviz_model/${NETWORK_NAME}/emulated_tobe/emulated_tobe_filtered.json
+
