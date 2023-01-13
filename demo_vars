@@ -1,7 +1,7 @@
 #NETWORK_NAME="nttcom-trial-2022"
 NETWORK_NAME="mddo-ospf"
 NETVIZ=localhost:3000
-NODERED_URL="http://172.19.0.3:1880"
+NODERED_URL="http://172.21.0.3:1880"
 ANSIBLERUNNER_IMAGE="ghcr.io/ool-mddo/mddo_ansible_runner:demo202211"
 NODERED_BRIDGE="mddo-nodered_node-red-net"
 LABNAME="demo202301"
