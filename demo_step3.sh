@@ -17,5 +17,8 @@ sudo docker-compose run netomox-exp  bundle exec ./exe/mddo_toolbox.rb convert_n
 sudo docker-compose run netomox-exp bundle exec ./exe/mddo_toolbox.rb filter_low_layers -f json /mddo/netoviz_model/${NETWORK_NAME}/original_asis/topology.json > $PLAYGROUND_DIR/netoviz_model/${NETWORK_NAME}/original_asis/original_asis_filtered.json
 sudo docker-compose run netomox-exp bundle exec ./exe/mddo_toolbox.rb filter_low_layers -f json /mddo/netoviz_model/${NETWORK_NAME}/emulated_tobe/topology.json > $PLAYGROUND_DIR/netoviz_model/${NETWORK_NAME}/emulated_tobe/emulated_tobe_filtered.json
 
-sudo docker-compose run netomox-exp bundle exec netomox diff -c /mddo/netoviz_model/$NETWORK_NAME/emulated_asis/topology.json /mddo/netoviz_model/$NETWORK_NAME/emulated_tobe/emulated_tobe_filtered.json
+#sudo docker-compose run netomox-exp bundle exec netomox diff -c /mddo/netoviz_model/$NETWORK_NAME/emulated_asis/topology.json /mddo/netoviz_model/$NETWORK_NAME/emulated_tobe/emulated_tobe_filtered.json
+
+cd $MODEL_MERGE_DIR/model_merge
+python3.10 merge.py config ../../playground/netoviz_model/${NETWORK_NAME}/original_asis/original_asis_filtered.json  ../../playground/netoviz_model/${NETWORK_NAME}/emulated_asis/topology.json ../../playground/netoviz_model/${NETWORK_NAME}/emulated_tobe/emulated_tobe_filtered.json
 
