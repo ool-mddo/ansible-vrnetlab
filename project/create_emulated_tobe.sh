@@ -17,5 +17,6 @@ DIR=$LOCALSERVER_HOMEDIR/clab-$LABNAME;  find  $DIR/*/config  -name juniper.conf
 
 
 cd $PLAYGROUND_DIR
+sudo docker-compose run netomox-exp bundle exec rake NETWORK=$NETWORK_NAME  PHY_SS_ONLY=1 
 sudo docker-compose run netomox-exp bundle exec rake NETWORK=$NETWORK_NAME  PHY_SS_ONLY=1 emulated_ss_diff
 

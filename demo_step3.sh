@@ -12,13 +12,13 @@ sudo ansible-runner run . -p /data/project/playbooks/step03.yml --container-opti
 	--process-isolation --process-isolation-executable docker --cmdline \
 	"-e nodered_url=${NODERED_URL} -e labname=${LABNAME} -e login_user=${LOCALSERVER_USER} -e netoviz_url=${NETVIZ_URL} -e network_name=${NETWORK_NAME} -e ansible_runner_dir=${ANSIBLE_RUNNER_DIR} -k -K "
 
-cd $PLAYGROUND_DIR
-sudo docker-compose run netomox-exp  bundle exec ./exe/mddo_toolbox.rb convert_namespace -f json  -o -t ns_table.json /mddo/netoviz_model/${NETWORK_NAME}/original_asis/topology.json > $PLAYGROUND_DIR/netoviz_model/${NETWORK_NAME}/emulated_asis/topology.json
-sudo docker-compose run netomox-exp bundle exec ./exe/mddo_toolbox.rb filter_low_layers -f json /mddo/netoviz_model/${NETWORK_NAME}/original_asis/topology.json > $PLAYGROUND_DIR/netoviz_model/${NETWORK_NAME}/original_asis/original_asis_filtered.json
-sudo docker-compose run netomox-exp bundle exec ./exe/mddo_toolbox.rb filter_low_layers -f json /mddo/netoviz_model/${NETWORK_NAME}/emulated_tobe/topology.json > $PLAYGROUND_DIR/netoviz_model/${NETWORK_NAME}/emulated_tobe/emulated_tobe_filtered.json
+#cd $PLAYGROUND_DIR
+#sudo docker-compose run netomox-exp  bundle exec ./exe/mddo_toolbox.rb convert_namespace -f json  -o -t ns_table.json /mddo/netoviz_model/${NETWORK_NAME}/original_asis/topology.json > $PLAYGROUND_DIR/netoviz_model/${NETWORK_NAME}/emulated_asis/topology.json
+#sudo docker-compose run netomox-exp bundle exec ./exe/mddo_toolbox.rb filter_low_layers -f json /mddo/netoviz_model/${NETWORK_NAME}/original_asis/topology.json > $PLAYGROUND_DIR/netoviz_model/${NETWORK_NAME}/original_asis/original_asis_filtered.json
+#sudo docker-compose run netomox-exp bundle exec ./exe/mddo_toolbox.rb filter_low_layers -f json /mddo/netoviz_model/${NETWORK_NAME}/emulated_tobe/topology.json > $PLAYGROUND_DIR/netoviz_model/${NETWORK_NAME}/emulated_tobe/emulated_tobe_filtered.json
 
 #sudo docker-compose run netomox-exp bundle exec netomox diff -c /mddo/netoviz_model/$NETWORK_NAME/emulated_asis/topology.json /mddo/netoviz_model/$NETWORK_NAME/emulated_tobe/emulated_tobe_filtered.json
 
-cd $MODEL_MERGE_DIR/model_merge
-python3.10 merge.py config ../../playground/netoviz_model/${NETWORK_NAME}/original_asis/original_asis_filtered.json  ../../playground/netoviz_model/${NETWORK_NAME}/emulated_asis/topology.json ../../playground/netoviz_model/${NETWORK_NAME}/emulated_tobe/emulated_tobe_filtered.json
+#cd $MODEL_MERGE_DIR/model_merge
+#python3.10 merge.py config ../../playground/netoviz_model/${NETWORK_NAME}/original_asis/original_asis_filtered.json  ../../playground/netoviz_model/${NETWORK_NAME}/emulated_asis/topology.json ../../playground/netoviz_model/${NETWORK_NAME}/emulated_tobe/emulated_tobe_filtered.json
 
