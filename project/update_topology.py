@@ -2,11 +2,6 @@ import json,sys
 convert_path=sys.argv[1]
 topology_path=sys.argv[2]
 
-#with open('data/dst/test_new_update.json', 'w') as f:
-#    json.dump(d_update, f, indent=2, ensure_ascii=False)
-#convert_open = open( convert_path , 'r')
-#topology_open = open( topology_path , 'r+')
-
 with open( convert_path , 'r') as convert_open:
   source_convert_table = json.load(convert_open)
 
