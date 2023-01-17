@@ -37,13 +37,10 @@ for node_index, node_value \
         if ("interface" in str(node_value["mddo-topology:l3-node-attributes"]["static-route"])):
               for route_index, route_value in enumerate(node_value["mddo-topology:l3-node-attributes"]["static-route"]):
                   if ("dynamic"  not in str(route_value["interface"])):
-                      print (route_value["interface"])
-                  conv_if_index = [ conv_if_index for conv_if_index , conv_if_value in enumerate(source_convert_table[conv_node_index[0]]["iflist"]) \
-                          if conv_if_value["original"] in route_value["interface"] ]
-                  if conv_if_index:
-                      print (source_convert_table[conv_node_index[0]]["iflist"][conv_if_index[0]])
-                      print (source_topology_table["ietf-network:networks"]["network"][layer3index[0]]["node"][node_index]["mddo-topology:l3-node-attributes"]["static-route"][route_index] )
-                      source_topology_table["ietf-network:networks"]["network"][layer3index[0]]["node"][node_index]["mddo-topology:l3-node-attributes"]["static-route"][route_index]["interface"] = "dynamic"
+                      conv_if_index = [ conv_if_index for conv_if_index , conv_if_value in enumerate(source_convert_table[conv_node_index[0]]["iflist"]) \
+                              if conv_if_value["original"] in route_value["interface"] ]
+                      if conv_if_index:
+                          source_topology_table["ietf-network:networks"]["network"][layer3index[0]]["node"][node_index]["mddo-topology:l3-node-attributes"]["static-route"][route_index]["interface"] = "dynamic"
 
 with open( topology_path , 'w') as topology_open:
     json.dump(source_topology_table, topology_open, indent=2, ensure_ascii=False)
