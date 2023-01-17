@@ -30,7 +30,7 @@ for node_index, node_value \
                 if conv_if_value["clab"] in node_value["ietf-network-topology:termination-point"][if_index]["tp-id"] ]
 
             if ( "mddo-topology:l3-termination-point-attributes" in  \
-                    str(node_value["ietf-network-topology:termination-point"][if_index])):
+                    str(node_value["ietf-network-topology:termination-point"][if_index]) and "ifDescr" in source_convert_table[conv_node_index[0]]["iflist"][conv_if_index[0]] ):
                 source_topology_table["ietf-network:networks"]["network"][layer3index[0]]["node"][node_index]["ietf-network-topology:termination-point"][if_index]["mddo-topology:l3-termination-point-attributes"]["description"] = source_convert_table[conv_node_index[0]]["iflist"][conv_if_index[0]]["ifDescr"]
 
         ## static-route interface convert (junos logic)##
