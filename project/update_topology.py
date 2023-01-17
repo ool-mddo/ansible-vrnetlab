@@ -30,14 +30,16 @@ for node_index, node_value \
                 if conv_if_value["clab"] in node_value["ietf-network-topology:termination-point"][if_index]["tp-id"] ]
 
             if ( "mddo-topology:l3-termination-point-attributes" in  \
-                    str(node_value["ietf-network-topology:termination-point"][if_index]) and "ifDescr" in source_convert_table[conv_node_index[0]]["iflist"][conv_if_index[0]] ):
+                    str(node_value["ietf-network-topology:termination-point"][if_index]) and \
+                    "ifDescr" in source_convert_table[conv_node_index[0]]["iflist"][conv_if_index[0]] ):
                 source_topology_table["ietf-network:networks"]["network"][layer3index[0]]["node"][node_index]["ietf-network-topology:termination-point"][if_index]["mddo-topology:l3-termination-point-attributes"]["description"] = source_convert_table[conv_node_index[0]]["iflist"][conv_if_index[0]]["ifDescr"]
 
         ## static-route interface convert (junos logic)##
         if ("interface" in str(node_value["mddo-topology:l3-node-attributes"]["static-route"])):
               for route_index, route_value in enumerate(node_value["mddo-topology:l3-node-attributes"]["static-route"]):
                   if ("dynamic"  not in str(route_value["interface"])):
-                      conv_if_index = [ conv_if_index for conv_if_index , conv_if_value in enumerate(source_convert_table[conv_node_index[0]]["iflist"]) \
+                      conv_if_index = [ conv_if_index for conv_if_index , conv_if_value \
+                              in enumerate(source_convert_table[conv_node_index[0]]["iflist"]) \
                               if conv_if_value["original"] in route_value["interface"] ]
                       if conv_if_index:
                           source_topology_table["ietf-network:networks"]["network"][layer3index[0]]["node"][node_index]["mddo-topology:l3-node-attributes"]["static-route"][route_index]["interface"] = "dynamic"
