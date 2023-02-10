@@ -8,7 +8,7 @@
     convertif: []
     bridge_image:
       kind: linux
-      image: ghcr.io/ool-mddo/clab-ovs:latest
+      image: ghcr.io/ool-mddo/clab-ovs:v0.0.1
     cnf_image:
       kind: 'juniper_crpd'
       image: 'crpd:22.1R1.10'
