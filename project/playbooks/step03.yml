@@ -20,7 +20,7 @@
         file: "/data/project/playbooks/sub_mddo_containerlab.yml"
 
     - name: "run create_emulated_tobe.sh"
-      shell: "sudo bash create_emulated_tobe.sh"
+      shell: "bash create_emulated_tobe.sh"
       args:
         chdir: "{{ ansible_runner_dir }}/project"
       register: result

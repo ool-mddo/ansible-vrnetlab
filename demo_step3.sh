@@ -7,14 +7,14 @@
 
 source ./demo_vars
 CUR_DIR=`pwd`
-sudo ansible-runner run . -p /data/project/playbooks/step03.yml --container-option="--net=${NODERED_BRIDGE}" \
+ansible-runner run . -p /data/project/playbooks/step03.yml --container-option="--net=${NODERED_BRIDGE}" \
 	--container-volume-mount="$PWD:/data" --container-image=${ANSIBLERUNNER_IMAGE} \
 	--process-isolation --process-isolation-executable docker --cmdline \
 	"-e nodered_url=${NODERED_URL} -e labname=${LABNAME} -e login_user=${LOCALSERVER_USER} -e netoviz_url=${NETVIZ_URL} -e network_name=${NETWORK_NAME} -e ansible_runner_dir=${ANSIBLE_RUNNER_DIR} -k -K "
 
 
 cd $PLAYGROUND_DIR
-sudo docker-compose run netomox-exp  bundle exec ./exe/mddo_toolbox.rb convert_namespace \
+docker-compose run netomox-exp  bundle exec ./exe/mddo_toolbox.rb convert_namespace \
 	-f json -o -t /mddo/netoviz_model/${NETWORK_NAME}/original_asis/ns_table.json \
 	/mddo/netoviz_model/${NETWORK_NAME}/original_asis/topology.json \
 	> $PLAYGROUND_DIR/netoviz_model/${NETWORK_NAME}/emulated_asis/topology.json
@@ -29,11 +29,11 @@ python3.10 project/update_topology.py $DEMO_DIR/emulated_asis/convert.json \
 
 echo Checking differences between emulated_asis and emulated_tobe...
 cd $PLAYGROUND_DIR
-sudo docker-compose run netomox-exp bundle exec rake NETWORK=$NETWORK_NAME  PHY_SS_ONLY=1 emulated_ss_diff
-sudo docker-compose run netomox-exp bundle exec ./exe/mddo_toolbox.rb filter_low_layers \
+docker-compose run netomox-exp bundle exec rake NETWORK=$NETWORK_NAME  PHY_SS_ONLY=1 emulated_ss_diff
+docker-compose run netomox-exp bundle exec ./exe/mddo_toolbox.rb filter_low_layers \
 	-f json /mddo/netoviz_model/${NETWORK_NAME}/emulated_tobe/topology.json \
 	> $PLAYGROUND_DIR/netoviz_model/${NETWORK_NAME}/emulated_tobe/emulated_tobe_filtered.json
-sudo docker-compose run netomox-exp bundle exec netomox diff \
+docker-compose run netomox-exp bundle exec netomox diff \
 	-c /mddo/netoviz_model/$NETWORK_NAME/emulated_asis/topology.json \
 	/mddo/netoviz_model/$NETWORK_NAME/emulated_tobe/emulated_tobe_filtered.json
 

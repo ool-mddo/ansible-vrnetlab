@@ -1,4 +1,67 @@
 ---
+- hosts: docker-host
+  gather_facts: false
+  become: yes
+  vars:
+    ansible_user: "{{ login_user}}"
+    mddo_containerlab_file: "configs/clab-topo.yml"
+    nodered_url: "http://192.168.80.2:1880"
+    ansible_python_interpreter: /usr/bin/python3
+    operation: create
+    ansible_runner_dir: "/home/${LOCALSERVER_USER}/Desktop/OOL/ansible-vrnetlab"
+    playground_dir: "/home/${LOCALSERVER_USER}/Desktop/OOL/playground"
+    model_merge_dir: "/home/${LOCALSERVER_USER}/Desktop/OOL/model-merge"
+    demo_dir: "{{ playground_dir }}/configs/{{ network_name }}"
+  tasks:
+    - name: mddo_toolbox.rb convert_namespace
+      shell: "docker-compose run netomox-exp  bundle exec ./exe/mddo_toolbox.rb convert_namespace -f json -t ns_table.json -o  /mddo/netoviz_model/{{ network_name }}/original_asis/topology.json > {{ playground_dir }}/netoviz_model/{{ network_name }}/emulated_asis/topology.json"
+      args:
+        chdir: "{{ playground_dir }}"
+
+    - name: get original_asis
+      shell: "curl {{ netoviz_url }}/model/{{ network_name }}/original_asis/topology.json > {{ demo_dir }}/original_asis/topology.json"
+      args:
+        chdir: "{{ demo_dir }}"
+
+    - name: get emulated_asis
+      shell: "curl -X 'POST' '{{ nodered_url }}/description/batfish' -H 'accept: application/json' -H 'Content-Type: application/json' --data @{{ demo_dir }}/original_asis/topology.json | jq .  > {{ demo_dir }}/emulated_asis/convert.json"
+      args:
+        chdir: "{{ demo_dir }}"
+
+    - name: convert topology
+      shell: "python3.10 project/update_topology.py {{ demo_dir }}/emulated_asis/convert.json {{ playground_dir }}/netoviz_model/{{ network_name }}/emulated_asis/topology.json"
+      args:
+        chdir: "{{ ansible_runner_dir }}"
+
+    - name: "get emulated asis data"
+      uri:
+        url: "{{ netoviz_url }}/model/{{network_name}}/emulated_asis/topology.json"
+        method: "GET"
+      register: emulated_asis
+
+    - set_fact:
+       topology: "{{ emulated_asis.json }}"
+
+    - name: "get nodered convert data"
+      uri:
+        url: "{{ nodered_url }}/convertif/eth"
+        method: "POST"
+        body: "{{ topology }}"
+        body_format: json
+      register: result_node
+#
+    - name: "create ovs-br {{ item.node.clab }}"
+      shell: "ovs-vsctl del-br {{ item.node.clab | community.general.crc32 }}"
+      when: '"Seg" in item.node.clab'
+      loop: "{{ result_node.json }}"
+      ignore_errors: True
+
+    - name: "create ovs-br {{ item.node.clab }}"
+      shell: "ovs-vsctl add-br {{ item.node.clab | community.general.crc32 }}"
+      when: '"Seg" in item.node.clab'
+      loop: "{{ result_node.json }}"
+      ignore_errors: True
+
 - hosts: localhost
   connection: local
   gather_facts: no
@@ -7,8 +70,7 @@
     containerlab: []
     convertif: []
     bridge_image:
-      kind: linux
-      image: ghcr.io/ool-mddo/clab-ovs:v0.0.1
+      kind: ovs-bridge
     cnf_image:
       kind: 'juniper_crpd'
       image: 'crpd:22.1R1.10'
@@ -38,37 +100,26 @@
         method: "GET"
       register: emulated_asis
 
-    #- name: get emulated_asis data
-    #  include_vars:
-    #    file: "/data/project/playbooks/configs/topology.json"
-    #    name: emulated_asis
 
     - name: create playbooks/configs directory
       shell: mkdir -p configs
   
     - include_tasks: 
         file: "/data/project/playbooks/sub_generate_topo.yml"
-
+#
     - include_tasks: 
         file: "/data/project/playbooks/sub_generate_config.yml"
-
-#    - name: add host values
-#      add_host:
-#        name: "docker-host"
-#        ansible_host: "{{ containerlab_host }}"
-
+#
 - hosts: docker-host
   gather_facts: false
   become: yes
   vars:
     ansible_user: "{{ login_user}}"
-    #ansible_password: "{{ login_pass }}"
-    #ansible_sudo_pass: "{{ sudo_pass }}"
     mddo_containerlab_file: "configs/clab-topo.yml"
     ansible_python_interpreter: /usr/bin/python3
     operation: create
-
+#
   tasks:
     - include_tasks: 
         file: "/data/project/playbooks/sub_mddo_containerlab.yml"
-  
+ 
