@@ -8,9 +8,9 @@
     nodered_url: "http://192.168.80.2:1880"
     ansible_python_interpreter: /usr/bin/python3
     operation: create
-    ansible_runner_dir: "/home/${LOCALSERVER_USER}/Desktop/OOL/ansible-vrnetlab"
-    playground_dir: "/home/${LOCALSERVER_USER}/Desktop/OOL/playground"
-    model_merge_dir: "/home/${LOCALSERVER_USER}/Desktop/OOL/model-merge"
+    ansible_runner_dir: ""
+    playground_dir: ""
+    model_merge_dir: ""
     demo_dir: "{{ playground_dir }}/configs/{{ network_name }}"
   tasks:
     - name: mddo_toolbox.rb convert_namespace
@@ -28,10 +28,15 @@
       args:
         chdir: "{{ demo_dir }}"
 
-    - name: convert topology
+    - name: convert emulated_asis topology
       shell: "python3.10 project/update_topology.py {{ demo_dir }}/emulated_asis/convert.json {{ playground_dir }}/netoviz_model/{{ network_name }}/emulated_asis/topology.json"
       args:
         chdir: "{{ ansible_runner_dir }}"
+
+    - name: backup emulated_asis topology
+      shell: "cp topology.json backup_topology.json"
+      args:
+        chdir: "{{ playground_dir }}/netoviz_model/{{ network_name }}/emulated_asis"
 
     - name: "get emulated asis data"
       uri:

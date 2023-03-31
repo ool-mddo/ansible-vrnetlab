@@ -8,7 +8,7 @@
 source ./demo_vars
 cd $PLAYGROUND_DIR
 mkdir -p $PLAYGROUND_DIR/netoviz_model/${NETWORK_NAME}/original_tobe
-sudo docker-compose run netomox-exp  bundle exec ./exe/mddo_toolbox.rb convert_namespace \
+docker-compose run netomox-exp  bundle exec ./exe/mddo_toolbox.rb convert_namespace \
 	-f json -t /mddo/netoviz_model/${NETWORK_NAME}/original_asis/ns_table.json \
 	/mddo/netoviz_model/${NETWORK_NAME}/emulated_tobe/topology.json \
 	> $PLAYGROUND_DIR/netoviz_model/${NETWORK_NAME}/original_tobe/topology.json
