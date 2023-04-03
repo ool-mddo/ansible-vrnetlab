@@ -56,8 +56,8 @@
        name: "{{ item.agent_name }}"
        iflist: >-
          {%- for dict in item.iflist -%}
-         {%-  if dict.description -%}
-         { 'name': '{{ dict.agent_name }}', 'description': '{{ dict.description }}'},
+         {%-  if 'description' in dict -%}
+         { 'name': '{{ dict.agent_name }}', 'description': 'to_{{ dict.name }}'},
          {%- else -%}
          { 'name': '{{ dict.agent_name }}' },
          {%- endif -%}
